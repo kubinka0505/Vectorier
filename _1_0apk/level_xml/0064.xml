@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root> 
+	
+	<Sets>
+		
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/> 
+    <City FileName="buildings_test.xml"/>	    
+	</Sets>
+	
+	<Models>
+		 <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>     
+    </Models>
+	
+	
+	<Layers>		 		
+		<Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+			<Background DeltaX="0" DeltaY="-500"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+      <Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+      <Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+      <Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+      <Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+		</Layer> 
+		
+		<Layer Name="Banner_Layer" Factor="0.5" Type="2">
+			<Building1 DeltaX="200" DeltaY="-100" />
+			<Billboard DeltaX="200" DeltaY="150" />
+			<Building2 DeltaX="500" DeltaY="-200" />
+			<LampPost DeltaX="300" DeltaY="500" />
+			<Building3 DeltaX="300" DeltaY="0" />
+			<Billboard DeltaX="400" DeltaY="-500" />
+			<Building1 DeltaX="200" DeltaY="200" />
+			<Building3 DeltaX="300" DeltaY="0" />
+			
+		</Layer> 
+		
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Building2000x500 X="-4455" Y="-15" DeltaX="-4455" DeltaY="-15" BoxX="0" BoxY="-450" BoxWidth="2000" BoxHeight="950">
+        <Spawn X="50" Y="-213"/>
+        <TriggerCameraStart X="205" Y="-450"/>
+        <Camera X="225" Y="-202"/>
+        <TriggerRunInhibition X="1100" Y="-195"/>
+        <TriggerRunFromInhibition X="1295" Y="-195"/>
+      </Building2000x500>
+      <Building2000x500 X="-2180" Y="0" DeltaX="275" DeltaY="15" BoxX="0" BoxY="-200" BoxWidth="2050" BoxHeight="700">
+        <TriggerFlyingArrow X="1325" Y="-200"/>
+        <SmallPipe X="1930" Y="-90"/>
+      </Building2000x500>
+      <Building2000x500 X="-185" Y="0" DeltaX="-5" DeltaY="0" BoxX="0" BoxY="-195" BoxWidth="2000" BoxHeight="695">
+        <TriggerLongCircle X="1140" Y="-195"/>
+      </Building2000x500>
+      <Building2000x500 X="1810" Y="90" DeltaX="-5" DeltaY="90" BoxX="0" BoxY="-190" BoxWidth="2060" BoxHeight="690">
+        <SmallPipe X="1940" Y="-90"/>
+        <TriggerJumpSpinVault X="1135" Y="-190"/>
+      </Building2000x500>
+      <Building2000x500 X="3810" Y="90" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-175" BoxWidth="2000" BoxHeight="675">
+        <TriggerSpin360 X="1420" Y="-175"/>
+      </Building2000x500>
+      <Building2000x500 X="6010" Y="0" DeltaX="200" DeltaY="-90" BoxX="0" BoxY="-190" BoxWidth="2000" BoxHeight="690">
+        <TriggerDoubleSpinVault X="600" Y="-190"/>
+        <DoubleConditioner X="1240" Y="-90"/>
+      </Building2000x500>
+      <Building2000x500 X="8010" Y="0" DeltaX="0" DeltaY="0" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+    </Layer>
+		
+		<Layer Name="Forward_Layer" Factor="2" Type="2">
+		</Layer>		
+	</Layers>
+</Root>

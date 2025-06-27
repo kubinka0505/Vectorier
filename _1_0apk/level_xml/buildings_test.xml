@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+<Sets>
+  <Ground FileName="objects.xml"/>
+  <Ground FileName="objects_downtown.xml"/>
+</Sets>
+    
+<Buildings>
+
+
+  
+  <Background Width="2121" Height="500">
+    <BackgroundImage X="0" Y="0"/>
+  </Background>
+  
+    
+  <Billboard Width="325" Height="500">
+    <BillboardImage X="0" Y="0"/>
+  </Billboard>
+  
+    
+  <Building1 Width="1789" Height="500">
+    <Building1Image X="0" Y="0"/>
+  </Building1>
+  
+
+  <Building2 Width="1070" Height="500">
+    <Building2Image X="0" Y="0"/>
+  </Building2>
+  
+      
+  <Building3 Width="1083" Height="500">
+    <Building3Image X="0" Y="0"/>
+  </Building3>
+  
+    
+  <LampPost Width="150" Height="500">
+    <LampPostImage X="0" Y="0"/>
+  </LampPost>
+    
+    
+  <ForwardLamppost Width="295" Height="684">
+    <ForwardLamppostImage X="0" Y="0"/>
+  </ForwardLamppost>
+  
+    
+  <ForwardLantern Width="295" Height="684">
+    <ForwardLanternImage X="0" Y="0"/>
+  </ForwardLantern>
+  
+    
+  <Platform3000 Width="3000" Height="500">
+    <Platform3000x1000 X="0" Y="0"/>
+  </Platform3000>
+  
+  
+  <TutorialRoof_1 Width="5510" Height="2590.5">
+    <Railing X="909" Y="-81"/>
+    <Booth X="3489" Y="-297"/>
+    <Platform600x300 X="2200" Y="-300"/>
+    <Dovecote X="3040" Y="-160"/>
+    <Platform800x1000 X="4700" Y="-300"/>
+    <Platform2000x1000 X="300" Y="0"/>
+    <Platform3000x1000 X="2500" Y="100"/>
+    <Platform1000x1000 X="0" Y="-300"/>
+    <Platform600x300 X="1295" Y="-300"/>
+    <TriggerJump X="720" Y="-500"/>
+    <TriggerJump X="1630" Y="-500"/>
+    <TriggerJump X="4520" Y="-100"/>
+    <Pipe X="1933" Y="-72"/>
+    <Barrel X="1017" Y="-92"/>
+    <Barrel X="1095" Y="-92"/>
+    <Barrel X="1054" Y="-180"/>
+    <TriggerCatch X="620" Y="-450"/>
+    <TriggerCatch X="1530" Y="-450"/>
+    <TriggerCatch X="2500" Y="-450"/>
+    <TriggerCatch X="4040" Y="-50"/>
+    <TriggerCatch X="4890" Y="-450"/>
+    <Platform3000x1000 X="2500" Y="1090"/>
+  </TutorialRoof_1>
+
+  <TutorialRoof_2 Width="3009" Height="2510">
+    <Platform3000x1000 X="0" Y="0"/>
+    <WaterTower X="2000" Y="-515"/>
+    <TriggerSlide X="550" Y="-200"/>
+    <TriggerSlide X="1750" Y="-200"/>
+    <TriggerCatch X="500" Y="-150"/>
+    <TriggerCatch X="1650" Y="-150"/>
+    <Platform3000x1000 X="0" Y="995"/>
+    <WaterTower X="800" Y="-515"/>
+  </TutorialRoof_2>
+
+  <TutorialRoof_3 Width="6500" Height="2000">
+    <Railing X="1029" Y="-379"/>
+    <Booth X="1714" Y="-397"/>
+    <Railing X="5491" Y="-77"/>
+    <Railing X="105" Y="-379"/>
+    <Platform1500x1000 X="0" Y="-300"/>
+    <TriggerJumpTumbleTrick180High X="900" Y="-500"/>
+    <Barrel X="2810" Y="-80"/>
+    <TriggerBarrelVaultTrick0High X="2220" Y="-200"/>
+    <Railing X="567" Y="-379"/>
+    <Platform1700x90 X="3800" Y="-90"/>
+    <SmallPipeT X="4500" Y="-180"/>
+    <SmallPipeT X="5180" Y="-180"/>
+    <TriggerJump X="2470" Y="-200"/>
+    <TriggerJump X="3570" Y="-200"/>
+    <TriggerJump X="4300" Y="-290"/>
+    <TriggerJump X="4980" Y="-290"/>
+    <Platform5000x500 X="1490" Y="0"/>
+    <BarrelsHeap1 X="1335" Y="-178"/>
+    <TriggerCatch X="1010" Y="-450"/>
+    <TriggerCatch X="2360" Y="-150"/>
+    <TriggerCatch X="3370" Y="-150"/>
+    <TriggerCatch X="4130" Y="-240"/>
+    <TriggerCatch X="5870" Y="-150"/>  
+  </TutorialRoof_3>
+  
+  <TutorialRoof_4 Width="5100" Height="1400">
+    <Booth X="3297" Y="-487"/>
+    <Platform5000x500 X="0" Y="0"/>
+    <DoubleConditionerT X="600" Y="-90"/>
+    <DoubleConditionerT X="1510" Y="-90"/>
+    <SmallPipeT X="2410" Y="-90"/>
+    <Platform1700x90 X="3300" Y="-90"/>
+    <Platform600x1000 X="4400" Y="-400"/>
+    <TriggerJump X="400" Y="-200"/>
+    <TriggerJump X="1310" Y="-200"/>
+    <TriggerJump X="2210" Y="-200"/>
+    <TriggerJump X="3070" Y="-200"/>
+    <TriggerJump X="4190" Y="-290"/>
+    <TriggerCatch X="250" Y="-150"/>
+    <TriggerCatch X="2970" Y="-150"/>
+    <TriggerCatch X="3720" Y="-240"/>
+    <TriggerCatch X="4650" Y="-550"/>
+  </TutorialRoof_4>
+  
+     
+  <Roof1 Width="3009" Height="3500">
+    <Booth X="0" Y="-395"/>
+    <Platform3000x1000 X="0" Y="0"/>
+    <SmallPipeT X="800" Y="-90"/>
+    <TriggerJump X="600" Y="-200"/>
+    <DoubleConditionerT X="1400" Y="-90"/>
+    <TriggerJump X="1200" Y="-200"/>
+    <SmallPipeT X="2300" Y="-90"/>
+    <TriggerJump X="2120" Y="-200"/>
+    <TriggerJump X="2900" Y="-200"/>
+    <TriggerZoomNormal X="2400" Y="-500"/>
+    <TriggerCatch X="2700" Y="-150"/>
+    <TriggerZoomMax X="0" Y="-500"/>
+  </Roof1>
+  
+    
+  <Roof2 Width="5501.5" Height="3500">
+    <TriggerZoomNormal X="-500" Y="-2000"/>
+    <Platform5000x500 X="0" Y="0"/>
+    <Outbuilding1700x400 X="0" Y="-400"/>
+    <WaterTower X="920" Y="-910"/>
+    <TriggerJump X="500" Y="-600"/>
+    <Platform500x1000 X="1700" Y="-650"/>
+    <TriggerJump X="1750" Y="-850"/>
+    <WaterTower X="2500" Y="-510"/>
+    <TriggerJump X="2600" Y="-710"/>
+    <TriggerZoomNormal X="2500" Y="-2000"/>
+    <Outbuilding1000x1000 X="3200" Y="-500"/>
+    <Pipe X="3700" Y="-70"/>
+    <TriggerZoomMin X="3400" Y="-2000"/>
+    <TriggerZoomNormal X="3900" Y="-2000"/>
+  </Roof2>
+  
+    
+  <Columns Width="850" Height="1200.5">
+    <Column X="0" Y="0"/>
+    <TriggerJump X="0" Y="-200"/>
+    <Column X="750" Y="0"/>
+    <TriggerJump X="750" Y="-200"/>
+  </Columns>
+  
+
+  <Roof3 Width="5410" Height="3967.5">
+    <Railing X="2900" Y="-280"/>
+    <Platform5000x500 X="0" Y="0"/>
+    <DoubleConditionerT X="550" Y="-90"/>
+    <TriggerJump X="100" Y="-200"/>
+    <TriggerJump X="750" Y="-290"/>
+    <Outbuilding1700x400 X="1200" Y="-400"/>
+    <SmallPipeT X="1700" Y="-490"/>
+    <TriggerJump X="1520" Y="-600"/>
+    <SmallPipeT X="2400" Y="-490"/>
+    <TriggerJump X="2220" Y="-600"/>
+    <TriggerJump X="2800" Y="-600"/>
+    <Outbuilding1000x1000 X="2900" Y="-200"/>
+    <SmallPipeT X="3750" Y="-90"/>
+    <TriggerJump X="3780" Y="-290"/>
+    <TriggerJump X="4950" Y="-200"/>
+    <TriggerZoomNormal X="-360" Y="-2920"/>
+  </Roof3>
+  
+    
+  <Roof4 Width="4922" Height="4990.5">
+    <Booth1 X="1385" Y="-290"/>
+    <BarrelsHeap3 X="3225" Y="-180"/>
+    <TriggerHighJump300 X="3473" Y="-330"/>
+    <Railing2 X="1123" Y="-90"/>
+    <DoubleConditioner X="2808" Y="-90"/>
+    <TriggerHighJump300 X="2808" Y="-240"/>
+    <Barrel X="2000" Y="-90"/>
+    <Barrel X="1990" Y="-175"/>
+    <Barrel X="2110" Y="-90"/>
+    <Booth2_deep X="3840" Y="-510"/>
+    <Pill X="1620" Y="-380"/>
+    <TriggerJump X="240" Y="-490"/>
+    <TriggerJump X="2975" Y="-290"/>
+    <TriggerJump X="3525" Y="-380"/>
+    <TriggerJump X="4060" Y="-465"/>
+    <TriggerJump X="4835" Y="-710"/>
+    <TriggerZoomMin X="4390" Y="-3965"/>
+    <TriggerCatch X="815" Y="-690"/>
+    <TriggerCatch X="1655" Y="-440"/>
+    <TriggerCatch X="4635" Y="-660"/>
+    <Platform3000x1000 X="1050" Y="0"/>
+    <TriggerJumpTumbleTrick180High X="585" Y="-740"/>
+    <TriggerJumpHard X="90" Y="-490"/>
+    <TriggerJumpHard X="1885" Y="-490"/>
+    <Booth2_deep X="20" Y="-535"/>
+  </Roof4>
+
+
+  <Roof5 Width="5400" Height="4737.5">
+    <Platform5000x500 X="0" Y="0"/>
+    <DoubleConditionerT X="3890" Y="-90"/>
+    <WaterTower X="4600" Y="-490"/>
+    <Platform1700x90 X="1080" Y="-290"/>
+    <TriggerZoomNormal X="-360" Y="-3000"/>
+    <TriggerZoomMin X="1150" Y="-3690"/>
+    <TriggerJump X="230" Y="-205"/>
+    <TriggerJump X="855" Y="-400"/>
+    <TriggerSpeedUp X="1410" Y="-490"/>
+    <TriggerCatch X="1310" Y="-440"/>
+    <TriggerJump X="2680" Y="-490"/>
+    <TriggerJump X="4940" Y="-200"/>
+    <Platform500x300 X="3120" Y="-150"/>
+    <TriggerRunFast X="1085" Y="-440"/>
+    <TriggerRunFast X="1585" Y="-440"/>
+    <TriggerRunFast X="2085" Y="-440"/>
+    <TriggerRunFast X="2585" Y="-440"/>
+    <Platform600x300 X="580" Y="-200"/>
+    <Platform2000x500 X="781" Y="-155"/>
+    <TriggerCatch X="2470" Y="-440"/>
+  </Roof5>
+  
+
+  <Roof6 Width="5000" Height="1990">
+    <Platform5000x500 X="0" Y="0"/>
+    <Booth2 X="565" Y="-535"/>
+    <Platform570x700 X="0" Y="-840"/>
+    <Platform570x700 X="2165" Y="-790"/>
+    <Platform570x700 X="3225" Y="-990"/>
+    <Booth1 X="2680" Y="-290"/>
+    <Booth2 X="3790" Y="-535"/>
+    <TriggerZoom80 X="0" Y="-3000"/>
+    <TriggerJump X="1565" Y="-735"/>
+    <TriggerJump X="4785" Y="-730"/>
+    <TriggerJump X="2635" Y="-990"/>
+    <TriggerJump X="470" Y="-1040"/>
+  </Roof6>
+  
+  <Roof7 Width="5075" Height="1500.5">
+    <Platform4500x500 X="565" Y="0"/>
+    <Booth1_deep X="0" Y="-290"/>
+    <Booth1 X="1110" Y="-290"/>
+    <Platform500x300 X="2075" Y="-290"/>
+    <Platform500x300 X="2675" Y="-290"/>
+    <Booth1 X="3340" Y="-290"/>
+    <BarrelsHeap1 X="3740" Y="-180"/>
+    <BarrelsHeap1 X="2745" Y="-180"/>
+    <Barrel X="750" Y="-90"/>
+    <Barrel X="645" Y="-90"/>
+    <Pill X="3020" Y="-230"/>
+    <TriggerJump X="450" Y="-490"/>
+    <TriggerJump X="1460" Y="-490"/>
+    <TriggerJump X="2125" Y="-490"/>
+    <TriggerJump X="3010" Y="-380"/>
+    <TriggerJump X="3810" Y="-490"/>
+    <TriggerCatch X="270" Y="-440"/>
+    <TriggerCatch X="1380" Y="-440"/>
+    <TriggerCatch X="3610" Y="-440"/>
+    <TriggerCatch X="4800" Y="-150"/>
+    <TriggerJump X="2754" Y="-490"/>
+  </Roof7>
+  
+
+  <Roof8 Width="5411.5" Height="4757.5">
+    <Platform5000x500 X="0" Y="0"/>
+    <WaterTower X="890" Y="-515"/>
+    <WaterTower X="2440" Y="-515"/>
+    <Pill X="30" Y="-50"/>
+    <Pill X="2525" Y="-590"/>
+    <DoubleConditionerT X="1590" Y="-90"/>
+    <DoubleConditionerT X="4300" Y="-90"/>
+    <Platform500x300 X="3140" Y="-300"/>
+    <Pipe X="3260" Y="-70"/>
+    <TriggerSlide X="500" Y="-200"/>
+    <TriggerJump X="1380" Y="-200"/>
+    <TriggerSlide X="2150" Y="-200"/>
+    <TriggerJump X="2800" Y="-200"/>
+    <TriggerJump X="4090" Y="-200"/>
+    <TriggerJump X="4900" Y="-200"/>
+    <TriggerZoomNormal X="-410" Y="-2750"/>
+    <TriggerZoomMin X="3160" Y="-3710"/>
+    <TriggerCatch X="400" Y="-150"/>
+    <TriggerCatch X="4700" Y="-150"/>
+  </Roof8>
+  
+
+  <Roof9 Width="5000" Height="5150">
+    <Railing X="2300" Y="-280"/>
+    <Railing X="770" Y="-280"/>
+    <Railing X="460" Y="-280"/>
+    <Railing X="1730" Y="-280"/>
+    <Platform5000x500 X="0" Y="0"/>
+    <Platform500x300 X="3120" Y="-150"/>
+    <Column X="3540" Y="-250"/>
+    <Outbuilding1700x400 X="570" Y="-200"/>
+    <DoubleConditionerT X="3890" Y="-90"/>
+    <WaterTower X="4600" Y="-490"/>
+    <Outbuilding1000x1000 X="2270" Y="-200"/>
+    <Booth1 X="1165" Y="-490"/>
+    <DoubleConditionerT X="2020" Y="-290"/>
+    <Barrel X="4485" Y="-90"/>
+    <Barrel X="4395" Y="-90"/>
+    <Platform570x700 X="0" Y="-900"/>
+    <BarrelsHeap1 X="630" Y="-380"/>
+    <TriggerZoom80 X="10" Y="-4150"/>
+    <TriggerZoomMin X="4610" Y="-3880"/>
+    <TriggerJump X="3220" Y="-350"/>
+    <TriggerJump X="4700" Y="-690"/>
+    <TriggerJump X="4090" Y="-290"/>
+    <TriggerJump X="2220" Y="-490"/>
+  </Roof9>
+
+  
+  <Roof10 Width="5000" Height="1210">
+    <Platform5000x500 X="0" Y="0"/>
+      
+    <TriggerJump X="680" Y="-200"/>
+    <TriggerBarrelVaultTrick0High X="680" Y="-200"/>
+    <Column X="1250" Y="-60"/>
+      
+    <TriggerObstacleFrontflipTrick0High X="1855" Y="-200"/>
+    <Barrel X="2300" Y="-90"/>
+      
+    <TriggerGateVaultTrick0High X="2950" Y="-200"/>
+    <Column X="3420" Y="-195"/>
+      
+    <TriggerJumpTumbleTrick180High X="4440" Y="-410"/>
+    <Platform500x500 X="4171" Y="-210"/>
+    <Platform500x500 X="4500" Y="-210"/>
+  </Roof10>
+  
+      
+  <Roof11 Width="5000" Height="1210">
+    <Platform5000x500 X="0" Y="0"/>
+
+    <TriggerSpinningVaultTrick0High X="700" Y="-200"/>
+    <DoubleConditioner X="1100" Y="-90"/>
+      
+    <TriggerJumpAndRoll X="2100" Y="-200"/>
+    <TriggerJumpAndRoll X="2200" Y="-200"/>
+    <Platform500x500 X="2400" Y="-90"/>
+    <TriggerBackFlipTrick90High X="2900" Y="-290"/>
+    <Platform500x500 X="2900" Y="-90"/>
+      
+    <TriggerJumpWheelTrick180High X="4500" Y="-380"/>
+    <Platform500x500 X="4200" Y="-180"/>
+    <Platform500x500 X="4500" Y="-180"/>
+     
+  </Roof11>
+  
+
+  <Roof12 Width="5000" Height="1210">
+    <Platform5000x500 X="0" Y="0"/>
+    <TriggerHandBackSpringTrick0High X="800" Y="-200"/>
+  </Roof12>
+<!--
+<TriggerJumpTumbleTrick180High X="2935" Y="0"/>
+<TriggerHandBackSpringTrick0High X="2935" Y="0"/>
+<TriggerGateVaultTrick0High X="2935" Y="0"/>
+<TriggerJumpWheelTrick180High X="2935" Y="0"/>
+<TriggerBarrelVaultTrick0High X="2935" Y="0"/>
+<TriggerSpinningVaultTrick0High X="2935" Y="0"/>
+<TriggerObstacleFrontflipTrick0High X="2935" Y="0"/>
+<TriggerBackFlipTrick90High X="2935" Y="0"/>
+-->
+
+  <Roof13 Width="4863" Height="1992">
+    <Platform1000x200 X="0" Y="0"/>
+    <Platform1000x200 X="0" Y="200"/>
+    <Platform1000x200 X="0" Y="400"/>
+    <Platform1000x200 X="1000" Y="400"/>
+    <Platform1000x200 X="1000" Y="0"/>
+    <Platform1000x200 X="1000" Y="200"/>
+    <Platform3000x1000 X="1855" Y="500"/>
+    <WaterTower X="1700" Y="-490"/>
+    <Platform1000x200 X="2270" Y="-200"/>
+    <SmallPipe X="2770" Y="-290"/>
+    <DoubleConditionerT X="2855" Y="410"/>
+    <DoubleConditionerT X="900" Y="-90"/>
+    <HangingBlockObject X="2870" Y="0"/>
+    <HangingBlockObject X="2470" Y="0"/>
+    <Booth2 X="3755" Y="-35"/>
+  </Roof13>
+  
+  <Roof14 Width="3480" Height="1210">
+    <Platform380x500 X="0" Y="0"/>
+    
+    
+    <Platform1000x500 X="380" Y="0"/>
+    
+    <JumpHelp X="880" Y="-200"/>
+    
+    <Platform1000x500 X="1580" Y="0"/> 
+
+    <Platform500x500 X="2580" Y="0"/>
+
+  </Roof14>
+  
+  <Roof15 Width="4790" Height="1210">
+    <Platform1000x500 X="0" Y="0"/> 
+
+    <TriggerLoss X="1000" Y="400"/>
+    <Platform1000x500 X="1800" Y="0"/>
+    
+    <JumpHelp X="2410" Y="-200"/>
+    
+    <Platform1000x500 X="2790" Y="-400"/>
+    <Platform1000x500 X="2790" Y="0"/>
+    
+    <Platform1000x500 X="3790" Y="-400"/>
+    
+    <SlideHelp X="3420" Y="-600"/>
+    <WaterTower X="3870" Y="-915"/>
+  </Roof15>
+  
+  <Roof15WOtrigs Width="4790" Height="1210">
+    <Platform1000x500 X="0" Y="0"/> 
+
+    <TriggerLoss X="1000" Y="400"/>
+    <Platform1000x500 X="1800" Y="0"/>
+    
+    
+    
+    <Platform1000x500 X="2790" Y="-400"/>
+    <Platform1000x500 X="2790" Y="0"/>
+    
+    <Platform1000x500 X="3790" Y="-400"/>
+    
+    <SlideHelp X="3420" Y="-600"/>
+    <WaterTower X="3870" Y="-915"/>
+  </Roof15WOtrigs>
+  
+  <Roof16 Width="5000" Height="1210">
+    <Platform5000x500 X="0" Y="0"/>
+    <FastRunHelp X="0" Y="-200"/>
+    
+    <SlideHelp X="1130" Y="-200"/>
+    <Outbuilding1000x1000 X="1720" Y="-1130"/>
+    
+    <FastRunHelp X="3100" Y="-200"/>
+    <JumpHelp X="4750" Y="-200"/>
+  </Roof16>
+  
+  <Roof17Test Width="2000" Height="1210">
+     <Platform5000x500 X="0" Y="0"/>
+     <Glass X="1410" Y="-290"/>
+     <Glass X="1610" Y="-290"/>
+     <Glass X="1810" Y="-290"/>
+     <Glass X="2010" Y="-290"/>
+     <Glass X="2210" Y="-290"/>
+     <Glass X="2410" Y="-290"/>
+     <Glass X="2610" Y="-290"/>
+     <!-- DoubleConditioner X="644" Y="-90"/ -->
+  </Roof17Test>
+  
+  <Roof18Test Width="5000" Height="1210">
+     <Platform5000x500 X="0" Y="0"/>
+     
+     <!-- DoubleConditioner X="644" Y="-90"/ -->
+  </Roof18Test>
+  
+  <Roof18Test2 Width="5000" Height="1210">
+     <Platform5000x500 X="0" Y="0"/>
+     
+     <!-- DoubleConditioner X="644" Y="-90"/ -->
+  </Roof18Test2>
+  
+  <Block1000 Width="1000" Height="1210">
+     <Platform1000x500 X="0" Y="0"/>
+  </Block1000>
+  
+  <Block600x1000 Width="600" Height="1000">
+     <Platform600x1000 X="0" Y="0"/>
+  </Block600x1000>
+  
+  <Block1800x1000 Width="3600" Height="1000">
+     <Platform600x1000 X="0" Y="0"/>
+     <Platform600x1000 X="900" Y="0"/>
+     <Platform600x1000 X="1800" Y="0"/>
+  </Block1800x1000>
+  
+  
+  <Block2000 Width="2000" Height="1210">
+     <Platform1000x500 X="0" Y="0"/>
+     <Platform1000x500 X="1010" Y="10"/>
+  </Block2000>
+  
+    <Building2000x500 InX="0" InY="0" OutX="2000" OutY="0">
+      <Platform2000x500 X="0" Y="0"/>
+    </Building2000x500>
+  
+  <Building2500x1000 InX="0" InY="0" OutX="2500" OutY="0">
+    <Platform2500x1000 X="0" Y="0"/>
+  </Building2500x1000>
+  
+  <Slope_Roof Width="5000" Height="1210">
+    <Booth X="0" Y="-400"/>
+    <SlopeUp X="500" Y="50"/>
+    <SlopeDown X="2000" Y="-300"/>
+    <Platform3000x1000 X="-1000" Y="0"/>
+    <Platform3000x1000 X="2000" Y="0"/>
+  </Slope_Roof>
+  
+  <Fast_Run_Roof Width="3000" Height="500">
+       <Platform3000x1000 X="0" Y="0"/>
+    <Platform3000x1000 X="3000" Y="100"/>
+    <TriggerHurdleJump X="0" Y="-200"/>
+  </Fast_Run_Roof>
+  
+  <JumpInSitTest Width="5000" Height="1210">
+    <Booth X="0" Y="-400"/>
+    <JumpInSitTest X="0" Y="200"/>
+    <JumpInSitTest X="1100" Y="400"/>
+  </JumpInSitTest>
+  
+  <Building_CE_01 Width="4909" Height="1628">
+    <LampPostImage X="1690" Y="-610"/>
+    <LampPostImage X="918" Y="-602"/>
+    <LampPostImage X="2074" Y="-614"/>
+    <LampPostImage X="2860" Y="-610"/>
+    <Grating X="942" Y="-170"/>
+    <Grating X="2099" Y="-170"/>
+    <Platform3000x1000 X="1" Y="0"/>
+    <SlopeUp X="2910" Y="15"/>
+    <SlopeDown X="3910" Y="-485"/>
+    <Booth_04 X="2370" Y="-625"/>
+    <Tower_01 X="1850" Y="-445"/>
+    <SmallPipeT X="1155" Y="-90"/>
+    <Platform2000x1000 X="2340" Y="0"/>
+  </Building_CE_01>
+
+<Building_CE_02 Width="4737" Height="1382">
+  <BackConditoner X="1137" Y="-86"/>
+  <BillboardImage X="4412" Y="-607"/>
+  <Railing X="205" Y="-70"/>
+  <Railing X="1110" Y="-75"/>
+  <v_barrel_01 X="1800" Y="-90"/>
+  <LampPostImage X="2035" Y="155"/>
+  <LampPostImage X="745" Y="-605"/>
+  <LampPostImage X="2490" Y="155"/>
+  <LampPostImage X="2945" Y="155"/>
+  <LampPostImage X="3420" Y="150"/>
+  <BillboardImage X="3925" Y="-580"/>
+  <v_barrel_01 X="345" Y="-90"/>
+  <v_barrel_01 X="25" Y="-90"/>
+  <v_barrel_01 X="90" Y="-90"/>
+  <v_barrel_01 X="60" Y="-175"/>
+  <v_barrel_01 X="275" Y="-90"/>
+  <v_fan_1_1 X="490" Y="-80"/>
+  <Grating X="2000" Y="-175"/>
+  <Platform2000x500 X="0" Y="0"/>
+  <Bridge_01 X="2000" Y="-60"/>
+  <Bridge_01 X="2340" Y="-60"/>
+  <Bridge_01 X="2680" Y="-60"/>
+  <Bridge_01 X="3020" Y="-60"/>
+  <Bridge_01 X="3360" Y="-60"/>
+  <DoubleConditionerT X="740" Y="-100"/>
+  <Gate_01 X="1960" Y="-200"/>
+  <TriggerGateVaultTrick0High X="1470" Y="-200"/>
+  <Platform1000x500 X="3690" Y="0"/>
+  <Grating X="2810" Y="-175"/>
+  <SmallPipeT X="3845" Y="-90"/>
+  <DoubleConditionerT X="4355" Y="-95"/>
+</Building_CE_02>
+    
+  <Building_CE_03 Width="5000" Height="1875">
+    <LampPostImage X="4800" Y="130"/>
+    <Booth X="2715" Y="345"/>
+    <Platform5000x500 X="0" Y="740"/>
+    <Platform500x300 X="1475" Y="255"/>
+    <Platform1000x500 X="1880" Y="255"/>
+    <SmallPipeT X="880" Y="-90"/>
+    <Dovecote_01 X="2575" Y="-125"/>
+    <Platform1000x500 X="0" Y="0"/>
+    <Tower_01 X="3275" Y="5"/>
+    <SmallPipeT X="4590" Y="470"/>
+    <Platform1000x500 X="3770" Y="555"/>
+    <Platform1000x500 X="0" Y="445"/>
+    <Outbuilding1000x1000 X="1395" Y="555"/>
+  </Building_CE_03>
+  
+<Building_01_Crawling_test Width="9515" Height="4210">
+  <BackgroundImage X="870" Y="-1090"/>
+  <Railing X="1080" Y="-80"/>
+  <Grating X="1730" Y="-180"/>
+  <WaterTower X="3120" Y="-490"/>
+  <BillboardImage X="200" Y="-570"/>
+  <Platform2000x1000 X="2995" Y="1030"/>
+  <WaterTower X="4390" Y="520"/>
+  <v_barrel_01 X="2495" Y="-98"/>
+  <WaterTower X="600" Y="-500"/>
+  <Platform5000x500 X="-2010" Y="-5"/>
+  <v_fan_1_1 X="2030" Y="-90"/>
+  <Dovecote X="1600" Y="-260"/>
+  <v_barrel_01 X="1925" Y="-95"/>
+  <Trapezoid_test X="-510" Y="-100"/>
+</Building_01_Crawling_test>
+
+<Crane Width="4000" Height="1000">
+  <CraneObject X="0" Y="0"/>
+  <TriggerSpeedUp X="1430" Y="-200"/>
+  <TriggerJump X="3880" Y="-200"/>
+  <TriggerCatch X="1330" Y="-150"/>
+  <TriggerRunFast X="1125" Y="-155"/>
+  <TriggerRunFast X="1630" Y="-155"/>
+  <TriggerRunFast X="2130" Y="-155"/>
+  <TriggerRunFast X="2630" Y="-155"/>
+  <TriggerRunFast X="3135" Y="-155"/>
+  <TriggerRunFast X="3635" Y="-155"/>
+  <TriggerJump X="620" Y="-200"/>
+</Crane>
+
+  <City Width="1500" Height="100">
+    <Roof X="0" Y="140"/>
+  </City>
+
+  
+    <Roof66666666 Width="5390" Height="1827">
+    <Platform1000x500 X="0" Y="0"/>
+    <Platform2000x500 X="915" Y="315"/>
+    <Platform2000x1000 X="2885" Y="790"/>
+  </Roof66666666>
+  
+  <Platform1500x1018 Width="10091.5" Height="3990">
+    <Platform1500x1000 X="0" Y="500"/>
+    <Platform1500x1000 X="1500" Y="706"/>
+    <Platform3000x1000 X="3000" Y="500"/>
+    <Platform1000x1000 X="9000" Y="500"/>
+    <SmallPipe X="3784" Y="411"/>
+    <SmallPipe X="5307" Y="410"/>
+    <WaterTower X="6851" Y="175"/>
+    <TriggerZoomMax X="-87" Y="-1198"/>
+    <TriggerJump X="3593" Y="303"/>
+    <TriggerJump X="5106" Y="303"/>
+    <TriggerSlide X="6680" Y="502"/>
+    <TriggerHighJump100 X="8772" Y="551"/>
+    <TriggerHighJumpT X="9703" Y="401"/>
+    <TriggerZoomMin X="9613" Y="-1688"/>
+    <TriggerHighJumpT X="8608" Y="597"/>
+    <TriggerSpeedVault X="3597" Y="303"/>
+    <TriggerSpeedVault X="5108" Y="296"/>
+    <TriggerSlide X="8084" Y="-54"/>
+    <WaterTower X="8049" Y="176"/>
+    <SmallPipe X="2167" Y="614"/>
+    <DoubleConditioner X="4421" Y="407"/>
+    <TriggerDivingKong X="4210" Y="307"/>
+    <TriggerSpeedVault X="2043" Y="510"/>
+    <TriggerWallSpeedVault X="2899" Y="505"/>
+    <TriggerWallSpeedVault X="2912" Y="447"/>
+    <Platform3000x1000 X="6000" Y="700"/>
+  </Platform1500x1018>
+  
+    <CS01_Downtown Override="0" Width="3064" Height="4322">
+      <TriggerWallJumpCamera X="1067" Y="-758"/>
+      <TriggerCS01DowntownMain X="1070" Y="-660"/>
+      <LampPostImage X="920" Y="-967"/>
+      <Passage_blank X="2427" Y="-645"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image X="2517" Y="-768" ClassName="v_office_x_passage_edge" Width="30" Height="430"/>
+        </Elements>
+      </ObjectNULL>
+      <Passage_blank X="1607" Y="-645"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image X="1702" Y="-590" ClassName="vent_bar" Width="20" Height="320"/>
+          <Image X="1592" Y="-690" ClassName="wall_right" Width="28" Height="330"/>
+        </Elements>
+      </ObjectNULL>
+      <TriggerCS01DowntownSecond X="1070" Y="-660"/>
+      <Constantine_Platform1000x500 X="0" Y="-3"/>
+      <TriggerZoom80 X="845" Y="-1817"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image X="1557" Y="-790" ClassName="v_Wall_L_01" Width="150" Height="150"/>
+          <Image X="1557" Y="-940" ClassName="v_Wall_L_01" Width="150" Height="150"/>
+          <Image X="1557" Y="-1085" ClassName="v_Wall_L_01" Width="150" Height="150"/>
+          <Image X="1557" Y="-1235" ClassName="v_Wall_03" Width="150" Height="150"/>
+          <Image X="1557" Y="-1385" ClassName="v_Wall_03" Width="150" Height="150"/>
+          <Image X="1557" Y="-1535" ClassName="v_Wall_03" Width="150" Height="150"/>
+          <Image X="1672" Y="-625" ClassName="vent_redbox" Width="50" Height="85"/>
+        </Elements>
+      </ObjectNULL>
+      <Passage_blank X="2017" Y="-645"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image X="1612" Y="-640" ClassName="vent_wire2" Width="175" Height="35"/>
+          <Image X="1922" Y="-460" ClassName="ventilation_hole" Width="117" Height="103"/>
+          <Image X="842" Y="105" ClassName="v_black" Width="2073" Height="393"/>
+          <Image X="1927" Y="-945" ClassName="vent_wire1" Width="170" Height="420"/>
+          <Image X="1572" Y="-685" ClassName="v_black" Width="63" Height="50"/>
+          <Image X="2052" Y="-455" ClassName="v_office_socket" Width="26" Height="27"/>
+          <Image X="2115" Y="-771" ClassName="v_office_x_passage_edge" Width="30" Height="430"/>
+          <Image X="2127" Y="-682" ClassName="vent_ceiling" Width="790" Height="255"/>
+        </Elements>
+      </ObjectNULL>
+      <MaxPlatform_1500x2000 X="1564" Y="-2640"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image X="1730" Y="-515" ClassName="vent_wire1" Width="170" Height="420"/>
+          <Image X="1892" Y="-550" ClassName="volts" Width="120" Height="200"/>
+          <Image X="170" Y="-133" ClassName="v_railing_C_01" Width="506" Height="139"/>
+          <Image X="24" Y="-132" ClassName="v_railing_L_01" Width="150" Height="139"/>
+          <Image X="673" Y="-133" ClassName="v_railing_R_01" Width="151" Height="139"/>
+        </Elements>
+      </ObjectNULL>
+      <V_fence X="822" Y="-394"/>
+      <V_fence_bar X="1270" Y="-396"/>
+      <V_fence X="1046" Y="-395"/>
+      <Constantine_Platform2100x500 X="816" Y="-360"/>
+      <TriggerCS01DowntownCtrlOut X="662" Y="-530"/>
+    </CS01_Downtown>
+	
+    <RoofTest-1 InX="0" InY="0" OutX="7490" OutY="0">
+      <SlopeDown X="2500" Y="1"/>
+      <Platform5000x500 X="2485" Y="499"/>
+      <Platform1000x1000 X="4750" Y="200"/>
+      <Platform1000x1000 X="5510" Y="-100"/>
+      <Platform1000x1000 X="6490" Y="-400"/>
+      <Platform2000x1000 X="0" Y="0"/>
+      <DoubleConditionerT X="6890" Y="-490"/>
+      <Birds X="6810" Y="-490"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image X="2483" Y="20" ClassName="v_black" Width="27" Height="470"/>
+        </Elements>
+      </ObjectNULL>
+    </RoofTest-1>
+
+    
+</Buildings>
+    
+</Root>

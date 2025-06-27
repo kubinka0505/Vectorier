@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.8" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  
+  <Layers>
+  
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2">
+      <Building1 DeltaX="200" DeltaY="-100"/>
+      <Billboard DeltaX="200" DeltaY="150"/>
+      <Building2 DeltaX="500" DeltaY="-200"/>
+      <LampPost DeltaX="300" DeltaY="500"/>
+      <Building3 DeltaX="300" DeltaY="0"/>
+      <Billboard DeltaX="400" DeltaY="-500"/>
+      <Building1 DeltaX="200" DeltaY="200"/>
+      <Building3 DeltaX="300" DeltaY="0"/>
+    </Layer>
+            
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Maxim_Roof16 DeltaX="-8" DeltaY="0">
+        <Spawn X="-530" Y="-455"/>
+        <Camera X="-383" Y="-335"/>
+        <TriggerCameraStart X="-254" Y="-296"/>
+        <TriggerZoomMin X="443" Y="-1645"/>
+        <TriggerZoomNormal X="3063" Y="-1922"/>
+        <Pill X="4158" Y="-300"/>
+        <TriggerZoomMin X="4656" Y="-2131"/>
+      </Maxim_Roof16>
+      <Maxim_Roof17 DeltaX="-335" DeltaY="368">
+        <Pill X="900" Y="-296"/>
+        <TriggerZoomNormal X="1496" Y="-2131"/>
+        <TriggerSpinningVaultTrick0High X="3600" Y="324"/>
+      </Maxim_Roof17>
+      <Maxim_Roof18 DeltaX="-57" DeltaY="-382">
+        <Pill X="2226" Y="757"/>
+        <TriggerZoomMin X="3155" Y="-1359"/>
+        <TriggerZoomNormal X="3904" Y="-1637"/>
+      </Maxim_Roof18>
+      <Maxim_Roof19 DeltaX="-127" DeltaY="-748">
+        <Pill X="2129" Y="593"/>
+        <TriggerZoomMin X="2158" Y="-1053"/>
+        <TriggerLoss X="4065" Y="2138"/>
+      </Maxim_Roof19>
+      <FinalRoof DeltaX="1957" DeltaY="1692">
+        <TriggerLoss X="-1000" Y="466"/>
+        <TriggerZoomNormal X="-239" Y="-2610"/>
+      </FinalRoof>
+    </Layer>
+            
+      </Layers>
+</Root>

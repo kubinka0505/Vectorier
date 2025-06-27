@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="40"/>
+  <Variable Name="Money">40</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+      <ConstructionYardBackground X="0" Y="-500" DeltaX="0" DeltaY="-500"/>
+      <ConstructionYardBackground X="2121" Y="-500" DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground X="4242" Y="-500" DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding2 X="125" Y="-205" DeltaX="125" DeltaY="-205"/>
+      <ConstructionYardBuilding1 X="1375" Y="-10" DeltaX="250" DeltaY="195"/>
+      <ConstructionYardBuilding2 X="3040" Y="165" DeltaX="502" DeltaY="175"/>
+      <ConstructionYardBuilding2 X="4630" Y="535" DeltaX="590" DeltaY="370"/>
+      <ConstructionYardBuilding1 X="6130" Y="535" DeltaX="500" DeltaY="0"/>
+      <ConstructionYardBuilding2 X="7732" Y="985" DeltaX="439" DeltaY="450"/>
+      <ConstructionYardBuilding1 X="9495" Y="716" DeltaX="763" DeltaY="-269"/>
+      <ConstructionYardBuilding1 X="11090" Y="1005" DeltaX="432" DeltaY="289"/>
+      <ConstructionYardBuilding2 X="13328" Y="811" DeltaX="1075" DeltaY="-194"/>
+      <ConstructionYardBuilding2 X="14613" Y="741" DeltaX="285" DeltaY="-70"/>
+      <ConstructionYardBuilding1 X="16068" Y="1166" DeltaX="455" DeltaY="425"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof127_8 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-175" BoxY="-1910" BoxWidth="5285" BoxHeight="4030">
+        <TriggerZoomMin X="3640" Y="-1380"/>
+        <TriggerZoomMax X="640" Y="-1910"/>
+        <TrackStart X="-125" Y="5"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="4030" Y="1830" Width="1080" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Trigger X="3955" Y="-195" Width="155" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="1" SubType="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof127_8>
+      <Roof127_2 X="5080" Y="1280" DeltaX="965" DeltaY="1280" BoxX="-525" BoxY="-2414" BoxWidth="6539" BoxHeight="4329">
+        <TriggerZoomMin X="1179" Y="-2221"/>
+        <TriggerZoomNormal X="3624" Y="-1881"/>
+        <TriggerLoss X="1209" Y="474"/>
+        <Pill X="2570" Y="476"/>
+        <Pill X="2420" Y="161"/>
+        <Pill X="2230" Y="-139"/>
+        <Pill X="2035" Y="-364"/>
+        <Pill X="1745" Y="-494"/>
+        <TriggerZoomNormal X="610" Y="-2414"/>
+        <Pill X="258" Y="-298"/>
+        <Pill X="-50" Y="-914"/>
+        <Pill X="-237" Y="-1198"/>
+        <Pill X="-445" Y="-1408"/>
+        <Respawn_2.5sec X="175" Y="-1"/>
+        <Pill X="122" Y="-601"/>
+        <Respawn_3sec X="3620" Y="184"/>
+        <TriggerMonkeyVault X="4145" Y="-16"/>
+        <TriggerZoomMin X="5070" Y="-2200"/>
+        <TriggerLoss X="5014" Y="757"/>
+        <TriggerJump X="5180" Y="-16"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="5160" Y="100" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="4560" Y="25" Score="10" Radius="80" Type="1" GroupId="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof127_2>
+      <Roof127_5 X="11090" Y="1680" DeltaX="730" DeltaY="215" BoxX="0" BoxY="-1940" BoxWidth="5218" BoxHeight="4118">
+        <TriggerZoomNormal X="39" Y="-1940"/>
+        <Respawn_3.3sec X="1747" Y="1000"/>
+        <Pill X="1857" Y="503"/>
+        <Pill X="1687" Y="273"/>
+        <Pill X="1952" Y="753"/>
+        <Pill X="1487" Y="70"/>
+        <TriggerLoss X="4218" Y="1278"/>
+        <TriggerZoomMin X="4243" Y="-1322"/>
+        <TriggerJump X="4282" Y="809"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="225" Y="-89" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3920" Y="836" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="2924" Y="-351" Width="870" Height="913" Text="Поправил трубы." FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof127_5>
+      <Roof127_6 X="15930" Y="2650" DeltaX="460" DeltaY="-35" BoxX="-325" BoxY="-2538" BoxWidth="4433" BoxHeight="3500">
+        <TriggerZoomNormal X="3670" Y="-2538"/>
+        <Pill X="1674" Y="-718"/>
+        <Pill X="1359" Y="-623"/>
+        <Pill X="2184" Y="-438"/>
+        <Pill X="1949" Y="-603"/>
+        <TriggerJump X="3605" Y="-640"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="1088" Y="463" Width="3020" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Item X="545" Y="-170" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="2510" Y="-335" Score="10" Radius="80" Type="1" GroupId="2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof127_6>
+      <Roof127_3 X="20035" Y="2010" DeltaX="395" DeltaY="-200" BoxX="0" BoxY="-1402" BoxWidth="5150" BoxHeight="4060">
+        <TriggerZoomMin X="2181" Y="-1402"/>
+        <Respawn_2sec X="2" Y="-3"/>
+        <Pill X="3599" Y="477"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="3700" Y="1145" Width="1450" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Item X="295" Y="-85" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="2330" Y="504" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="3250" Y="511" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Trigger X="3630" Y="389" Width="120" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0" SubType="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof127_3>
+      <Roof127_4 X="25124" Y="2778" DeltaX="1340" DeltaY="180" BoxX="-1348" BoxY="-2048" BoxWidth="6355" BoxHeight="4133">
+        <TriggerZoom80 X="168" Y="-1928"/>
+        <TriggerZoomMax X="1818" Y="-1873"/>
+        <TriggerZoomNormal X="2897" Y="-2048"/>
+        <Pill X="3520" Y="-147"/>
+        <Pill X="3389" Y="-263"/>
+        <Pill X="3215" Y="-288"/>
+        <Pill X="3038" Y="-288"/>
+        <Pill X="-1268" Y="-367"/>
+        <Pill X="-1057" Y="-403"/>
+        <Pill X="-827" Y="-428"/>
+        <Pill X="-598" Y="-398"/>
+        <Pill X="-352" Y="-313"/>
+        <Pill X="-117" Y="-198"/>
+        <TriggerSideFlip X="1721" Y="-418"/>
+        <TriggerZoomMax X="4356" Y="-1887"/>
+        <TriggerMonkeyToBomb X="3696" Y="-263"/>
+        <TriggerJump X="4126" Y="-263"/>
+        <Respawn_2.7sec X="21" Y="17"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="896" Y="-168" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="2836" Y="-298" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="381" Y="-78" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="4052" Y="492" Width="955" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Comment X="1096" Y="-1073" Width="1735" Height="1888" Text="Поправил трубы." FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof127_4>
+      <Final_Roof127_5 X="29879" Y="3013" DeltaX="300" DeltaY="390" BoxX="-212" BoxY="-2008" BoxWidth="3212" BoxHeight="3500">
+        <TriggerZoomNormal X="401" Y="-2008"/>
+        <Pill X="326" Y="-93"/>
+        <Pill X="106" Y="-273"/>
+        <Pill X="-132" Y="-428"/>
+      </Final_Roof127_5>
+    </Layer>
+  </Layers>
+</Root>

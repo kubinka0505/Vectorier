@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+	<City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" AllowedSpawns="PlayerLag" Murders="Hunter" Arrests="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="BotSpawn" AI="1" Time="0.3" Respawns="Player" AllowedSpawns="SceneRespawn" Skins="hunter" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="BotSpawn_2" AI="1" Time="2.35" Respawns="Player|Hunter" AllowedSpawns="Respawn" Skins="hunter" Icon="1" Victory="1" Lose="1"/>
+  </Models>
+  
+  <Coins Value="40"/>
+  <Variable Name="Money">40</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+      <ConstructionYardBackground DeltaX="0" DeltaY="-400"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="1" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding1 X="40" Y="-720" DeltaX="40" DeltaY="-720"/>
+      <ConstructionYardBuilding2 X="1857" Y="-601" DeltaX="654" DeltaY="119"/>
+      <ConstructionYardBuilding2 X="3310" Y="-485" DeltaX="453" DeltaY="116"/>
+      <ConstructionYardBuilding1 X="5495" Y="-480" DeltaX="1185" DeltaY="5"/>
+      <ConstructionYardBuilding1 X="6225" Y="-165" DeltaX="-433" DeltaY="315"/>
+      <ConstructionYardBuilding2 X="8640" Y="-230" DeltaX="1252" DeltaY="-65"/>
+      <ConstructionYardBuilding2 X="9875" Y="10" DeltaX="235" DeltaY="240"/>
+      <ConstructionYardBuilding2 X="11295" Y="-245" DeltaX="420" DeltaY="-255"/>
+      <ConstructionYardBuilding1 X="12625" Y="-445" DeltaX="330" DeltaY="-200"/>
+    </Layer>    
+
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof133-1 X="-550" Y="0" DeltaX="-550" DeltaY="0" BoxX="-305" BoxY="-2085" BoxWidth="9040" BoxHeight="3694">
+        <TriggerCameraStart X="690" Y="-455"/>
+        <Camera X="915" Y="-310"/>
+        <TriggerRunForwardFromFailReverse X="2425" Y="-255"/>
+        <TriggerZoomMin X="6025" Y="-2085"/>
+        <TriggerJump X="6255" Y="240"/>
+        <Pill X="4905" Y="280"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="-195" Y="-410" Name="DefaultSpawn" Animation="FrontfilpLegsUpStart|18"/>
+            <Spawn X="-255" Y="80" Name="BotSpawn" Animation="RunForward|1"/>
+            <Spawn X="2510" Y="-380" Name="BotSpawn_2" Animation="WallRunFly|18|1"/>
+            <Comment X="3850" Y="915" Width="1560" Height="535" Text="Я бы убрал эту часть вовсе, она может вызывать часть тормозов&#xD;ИСПРАВЛЕНО" FontSize="100"/>
+            <Comment X="5140" Y="-2055" Width="10000" Height="415" Text="Еще одна потенциальная причина падения фпс - эти непомерно длинные балки сверху и снизу&#xD;ИСПРАВЛЕНО" FontSize="100"/>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="6240" Y="1449" Width="2495" Height="160" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="6190" Y="1364" Width="2540" Height="145" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="690" Y="-270" Width="2755" Height="260" Text="Длинный участок без препятствий и разбега - плохо&#xD;ИСПРАВЛЕНО" FontSize="100"/>
+            <Trigger X="4015" Y="-845" Width="150" Height="1305" Name="PlayerLag" Type="11" Node="COM" Priority="0" Spawn="PlayerLag" Time="4.5" SubType="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof133-1>
+      <Roof133-2 X="6040" Y="365" DeltaX="305" DeltaY="-125" BoxX="0" BoxY="-1061" BoxWidth="4915" BoxHeight="3535">
+        <TriggerZoomNormal X="2055" Y="-1061"/>
+        <TriggerZoomMin X="3740" Y="-1026"/>
+        <TriggerSwallow X="3715" Y="430"/>
+        <TriggerJump X="3635" Y="-80"/>
+        <Pill X="850" Y="305"/>
+        <Pill X="2260" Y="530"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="2025" Y="-375" Width="150" Height="1305" Name="PlayerLag" Type="11" Node="COM" Priority="0" Spawn="PlayerLag" Time="4" SubType="1"/>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="3470" Y="769" Width="1445" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="3355" Y="799" Width="1370" Height="80" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="1025" Y="-510" Width="1085" Height="600" Text="Прыжок с крыш лиятов на верхний путь некрасиво получается, непонятно зачем так.&#xD;ИСПРАВЛЕНО" FontSize="75"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof133-2>
+      <Roof133-3 X="10090" Y="-945" DeltaX="190" DeltaY="-1940" BoxX="0" BoxY="-3245" BoxWidth="4615" BoxHeight="7010">
+        <TriggerLoss X="925" Y="2034"/>
+        <TriggerZoomMin X="2550" Y="-2845"/>
+        <TriggerZoomNormal X="3780" Y="265"/>
+        <TriggerJump X="4240" Y="785"/>
+        <TriggerJump X="3190" Y="70"/>
+        <TriggerZoomMax X="1010" Y="-3025"/>
+        <TriggerZoomMax X="3825" Y="-3245"/>
+        <Pill X="3485" Y="410"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="800" Y="666" Width="1300" Height="55" Node="COM" Priority="0" SubType="0"/>
+            <Trigger X="15" Y="659" Width="345" Height="445" Name="NoWallRun" Type="4" Node="COM" Priority="0" Output="NaN"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="605" Y="2074" Width="2140" Height="130" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="805" Y="1369" Width="110" Height="875" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="925" Y="1474" Width="1595" Height="130" Node="COM" Priority="0" SubType="0"/>
+            <Spawn X="2190" Y="830" Name="SceneRespawn" Animation="RunForward|1"/>
+            <Trigger X="2280" Y="-225" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="SceneRespawn" Time="0.1" SubType="0" AI="1"/>
+            <Trigger X="1490" Y="1860" Width="200" Height="430" Name="NoWallRun" Type="4" Node="COM" Priority="0" Output="NaN"/>
+            <Comment X="2655" Y="-165" Width="1655" Height="760" Text="Проигрыш посреди трассы за то, что игрок не знал авторскую задумку заранее? Нет-нет-нет, так нельзя. Исправить.&#xD;ИСПРАВЛЕНО" FontSize="100"/>
+            <Trigger X="3795" Y="-140" Width="195" Height="390" Name="NOCONTROL" Type="12" Node="COM" Priority="0" AI="0"/>
+            <Trigger X="495" Y="-840" Width="150" Height="1305" Name="PlayerLag" Type="11" Node="COM" Priority="0" Spawn="PlayerLag" Time="4" SubType="1"/>
+            <Trigger X="3665" Y="-105" Width="200" Height="420" Name="NOPASARAN" Type="13" Node="COM" Priority="0" Animation="WallJumpLanding|44" AI="0"/>
+            <Trigger X="3620" Y="245" Width="200" Height="290" Name="NoWallRun" Type="4" Node="COM" Priority="0" Output="NaN"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof133-3>
+      <Roof133-7 X="13854" Y="-700" DeltaX="-851" DeltaY="-740" BoxX="0" BoxY="-425" BoxWidth="1751" BoxHeight="4785">
+        <TriggerZoomMin X="1236" Y="860"/>
+        <Pill X="1300" Y="1080"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="1601" Y="200" Width="150" Height="1305" Name="PlayerLag" Type="11" Node="COM" Priority="0" Spawn="PlayerLag" Time="4" SubType="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof133-7>
+      <Roof133-4 X="14704" Y="605" DeltaX="-870" DeltaY="1305" BoxX="0" BoxY="-1745" BoxWidth="3870" BoxHeight="3500">
+        <TriggerZoomNormal X="2745" Y="-1745"/>
+        <NoWallRun X="2970" Y="105"/>
+        <TriggerLoss X="2505" Y="250"/>
+        <TriggerJumpWheelTrick180High X="946" Y="-200"/>
+      </Roof133-4>
+      <Roof133-5 X="18574" Y="530" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-1947" BoxWidth="2505" BoxHeight="3500">
+        <TriggerZoomMin X="284" Y="-1947"/>
+        <TriggerJump X="2289" Y="-915"/>
+        <Pill X="874" Y="-1050"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="1391" Y="-1595" Width="150" Height="1305" Name="PlayerLag" Type="11" Node="COM" Priority="0" Spawn="PlayerLag" Time="4" SubType="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof133-5>
+      <Roof133-6 X="21458" Y="-75" DeltaX="379" DeltaY="110" BoxX="-435" BoxY="-500" BoxWidth="3125" BoxHeight="1880">
+        <TriggerSideFlip X="2171" Y="345"/>
+        <Pill X="1551" Y="455"/>
+      </Roof133-6>
+      <Roof133-8 X="24438" Y="470" DeltaX="290" DeltaY="0" BoxX="-129" BoxY="-1831" BoxWidth="3284" BoxHeight="3712">
+        <TriggerZoomMax X="721" Y="-1831"/>
+        <TriggerZoomMax X="-129" Y="-1619"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="2" Y="-1195" Width="150" Height="1305" Name="PlayerLag" Type="11" Node="COM" Priority="0" Spawn="PlayerLag" Time="4" SubType="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof133-8>
+    </Layer>
+  </Layers>
+</Root>

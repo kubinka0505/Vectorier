@@ -1,0 +1,31 @@
+		<Object Name="object_rain">
+			<Content>
+				<Trigger Name="trigger_rain" X="-5000" Y="-5000" Width="10000" Height="10000" Type="Animation">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="-1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<EventBlock Template="NoneType.Only"/>
+							</Events>
+							<Actions>
+								<ActionBlock Template="NoneType.Only"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+				<Animation
+					X="0" Y="0"
+					Width="128" Height="32"
+					Type="1"
+					Direction="0|0" Acceleration="0|0"
+					ScaleX="1" ScaleY="1"
+					Time="100" Speed="1"
+					ClassName="rain"
+				/>
+			</Content>
+		</Object>

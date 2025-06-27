@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="0" Respawns="Hunter|Helper|RevolutionGirl" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="200" Y="-100" DeltaX="200" DeltaY="-100"/>
+      <Billboard X="1995" Y="305" DeltaX="6" DeltaY="405"/>
+      <Building2 X="3014" Y="-150" DeltaX="694" DeltaY="-455"/>
+      <Building3 X="4834" Y="350" DeltaX="750" DeltaY="500"/>
+      <Billboard X="6570" Y="235" DeltaX="653" DeltaY="-115"/>
+      <Building1 X="6842" Y="350" DeltaX="-53" DeltaY="115"/>
+      <Building3 X="8931" Y="350" DeltaX="300" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <BotTrekRoof-1 X="0" Y="0" DeltaX="-650" DeltaY="0" BoxX="-865" BoxY="-400" BoxWidth="5615" BoxHeight="1134">
+        <TriggerCameraStart X="-255" Y="-400"/>
+        <Camera X="-55" Y="-100"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="-815" Y="90" Name="DefaultSpawn" Animation="RunForward|1"/>
+          </Elements>
+        </ObjectNULL>
+      </BotTrekRoof-1>
+      <BotTrekRoof-2 X="5419" Y="255" DeltaX="669" DeltaY="4" BoxX="0" BoxY="-925" BoxWidth="5580" BoxHeight="1245"/>
+      <BotTrekRoof-8 X="10998" Y="475" DeltaX="-1" DeltaY="0" BoxX="0" BoxY="-201" BoxWidth="3704" BoxHeight="982"/>
+      <BotTrekRoof-3 X="14702" Y="276" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-486" BoxWidth="8015" BoxHeight="686"/>
+      <BotTrekRoof-4 X="22719" Y="276" DeltaX="2" DeltaY="0" BoxX="0" BoxY="-1485" BoxWidth="5968" BoxHeight="3870"/>
+      <BotTrekRoof-5 X="29180" Y="460" DeltaX="493" DeltaY="184" BoxX="0" BoxY="-2125" BoxWidth="7540" BoxHeight="3500"/>
+      <BotTrekRoof-6 X="36720" Y="1726" DeltaX="0" DeltaY="1" BoxX="0" BoxY="-1305" BoxWidth="4918" BoxHeight="1805"/>
+      <BotTrekRoof-7 X="41625" Y="1271" DeltaX="1" DeltaY="535" BoxX="15" BoxY="360" BoxWidth="1995" BoxHeight="1130"/>
+    </Layer>
+  </Layers>
+</Root>

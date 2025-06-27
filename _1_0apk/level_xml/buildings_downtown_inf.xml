@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <Ground FileName="objects.xml"/>
+    <Ground FileName="objects_downtown.xml"/>
+  </Sets>
+  
+  <ConnectionTypes>
+    <Out Name="Jump">
+      <Trajectory X1="150" X2="440" Polynomial="-10|1.2546|-0.0021"/>
+      <Trajectory X1="440" X2="1000" Polynomial="-10|1.2546|-0.0021" />
+    </Out>
+    <Out Name="Runoff">
+      <Trajectory X1="150" X2="440" Polynomial="-10|1.2546|-0.0021"/>
+      <Trajectory X1="440" X2="1000" Polynomial="-10|1.2546|-0.0021" />
+    </Out>
+    <Out Name="Slide">
+      <Trajectory X1="150" X2="440" Polynomial="-10|1.2546|-0.0021"/>
+      <Trajectory X1="440" X2="1000" Polynomial="-10|1.2546|-0.0021" />
+    </Out>
+    <In Name="Cling">
+      <Out Name="Jump" X1="300" X2="1000" DeltaY1="-45" DeltaY2="-95"/>
+    </In>
+    <Out Name="Slide" A="-1" B="0" C="100" X1="200" X2="800" DeltaX1="50" DeltaX2="50"/>
+    <In Name="HorizontalGap" A="0" B="0" C="0" X1="200" X2="400"/>
+  </ConnectionTypes>
+  
+  
+  <Buildings>
+    <RoofTest_downtown_Platform1000 InX="0" InY="0" OutX="1000" OutY="0">
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image Type="3" Depth="0" X="0" Y="0" ClassName="v_black" Width="1000" Height="500" NativeX="50" NativeY="50"/>
+          <Platform X="0" Y="0" Width="1000" Height="500"/>
+        </Elements>
+      </ObjectNULL>
+    </RoofTest_downtown_Platform1000>
+
+    <RoofTest_downtown_Run InX="0" InY="0" OutX="2000" OutY="0">
+      <TriggerSpeedUp X="450" Y="-200"/>
+      <RunIndicator X="148" Y="-150"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image Type="3" Depth="0" X="0" Y="0" ClassName="v_black" Width="2000" Height="500" NativeX="50" NativeY="50"/>
+          <Platform X="0" Y="0" Width="2000" Height="500"/>
+          <Trigger Name="TriggerRunFast" Type="4" X="0" Y="-150" Width="2000" Height="150" Node="COM" Priority="0" Output="0"/>
+        </Elements>
+      </ObjectNULL>
+    </RoofTest_downtown_Run>
+	
+    <RoofTest_downtown_NoJump InX="0" InY="0" OutX="1000" OutY="0">
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image Type="3" Depth="0" X="0" Y="0" ClassName="v_black" Width="1000" Height="500" NativeX="50" NativeY="50"/>
+          <Image Type="3" Depth="0" X="900" Y="-680" ClassName="v_black" Width="500" Height="500" NativeX="50" NativeY="50"/>
+          <Platform X="0" Y="0" Width="1000" Height="500"/>
+          <Platform X="900" Y="-680" Width="500" Height="500"/>
+        </Elements>
+      </ObjectNULL>
+    </RoofTest_downtown_NoJump>
+    
+    <RoofTest_downtown_Slide InX="0" InY="0" OutX="1000" OutY="0">
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image Type="3" Depth="0" X="0" Y="0" ClassName="v_black" Width="1000" Height="500" NativeX="50" NativeY="50"/>
+          <Image Type="3" Depth="0" X="900" Y="-600" ClassName="v_black" Width="500" Height="500" NativeX="50" NativeY="50"/>
+          <Platform X="0" Y="0" Width="1000" Height="500"/>
+          <Platform X="900" Y="-600" Width="500" Height="500"/>
+        </Elements>
+      </ObjectNULL>
+    </RoofTest_downtown_Slide>
+    
+    <RoofTest_downtown_RunNoJump InX="0" InY="0" OutX="2000" OutY="0">
+      <TriggerSpeedUp X="450" Y="-200"/>
+      <RunIndicator X="148" Y="-150"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image Type="3" Depth="0" X="0" Y="0" ClassName="v_black" Width="2000" Height="500" NativeX="50" NativeY="50"/>
+          <Image Type="3" Depth="0" X="1900" Y="-680" ClassName="v_black" Width="500" Height="500" NativeX="50" NativeY="50"/>
+          <Platform X="0" Y="0" Width="2000" Height="500"/>
+          <Trigger Name="TriggerRunFast" Type="4" X="0" Y="-150" Width="2000" Height="150" Node="COM" Priority="0" Output="0"/>
+          <Platform X="1900" Y="-680" Width="500" Height="500"/>
+        </Elements>
+      </ObjectNULL>
+    </RoofTest_downtown_RunNoJump>
+    
+    <RoofTest_downtown_RunAndSlide InX="0" InY="0" OutX="2000" OutY="0">
+      <TriggerSpeedUp X="450" Y="-200"/>
+      <RunIndicator X="148" Y="-150"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image Type="3" Depth="0" X="0" Y="0" ClassName="v_black" Width="2000" Height="500" NativeX="50" NativeY="50"/>
+          <Image Type="3" Depth="0" X="1900" Y="-600" ClassName="v_black" Width="500" Height="500" NativeX="50" NativeY="50"/>
+          <Platform X="0" Y="0" Width="2000" Height="500"/>
+          <Trigger Name="TriggerRunFast" Type="4" X="0" Y="-150" Width="2000" Height="150" Node="COM" Priority="0" Output="0"/>
+          <Platform X="1900" Y="-600" Width="500" Height="500"/>
+        </Elements>
+      </ObjectNULL>
+    </RoofTest_downtown_RunAndSlide>
+    
+    <RoofTest_downtown_Platform500 InX="0" InY="0" OutX="500" OutY="0">
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image Type="3" Depth="0" X="0" Y="0" ClassName="v_black" Width="500" Height="500" NativeX="50" NativeY="50"/>
+          <Platform X="0" Y="0" Width="500" Height="500"/>
+        </Elements>
+      </ObjectNULL>
+    </RoofTest_downtown_Platform500>
+    
+    <RoofTest_downtown_Platform100 InX="0" InY="0" OutX="100" OutY="0">
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image Type="3" Depth="0" X="0" Y="0" ClassName="v_black" Width="100" Height="500" NativeX="50" NativeY="50"/>
+          <Platform X="0" Y="0" Width="100" Height="500"/>
+        </Elements>
+      </ObjectNULL>
+    </RoofTest_downtown_Platform100>
+    
+    <RoofTest_downtown_NoSlide InX="0" InY="0" OutX="1000" OutY="0">
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image Type="3" Depth="0" X="0" Y="0" ClassName="v_black" Width="1000" Height="500" NativeX="50" NativeY="50"/>
+        </Elements>
+      </ObjectNULL>
+      <SmallPipeToFly X="880" Y="0"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Platform X="0" Y="0" Width="1000" Height="500"/>
+        </Elements>
+      </ObjectNULL>
+    </RoofTest_downtown_NoSlide>
+    
+    <RoofTest_downtown_RunNoSlide InX="0" InY="0" OutX="2000" OutY="0">
+      <TriggerSpeedUp X="450" Y="-200"/>
+      <RunIndicator X="148" Y="-150"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image Type="3" Depth="0" X="0" Y="0" ClassName="v_black" Width="2000" Height="500" NativeX="50" NativeY="50"/>
+        </Elements>
+      </ObjectNULL>
+      <SmallPipeToFly X="1880" Y="0"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Platform X="0" Y="0" Width="2000" Height="500"/>
+          <Trigger Name="TriggerRunFast" Type="4" X="0" Y="-150" Width="2000" Height="150" Node="COM" Priority="0" Output="0"/>
+        </Elements>
+      </ObjectNULL>
+    </RoofTest_downtown_RunNoSlide>
+    
+    <RoofTest_downtown_Jump InX="0" InY="0" OutX="1000" OutY="-300">
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image Type="3" Depth="0" X="0" Y="0" ClassName="v_black" Width="1000" Height="500" NativeX="50" NativeY="50"/>
+          <Image Type="3" Depth="0" X="900" Y="-300" ClassName="v_black" Width="100" Height="300" NativeX="50" NativeY="50"/>
+        </Elements>
+      </ObjectNULL>
+      <TriggerWallRunFromFail X="750" Y="-250"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Platform X="0" Y="0" Width="1000" Height="500"/>
+          <Platform X="900" Y="-300" Width="100" Height="300"/>
+        </Elements>
+      </ObjectNULL>
+    </RoofTest_downtown_Jump>
+    
+    <RoofTest_downtown_RunAndJump InX="0" InY="0" OutX="2000" OutY="0">
+      <TriggerSpeedUp X="450" Y="-200"/>
+      <RunIndicator X="148" Y="-150"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Image Type="3" Depth="0" X="0" Y="0" ClassName="v_black" Width="2000" Height="500" NativeX="50" NativeY="50"/>
+          <Image Type="3" Depth="0" X="1900" Y="-500" ClassName="v_black" Width="100" Height="500" NativeX="50" NativeY="50"/>
+        </Elements>
+      </ObjectNULL>
+      <TriggerWallRunFromFail X="1750" Y="-250"/>
+      <ObjectNULL X="0" Y="0">
+        <Elements>
+          <Platform X="0" Y="0" Width="2000" Height="500"/>
+          <Trigger Name="TriggerRunFast" Type="4" X="0" Y="-150" Width="1900" Height="150" Node="COM" Priority="0" Output="0"/>
+          <Platform X="1900" Y="-500" Width="100" Height="500"/>
+        </Elements>
+      </ObjectNULL>
+    </RoofTest_downtown_RunAndJump>
+    
+    <Background InX="0" InY="0" OutX="2121" OutY="0">
+      <BackgroundImage X="0" Y="0"/>
+    </Background>
+      
+    <Billboard InX="0" InY="0" OutX="325" OutY="0">
+      <BillboardImage X="0" Y="0"/>
+    </Billboard>
+
+    <Building1 InX="0" InY="0" OutX="1789" OutY="0">
+      <Building1Image X="0" Y="0"/>
+    </Building1>
+
+    <Building2 InX="0" InY="0" OutX="1070" OutY="0">
+      <Building2Image X="0" Y="0"/>
+    </Building2>
+
+    <Building3 InX="0" InY="0" OutX="1083" OutY="0">
+      <Building3Image X="0" Y="0"/>
+    </Building3>
+
+    <LampPost InX="0" InY="0" OutX="150" OutY="0">
+      <LampPostImage X="0" Y="0"/>
+    </LampPost>
+
+    <ForwardLamppost InX="0" InY="0" OutX="295" OutY="0">
+      <ForwardLamppostImage X="0" Y="0"/>
+    </ForwardLamppost>
+
+    <ForwardLantern InX="0" InY="0" OutX="295" OutY="0">
+      <ForwardLanternImage X="0" Y="0"/>
+    </ForwardLantern>
+    
+  </Buildings>
+</Root>

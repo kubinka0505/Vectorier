@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter|Helper|RevolutionGirl" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.7" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+    <!--Model Name="RevolutionGirl" Type="0" Color="0" AllowedSpawns="RespawnRevolutionGirl" AI="2" Time="0" Skins="revolution_girl" /-->
+    <Model Name="Helper" Type="0" Color="0"  AllowedSpawns="RespawnHelper" AI="3" Time="0" Skins="helper|shirt|cap" LifeTime="15" />
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="200" Y="-100" DeltaX="200" DeltaY="-100"/>
+      <Billboard X="2189" Y="195" DeltaX="200" DeltaY="295"/>
+      <Building2 X="3014" Y="-150" DeltaX="500" DeltaY="-345"/>
+      <LampPost X="4384" Y="350" DeltaX="300" DeltaY="500"/>
+      <Building3 X="4834" Y="235" DeltaX="300" DeltaY="-115"/>
+      <Building1 X="6537" Y="79" DeltaX="620" DeltaY="-156"/>
+      <Building3 X="8931" Y="350" DeltaX="605" DeltaY="271"/>
+      <LampPost X="10760" Y="1085" DeltaX="746" DeltaY="735"/>
+      <Building1 X="10875" Y="55" DeltaX="-35" DeltaY="-1030"/>
+      <Building3 X="14055" Y="155" DeltaX="1391" DeltaY="100"/>
+      <Building3 X="15765" Y="330" DeltaX="627" DeltaY="175"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof132_1 X="180" Y="535" DeltaX="370" DeltaY="1135" BoxX="-225" BoxY="200" BoxWidth="3425" BoxHeight="940">
+        <TrackStart X="-175" Y="600"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="475" Y="330" Width="455" Height="240" Text="Заменил кондиционер с мусорного на правильный." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="745" Y="-555" Width="2000" Height="330" Text="ВЕЗДЕ:&#xD;-Подправил изображения&#xD;-В некоторых домах подкорректировал входы\выходы." FontSize="60" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof132_1>
+      <Roof132_5 X="3955" Y="155" DeltaX="945" DeltaY="420" BoxX="-845" BoxY="-555" BoxWidth="5430" BoxHeight="4030">
+        <TriggerZoomMin X="-845" Y="-555"/>
+        <TriggerZoomNormal X="525" Y="-25"/>
+        <TriggerZoom80 X="3495" Y="-70"/>
+        <TriggerLoss X="-615" Y="1555"/>
+        <Pill X="-20" Y="505"/>
+        <TriggerLoss X="3585" Y="1065"/>
+        <Pill X="2010" Y="850"/>
+        <TriggerSwallow X="3545" Y="475"/>
+        <TriggerJump X="-625" Y="520"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="3365" Y="250" Width="460" Height="295" Text="Изменил платформу. Согласно вики, горизонтальная поверхность в конце подъема должна быть вровень или ниже, а раньше было выше." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Spawn X="245" Y="1005" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="370" Y="640" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2.2" SubType="0"/>
+            <Comment X="125" Y="795" Width="390" Height="290" Text="Добавил триггер спауна." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Trigger X="3710" Y="475" Width="115" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+            <Comment X="3650" Y="700" Width="915" Height="785" Text="Подровнял здания, чтобы платформы в этой пропасти имели уровень 0 относительно друг друга." FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof132_5>
+      <Roof132_2 X="8345" Y="645" DeltaX="665" DeltaY="0" BoxX="10" BoxY="-935" BoxWidth="6050" BoxHeight="3890">
+        <TriggerZoomNormal X="150" Y="-545"/>
+        <TriggerZoomMin X="4050" Y="-665"/>
+        <TriggerZoom80 X="1740" Y="-935"/>
+        <Respawn_2sec X="10" Y="180"/>
+        <TriggerLoss X="3130" Y="810"/>
+        <TriggerJump X="4190" Y="-115"/>
+        <Pill X="3045" Y="365"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="4315" Y="1430" Width="1745" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Item X="2715" Y="500" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="4130" Y="10" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3925" Y="10" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Comment X="2030" Y="-15" Width="795" Height="330" Text="Пододвинул пораньше триггер  камеры и поставил бонус-подсказку." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="3630" Y="-236" Width="935" Height="150" Text="Приподнял пллатформу на 20 вверх. Так же два бонуса на ней и один справа." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="3100" Y="-90" Width="435" Height="266" Text="Добавил триггер HighJump." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="-31" Y="-255" Width="780" Height="565" Text="Было маловато места после приземления трюком - слишком резкий и не очень красивый переход на скольжение вниз. Удлиннил платформу." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="1570" Y="505" Width="840" Height="250" Text="Передвинул на 50 вправо." FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof132_2>
+      <Crane_132 X="13775" Y="1545" DeltaX="1010" DeltaY="810" BoxX="-625" BoxY="-3500" BoxWidth="4690" BoxHeight="5735">
+        <Pill X="-545" Y="-1040"/>
+        <TriggerZoomNormal X="615" Y="-1430"/>
+        <TriggerZoomMin X="1890" Y="-1265"/>
+        <TriggerJump X="3800" Y="-205"/>
+        <TriggerZoomNormal X="3965" Y="-3500"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="105" Y="-180" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="30" Y="-810" Width="150" Height="715" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2.2" SubType="0"/>
+            <Item X="3660" Y="-100" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="3905" Y="-870" Width="715" Height="425" Text="Передвинул триггер камеры, чтобы не видно было обрезок финиша." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="-135" Y="70" Width="410" Height="280" Text="Добавил сюда v_black, чтобы при не долете по воздуху не забирался." FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Crane_132>
+      <Roof132_3 X="19010" Y="1470" DeltaX="1210" DeltaY="80" BoxX="-1155" BoxY="-2840" BoxWidth="3265" BoxHeight="6875">
+        <TriggerZoomMin X="1395" Y="-2840"/>
+        <TriggerZoomNormal X="1395" Y="535"/>
+        <TriggerMonkeyVault X="1600" Y="1065"/>
+        <Respawn_2sec X="-125" Y="155"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="1.5" X="-1150" Y="155" Width="1175" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="-1155" Y="125" Width="1180" Height="490" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-1155" Y="465" Width="1180" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Item X="1340" Y="1100" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="1055" Y="1180" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="840" Y="1185" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="975" Y="-10" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="-85" Y="-80" Width="580" Height="295" Text="Добавил респаун." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="945" Y="890" Width="390" Height="540" Text="Отобрал управление, чтобы игрок не прыгал с баллонов в дверь и перенес триггер победы с игрового слоя в здание." FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof132_3>
+      <Roof132_4 X="21090" Y="1146" DeltaX="460" DeltaY="641" BoxX="-135" BoxY="-2485" BoxWidth="5480" BoxHeight="6535">
+        <TriggerZoomMax X="1075" Y="550"/>
+        <TriggerZoomMin X="4050" Y="545"/>
+        <TriggerZoomNormal X="3840" Y="-2485"/>
+        <TriggerZoomMin X="700" Y="-2480"/>
+        <TriggerLoss X="-135" Y="1900"/>
+        <Pill X="4640" Y="489"/>
+        <Pill X="2325" Y="460"/>
+        <TriggerLoss X="4070" Y="1705"/>
+        <TriggerSlide X="1065" Y="335"/>
+        <TriggerHandSpringTrick0High X="1710" Y="1385"/>
+        <Respawn_2sec X="1030" Y="1495"/>
+        <Respawn_2sec_Reversed X="1830" Y="445"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="4397" Y="161" Name="Respawn" Animation="JumpOff|18|1"/>
+            <Trigger X="3895" Y="-75" Width="565" Height="595" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.8" SubType="0"/>
+            <Item X="2690" Y="1425" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="1745" Y="360" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="20" Y="855" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3550" Y="1420" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="4230" Y="440" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="1205" Y="460" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="2675" Y="360" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Comment X="490" Y="750" Width="425" Height="270" Text="Перенес NoWallRun в здание." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="950" Y="1155" Width="470" Height="320" Text="Добавил респаун." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="1700" Y="250" Width="275" Height="205" Text="Добавил респаун." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="-240" Y="765" Width="495" Height="360" Text="На 5 уменьшил длину трапеции, чтобы игрок не убивался." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="2150" Y="-990" Width="100" Height="1530" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="1650" Y="1260" Width="430" Height="375" Text="Сместил триггеры, объекты и бонусы на 150 вправо." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="4289" Y="1245" Width="520" Height="395" Text="Поднял Walljump на 50 вверх." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="4095" Y="839" Width="410" Height="390" Text="Заменил дверь на движущуюся платформу." FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof132_4>
+    </Layer>
+
+  </Layers>
+</Root>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="70"/>
+  <Variable Name="Money">70</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+      <ConstructionYardBackground X="0" Y="-550" DeltaX="0" DeltaY="-550"/>
+      <ConstructionYardBackground X="2120" Y="-500" DeltaX="0" DeltaY="50"/>
+      <ConstructionYardBackground X="4240" Y="-500" DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding2 X="50" Y="925" DeltaX="50" DeltaY="925"/>
+      <ConstructionYardBuilding1 X="1440" Y="1355" DeltaX="390" DeltaY="430"/>
+      <ConstructionYardBuilding2 X="2949" Y="415" DeltaX="346" DeltaY="-940"/>
+      <ConstructionYardBuilding1 X="4369" Y="455" DeltaX="420" DeltaY="40"/>
+      <ConstructionYardBuilding2 X="6140" Y="-655" DeltaX="608" DeltaY="-1110"/>
+      <ConstructionYardBuilding2 X="7880" Y="-2180" DeltaX="740" DeltaY="-1525"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof126-1 X="715" Y="3499" DeltaX="715" DeltaY="3499" BoxX="-545" BoxY="-1500" BoxWidth="4460" BoxHeight="1655">
+        <Spawn X="-495" Y="-435"/>
+      </Roof126-1>
+      <Roof126-6 X="5715" Y="-395" DeltaX="5005" DeltaY="-3109" BoxX="-4650" BoxY="-2105" BoxWidth="8570" BoxHeight="5999">
+        <Pill X="-3705" Y="3629"/>
+        <TriggerJump X="-1195" Y="2919"/>
+        <Camera X="-4500" Y="3789"/>
+        <TriggerCameraStart X="-4650" Y="3494"/>
+        <TriggerLossPanic X="-1005" Y="3780"/>
+        <TriggerLossPanic X="-960" Y="-470"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="-2810" Y="2365" Width="160" Height="775" Name="zoommin" Type="2" Node="COM" Priority="0" Value="0.65" SubType="0"/>
+            <Comment X="-3775" Y="3269" Width="405" Height="305" Text="Подвинул платформу, припятсвие и бонус, чтобы избежать некрасивой смерти в углу" FontSize="40" Colour="6749952" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof126-6>
+      <Roof126-2 X="5715" Y="2755" DeltaX="-1805" DeltaY="4725" BoxX="0" BoxY="-1390" BoxWidth="2865" BoxHeight="3020"/>
+      <Roof126-3 X="6235" Y="1180" DeltaX="520" DeltaY="-615" BoxX="-520" BoxY="-1575" BoxWidth="3920" BoxHeight="2186"/>
+      <Roof126-7 X="7325" Y="-3795" DeltaX="-2310" DeltaY="-3150" BoxX="-755" BoxY="-530" BoxWidth="2935" BoxHeight="2355"/>
+      <Roof126-5 X="9725" Y="-360" DeltaX="4440" DeltaY="4845" BoxX="-4093" BoxY="-4009" BoxWidth="8478" BoxHeight="7165">
+        <TriggerJump X="-3661" Y="1945"/>
+        <Pill X="-2800" Y="2850"/>
+        <TriggerJump X="-2645" Y="-1810"/>
+        <Pill X="-2335" Y="-3620"/>
+        <Respawn_2sec X="-3955" Y="-1740"/>
+        <TriggerJump X="-235" Y="1340"/>
+        <TriggerJump X="-550" Y="-3635"/>
+        <TriggerTripleHit X="-2215" Y="1945"/>
+        <TriggerLossPanic X="0" Y="2029"/>
+        <TriggerLossPanic X="-50" Y="384"/>
+        <Respawn X="-4093" Y="3110"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="-4375" Y="2205" Width="360" Height="260" Text="Переместил элемент Out на &quot;действительный&quot; выход из здания" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Trigger X="-3973" Y="2356" Width="165" Height="800" Name="zoommax" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+            <Trigger X="-2548" Y="792" Width="160" Height="775" Name="zoommin" Type="2" Node="COM" Priority="0" Value="0.65" SubType="0"/>
+            <Trigger X="-3990" Y="-2325" Width="190" Height="610" Name="zoommax" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+            <Trigger X="-2930" Y="-2090" Width="160" Height="495" Name="zoomnormal" Type="2" Node="COM" Priority="0" Value="1" SubType="0"/>
+            <Trigger X="-2230" Y="2370" Width="190" Height="770" Name="zoomnormal" Type="2" Node="COM" Priority="0" Value="1" SubType="0"/>
+            <Trigger X="-519" Y="-805" Width="190" Height="770" Name="zoomnormal" Type="2" Node="COM" Priority="0" Value="1" SubType="0"/>
+            <Trigger X="-2314" Y="-4009" Width="160" Height="775" Name="zoommin" Type="2" Node="COM" Priority="0" Value="0.65" SubType="0"/>
+            <Item Type="1" X="-3580" Y="2085" Radius="80" Score="10" GroupId="1"/>
+            <Item Type="1" X="-2850" Y="1480" Radius="80" Score="10" GroupId="1"/>
+            <Item Type="1" X="-3290" Y="1480" Radius="80" Score="10" GroupId="1"/>
+            <Item Type="1" X="-905" Y="-3520" Radius="80" Score="10" GroupId="6"/>
+            <Item Type="1" X="-1990" Y="-3520" Radius="80" Score="10" GroupId="6"/>
+            <Item Type="1" X="-1450" Y="-3520" Radius="80" Score="10" GroupId="6"/>
+            <Item Type="1" X="-3345" Y="-1820" Radius="80" Score="10" GroupId="5"/>
+            <Item Type="1" X="-2170" Y="-900" Radius="80" Score="10" GroupId="4"/>
+            <Item Type="1" X="-685" Y="-125" Radius="80" Score="10" GroupId="3"/>
+            <Item Type="1" X="-3405" Y="-795" Radius="80" Score="10" GroupId="4"/>
+            <Item Type="1" X="-3860" Y="-895" Radius="80" Score="10" GroupId="4"/>
+            <Item Type="1" X="-2640" Y="-1690" Radius="80" Score="10" GroupId="5"/>
+            <Item Type="1" X="-3695" Y="-1820" Radius="80" Score="10" GroupId="5"/>
+            <Comment X="-1135" Y="2645" Width="315" Height="200" Text="Уменьшил размер платформы" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="-3395" Y="2785" Width="195" Height="105" Text="Добавил Catch" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="-1895" Y="2940" Width="195" Height="105" Text="Добавил Catch" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="-2740" Y="1115" Width="295" Height="240" Text="Изменил платформу под слайд, под правильные размеры - минимум 130" FontSize="30" Colour="6749952" Transparency="1"/>
+            <Comment X="-3125" Y="980" Width="161" Height="102" Text="Увеличил no wallrun" FontSize="30" Colour="6749952" Transparency="1"/>
+            <Comment X="-2185" Y="-1820" Width="315" Height="165" Text="Изменил положение элемента Out" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="-60" Y="-205" Width="280" Height="150" Text="Изменил положение элемента IN" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="-1205" Y="-260" Width="195" Height="105" Text="Добавил Catch" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="-2680" Y="-1805" Width="280" Height="150" Text="Изменил положение элемента IN" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="-1750" Y="-3205" Width="340" Height="145" Text="Заменил две платформы на одну" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="-3235" Y="-2205" Width="280" Height="150" Text="Добавил nowallrun" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Spawn X="-160" Y="-135" Name="Respawn" Animation="JumpOff|18|1"/>
+            <Trigger X="-235" Y="-535" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2" SubType="0"/>
+            <Comment X="-80" Y="-470" Width="210" Height="110" Text="Добавлен respawn" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="-2195" Y="2555" Width="195" Height="105" Text="Добавил nowallrun" FontSize="40" Colour="6749952" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof126-5>
+      <Roof126-8 X="10705" Y="-2845" DeltaX="980" DeltaY="-2650" BoxX="-950" BoxY="-1824" BoxWidth="5559" BoxHeight="5897">
+        <TriggerJump X="-950" Y="2451"/>
+        <Pill X="1925" Y="2200"/>
+        <TriggerTripleSwing X="205" Y="2250"/>
+        <TriggerRollForward X="670" Y="-200"/>
+        <Respawn X="15" Y="4022"/>
+        <TriggerJump X="3012" Y="3823"/>
+        <TriggerSlide X="3609" Y="-986"/>
+        <TriggerLossPanic X="3609" Y="369"/>
+        <TriggerLossPanic X="-945" Y="419"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="-927" Y="415" Width="975" Height="100" Name="zoommax" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Trigger X="75" Y="3273" Width="165" Height="800" Name="zoommax" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+            <Trigger X="2365" Y="3280" Width="190" Height="770" Name="zoomnormal" Type="2" Node="COM" Priority="0" Value="1" SubType="0"/>
+            <Trigger X="2665" Y="1663" Width="160" Height="775" Name="zoommin" Type="2" Node="COM" Priority="0" Value="0.65" SubType="0"/>
+            <Trigger X="40" Y="-1824" Width="190" Height="1030" Name="zoomnormal" Type="2" Node="COM" Priority="0" Value="1" SubType="0"/>
+            <Trigger X="3037" Y="-1572" Width="160" Height="775" Name="zoommin" Type="2" Node="COM" Priority="0" Value="0.65" SubType="0"/>
+            <Item Type="1" X="2225" Y="3950" Radius="80" Score="10" GroupId="2"/>
+            <Item Type="1" X="865" Y="2285" Radius="80" Score="10" GroupId="3"/>
+            <Item Type="1" X="2890" Y="3955" Radius="80" Score="10" GroupId="2"/>
+            <Item Type="1" X="2535" Y="3945" Radius="80" Score="10" GroupId="2"/>
+            <Item Type="1" X="1335" Y="2385" Radius="80" Score="10" GroupId="3"/>
+            <Comment X="-465" Y="1900" Width="340" Height="145" Text="Убрал платформы с крюков" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="-915" Y="2490" Width="315" Height="165" Text="Изменил положение элемента Out" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="3220" Y="3870" Width="280" Height="150" Text="Изменил положение элемента IN" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="235" Y="2120" Width="195" Height="105" Text="Добавил Catch" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="1785" Y="1825" Width="395" Height="250" Text="Немного сократил ширину платформы и подвинул бонус для более простого прохождения" FontSize="40" Colour="6749952" Transparency="1"/>
+            <Comment X="-500" Y="205" Width="280" Height="150" Text="Добавил nowallrun" FontSize="40" Colour="6749952" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof126-8>
+      <Roof126-4 X="10720" Y="1180" DeltaX="-3895" DeltaY="4025" BoxX="0" BoxY="-200" BoxWidth="3915" BoxHeight="2140"/>
+      <FinalRoof_8 X="14945" Y="-2850" DeltaX="310" DeltaY="-4030" BoxX="-226" BoxY="-2147" BoxWidth="5396" BoxHeight="3500">
+        <Pill X="-146" Y="-221"/>
+        <TriggerZoomNormal X="686" Y="-2147"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item Type="1" X="1870" Y="-90" Radius="80" Score="10" GroupId="7"/>
+            <Item Type="1" X="2515" Y="-85" Radius="80" Score="10" GroupId="7"/>
+            <Item Type="1" X="940" Y="-85" Radius="80" Score="10" GroupId="7"/>
+            <Spawn X="105" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="30" Y="-860" Width="150" Height="860" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2" SubType="0"/>
+            <Comment X="180" Y="-570" Width="195" Height="105" Text="Добавлен Respawn" FontSize="40" Colour="6749952" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_8>
+    </Layer>
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>

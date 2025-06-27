@@ -1,0 +1,1 @@
+start /max C:\Windows\explorer.exe "C:\Program Files (x86)\Steam\steamapps\common\Vector"

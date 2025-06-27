@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="SpawnCSyardcs01" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="10.2" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="40"/>
+  <Variable Name="Money">40</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+      <ConstructionYardBackground X="-2121" Y="-500" DeltaX="-2121" DeltaY="-500"/>
+      <ConstructionYardBackground X="1" Y="-500" DeltaX="2" DeltaY="0"/>
+      <ConstructionYardBackground X="2120" Y="-500" DeltaX="-1" DeltaY="0"/>
+      <ConstructionYardBackground X="4240" Y="-500" DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding2 X="-2880" Y="500" DeltaX="-2880" DeltaY="500"/>
+      <ConstructionYardBuilding2 X="-1180" Y="300" DeltaX="700" DeltaY="-200"/>
+      <ConstructionYardBuilding1 X="156" Y="631" DeltaX="336" DeltaY="331"/>
+      <ConstructionYardBuilding2 X="1607" Y="916" DeltaX="288" DeltaY="285"/>
+      <ConstructionYardBuilding2 X="3147" Y="995" DeltaX="540" DeltaY="79"/>
+      <ConstructionYardBuilding1 X="4756" Y="1278" DeltaX="609" DeltaY="283"/>
+      <ConstructionYardBuilding2 X="6359" Y="1120" DeltaX="440" DeltaY="-158"/>
+      <ConstructionYardBuilding2 X="8375" Y="1092" DeltaX="1016" DeltaY="-28"/>
+      <ConstructionYardBuilding1 X="10063" Y="1289" DeltaX="688" DeltaY="197"/>
+      <ConstructionYardBuilding1 X="11648" Y="1332" DeltaX="422" DeltaY="43"/>
+      <ConstructionYardBuilding2 X="13197" Y="761" DeltaX="386" DeltaY="-571"/>
+      <ConstructionYardBuilding1 X="14842" Y="919" DeltaX="645" DeltaY="158"/>
+      <ConstructionYardBuilding2 X="16473" Y="867" DeltaX="468" DeltaY="-52"/>
+      <ConstructionYardBuilding1 X="18244" Y="523" DeltaX="771" DeltaY="-344"/>
+      <ConstructionYardBuilding2 X="19851" Y="736" DeltaX="444" DeltaY="213"/>
+      <ConstructionYardBuilding1 X="21478" Y="459" DeltaX="627" DeltaY="-277"/>
+      <ConstructionYardBuilding2 X="23095" Y="975" DeltaX="454" DeltaY="516"/>
+    </Layer>
+    
+    <Layer Name="Game_layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <CS01Building1 X="-8092" Y="1605" DeltaX="-8092" DeltaY="1605" BoxX="8310" BoxY="0" BoxWidth="65" BoxHeight="100"/>
+      <Roof16-6 X="-1700" Y="815" DeltaX="-1983" DeltaY="-790" BoxX="-8255" BoxY="-1955" BoxWidth="13205" BoxHeight="4330">
+        <TriggerCSYardCS01Truck X="-6455" Y="645"/>
+        <SpawnCSyardcs01 X="-6620" Y="505"/>
+        <TriggerCameraStart X="-5860" Y="295"/>
+        <Camera X="-3565" Y="-20"/>
+        <TriggerZoomMin X="-6568" Y="-1125"/>
+        <TriggerZoomNormal X="-540" Y="-1955"/>
+        <TriggerJump X="2810" Y="-1120"/>
+        <Respawn_16 X="1640" Y="-720"/>
+        <Pill X="3500" Y="-1115"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="1155" Y="-200" Width="100" Height="200" Name="JumpHelp" Type="3" Node="COM" Priority="1" Key="0" Description="help_up1"/>
+            <Trigger Name="TriggerZoomMin" Type="2" Value="0.65" X="1640" Y="-1945" Width="100" Height="2125" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="680" Y="-1000" Width="100" Height="1175" Node="COM" Priority="0" SubType="0"/>
+            <Trigger X="1295" Y="-965" Width="30" Height="680" Name="WallJumpRightHelp" Type="3" Node="COM" Priority="1" Key="1" Description="help_right2"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="2755" Y="330" Width="2195" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="2785" Y="255" Width="2080" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Trigger X="1502" Y="-280" Width="90" Height="30" Name="WallJumpLeftHelp" Type="3" Node="COM" Priority="1" Key="3" Description="help_left2"/>
+            <Trigger X="1525" Y="-745" Width="30" Height="310" Name="WallJumpLeftHelp" Type="3" Node="COM" Priority="1" Key="3" Description="help_left2"/>
+            <Comment X="850" Y="385" Width="355" Height="195" Text="СДЕЛАНО&#xD;&#xD;Трубы должны соединяться кубом, либо уходить в черноту&#xD;" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="690" Y="-295" Width="370" Height="240" Text="СДЕЛАНО&#xD;&#xD;Трубы должны соединяться кубом, либо уходить в черноту&#xD;" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="-2920" Y="0" Width="1170" Height="640" Text="СДЕЛАНО&#xD;&#xD;разобраться с коробками зданий. Например можно растянуть коробку второго здания, поставив платформу сильно левее самого здания. Другой вариант - добавить платформу в первое здание&#xD;" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="310" Y="-230" Width="415" Height="280" Text="СДЕЛАНО&#xD;&#xD;Тут нужно отобрать у игрока возможность перепрыгнуть через триггер хелпа. Варианты решения - передвинуть хелп воллджампа и сам воллджамп ближе к входу в здание, другой вариант - сделать препятствие, преодоление которого любым способом приведет к попаданию в триггер хелпа&#xD;" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Trigger Width="200" Height="300" Name="TriggerCS01DowntownCtrlOut" Type="12" Node="COM" Priority="10" X="40" Y="-300"/>
+            <Trigger Width="200" Height="300" Name="TriggerCS01DowntownCtrlOut" Type="12" Node="COM" Priority="10" X="1155" Y="-300"/>
+            <Spawn X="-8205" Y="330" Name="DefaultSpawn" Animation="JumpOff|18"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof16-6>
+      <Crane-v2 X="2145" Y="550" DeltaX="895" DeltaY="655" BoxX="0" BoxY="-645" BoxWidth="4558" BoxHeight="845">
+        <Respawn_2.5sec X="1280" Y="0"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="3365" Y="-205" Width="100" Height="200" Name="SlideHelp" Type="3" Node="COM" Priority="1" Key="2" Description="help_down1"/>
+            <Comment X="690" Y="-1525" Width="1595" Height="805" Text="В хмл-файле надо добавить параметр Description=&quot;&quot; триггерам хелпа.&#xD;Значения:&#xD;Для прыжка - &quot;help_up1&quot;&#xD;Для прыжка направо - &quot;help_right2&quot;&#xD;Для прыжка налево - &quot;help_left2&quot;&#xD;Для скольжения - &quot;help_down1&quot;&#xD;Для торможения - &quot;help_left1&quot;&#xD;" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Crane-v2>
+      <Roof16-2 X="7010" Y="1515" DeltaX="865" DeltaY="965" BoxX="-1010" BoxY="-1624" BoxWidth="6870" BoxHeight="3607">
+        <TriggerDoubleKong X="605" Y="-200"/>
+        <Respawn_2sec X="100" Y="0"/>
+        <Pill X="2995" Y="-615"/>
+        <TriggerJump X="4545" Y="-630"/>
+        <Pill X="4790" Y="-625"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="153" Y="-1615" Width="100" Height="3500" Node="COM" Priority="0"/>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="2621" Y="-1624" Width="100" Height="3500" Node="COM" Priority="0"/>
+            <Trigger Name="TriggerZoomMin" Type="2" Value="0.65" X="4310" Y="-1517" Width="100" Height="3500" Node="COM" Priority="0"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-1010" Y="485" Width="1010" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation=""/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3765" Y="610" Width="2090" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="3780" Y="615" Width="2080" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Comment X="2700" Y="-490" Width="530" Height="295" Text="СДЕЛАНО&#xD;&#xD;Тут стоит сделать альтернативное прохождение. Воллджамп оставить для взятия бонуса, но залезть на стену должно быть возможно и без него" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="-1010" Y="355" Width="1010" Height="140" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof16-2>
+      <Roof16-3 X="12600" Y="1625" DeltaX="945" DeltaY="540" BoxX="0" BoxY="-1180" BoxWidth="7105" BoxHeight="3500">
+        <Respawn_2.5sec X="290" Y="5"/>
+        <Pill X="3130" Y="-235"/>
+        <TriggerJump X="3370" Y="-595"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="2320" Y="-195" Width="100" Height="200" Name="SlowDownHelp" Type="3" Node="COM" Priority="1" Key="3" Description="help_left1"/>
+            <Trigger Name="TriggerZoom80" Type="2" Value="0.8" X="2060" Y="-1180" Width="100" Height="3500" Node="COM" Priority="0"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3540" Y="275" Width="3565" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation=""/>
+            <Item X="850" Y="-85" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="1840" Y="-85" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3351" Y="-481" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Trigger X="3540" Y="315" Width="3550" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Comment X="875" Y="-1875" Width="655" Height="370" Text="СДЕЛАНО&#xD;&#xD;тут нужна цветная графика" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof16-3>
+      <Roof16-4 X="16615" Y="1230" DeltaX="395" DeltaY="-395" BoxX="0" BoxY="-500" BoxWidth="3080" BoxHeight="800">
+        <Respawn_2sec X="95" Y="0"/>
+        <TriggerBarrelVaultTrick0High X="470" Y="-200"/>
+        <TriggerObstacleFrontflipTrick0High X="1700" Y="-200"/>
+        <TriggerJump X="2595" Y="-200"/>
+        <Pill X="3000" Y="-195"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="335" Y="-80" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="1065" Y="-175" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="2065" Y="-170" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="2600" Y="-80" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="580" Y="695" Width="1515" Height="160" Text="СДЕЛАНО&#xD;&#xD;Тут вместо 4 триггеров можно поставить 2" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof16-4>
+      <Roof16-5 X="19675" Y="1335" DeltaX="365" DeltaY="105" BoxX="0" BoxY="-2045" BoxWidth="4610" BoxHeight="3500">
+        <Respawn_2sec X="60" Y="0"/>
+        <TriggerJump X="3575" Y="-705"/>
+        <TriggerZoomMin X="1665" Y="-2045"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="JumpHelpColumn" Type="3" Key="0" X="1695" Y="-705" Width="30" Height="200" Node="COM" Priority="0" Description="help_up1"/>
+            <Trigger Name="JumpHelpColumn" Type="3" Key="0" X="2355" Y="-705" Width="30" Height="200" Node="COM" Priority="0" Description="help_up1"/>
+            <Trigger Name="JumpHelpColumn" Type="3" Key="0" X="2965" Y="-705" Width="30" Height="200" Node="COM" Priority="0" Description="help_up1"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3610" Y="110" Width="1000" Height="100" Node="COM" Priority="0" Start="FlyPanic|1"/>
+            <Trigger Name="JumpHelpColumn" Type="3" Key="0" X="3575" Y="-705" Width="30" Height="200" Node="COM" Priority="0" Description="help_up1"/>
+            <Item X="670" Y="-75" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="1450" Y="-255" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="2370" Y="-580" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="2985" Y="-580" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Trigger X="3610" Y="10" Width="995" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Item X="3590" Y="-585" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Comment X="2795" Y="-1065" Width="435" Height="285" Text="СДЕЛАНО&#xD;&#xD;Тут нужно переработать препятствия таким образом, чтобы игрок 100% попал в триггер хелпа. Сейчас его можно пропустить" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof16-5>
+      <FinalRoof_6 X="23860" Y="839" DeltaX="345" DeltaY="-986" BoxX="0" BoxY="-1605" BoxWidth="3740" BoxHeight="3696">
+        <Respawn_2.5sec X="60" Y="-4"/>
+        <Pill X="1640" Y="-1109"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="80" Y="-1409" Width="100" Height="3500" Node="COM" Priority="0"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="1237" Y="285" Width="1000" Height="100" Node="COM" Priority="0" Start="FlyPanic|1"/>
+            <Item X="502" Y="-76" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="1610" Y="-254" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Trigger X="1287" Y="295" Width="990" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_6>
+    </Layer>
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>

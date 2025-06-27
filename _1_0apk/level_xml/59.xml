@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="2" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="40"/>
+  <Variable Name="Money">40</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="280" Y="-735" DeltaX="280" DeltaY="-735"/>
+      <Billboard X="2270" Y="-491" DeltaX="201" DeltaY="244"/>
+      <Building2 X="3095" Y="-786" DeltaX="500" DeltaY="-295"/>
+      <LampPost X="4465" Y="-285" DeltaX="300" DeltaY="501"/>
+      <Building3 X="5635" Y="-205" DeltaX="1020" DeltaY="80"/>
+      <Billboard X="8238" Y="704" DeltaX="1520" DeltaY="909"/>
+      <Building1 X="8783" Y="545" DeltaX="220" DeltaY="-159"/>
+      <Building3 X="10992" Y="1115" DeltaX="420" DeltaY="570"/>
+      <Building1 X="12562" Y="1896" DeltaX="487" DeltaY="781"/>
+      <Billboard X="14542" Y="2217" DeltaX="191" DeltaY="321"/>
+      <Building3 X="15134" Y="1738" DeltaX="267" DeltaY="-479"/>
+      <Building3 X="16685" Y="1110" DeltaX="468" DeltaY="-628"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof59-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-565" BoxY="-2200" BoxWidth="5335" BoxHeight="3735">
+        <Pill X="3925" Y="-110"/>
+        <Spawn X="-515" Y="-430"/>
+        <TriggerCameraStart X="300" Y="-400"/>
+        <Camera X="451" Y="-120"/>
+        <TriggerZoomMin X="1940" Y="-2200"/>
+        <TriggerZoomNormal X="3760" Y="-1965"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="4025" Y="-195" Width="745" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="1" SubType="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof59-1>
+      <Roof59-6 X="4700" Y="-300" DeltaX="0" DeltaY="-300" BoxX="0" BoxY="-1599" BoxWidth="4340" BoxHeight="3500">
+        <TriggerZoomMin X="318" Y="-1599"/>
+        <TriggerJump X="3380" Y="-190"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="775" Y="-465" Width="645" Height="450" Text="ГОТОВО&#xD;Разбег надо удлинить сильнее. Если игрок попадет на разбег упав с башни - он может не успеть прыгнуть и сойдет с платформы в джампофф, резко дернувшись при этом. Особенно это критично для игры на смартфонах." FontSize="40" Colour="13395507" Transparency="1"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3100" Y="810" Width="1240" Height="100" Node="COM" Priority="0" Animation="JumpOff" Start="FlyPanic|1"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="2" X="3175" Y="810" Width="1045" Height="100" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof59-6>
+      <Roof59-2 X="8680" Y="-15" DeltaX="480" DeltaY="285" BoxX="0" BoxY="-470" BoxWidth="2009" BoxHeight="2465">
+        <Pill X="618" Y="-390"/>
+      </Roof59-2>
+      <Roof59-5 X="10660" Y="884" DeltaX="975" DeltaY="899" BoxX="0" BoxY="-1936" BoxWidth="6195" BoxHeight="3821">
+        <Pill X="1170" Y="-236"/>
+        <Respawn_2.5sec X="20" Y="5"/>
+        <TriggerZoomMax X="95" Y="-1906"/>
+        <TriggerZoomMin X="1595" Y="-1936"/>
+        <TriggerJump X="3660" Y="-201"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="560" Y="-85" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="1915" Y="-90" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="2780" Y="-90" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3790" Y="1620" Width="2200" Height="100" Node="COM" Priority="0" Animation="JumpOff" Start="FlyPanic|1"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="2" X="3800" Y="1599" Width="2395" Height="100" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof59-5>
+      <Roof59-3 X="16606" Y="1820" DeltaX="2096" DeltaY="936" BoxX="0" BoxY="-1902" BoxWidth="7824" BoxHeight="4537">
+        <TriggerZoomNormal X="206" Y="-1902"/>
+        <TriggerBackFlipTrick90High X="1102" Y="-202"/>
+        <Pill X="3111" Y="493"/>
+        <TriggerThiefVault X="6011" Y="628"/>
+        <TriggerZoomMin X="6496" Y="-982"/>
+        <TriggerJump X="6939" Y="630"/>
+        <Respawn_2.5sec X="7" Y="-2"/>
+        <TriggerZoomMin X="3385" Y="-1264"/>
+        <TriggerZoomNormal X="4895" Y="-1189"/>
+        <Respawn_3sec X="3790" Y="296"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="907" Y="-77" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="2547" Y="178" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="4177" Y="218" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="5187" Y="663" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="6427" Y="643" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Comment X="4220" Y="-174" Width="645" Height="450" Text="ГОТОВО&#xD;При прыжке с края слоупа игрок попадет в яму, бот его перегонит и при этом он может не войти в кетч и исчезнуть после ближайшего респауна." FontSize="40" Colour="13395507" Transparency="1"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="6794" Y="1653" Width="1030" Height="100" Node="COM" Priority="0" Animation="JumpOff" Start="FlyPanic|1"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="2" X="6779" Y="1663" Width="1045" Height="100" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof59-3>
+      <Roof59-4 X="24056" Y="3020" DeltaX="385" DeltaY="370" BoxX="0" BoxY="-826" BoxWidth="6446" BoxHeight="3500">
+        <Pill X="1347" Y="123"/>
+        <TriggerZoomNormal X="2948" Y="-826"/>
+        <TriggerJumpObstacle X="4984" Y="1209"/>
+        <TriggerJump X="5647" Y="1210"/>
+        <Respawn_2.5sec X="247" Y="-2"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="2565" Y="1133" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="5379" Y="1244" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="5685" Y="1345" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="4259" Y="1339" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="5586" Y="1858" Width="840" Height="100" Node="COM" Priority="0" Animation="JumpOff" Start="FlyPanic|1"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="2" X="5556" Y="1863" Width="890" Height="100" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof59-4>
+      <FinalRoof_DownTown_02 X="30308" Y="4445" DeltaX="507" DeltaY="15" BoxX="0" BoxY="-299" BoxWidth="3500" BoxHeight="2229">
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="302" Y="-83" Score="10" Radius="80" Type="1" GroupId="4"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_DownTown_02>
+    </Layer>
+    
+    <Layer Name="Forward_Layer" Factor="2" Type="2">
+    </Layer>
+    
+  </Layers>
+</Root>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+ <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" 
+ Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1" Skins="hunter" Stocks="bike"/>   
+   <!--Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter|Helper|RevolutionGirl" Skins="hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <!--Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.7" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+    <Model Name="RevolutionGirl" Type="0" Color="0" AllowedSpawns="RespawnRevolutionGirl" AI="2" Time="0" Skins="revolution_girl" />
+    <Model Name="Helper" Type="0" Color="0"  AllowedSpawns="RespawnHelper" AI="3" Time="0" Skins="helper|shirt|cap" LifeTime="15" /-->
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="50" Y="-300" DeltaX="50" DeltaY="-300"/>
+      <Billboard X="2039" Y="-150" DeltaX="200" DeltaY="150"/>
+      <Building2 X="2674" Y="-350" DeltaX="310" DeltaY="-200"/>
+      <LampPost X="4035" Y="30" DeltaX="291" DeltaY="380"/>
+      <Building3 X="4684" Y="150" DeltaX="499" DeltaY="120"/>
+      <Billboard X="6167" Y="70" DeltaX="400" DeltaY="-80"/>
+      <Building1 X="6692" Y="150" DeltaX="200" DeltaY="80"/>
+      <Building3 X="8781" Y="150" DeltaX="300" DeltaY="0"/>
+      <Building1 X="10895" Y="-145" DeltaX="1031" DeltaY="-295"/>
+      <Building3 X="13905" Y="-45" DeltaX="1221" DeltaY="100"/>
+      <Building3 X="15615" Y="130" DeltaX="627" DeltaY="175"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Building2000x500 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-360" BoxY="-2165" BoxWidth="2360" BoxHeight="3500">
+        <TriggerCameraStart X="-360" Y="-520"/>
+        <Camera X="-150" Y="-225"/>
+        <TriggerZoomMin2 X="-90" Y="-2165"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="-305" Y="-265" Name="DefaultSpawn" Animation="BikeJumpOff|18"/>
+          </Elements>
+        </ObjectNULL>
+      </Building2000x500>
+      <Building2000x500 X="1875" Y="0" DeltaX="-125" DeltaY="0" BoxX="0" BoxY="-90" BoxWidth="2000" BoxHeight="590">
+        <DoubleConditioner X="1605" Y="-90"/>
+      </Building2000x500>
+      <Building2000x500 X="3890" Y="115" DeltaX="15" DeltaY="115" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="5890" Y="115" DeltaX="0" DeltaY="0" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="7865" Y="115" DeltaX="-25" DeltaY="0" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="9855" Y="115" DeltaX="-10" DeltaY="0" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="13195" Y="-800" DeltaX="1340" DeltaY="-915" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="13200" Y="-1295" DeltaX="-1995" DeltaY="-495" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="13400" Y="295" DeltaX="-1800" DeltaY="1590" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="16425" Y="595" DeltaX="1025" DeltaY="300" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="19015" Y="530" DeltaX="590" DeltaY="-65" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="21800" Y="-1235" DeltaX="785" DeltaY="-1765" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="21815" Y="620" DeltaX="-1985" DeltaY="1855" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="21845" Y="-760" DeltaX="-1970" DeltaY="-1380" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="24355" Y="889" DeltaX="510" DeltaY="1649" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="26815" Y="154" DeltaX="460" DeltaY="-735" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="26820" Y="-340" DeltaX="-1995" DeltaY="-494" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="27020" Y="1249" DeltaX="-1800" DeltaY="1589" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="29465" Y="1165" DeltaX="445" DeltaY="-84" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="31960" Y="1050" DeltaX="495" DeltaY="-115" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="34700" Y="1405" DeltaX="740" DeltaY="355" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+      <Building2000x500 X="36860" Y="1280" DeltaX="160" DeltaY="-125" BoxX="0" BoxY="0" BoxWidth="2000" BoxHeight="500"/>
+    </Layer>
+
+  </Layers>
+</Root>

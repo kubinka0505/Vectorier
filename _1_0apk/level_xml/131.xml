@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="5.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="150"/>
+  <Variable Name="Money">150</Variable>
+  
+  <Layers> 
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="-140" Y="-870" DeltaX="-140" DeltaY="-870"/>
+      <Billboard X="1745" Y="-490" DeltaX="96" DeltaY="380"/>
+      <Building2 X="2860" Y="-550" DeltaX="790" DeltaY="-60"/>
+      <Building3 X="5115" Y="-390" DeltaX="1185" DeltaY="160"/>
+      <Billboard X="6750" Y="45" DeltaX="552" DeltaY="435"/>
+      <Building1 X="7810" Y="-175" DeltaX="735" DeltaY="-220"/>
+      <Building3 X="10540" Y="-135" DeltaX="941" DeltaY="40"/>
+      <Building3 X="12585" Y="35" DeltaX="962" DeltaY="170"/>
+      <Billboard X="14285" Y="185" DeltaX="617" DeltaY="150"/>
+      <Building1 X="15325" Y="-350" DeltaX="715" DeltaY="-535"/>
+      <LampPost X="19030" Y="-340" DeltaX="1916" DeltaY="10"/>
+      <Building3 X="19650" Y="-350" DeltaX="470" DeltaY="-10"/>
+      <Building3 X="22165" Y="-305" DeltaX="1432" DeltaY="45"/>
+      <Building1 X="25255" Y="-535" DeltaX="2007" DeltaY="-230"/>
+      <Billboard X="28510" Y="80" DeltaX="1466" DeltaY="615"/>
+      <Building1 X="29470" Y="-330" DeltaX="635" DeltaY="-410"/>
+      <Building3 X="32820" Y="-205" DeltaX="1561" DeltaY="125"/>
+      <Billboard X="34665" Y="385" DeltaX="762" DeltaY="590"/>
+      <Building3 X="36650" Y="270" DeltaX="1660" DeltaY="-115"/>
+      <Building3 X="39410" Y="120" DeltaX="1677" DeltaY="-150"/>
+      <Billboard X="41760" Y="-45" DeltaX="1267" DeltaY="-165"/>
+      <Building1 X="43315" Y="-615" DeltaX="1230" DeltaY="-570"/>
+      <Building3 X="46700" Y="-985" DeltaX="1596" DeltaY="-370"/>
+      <Building1 X="48945" Y="-570" DeltaX="1162" DeltaY="415"/>
+      <Billboard X="52595" Y="-70" DeltaX="1861" DeltaY="500"/>
+      <Building3 X="53920" Y="-185" DeltaX="1000" DeltaY="-115"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof131-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-390" BoxY="-2340" BoxWidth="5475" BoxHeight="3500">
+        <TriggerZoomMin X="2095" Y="-2340"/>
+        <Pill X="3790" Y="-165"/>
+        <TriggerJump X="4400" Y="-275"/>
+        <TriggerCameraStart X="555" Y="-400"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="4120" Y="65" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="4145" Y="65" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Spawn X="-340" Y="-240" Name="DefaultSpawn" Animation="JumpOff|18"/>
+            <Camera X="705" Y="-100"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-1>
+      <Roof131-16 X="4735" Y="-450" DeltaX="250" DeltaY="-365" BoxX="0" BoxY="-497" BoxWidth="5430" BoxHeight="2122">
+        <TriggerJump X="2895" Y="-195"/>
+        <Respawn_3sec X="790" Y="5"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="2920" Y="1215" Width="2480" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="2945" Y="1215" Width="2485" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-16>
+      <Roof131-2 X="9840" Y="305" DeltaX="2105" DeltaY="755" BoxX="-70" BoxY="-1925" BoxWidth="7375" BoxHeight="3815">
+        <TriggerZoomNormal X="3230" Y="-1610"/>
+        <TriggerZoomMax X="375" Y="-1895"/>
+        <TriggerZoomMin X="1360" Y="-1925"/>
+        <Pill X="3010" Y="450"/>
+        <TriggerJump X="6730" Y="555"/>
+        <TriggerHighJump500 X="6535" Y="605"/>
+        <Respawn_2sec X="-70" Y="0"/>
+        <Respawn_2sec X="3755" Y="220"/>
+        <TriggerJumpAndRoll X="6725" Y="555"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="6340" Y="1250" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="6365" Y="1250" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Item X="3740" Y="140" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="5965" Y="670" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="6430" Y="585" Score="10" Radius="80" Type="1" GroupId="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-2>
+      <Roof131-3 X="16890" Y="965" DeltaX="185" DeltaY="-90" BoxX="-132" BoxY="-1874" BoxWidth="7362" BoxHeight="3530">
+        <TriggerZoomNormal X="5697" Y="-1844"/>
+        <TriggerZoomMax X="4150" Y="-1874"/>
+        <TriggerBackFlipTrick90High X="4280" Y="-465"/>
+        <TriggerJump X="6395" Y="266"/>
+        <Respawn_2sec X="4155" Y="-269"/>
+        <Respawn_3sec X="90" Y="-5"/>
+        <Pill X="5850" Y="-240"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="6265" Y="1370" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="6290" Y="1370" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Trigger X="5370" Y="-150" Width="250" Height="150" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="1" SubType="1"/>
+            <Item X="3415" Y="-85" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3770" Y="-85" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="4605" Y="-345" Score="10" Radius="80" Type="1" GroupId="2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-3>
+      <Roof131-4 X="23770" Y="1129" DeltaX="345" DeltaY="-336" BoxX="0" BoxY="-1495" BoxWidth="4379" BoxHeight="4155">
+        <TriggerZoomMin X="2595" Y="-1495"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3414" Y="554" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="3445" Y="566" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Item X="1235" Y="936" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="2975" Y="26" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="3490" Y="-44" Score="10" Radius="80" Type="1" GroupId="3"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-4>
+      <Roof131-17 X="27963" Y="1219" DeltaX="625" DeltaY="55" BoxX="-55" BoxY="-1600" BoxWidth="2757" BoxHeight="3680">
+        <TriggerJump X="1862" Y="-195"/>
+        <Respawn_3sec X="137" Y="5"/>
+        <TriggerTripleTrickToSwalow X="171" Y="-202"/>
+        <TriggerZoomNormal X="117" Y="-1600"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="1737" Y="131" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="1737" Y="131" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-17>
+      <Roof131-5 X="30229" Y="928" DeltaX="266" DeltaY="-291" BoxX="0" BoxY="-2641" BoxWidth="5926" BoxHeight="4719">
+        <TriggerJump X="4998" Y="-862"/>
+        <TriggerZoomMax X="88" Y="-1612"/>
+        <Respawn_2sec X="78" Y="-8"/>
+        <TriggerSideFlip X="4008" Y="-856"/>
+        <Respawn_3sec X="3893" Y="-651"/>
+        <TriggerZoomMin X="2197" Y="-2641"/>
+        <TriggerZoomNormal X="3867" Y="-2446"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="4961" Y="-473" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="4986" Y="-473" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Item X="416" Y="-78" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="1141" Y="-168" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="1826" Y="-78" Score="10" Radius="80" Type="1" GroupId="4"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-5>
+      <Roof131-6 X="35783" Y="-5" DeltaX="274" DeltaY="-283" BoxX="0" BoxY="-706" BoxWidth="4915" BoxHeight="2821">
+        <Pill X="1793" Y="9"/>
+        <Respawn_2.5sec X="3938" Y="-206"/>
+        <TriggerDashToFrontflip X="4067" Y="-399"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3950" Y="548" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="3975" Y="548" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Item X="2172" Y="-290" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="1137" Y="-70" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="82" Y="-75" Score="10" Radius="80" Type="1" GroupId="5"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-6>
+      <Roof131-7 X="40649" Y="13" DeltaX="301" DeltaY="218" BoxX="0" BoxY="-1625" BoxWidth="9155" BoxHeight="3500">
+        <TriggerZoomMin X="1715" Y="-1625"/>
+        <TriggerJump X="6908" Y="-201"/>
+        <Respawn_3sec X="1648" Y="4"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="7190" Y="1160" Width="1965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="7190" Y="1160" Width="1930" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Item X="6371" Y="-73" Score="10" Radius="80" Type="1" GroupId="6"/>
+            <Item X="4471" Y="-83" Score="10" Radius="80" Type="1" GroupId="6"/>
+            <Item X="3051" Y="-73" Score="10" Radius="80" Type="1" GroupId="6"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-7>
+      <Roof131-8 X="49719" Y="748" DeltaX="1820" DeltaY="735" BoxX="0" BoxY="-2039" BoxWidth="7623" BoxHeight="3805">
+        <Pill X="372" Y="-81"/>
+        <TriggerZoomMax X="418" Y="-1739"/>
+        <TriggerZoomNormal X="5773" Y="-2039"/>
+        <TriggerZoomMin X="2748" Y="-1734"/>
+        <Pill X="4705" Y="-393"/>
+        <TriggerSpinningVaultTrick0High X="1723" Y="-204"/>
+        <Respawn_2sec X="3" Y="-4"/>
+        <TriggerHighJump500 X="6648" Y="-62"/>
+        <TriggerJump X="6912" Y="-111"/>
+        <TriggerJumpAndRoll X="6907" Y="-111"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="6658" Y="493" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="6683" Y="493" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Item X="1221" Y="-163" Score="10" Radius="80" Type="1" GroupId="7"/>
+            <Item X="2421" Y="-168" Score="10" Radius="80" Type="1" GroupId="7"/>
+            <Item X="3766" Y="-83" Score="10" Radius="80" Type="1" GroupId="7"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-8>
+      <Roof131-9 X="56954" Y="748" DeltaX="190" DeltaY="-90" BoxX="0" BoxY="-2024" BoxWidth="6802" BoxHeight="3883">
+        <TriggerZoomMin X="258" Y="-2024"/>
+        <Respawn_3sec X="64" Y="-4"/>
+        <Respawn_3sec X="4558" Y="297"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="5837" Y="847" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="5862" Y="847" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Item X="2241" Y="-73" Score="10" Radius="80" Type="1" GroupId="8"/>
+            <Item X="3776" Y="212" Score="10" Radius="80" Type="1" GroupId="8"/>
+            <Item X="1501" Y="-78" Score="10" Radius="80" Type="1" GroupId="8"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-9>
+      <Roof131-10 X="63424" Y="1138" DeltaX="340" DeltaY="90" BoxX="-427" BoxY="-1808" BoxWidth="8305" BoxHeight="3659">
+        <TriggerZoomMax X="5171" Y="-1649"/>
+        <Pill X="2471" Y="-193"/>
+        <TriggerFrontFlipTwoLegs X="6908" Y="109"/>
+        <Respawn_3sec X="5063" Y="304"/>
+        <TriggerZoomNormal X="2596" Y="-1808"/>
+        <TriggerJump X="7043" Y="113"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="6913" Y="929" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="6938" Y="929" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Item X="1046" Y="-83" Score="10" Radius="80" Type="1" GroupId="9"/>
+            <Item X="4826" Y="232" Score="10" Radius="80" Type="1" GroupId="9"/>
+            <Item X="4246" Y="477" Score="10" Radius="80" Type="1" GroupId="9"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-10>
+      <Roof131-11 X="70979" Y="1538" DeltaX="305" DeltaY="90" BoxX="-190" BoxY="-2041" BoxWidth="7775" BoxHeight="3809">
+        <TriggerZoomNormal X="-190" Y="-2041"/>
+        <TriggerZoomMin X="3486" Y="-1838"/>
+        <Pill X="1640" Y="-213"/>
+        <TriggerJump X="5454" Y="-163"/>
+        <Respawn_3sec X="200" Y="34"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="5415" Y="814" Width="2170" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="5425" Y="809" Width="2100" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Item X="826" Y="-78" Score="10" Radius="80" Type="1" GroupId="10"/>
+            <Item X="451" Y="-73" Score="10" Radius="80" Type="1" GroupId="10"/>
+            <Item X="2816" Y="-83" Score="10" Radius="80" Type="1" GroupId="10"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-11>
+      <Roof131-12 X="78239" Y="1988" DeltaX="1710" DeltaY="450" BoxX="-115" BoxY="-2091" BoxWidth="4436" BoxHeight="4036">
+        <TriggerZoomNormal X="1785" Y="-1968"/>
+        <TriggerZoomMax X="421" Y="-2091"/>
+        <Respawn_2sec X="137" Y="-6"/>
+        <TriggerJump X="3590" Y="-1007"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3356" Y="-509" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="3436" Y="-504" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Item X="641" Y="-78" Score="10" Radius="80" Type="1" GroupId="11"/>
+            <Item X="1171" Y="-158" Score="10" Radius="80" Type="1" GroupId="11"/>
+            <Item X="2126" Y="-283" Score="10" Radius="80" Type="1" GroupId="11"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-12>
+      <Roof131-13 X="82244" Y="868" DeltaX="280" DeltaY="-310" BoxX="0" BoxY="-2493" BoxWidth="6961" BoxHeight="4440">
+        <TriggerZoomMax X="272" Y="-1843"/>
+        <TriggerZoomNormal X="1723" Y="-1820"/>
+        <TriggerZoomMin X="3751" Y="-2493"/>
+        <Pill X="5685" Y="-1082"/>
+        <TriggerJump X="6185" Y="-1170"/>
+        <Respawn_3sec X="68" Y="6"/>
+        <TriggerRailFlipVault X="157" Y="-198"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="5996" Y="-354" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="6076" Y="-349" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Item X="2196" Y="-168" Score="10" Radius="80" Type="1" GroupId="12"/>
+            <Item X="2846" Y="-473" Score="10" Radius="80" Type="1" GroupId="12"/>
+            <Item X="916" Y="-168" Score="10" Radius="80" Type="1" GroupId="12"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-13>
+      <Roof131-14 X="89034" Y="-105" DeltaX="200" DeltaY="-268" BoxX="0" BoxY="-2394" BoxWidth="6409" BoxHeight="4036">
+        <TriggerZoomMax X="212" Y="-1858"/>
+        <TriggerZoomMin X="3880" Y="-2394"/>
+        <Respawn_2sec X="54" Y="-4"/>
+        <TriggerZoomNormal X="1814" Y="-1929"/>
+        <TriggerJump X="5633" Y="-1014"/>
+        <TriggerAILeftJump X="5283" Y="-1009"/>
+        <TriggerDashVault X="827" Y="-200"/>
+        <TriggerMonkeyToBackflip X="3941" Y="-999"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="5444" Y="-313" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="5524" Y="-309" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Item X="2471" Y="-325" Score="10" Radius="80" Type="1" GroupId="13"/>
+            <Item X="1866" Y="-75" Score="10" Radius="80" Type="1" GroupId="13"/>
+            <Item X="1326" Y="-170" Score="10" Radius="80" Type="1" GroupId="13"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-14>
+      <Roof131-15 X="94984" Y="-1147" DeltaX="170" DeltaY="-247" BoxX="0" BoxY="-1898" BoxWidth="6754" BoxHeight="4562">
+        <TriggerZoomNormal X="4156" Y="-836"/>
+        <TriggerJump X="5771" Y="1209"/>
+        <Respawn_3sec X="4028" Y="1507"/>
+        <Respawn_3sec X="128" Y="1"/>
+        <TriggerZoomMin X="506" Y="-1898"/>
+        <Pill X="1843" Y="246"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="5789" Y="1957" Width="965" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="5869" Y="1962" Width="840" Height="100" Name="zoom" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+            <Item X="81" Y="-93" Score="10" Radius="80" Type="1" GroupId="14"/>
+            <Item X="4041" Y="1417" Score="10" Radius="80" Type="1" GroupId="14"/>
+            <Item X="2761" Y="1152" Score="10" Radius="80" Type="1" GroupId="14"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof131-15>
+      <FinalRoof X="101329" Y="258" DeltaX="460" DeltaY="-5" BoxX="0" BoxY="-299" BoxWidth="3500" BoxHeight="2229">
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="571" Y="-73" Score="10" Radius="80" Type="1" GroupId="15"/>
+            <Item X="1046" Y="-73" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="241" Y="-73" Score="10" Radius="80" Type="1" GroupId="1"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof>
+    </Layer>
+  </Layers>
+</Root>

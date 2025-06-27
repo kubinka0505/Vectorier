@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="60"/>
+  <Variable Name="Money">60</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <ConstructionYardBackground DeltaX="0" DeltaY="-500"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding1 X="830" Y="-325" DeltaX="830" DeltaY="-325"/>
+      <ConstructionYardBuilding1 X="2955" Y="-420" DeltaX="962" DeltaY="-95"/>
+      <ConstructionYardBuilding2 X="4760" Y="-175" DeltaX="642" DeltaY="245"/>
+      <ConstructionYardBuilding1 X="6570" Y="-350" DeltaX="810" DeltaY="-175"/>
+      <ConstructionYardBuilding2 X="8335" Y="770" DeltaX="602" DeltaY="1120"/>
+      <ConstructionYardBuilding1 X="9830" Y="515" DeltaX="495" DeltaY="-255"/>
+      <ConstructionYardBuilding2 X="11845" Y="800" DeltaX="852" DeltaY="285"/>
+      <ConstructionYardBuilding1 X="13840" Y="715" DeltaX="995" DeltaY="-85"/>
+      <ConstructionYardBuilding1 X="16135" Y="845" DeltaX="1132" DeltaY="130"/>
+      <ConstructionYardBuilding1 X="18290" Y="710" DeltaX="992" DeltaY="-135"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof125-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-420" BoxY="-4385" BoxWidth="7130" BoxHeight="7678">
+        <TriggerJump X="5965" Y="-405"/>
+        <Pill X="1675" Y="-1412"/>
+        <TriggerZoomMax X="2078" Y="-207"/>
+        <TriggerZoomNormal X="5910" Y="-2160"/>
+        <TriggerLossPanic X="5710" Y="100"/>
+        <TriggerBarJumpSaltoless X="3730" Y="-1055"/>
+        <TriggerZoomMin X="1360" Y="-4385"/>
+        <Respawn_2.7sec X="1675" Y="-930"/>
+        <TriggerJump X="5945" Y="-1055"/>
+        <Respawn_2sec X="2755" Y="-300"/>
+        <TriggerCameraStart X="640" Y="-370"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="3035" Y="-660" Width="100" Height="385" Node="COM" Priority="0" SubType="0"/>
+            <Trigger X="5810" Y="100" Width="760" Height="102" Name="" Type="2" Node="COM" Priority="0" Animation="" Time="2" Start="FlyPanic|1" Value="2" SubType="0"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="1050" Y="-945" Width="100" Height="550" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="5005" Y="-800" Width="560" Height="146" Text="Видоизменил платформы&#xD;" FontSize="40" Colour="6736947" Transparency="1"/>
+            <Comment X="4235" Y="-690" Width="560" Height="146" Text="Изменил положения двух платформ относительно друг друга" FontSize="40" Colour="6736947" Transparency="1"/>
+            <Comment X="3500" Y="-610" Width="625" Height="185" Text="Изменил положения платформы, чтобы об &quot;потолок&quot; нельзя было удариться" FontSize="40" Colour="6736947" Transparency="1"/>
+            <Comment X="3670" Y="240" Width="560" Height="146" Text="Заменил препятсвие" FontSize="40" Colour="6736947" Transparency="1"/>
+            <Spawn X="-370" Y="-480" Name="DefaultSpawn" Animation="JumpOff|18"/>
+            <Camera X="805" Y="-80"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof125-1>
+      <Roof125-2 X="6235" Y="-295" DeltaX="175" DeltaY="-90" BoxX="-5" BoxY="-2585" BoxWidth="6575" BoxHeight="5595">
+        <TriggerJump X="5690" Y="-198"/>
+        <Pill X="4685" Y="-673"/>
+        <TriggerZoomMin X="1480" Y="-2585"/>
+        <TriggerZoomMax X="2945" Y="-490"/>
+        <TriggerLossPanic X="5570" Y="766"/>
+        <Respawn_3.3sec X="515" Y="-260"/>
+        <TriggerZoomMin X="5550" Y="-1645"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="5580" Y="750" Width="760" Height="102" Name="" Type="2" Node="COM" Priority="0" Animation="" Time="2" Start="FlyPanic|1" Value="2" SubType="0"/>
+            <Comment X="820" Y="-410" Width="560" Height="146" Text="Изменил положения двух платформ относительно друг друга" FontSize="40" Colour="6736947" Transparency="1"/>
+            <Comment X="4340" Y="-925" Width="395" Height="75" Text="Добавлен nowallrun" FontSize="40" Colour="6736947" Transparency="1"/>
+            <Comment X="1745" Y="-350" Width="560" Height="146" Text="Увеличил размер припятсвия для более коректной работы условных триггеров&#xD;" FontSize="40" Colour="6736947" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof125-2>
+      <Roof125-3 X="12520" Y="-120" DeltaX="495" DeltaY="175" BoxX="-315" BoxY="-3850" BoxWidth="7090" BoxHeight="7070">
+        <TriggerJump X="5790" Y="535"/>
+        <TriggerZoomMax X="1995" Y="-3850"/>
+        <TriggerZoomNormal X="4000" Y="-3645"/>
+        <Pill X="4155" Y="-320"/>
+        <TriggerLossPanic X="5775" Y="1630"/>
+        <TriggerZoomNormal X="2570" Y="-280"/>
+        <TriggerGateVaultTrick0High X="2085" Y="-605"/>
+        <Respawn_2sec X="1850" Y="-405"/>
+        <Respawn_2sec X="2435" Y="625"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="5848" Y="1646" Width="760" Height="102" Name="" Type="2" Node="COM" Priority="0" Animation="" Time="2" Start="FlyPanic|1" Value="2" SubType="0"/>
+            <Item X="400" Y="-75" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="5315" Y="565" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="5405" Y="465" Width="280" Height="170" Text="Изменил положение припятсвия" FontSize="40" Colour="6750003" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof125-3>
+      <Roof125-4 X="19090" Y="815" DeltaX="695" DeltaY="200" BoxX="-295" BoxY="-2596" BoxWidth="7100" BoxHeight="6948">
+        <TriggerZoomMax X="5872" Y="852"/>
+        <TriggerZoomMin X="334" Y="-2356"/>
+        <Respawn_3.3sec X="140" Y="5"/>
+        <Pill X="2247" Y="602"/>
+        <Pill X="4195" Y="720"/>
+        <TriggerLossPanic X="5705" Y="1635"/>
+        <TriggerZoomMax X="6547" Y="-2596"/>
+        <TriggerJump X="6666" Y="1179"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="345" Y="-80" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3070" Y="580" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="3300" Y="575" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="2825" Y="580" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="80" Y="-80" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="6765" Y="1130" Width="275" Height="210" Text="Изменено положение элемента Out" FontSize="40" Colour="6750003" Transparency="1"/>
+            <Comment X="3105" Y="330" Width="450" Height="335" Text="Возможна смерть при хитром прыжке в верхную платформу.&#xD;Стоит проверить это место, когда изменится анимация" FontSize="40" Colour="6750003" Transparency="1"/>
+            <Comment X="3615" Y="1060" Width="450" Height="185" Text="Развилка немного изменена, для более красивого прохождения" FontSize="40" Colour="6750003" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof125-4>
+      <Roof125-5 X="26400" Y="2150" DeltaX="505" DeltaY="-45" BoxX="-493" BoxY="-2626" BoxWidth="9197" BoxHeight="3877">
+        <TriggerZoomNormal X="3047" Y="-2496"/>
+        <Pill X="3526" Y="177"/>
+        <TriggerLossPanic X="7704" Y="1151"/>
+        <TriggerSwallow400 X="3822" Y="-123"/>
+        <TriggerJump X="7734" Y="281"/>
+        <TriggerZoomMin X="802" Y="-2626"/>
+        <TriggerLoss X="-458" Y="339"/>
+        <Respawn_2.5sec X="-85" Y="0"/>
+        <Respawn_2.7sec X="4740" Y="480"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="-493" Y="268" Width="760" Height="102" Name="" Type="2" Node="COM" Priority="0" Animation="" Time="2" Start="FlyPanic|1" Value="2" SubType="0"/>
+            <Trigger X="7802" Y="1149" Width="760" Height="102" Name="" Type="2" Node="COM" Priority="0" Animation="" Time="2" Start="FlyPanic|1" Value="2" SubType="0"/>
+            <Item X="2086" Y="-701" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="5781" Y="84" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="6946" Y="319" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="5371" Y="404" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="656" Y="-161" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="1631" Y="-306" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Comment X="6515" Y="640" Width="430" Height="205" Text="Видоизменил платформу, с целью сокращения колличества image" FontSize="40" Colour="6750003" Transparency="1"/>
+            <Comment X="2110" Y="-50" Width="450" Height="335" Text="Возможна смерть при хитром прыжке в верхную платформу.&#xD;Стоит проверить это место, когда изменится анимация" FontSize="40" Colour="6750003" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof125-5>
+      <FinalRoof_7 X="34695" Y="2745" DeltaX="475" DeltaY="115" BoxX="0" BoxY="-2511" BoxWidth="5485" BoxHeight="3742">
+        <TriggerZoomMax X="293" Y="-2269"/>
+        <Respawn_2sec X="143" Y="1"/>
+        <TriggerZoomNormal X="3014" Y="-2511"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="517" Y="-81" Score="10" Radius="80" Type="1" GroupId="6"/>
+            <Item X="1812" Y="-266" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="2297" Y="-496" Score="10" Radius="80" Type="1" GroupId="1"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_7>
+    </Layer>
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>

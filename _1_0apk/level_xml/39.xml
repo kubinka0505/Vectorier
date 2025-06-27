@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter|Helper|RevolutionGirl" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.7" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+    <!--Model Name="RevolutionGirl" Type="0" Color="0" AllowedSpawns="RespawnRevolutionGirl" AI="2" Time="0" Skins="revolution_girl" /-->
+    <Model Name="Helper" Type="0" Color="0" BirthSpawn="HelperSpawn" AllowedSpawns="RespawnHelper" AI="3" Time="0" Skins="helper|shirt|cap" LifeTime="15" />
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="50" Y="-300" DeltaX="50" DeltaY="-300"/>
+      <Billboard X="2039" Y="-150" DeltaX="200" DeltaY="150"/>
+      <Building2 X="2674" Y="-350" DeltaX="310" DeltaY="-200"/>
+      <LampPost X="4035" Y="30" DeltaX="291" DeltaY="380"/>
+      <Building3 X="4684" Y="150" DeltaX="499" DeltaY="120"/>
+      <Billboard X="6167" Y="70" DeltaX="400" DeltaY="-80"/>
+      <Building1 X="6692" Y="150" DeltaX="200" DeltaY="80"/>
+      <Building3 X="8781" Y="150" DeltaX="300" DeltaY="0"/>
+      <Building1 X="10895" Y="-145" DeltaX="1031" DeltaY="-295"/>
+      <Building3 X="13905" Y="-45" DeltaX="1221" DeltaY="100"/>
+      <Building3 X="15615" Y="130" DeltaX="627" DeltaY="175"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof39-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-410" BoxY="-505" BoxWidth="4260" BoxHeight="3505">
+        <Pill X="1945" Y="-320"/>
+        <TriggerZoomNormal X="2395" Y="-500"/>
+        <TriggerZoomMax X="-5" Y="-500"/>
+        <Respawn_2.5sec X="2515" Y="-5"/>
+        <TriggerLossPanic X="2850" Y="720"/>
+        <TriggerJump X="2900" Y="-200"/>
+        <Spawn X="-360" Y="-250"/>
+        <TriggerCameraStart X="392" Y="-400"/>
+        <Camera X="545" Y="-105"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="2715" Y="715" Width="1135" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof39-1>
+      <Roof39-6 X="3600" Y="0" DeltaX="600" DeltaY="0" BoxX="0" BoxY="-500" BoxWidth="5640" BoxHeight="1790">
+        <Pill X="2965" Y="40"/>
+        <Respawn_2.5sec X="3540" Y="0"/>
+        <TriggerLossPanic X="4630" Y="820"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="4560" Y="870" Width="1080" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof39-6>
+      <Roof39-3 X="8970" Y="480" DeltaX="410" DeltaY="210" BoxX="0" BoxY="-2275" BoxWidth="7140" BoxHeight="3765">
+        <Pill X="1615" Y="-190"/>
+        <TriggerZoomMin X="350" Y="-2275"/>
+        <Respawn_2.5sec X="4835" Y="-225"/>
+        <TriggerJump X="5280" Y="-405"/>
+        <TriggerZoomNormal X="3405" Y="-2010"/>
+        <TriggerZoomMin X="4850" Y="-2015"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="2750" Y="120" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="4445" Y="-55" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="5200" Y="-300" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="4735" Y="765" Width="2385" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="4810" Y="775" Width="2330" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Comment X="765" Y="-1400" Width="4125" Height="650" Text="ГОТОВО&#xD;Несмотря на то, что это сложная геймплейная трасса. Мне хочется, чтобы здесь было несколько красивых вариантов прохождения. &#xD;&#xD;Желательно с одним интересным бонусом." FontSize="100" Colour="10027263" Transparency="1"/>
+            <Comment X="495" Y="85" Width="1400" Height="275" Text="Бонус не взять, если не сделать два подката подряд или не прыгнуть с края первой платформы. В любом случае это нужно делать вслепую, что плохо. " FontSize="50" Colour="10027263" Transparency="0"/>
+            <Comment X="2160" Y="305" Width="1340" Height="405" Text="Сход со второй платформы без подката или прыжок с первой платформы приводят к слишком резкому переходу в дайвингконг." FontSize="60" Colour="10027263" Transparency="0"/>
+            <Comment X="2180" Y="-430" Width="1150" Height="420" Text="Лучше вообще перенести бонус во вторую половину здания, чтобы оставить игроку свободу прохождения в первой" FontSize="60" Colour="10027263" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof39-3>
+      <Crane X="15264" Y="768" DeltaX="949" DeltaY="513" BoxX="0" BoxY="-508" BoxWidth="4492" BoxHeight="708">
+        <TriggerJump X="3905" Y="-205"/>
+        <Birds X="3692" Y="-8"/>
+        <Pill X="4031" Y="-173"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="965" Y="-170" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="2580" Y="-90" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3350" Y="-90" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="3991" Y="-633" Width="1915" Height="905" Text="Птицы не очень помогли.&#xD;Лучше переместить бонус так, чтобы он был виден заранее, и собирался прыжком с того же места. Лучшим вариантом возможно будет поместить его в самую верхнюю часть траектории игрока." FontSize="100" Colour="10027263" Transparency="1"/>
+            <Comment X="4057" Y="-1500" Width="1705" Height="785" Text="ГОТОВО&#xD;Сложный бонус, для взятия которого нужно прыгнуть незадолго до края, лучше снабдить визуальным якорем, отмечающим место прыжка. Попробуй посадить на край крана птиц.&#xD;" FontSize="100" Colour="10027263" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Crane>
+      <Roof39-4 X="21069" Y="1269" DeltaX="1805" DeltaY="501" BoxX="-2565" BoxY="-3697" BoxWidth="8282" BoxHeight="4767">
+        <Pill X="2532" Y="-577"/>
+        <Respawn_2.5sec X="4667" Y="13"/>
+        <TriggerZoomNormal X="-403" Y="-2737"/>
+        <TriggerZoomMin X="3167" Y="-3697"/>
+        <TriggerJump X="4907" Y="-187"/>
+        <TriggerZoomNormal X="5617" Y="-2489"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-2565" Y="970" Width="2665" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="-2545" Y="570" Width="2650" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Item X="452" Y="-72" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="1762" Y="-167" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3222" Y="-367" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="4502" Y="-172" Score="10" Radius="80" Type="1" GroupId="3"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof39-4>
+      <Roof39-5 X="27040" Y="1772" DeltaX="971" DeltaY="503" BoxX="-1443" BoxY="-3682" BoxWidth="6809" BoxHeight="4682">
+        <TriggerLossPanic X="-938" Y="801"/>
+        <TriggerZoomMin X="1157" Y="-3682"/>
+        <TriggerJump X="5266" Y="-191"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="-1443" Y="828" Width="1800" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="2"/>
+            <Item X="652" Y="-267" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="1612" Y="-367" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="2297" Y="-367" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="5247" Y="-72" Score="10" Radius="80" Type="1" GroupId="4"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof39-5>
+      <Roof39-2 X="33297" Y="2275" DeltaX="957" DeltaY="503" BoxX="-1050" BoxY="-500" BoxWidth="4993" BoxHeight="3506">
+        <TriggerLossPanic X="-879" Y="983"/>
+        <TriggerThiefVault X="455" Y="-200"/>
+        <TriggerScrewDriver X="1100" Y="-200"/>
+        <TriggerObstacleFrontflipTrick0High X="1995" Y="-200"/>
+        <Respawn_2.5sec X="2558" Y="7"/>
+        <TriggerLossPanic X="2872" Y="975"/>
+        <TriggerJump X="2733" Y="-193"/>
+        <TriggerZoomMax X="8" Y="-494"/>
+        <TriggerZoomNormal X="2407" Y="-494"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="-1050" Y="985" Width="1220" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Item X="858" Y="-163" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="1613" Y="-168" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="2423" Y="-168" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Trigger X="2838" Y="637" Width="1105" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof39-2>
+      <CS01_Downtown X="37025" Y="2272" DeltaX="728" DeltaY="-3" BoxX="-810" BoxY="-1800" BoxWidth="5410" BoxHeight="3500">
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="1136" Y="-566" Width="311" Height="201" Name="HunterStop" Type="13" AI="1" Node="COM" Priority="1" Animation="Loose|20"/>
+            <Comment X="-324" Y="-1161" Width="1540" Height="615" Text="Убрать ссылки на несуществующие предметы, на всякий случай посмотреть, не сломалось ли прохождение трассы." FontSize="100" Colour="10027263" Transparency="1"/>
+            <Spawn X="4550" Y="-587" Name="HelperSpawn" Animation="|"/>
+          </Elements>
+        </ObjectNULL>
+      </CS01_Downtown>
+    </Layer>
+
+  </Layers>
+</Root>

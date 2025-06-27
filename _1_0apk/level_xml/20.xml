@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <ConstructionYardBackground DeltaX="0" DeltaY="-500"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding2 X="-300" Y="-715" DeltaX="-300" DeltaY="-715"/>
+      <ConstructionYardBuilding1 X="1090" Y="-315" DeltaX="390" DeltaY="400"/>
+      <ConstructionYardBuilding2 X="2599" Y="-530" DeltaX="346" DeltaY="-215"/>
+      <ConstructionYardBuilding1 X="4019" Y="-550" DeltaX="420" DeltaY="-20"/>
+      <ConstructionYardBuilding2 X="5848" Y="-490" DeltaX="666" DeltaY="60"/>
+      <ConstructionYardBuilding2 X="7708" Y="-250" DeltaX="860" DeltaY="240"/>
+      <ConstructionYardBuilding2 X="9433" Y="-175" DeltaX="725" DeltaY="75"/>
+      <ConstructionYardBuilding1 X="11023" Y="425" DeltaX="590" DeltaY="600"/>
+      <ConstructionYardBuilding2 X="12712" Y="465" DeltaX="526" DeltaY="40"/>
+      <ConstructionYardBuilding1 X="14307" Y="475" DeltaX="595" DeltaY="10"/>
+      <ConstructionYardBuilding2 X="16026" Y="370" DeltaX="556" DeltaY="-105"/>
+      <ConstructionYardBuilding1 X="17591" Y="315" DeltaX="565" DeltaY="-55"/>
+      <ConstructionYardBuilding2 X="19180" Y="440" DeltaX="426" DeltaY="125"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof20-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-655" BoxY="-2435" BoxWidth="7096" BoxHeight="3700">
+        <TriggerZoomMin X="5405" Y="-2235"/>
+        <TriggerTurnVault X="5900" Y="-810"/>
+        <Pill X="4475" Y="-805"/>
+        <Pill X="2695" Y="-613"/>
+        <Pill X="3245" Y="-675"/>
+        <Pill X="3775" Y="-725"/>
+        <Pill X="1080" Y="-500"/>
+        <Pill X="1665" Y="-525"/>
+        <TriggerZoomMax X="4085" Y="-2435"/>
+        <Pill X="6115" Y="-690"/>
+        <Pill X="6360" Y="-790"/>
+        <Spawn X="-605" Y="-555"/>
+        <TriggerCameraStart X="225" Y="-395"/>
+        <Camera X="365" Y="-90"/>
+        <Respawn_2.7sec X="3958" Y="-600"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="2155" Y="-780" Width="830" Height="540" Text="СДЕЛАНО&#xD;После взятия бонуса игрок входит в анимацию залезания на столб, которая выглядит как ошибка. Лучше не ставить башни на такие узкие платформы, надо поменять на более простое препятствие" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="1440" Y="-850" Width="725" Height="315" Text="СДЕЛАНО&#xD;Время респауна надо увеличить, сейчас если не подкатываться под башню, а пройти  ее кроулингом видно исчезновение бота" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="3705" Y="-1210" Width="555" Height="395" Text="СДЕЛАНО&#xD;Время респауна надо увеличить, сейчас если подкатиться в препятствие видно исчезновение бота" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+        <ObjectNULL X="0" Y="0" Group="1">
+          <Objects/>
+          <Elements>
+            <Spawn X="1035" Y="-530" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="1865" Y="-920" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.5" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof20-1>
+      <Roof20-2 X="6430" Y="290" DeltaX="-10" DeltaY="990" BoxX="0" BoxY="-3120" BoxWidth="7210" BoxHeight="3750">
+        <TriggerZoomMin X="6440" Y="-2870"/>
+        <Pill X="134" Y="-925"/>
+        <Pill X="4100" Y="-1020"/>
+        <Pill X="5900" Y="-1470"/>
+        <Pill X="1600" Y="-215"/>
+        <TriggerZoomMax X="5215" Y="-3120"/>
+        <TriggerAirBomb X="6700" Y="-1498"/>
+        <Pill X="7130" Y="-1448"/>
+        <Respawn_2.5sec X="5145" Y="-1315"/>
+        <Respawn_2.5sec X="1835" Y="-90"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="5405" Y="-1380" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="4680" Y="-1160" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="6405" Y="-1375" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Comment X="6925" Y="-1990" Width="600" Height="420" Text="СДЕЛАНО&#xD;Сейчас бонус без трюка можно взять только прыгнув. При этом приземляешься в перекат и тебя догоняет бот. Надо немного опустить бонус чтобы он брался из обычного бега" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof20-2>
+      <Roof20-3 X="13990" Y="-533" DeltaX="415" DeltaY="475" BoxX="0" BoxY="-2030" BoxWidth="3840" BoxHeight="3872">
+        <Pill X="884" Y="-213"/>
+        <Pill X="1739" Y="-123"/>
+        <Pill X="2589" Y="-13"/>
+        <Pill X="3249" Y="112"/>
+        <TriggerZoomNormal X="139" Y="-2030"/>
+        <TriggerZoomMin X="3219" Y="-1658"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="1850" Y="-522" Width="580" Height="435" Text="СДЕЛАНО&#xD;Время респауна лучше увеличить" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+        <ObjectNULL X="-13990" Y="533" Group="1">
+          <Objects/>
+          <Elements>
+            <Spawn X="15545" Y="-570" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="15955" Y="-810" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2.7" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof20-3>
+      <Roof20-4 X="17829" Y="776" DeltaX="-1" DeltaY="1094" BoxX="0" BoxY="-2505" BoxWidth="5227" BoxHeight="3570">
+        <TriggerZoomMin X="4352" Y="-2505"/>
+        <Pill X="477" Y="-1295"/>
+        <Pill X="832" Y="-940"/>
+        <Pill X="1202" Y="-220"/>
+        <Pill X="1032" Y="-580"/>
+        <Pill X="2307" Y="-160"/>
+        <TriggerLoss X="4227" Y="510"/>
+        <TriggerSlide X="4090" Y="-965"/>
+        <TriggerZoomMax X="1577" Y="-2435"/>
+        <Respawn_2sec X="1230" Y="0"/>
+        <Pill X="4924" Y="-404"/>
+        <Pill X="4654" Y="-689"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="1627" Y="-82" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="2737" Y="-67" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3217" Y="-832" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="1551" Y="-1491" Width="1405" Height="245" Text="СДЕЛАНО&#xD;С этой платформой игрок не контактирует. надо убрать, подвинуть графику немного выше, чтобы точно исключить взаимодействие с ней." FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="4511" Y="1944" Width="645" Height="560" Text="СДЕЛАНО&#xD;Все еще виден обрезанный край при некоторых приземлениях" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof20-4>
+      <Roof20-5 X="22839" Y="1016" DeltaX="510" DeltaY="1005" BoxX="-5" BoxY="-489" BoxWidth="5639" BoxHeight="1134">
+        <Pill X="2233" Y="-54"/>
+        <Pill X="2418" Y="-54"/>
+        <Pill X="2608" Y="6"/>
+        <Pill X="2778" Y="96"/>
+        <Pill X="2928" Y="186"/>
+        <Pill X="149" Y="-299"/>
+        <TriggerJump X="4865" Y="45"/>
+        <Pill X="5139" Y="144"/>
+        <Pill X="5554" Y="50"/>
+        <Respawn_2.5sec X="351" Y="11"/>
+        <Respawn_2.5sec X="2696" Y="261"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="959" Y="-61" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="2069" Y="-46" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="3449" Y="184" Score="10" Radius="80" Type="1" GroupId="3"/>
+          </Elements>
+        </ObjectNULL>
+        <ObjectNULL X="-22839" Y="-1016" Group="1">
+          <Objects/>
+          <Elements>
+            <Spawn X="29550" Y="-313" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="29940" Y="-613" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2.7" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof20-5>
+      <Roof20-6 X="28374" Y="2176" DeltaX="560" DeltaY="915" BoxX="0" BoxY="-1150" BoxWidth="4170" BoxHeight="1930">
+        <Pill X="1014" Y="-725"/>
+        <Pill X="724" Y="-915"/>
+        <Pill X="399" Y="-1070"/>
+        <Pill X="3350" Y="-676"/>
+        <TriggerJump X="3425" Y="-799"/>
+        <Pill X="3075" Y="-676"/>
+        <Pill X="2745" Y="-676"/>
+        <Pill X="2315" Y="-676"/>
+        <Pill X="1740" Y="-676"/>
+        <TriggerLossPanic X="3170" Y="47"/>
+        <Pill X="3576" Y="-755"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="2005" Y="-673" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="1310" Y="-668" Score="10" Radius="80" Type="1" GroupId="4"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof20-6>
+      <Roof20-7 X="32144" Y="1281" DeltaX="230" DeltaY="-295" BoxX="-152" BoxY="-2345" BoxWidth="5821" BoxHeight="4014">
+        <Pill X="-72" Y="-6"/>
+        <Pill X="93" Y="-71"/>
+        <Pill X="1221" Y="-187"/>
+        <TriggerLoss X="4491" Y="753"/>
+        <TriggerJump X="4093" Y="-1146"/>
+        <TriggerZoomMax X="198" Y="-1831"/>
+        <TriggerZoomMin X="1678" Y="-1856"/>
+        <TriggerZoomNormal X="4343" Y="-2345"/>
+        <TriggerSplitOne X="857" Y="-200"/>
+        <Respawn_2.5sec X="57" Y="0"/>
+        <Pill X="4937" Y="-1158"/>
+        <Pill X="5312" Y="-1018"/>
+        <Pill X="5589" Y="-737"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="3968" Y="-948" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="288" Y="-68" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="4528" Y="-1063" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="3508" Y="-723" Score="10" Radius="80" Type="1" GroupId="5"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof20-7>
+      <FinalRoof_4 X="37529" Y="1587" DeltaX="765" DeltaY="1300" BoxX="0" BoxY="-809" BoxWidth="3345" BoxHeight="3249">
+        <Pill X="402" Y="-729"/>
+        <Pill X="564" Y="-340"/>
+        <Respawn X="447" Y="15"/>
+      </FinalRoof_4>
+    </Layer>
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>
