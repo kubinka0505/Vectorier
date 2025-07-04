@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="80"/>
+  <Variable Name="Money">80</Variable>
+  
+   <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="-400">
+      <ConstructionYardBackground DeltaX="0" DeltaY="-500"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding2 X="-380" Y="-1515" DeltaX="-380" DeltaY="-1515"/>
+      <ConstructionYardBuilding1 X="1475" Y="-1615" DeltaX="855" DeltaY="-100"/>
+      <ConstructionYardBuilding1 X="3323" Y="-1620" DeltaX="685" DeltaY="-5"/>
+      <ConstructionYardBuilding2 X="5105" Y="-1515" DeltaX="619" DeltaY="105"/>
+      <ConstructionYardBuilding1 X="6900" Y="-1615" DeltaX="795" DeltaY="-100"/>
+      <ConstructionYardBuilding2 X="8772" Y="-1515" DeltaX="709" DeltaY="100"/>
+      <ConstructionYardBuilding2 X="10595" Y="-1515" DeltaX="823" DeltaY="0"/>
+      <ConstructionYardBuilding1 X="12440" Y="-1615" DeltaX="845" DeltaY="-100"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof130-2 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-2595" BoxWidth="5220" BoxHeight="4055">
+        <TriggerZoomMin X="1530" Y="-2595"/>
+        <Pill X="3795" Y="-320"/>
+        <TriggerJump X="4614" Y="-380"/>
+        <TriggerZoomNormal X="4200" Y="-2040"/>
+        <Camera X="1054" Y="-74"/>
+        <TriggerCameraStart X="900" Y="-400"/>
+        <Spawn X="55" Y="-70"/>
+      </Roof130-2>
+      <Roof130-1 X="5220" Y="0" DeltaX="0" DeltaY="0" BoxX="-720" BoxY="-4415" BoxWidth="5515" BoxHeight="7010">
+        <TriggerLoss X="3795" Y="-148"/>
+        <TriggerJump X="3940" Y="-640"/>
+        <TriggerZoomMin X="1170" Y="-2040"/>
+        <TriggerZoomNormal X="3035" Y="-905"/>
+        <TriggerZoomNormal X="3960" Y="-4415"/>
+        <Respawn_2.5sec X="85" Y="-100"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="3520" Y="-1085" Score="10" Radius="80" Type="1" GroupId="8"/>
+            <Item X="3740" Y="-1085" Score="10" Radius="80" Type="1" GroupId="8"/>
+            <Comment X="1355" Y="-545" Width="685" Height="420" Text="Увеличил высоту висящей платформы до 160" FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="2635" Y="-2340" Width="390" Height="650" Text="Заменил повторяющиеся триггеры прыжков от стены к стене на один растянутый." FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof130-1>
+      <Roof130-3 X="9250" Y="-55" DeltaX="0" DeltaY="380" BoxX="0" BoxY="-4860" BoxWidth="5195" BoxHeight="7320">
+        <TriggerLoss X="4195" Y="-71"/>
+        <TriggerJump X="4080" Y="-670"/>
+        <TriggerSlide X="725" Y="-1578"/>
+        <TriggerZoomMax X="460" Y="-1045"/>
+        <TriggerZoomMin X="1990" Y="-1040"/>
+        <TriggerZoomMax X="3755" Y="-4860"/>
+        <TriggerZoomMin X="1215" Y="-4815"/>
+        <Pill X="1257" Y="-1630"/>
+        <TriggerDoubleKong X="820" Y="-690"/>
+        <TriggerDoubleBack X="3475" Y="-1580"/>
+        <Respawn_2sec X="500" Y="-490"/>
+        <Respawn_2sec_Reversed X="3760" Y="-1380"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="1755" Y="-655" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="2775" Y="-565" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3085" Y="-570" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="695" Y="-1455" Score="10" Radius="80" Type="1" GroupId="8"/>
+            <Item X="4450" Y="-1155" Score="10" Radius="80" Type="1" GroupId="7"/>
+            <Comment X="4420" Y="-1195" Width="610" Height="400" Text="Увеличил высоту висящей платформы до 160" FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof130-3>
+      <Roof130-4 X="14440" Y="-545" DeltaX="0" DeltaY="-490" BoxX="0" BoxY="-3800" BoxWidth="5385" BoxHeight="7265">
+        <Pill X="690" Y="-235"/>
+        <Pill X="2775" Y="360"/>
+        <TriggerJump X="5245" Y="310"/>
+        <TriggerJump X="115" Y="-845"/>
+        <TriggerZoomMin X="5165" Y="-3800"/>
+        <TriggerZoomNormal X="2420" Y="-1915"/>
+        <TriggerZoomMax X="150" Y="-420"/>
+        <TriggerZoomNormal X="1900" Y="-35"/>
+        <Respawn_2sec X="100" Y="0"/>
+        <Respawn_2.5sec_Reversed X="5145" Y="-445"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="310" Y="-90" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="1980" Y="410" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="1550" Y="415" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="440" Y="-745" Score="10" Radius="80" Type="1" GroupId="7"/>
+            <Item X="965" Y="-745" Score="10" Radius="80" Type="1" GroupId="7"/>
+            <Item X="5050" Y="-527" Score="10" Radius="80" Type="1" GroupId="6"/>
+            <Comment X="5080" Y="-670" Width="540" Height="550" Text="Увеличил высоту висящей платформы до 160, а также добавил перед ней триггеры HighJump и mpAndRoll" FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof130-4>
+      <Roof130-5 X="19825" Y="885" DeltaX="5" DeltaY="940" BoxX="-40" BoxY="-2626" BoxWidth="3935" BoxHeight="2936">
+        <Pill X="2966" Y="-123"/>
+        <TriggerJump X="2811" Y="-543"/>
+        <TriggerJump X="3096" Y="-1138"/>
+        <TriggerHighJump500 X="176" Y="-1935"/>
+        <TriggerJumpAndRoll X="76" Y="-1985"/>
+        <Respawn_2sec X="440" Y="5"/>
+        <Respawn_3sec X="305" Y="-935"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="3205" Y="-1025" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="2635" Y="-1865" Score="10" Radius="80" Type="1" GroupId="6"/>
+            <Item X="1130" Y="-2045" Score="10" Radius="80" Type="1" GroupId="6"/>
+            <Item X="40" Y="-1035" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Comment X="3075" Y="-1770" Width="255" Height="495" Text="Заменил повторяющиеся триггеры прыжков от стены к стене на один растянутый." FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof130-5>
+      <Roof130-6 X="23080" Y="545" DeltaX="0" DeltaY="-340" BoxX="-225" BoxY="-4060" BoxWidth="3980" BoxHeight="7175">
+        <TriggerZoomMax X="915" Y="-405"/>
+        <TriggerZoomNormal X="2315" Y="-385"/>
+        <TriggerZoomMax X="2615" Y="-4060"/>
+        <TriggerZoomNormal X="1400" Y="-4025"/>
+        <Respawn_2sec X="890" Y="0"/>
+        <Respawn_2sec_Reversed X="2746" Y="-599"/>
+        <TriggerGateVaultTrick0High X="2485" Y="-800"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="2995" Y="-680" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="720" Y="-770" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="1115" Y="-680" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="3325" Y="-85" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="2635" Y="-65" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="760" Y="-75" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="110" Y="-75" Score="10" Radius="80" Type="1" GroupId="3"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof130-6>
+    </Layer>
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>

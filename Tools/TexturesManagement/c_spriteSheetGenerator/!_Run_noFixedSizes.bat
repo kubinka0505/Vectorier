@@ -1,0 +1,1 @@
+py ssg_GUI.pyw -i "" -od -x 0 -y 0

@@ -1,0 +1,3638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+   <Library FileName="common.swf"/>
+   <Library FileName="glass.swf"/>
+   <Library FileName="birds.swf"/>
+   <Library FileName="papers.swf"/>
+  </Sets>
+
+  <Objects>
+    
+    <TestDoor Label="Model">
+      <Elements>
+        <Trigger Name="TriggerDoor" Type="10" X="60" Y="0" Width="50" Height="300" Sounds="door_close" SoundType="0" Animation="awd|18"/>
+        <Model X="100" Y="-100" Type="1" ClassName="hunter"/>
+      </Elements>
+    </TestDoor>
+    
+    <RunIndicator>
+      <Elements>
+        <Image X="0" Y="0" ClassName="run_indicator" Type="3" Width="300" Height="150"/>
+      </Elements>
+    </RunIndicator>
+    
+    <Spawn>
+      <Elements>
+        <Spawn X="0" Y="0" Name="DefaultSpawn" Animation="JumpOff|18"/>
+      </Elements>
+    </Spawn>
+    
+    <SpawnCSyardcs01>
+      <Elements>
+        <Spawn X="0" Y="0" Name="SpawnCSyardcs01" Animation="CSYardCS01PlayerPart1|5"/>
+      </Elements>
+    </SpawnCSyardcs01>
+    
+    <SpawnCStechnocs01>
+      <Elements>
+        <Spawn X="0" Y="0" Name="SpawnCStechnocs01" Animation="CSTechParkCS01Player|1"/>
+      </Elements>
+    </SpawnCStechnocs01>
+    
+    <SpawnFly>
+      <Elements>
+        <Spawn X="0" Y="0" Name="DefaultSpawnFly" Animation="Fly|10"/>
+      </Elements>
+    </SpawnFly>
+
+    
+    <Camera>
+      <Elements>
+       <Camera X="0" Y="0" Name="Camera"/>
+      </Elements>
+    </Camera>
+    
+    <Glass>
+      <Elements>
+        <Image X="0" Y="0" ClassName="v_black" Type="2" Width="15" Height="290"/>
+        <Trigger X="0" Y="0" Width="45" Height="290" Sounds="glass_break" SoundType="0" Statistic="Glass" ActiveDeath="1"/>
+        <Particle X="0" Y="0" Width="45" Height="45" Frame="50" Type="1" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="10" Width="45" Height="45" Frame="50" Type="1" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="20" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="30" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="40" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="50" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="60" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="70" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="80" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="90" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="100" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="110" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="120" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="130" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="140" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="150" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="160" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="170" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="180" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="190" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="200" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="210" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="220" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="230" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="240" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="250" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="260" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="270" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+      </Elements>
+    </Glass>
+    
+    <HighGlass>
+      <Elements>
+        <Image X="0" Y="0" ClassName="v_black" Type="2" Width="15" Height="400"/>
+        <Trigger X="0" Y="0" Width="45" Height="400" Sounds="glass_break" SoundType="0" Statistic="Glass" ActiveDeath="1"/>
+        <Particle X="0" Y="0" Width="45" Height="45" Frame="50" Type="1" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="15" Width="45" Height="45" Frame="50" Type="1" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="30" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="45" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="60" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="75" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="90" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="105" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="120" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="135" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="150" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="165" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="180" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="195" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="210" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="225" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="240" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="255" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="270" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="285" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="300" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="315" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="330" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="345" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="360" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="375" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="0" Y="390" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+      </Elements>
+    </HighGlass>
+    
+    <Birds>
+      <Elements>
+        <Trigger X="-400" Y="-500" Width="1200" Height="600" Sounds="birds1|birds2|birds3" SoundType="0" Name="Birds" Type="0" Node="COM" Priority="0"/>
+        <Animation X="90" Y="-70" Width="90" Height="66" Type="1" Direction="2|-3" Acceleration="0.08|-0.1" ScaleX="1" ScaleY="1" Time="5" ClassName="p_birds3"/>
+        <Animation X="130" Y="-60" Width="90" Height="66" Type="1" Direction="3|-4" Acceleration="0.09|-0.15" ScaleX="1" ScaleY="1" Time="5" ClassName="p_birds3"/>
+        <Animation X="200" Y="-50" Width="90" Height="66" Type="1" Direction="5|-2" Acceleration="0.07|-0.1" ScaleX="1" ScaleY="1" Time="5" ClassName="p_birds1"/>
+        <Animation X="250" Y="-40" Width="90" Height="66" Type="1" Direction="10|-1.5" Acceleration="0.02|-0.1" ScaleX="1" ScaleY="1" Time="5" ClassName="p_birds2"/>
+        <Image Type="2" X="226" Y="-29" ClassName="parrot02" Width="45" Height="30" NativeX="45" NativeY="30"/>
+        <Image Type="2" X="172" Y="-29" ClassName="parrot03" Width="45" Height="30" NativeX="45" NativeY="30"/>
+        <Image Type="2" X="282" Y="-29" ClassName="parrot03" Width="45" Height="30" NativeX="45" NativeY="30"/>
+        <Image Type="2" X="132" Y="-29" ClassName="parrot01" Width="45" Height="30" NativeX="45" NativeY="30"/>
+
+      </Elements>
+      <Objects/>
+    </Birds>
+    
+    <Paper>
+       <Elements>
+          <Trigger X="100" Y="100" Width="400" Height="230" Sounds="papers1|papers2" SoundType="0"/>
+          <Animation X="0" Y="0" Width="600" Height="345" ScaleX="1.5" ScaleY="1.5" Type="0" ClassName="p_paper1"/>
+       </Elements>
+    </Paper>
+    
+    <Dust>
+      <Elements>
+        <Trigger X="200" Y="295" Width="200" Height="50" Name="Dust" Type="0" Node="COM" Priority="0"/>
+          <Animation X="0" Y="0" Width="600" Height="345" ScaleX="3" ScaleY="3" Type="0" ClassName="p_dust2"/>
+      </Elements>
+      <Objects/>
+    </Dust>
+    
+    <Stool Label="Model">
+      <Elements>
+        <Model X="0" Y="0" Type="0" ClassName="stool_3" LifeTime="10"/>
+      </Elements>
+    </Stool>
+    
+    <Ladder Label="Model">
+      <Elements>
+        <Model X="0" Y="0" Type="0" ClassName="ladder_8" LifeTime="10"/>
+      </Elements>
+    </Ladder>
+    
+	<BarrelTower01 Label="Model">
+      <Elements>
+        <Model X="0" Y="0" Type="0" ClassName="barrel_tower" LifeTime="10"/>
+      </Elements>
+    </BarrelTower01>
+
+    <Door Label="Model">
+      <Elements>
+        <Trigger Name="TriggerDoor" Type="10" X="60" Y="0" Width="50" Height="300" Sounds="door_close" SoundType="0" Animation="Door|1"/>
+        <Model X="0" Y="0" Type="1" ClassName="door_3"/>
+      </Elements>
+    </Door>
+	
+    <BarrelTower Label="Model">
+      <Elements>
+        <Trigger Name="BarrelTower" Type="10" X="100" Y="-250" Width="50" Height="300" Sounds="door_close" SoundType="0" Animation="BarrelTower|1"/>
+        <Model X="0" Y="0" Type="1" ClassName="barrel_tower"/>
+      </Elements>
+      <Objects/>
+    </BarrelTower>
+    
+    <Barrier Label="Model">
+      <Elements>
+        <Model X="0" Y="0" Type="0" ClassName="barrier_3" LifeTime="10"/>
+      </Elements>
+    </Barrier>
+      
+    <Pipe2>
+      <Elements>
+        <Image X="-4" Y="-13" Width="104" Height="94" ClassName="v_Pipe_1"/>
+        <Platform X="0" Y="0" Width="95" Height="80"/>
+      </Elements>
+    </Pipe2>
+    
+    <Pipe3>
+      <Elements>
+        <Image X="-4" Y="-4" Width="91" Height="77" ClassName="v_Pipe_3"/>
+        <Platform X="0" Y="0" Width="80" Height="70"/>
+      </Elements>
+    </Pipe3>
+      
+    <Pipe80x90>
+      <Elements>
+        <Image X="-7" Y="-7" Width="93" Height="98" ClassName="v_Pipe_4"/>
+        <Platform X="0" Y="0" Width="80" Height="90"/>
+      </Elements>
+      <Objects/>
+    </Pipe80x90>
+    
+    <Pipe365x90>
+      <Elements>
+        <Image X="0" Y="0" Width="365" Height="90" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="365" Height="90"/>
+      </Elements>
+    </Pipe365x90>
+    
+    <Pipe460x90>
+      <Elements>
+        <Image X="0" Y="0" Width="460" Height="90" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="460" Height="90"/>
+      </Elements>
+    </Pipe460x90>
+
+    <ForwardLamppostImage>
+      <Elements>
+        <Image X="0" Y="0" Width="295" Height="684" ClassName="v_lamppost"/>
+      </Elements>
+    </ForwardLamppostImage>
+    
+      
+    <ForwardLanternImage>
+      <Elements>
+        <Image X="0" Y="0" Width="295" Height="684" ClassName="v_lantern"/>
+      </Elements>
+    </ForwardLanternImage>
+      
+
+    <Dovecote>
+      <Elements>
+        <Image X="-12" Y="-14" Width="299" Height="277" ClassName="v_dovecote_1"/>
+        <Platform X="0" Y="0" Width="275" Height="260"/>
+      </Elements>
+      <Objects/>
+    </Dovecote>
+      
+    <Barrel>
+      <Elements>
+        <Image X="-5" Y="0" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Platform X="-2" Y="0" Width="65" Height="90"/>
+      </Elements>
+    </Barrel>
+          
+    <BarrelsHeap1>
+      <Elements>
+        <Image X="194" Y="89" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="263" Y="89" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="161" Y="0" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="230" Y="0" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="125" Y="89" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="331" Y="89" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="62" Y="89" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="-3" Y="89" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="298" Y="0" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Platform X="0" Y="90" Width="405" Height="90"/>
+        <Platform X="165" Y="0" Width="201" Height="90"/>
+      </Elements>
+    </BarrelsHeap1>
+
+    <BarrelsHeap2 Label="Standard obstacles">
+      <Elements>
+        <Image X="194" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="263" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="147" Y="0" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="225" Y="0" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="125" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="331" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="62" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="-3" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="300" Y="0" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="71" Y="0" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="0" Y="0" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Platform X="0" Y="0" Width="370" Height="180"/>
+      </Elements>
+      <Objects/>
+    </BarrelsHeap2>
+
+    <BarrelsHeap3 Label="Standard obstacles">
+      <Elements>
+        <Image X="406" Y="89" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="337" Y="89" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="296" Y="0" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="365" Y="0" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="270" Y="89" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="473" Y="89" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="203" Y="89" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="136" Y="89" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="432" Y="0" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="66" Y="89" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="498" Y="0" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="565" Y="0" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="540" Y="89" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="602" Y="89" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="-3" Y="89" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Platform X="0" Y="90" Width="667" Height="90" Name="platform"/>
+        <Platform X="300" Y="0" Width="331" Height="90" Name="platform"/>
+        <Trigger Name="TriggerHighJump" Type="4" X="-400" Y="-60" Width="600" Height="150" Node="COM" Priority="0" Output="0"/>
+        <Trigger Name="TriggerHighJump" Type="4" X="-697" Y="30" Width="600" Height="150" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects/>
+    </BarrelsHeap3>
+
+    <Booth1>
+      <Elements>
+        <Image X="-4" Y="150" Width="150" Height="150" ClassName="v_CornerDown_L_02"/>
+        <Image X="-4" Y="5" Width="150" Height="150" ClassName="v_Wall_01"/>
+        <Image X="148" Y="-3" Width="150" Height="150" ClassName="v_Floor_02"/>
+        <Image X="-2" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="298" Y="-3" Width="150" Height="150" ClassName="v_Floor_03"/>
+        <Image X="424" Y="150" Width="150" Height="150" ClassName="v_CornerDown_R_02"/>
+        <Image X="423" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_03"/>
+        <Image X="135" Y="137" Width="299" Height="163" ClassName="v_black" Type="3"/>
+        <Image X="423" Y="138" Width="147" Height="21" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="570" Height="300"/>
+      </Elements>
+      <Objects/>
+    </Booth1>
+
+    <Booth1_deep>
+      <Elements>
+        <Image X="148" Y="-3" Width="150" Height="150" ClassName="v_Floor_02"/>
+        <Image X="-4" Y="5" Width="150" Height="150" ClassName="v_Wall_01"/>
+        <Image X="-2" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="298" Y="-3" Width="150" Height="150" ClassName="v_Floor_03"/>
+        <Image X="423" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_03"/>
+        <Image X="144" Y="130" Width="296" Height="1170" ClassName="v_black" Type="3"/>
+        <Image X="-4" Y="155" Width="150" Height="500" ClassName="v_LongCornerUp_L_02"/>
+        <Image X="424" Y="147" Width="150" Height="500" ClassName="v_LongCornerUp_R_02"/>
+        <Image X="424" Y="500" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="-4" Y="500" Width="150" Height="500" ClassName="v_LongCornerUp_L_03"/>
+        <Image X="424" Y="1150" Width="150" Height="150" ClassName="v_CornerDown_R_03"/>
+        <Image X="-4" Y="1149" Width="150" Height="150" ClassName="v_CornerDown_L_01"/>
+        <Image X="-4" Y="1000" Width="150" Height="150" ClassName="v_Wall_02"/>
+        <Image X="424" Y="1000" Width="150" Height="150" ClassName="v_Wall_R_01"/>
+        <Platform X="0" Y="0" Width="570" Height="1300"/>
+      </Elements>
+      <Objects/>
+    </Booth1_deep>
+    
+
+    <Booth2>
+      <Elements>
+        <Image X="516" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_03"/>
+        <Image X="515" Y="147" Width="150" Height="150" ClassName="v_CornerDown_L_02"/>
+        <Image X="-3" Y="242" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="141" Y="242" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="583" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="948" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="130" Y="387" Width="537" Height="148" ClassName="v_black" Type="3"/>
+        <Image X="610" Y="123" Width="347" Height="412" ClassName="v_black" Type="3"/>
+        <Image X="-4" Y="385" Width="150" Height="150" ClassName="v_CornerDown_L_02"/>
+        <Image X="948" Y="385" Width="150" Height="150" ClassName="v_CornerDown_R_01"/>
+        <Image X="949" Y="147" Width="150" Height="150" ClassName="v_Wall_R_01"/>
+        <Image X="949" Y="297" Width="150" Height="150" ClassName="v_Wall_R_01"/>
+        <Platform X="520" Y="0" Width="575" Height="245"/>
+        <Platform X="0" Y="245" Width="1095" Height="290"/>
+      </Elements>
+      <Objects/>
+    </Booth2>
+    
+    <Booth2_deep>
+      <Elements>
+        <Image X="949" Y="537" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="949" Y="1035" Width="150" Height="500" ClassName="v_LongCornerUp_R_03"/>
+        <Image X="-3" Y="537" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="-3" Y="1035" Width="150" Height="500" ClassName="v_LongCornerUp_L_03"/>
+        <Image X="136" Y="537" Width="834" Height="998" ClassName="v_black" Type="3"/>
+        <Image X="516" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_03"/>
+        <Image X="515" Y="147" Width="150" Height="150" ClassName="v_CornerDown_L_02"/>
+        <Image X="-3" Y="242" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="-3" Y="392" Width="150" Height="150" ClassName="v_Wall_01"/>
+        <Image X="141" Y="242" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="583" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="948" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="949" Y="147" Width="150" Height="500" ClassName="v_LongCornerUp_R_02"/>
+        <Image X="610" Y="121" Width="347" Height="427" ClassName="v_black" Type="3"/>
+        <Image X="130" Y="386" Width="537" Height="164" ClassName="v_black" Type="3"/>
+        <Platform X="520" Y="0" Width="575" Height="245"/>
+        <Platform X="0" Y="245" Width="1095" Height="1290"/>
+      </Elements>
+      <Objects/>
+    </Booth2_deep>
+    
+      
+    <Railing2>
+      <Elements>
+        <Image X="-9" Y="-11" Width="279" Height="107" ClassName="v_railing_1"/>
+        <Platform X="0" Y="0" Width="260" Height="95"/>
+      </Elements>
+    </Railing2>
+
+    <CraneImageMerged>
+      <Elements>
+        <Image X="0" Y="0" Width="1388" Height="964" ClassName="v_crane_1_01"/>
+        <Image X="1388" Y="0" Width="1364" Height="964" ClassName="v_crane_1_02"/>
+        <Image X="2752" Y="0" Width="1336" Height="964" ClassName="v_crane_1_03"/>
+      </Elements>
+      <Objects/>
+    </CraneImageMerged>
+    
+    <CraneObject>
+      <Elements>
+        <Platform X="0" Y="0" Width="4000" Height="200"/>
+        <Platform X="820" Y="-90" Width="300" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerDivingKong X="620" Y="-200"/>
+        <CraneImageMerged X="-9" Y="-135"/>
+        <TriggerHighJump500 X="120" Y="-150"/>
+      </Objects>
+    </CraneObject>
+      
+      
+    <HangingBlockObject>
+      <Elements>
+        <Image X="0" Y="0" Width="400" Height="200" ClassName="v_black" Type="3"/>
+        <Platform X="-2" Y="0" Width="400" Height="200"/>
+      </Elements>
+    </HangingBlockObject>
+    
+    <SmallWall Label="Standard obstacles">
+      <Elements>
+        <Image X="0" Y="0" ClassName="v_black" Width="50" Height="180" NativeX="50" NativeY="50"/>
+        <Platform X="0" Y="0" Width="50" Height="180"/>
+      </Elements>
+      <Objects>
+        <TriggerPopVault X="-320" Y="-20"/>
+        <TriggerPopVaultClose X="-230" Y="-20"/>
+      </Objects>
+    </SmallWall>
+    <Gas_popvault Label="Standard obstacles">
+      <Elements>
+        <Image X="-5" Y="0" ClassName="gas_vertical" Width="60" Height="180" NativeX="60" NativeY="180"/>
+        <Platform X="0" Y="0" Width="50" Height="180"/>
+      </Elements>
+      <Objects>
+        <TriggerPopVault X="-320" Y="-20"/>
+        <TriggerPopVaultClose X="-230" Y="-20"/>
+      </Objects>
+    </Gas_popvault>
+    
+    <SmallPipe Label="Standard obstacles">
+      <Elements>
+        <Platform X="0" Y="0" Width="120" Height="90" Name="platform"/>
+        <Image X="-4" Y="-11" ClassName="v_Pipe_1" Width="129" Height="104"/>
+      </Elements>
+    </SmallPipe>
+
+    <DoubleConditioner Label="Standard obstacles">
+      <Elements>
+        <Platform X="0" Y="0" Width="300" Height="90"/>
+        <Image X="-57" Y="-19" ClassName="v_fan_1" Width="405" Height="125" NativeX="335" NativeY="106"/>
+      </Elements>
+      <Objects/>
+    </DoubleConditioner>
+      
+      
+    <SmallPipeT Label="Standard obstacles">
+      <Elements>
+        <Platform X="0" Y="0" Width="120" Height="90" Name="platform"/>
+        <Image X="-4" Y="-11" ClassName="v_Pipe_1" Width="129" Height="104"/>
+      </Elements>
+      <Objects>
+        <TriggerHighJump500 X="-720" Y="-60"/>
+        <TriggerSpeedVault X="-220" Y="-110"/>
+      </Objects>
+    </SmallPipeT>
+    
+
+    <DoubleConditionerT Label="Standard obstacles">
+      <Elements/>
+      <Objects>
+        <TriggerHighJump500 X="-700" Y="-60"/>
+        <TriggerDivingKong X="-200" Y="-110"/>
+        <DoubleConditioner X="0" Y="0"/>
+      </Objects>
+    </DoubleConditionerT>
+    
+
+
+    
+
+
+
+    <Pipe>
+      <Elements>
+        <Image X="-3" Y="-2" ClassName="v_Pipe_2" Width="306" Height="74"/>
+      </Elements>
+    </Pipe>
+      
+      
+
+    
+      
+    <WaterTower Label="Standard obstacles">
+      <Elements>
+        <Image X="-45" Y="-490" ClassName="v_water_tower" Width="278" Height="495" NativeX="278" NativeY="512"/>
+        <Platform X="0" Y="-490" Width="200" Height="360"/>
+        <Trigger Name="TriggerCrawlingFinish" Type="4" X="200" Y="-130" Width="100" Height="130" Node="DetectorV" Priority="0" Output="0"/>
+        <Trigger X="-50" Y="-130" Width="250" Height="130" Name="TriggerCrawlingMiddle" Type="4" Node="COM" Priority="0" Output="0"/>
+        <Trigger Name="TriggerCrawlingStart" Type="4" X="-100" Y="-130" Width="50" Height="130" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects/>
+    </WaterTower>
+    
+    <Pipe_02>
+      <Elements>
+        <Image X="0" Y="0" Width="93" Height="98" ClassName="v_Pipe_4"/>
+        <Platform X="9" Y="8" Width="75" Height="90"/>
+      </Elements>
+    </Pipe_02>
+
+    <Tower_01>
+      <Elements>
+        <Image X="1" Y="236" Width="28" Height="215" ClassName="v_Pipe_5"/>
+        <Image X="174" Y="236" Width="28" Height="215" ClassName="v_Pipe_5"/>
+        <Image X="10" Y="280" Width="178" Height="143" ClassName="v_crane_1_02"/>
+        <Image X="1" Y="0" Width="200" Height="300" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="-1" Width="200" Height="300"/>
+      </Elements>
+    </Tower_01>
+    
+      
+    <Booth_04 Label="Trash">
+      <Elements>
+        <Image X="5" Y="390" Width="500" Height="300" ClassName="v_black" Type="3"/>
+        <Image X="305" Y="-3" Width="200" Height="301" ClassName="v_black" Type="3"/>
+        <Image X="310" Y="230" Width="50" Height="165" ClassName="v_black" Type="3"/>
+        <Image X="450" Y="245" Width="50" Height="165" ClassName="v_black" Type="3"/>
+        <Image X="305" Y="315" Width="200" Height="50" ClassName="v_black" Type="3"/>
+        <Image X="380" Y="255" Width="50" Height="165" ClassName="v_black" Type="3"/>
+        <Image X="355" Y="230" Width="5" Height="165" ClassName="v_black" Type="3"/>
+        <Platform X="5" Y="390" Width="500" Height="300"/>
+        <Platform X="305" Y="-3" Width="200" Height="395"/>
+      </Elements>
+    </Booth_04>
+
+    <Bridge_01 Label="">
+      <Elements>
+        <Image X="0" Y="-30" Width="341" Height="241" ClassName="v_crane_1_02"/>
+        <Platform X="0" Y="61" Width="341" Height="28"/>
+      </Elements>
+    </Bridge_01>
+
+    <Gate_01>
+      <Elements>
+        <Image X="0" Y="0" Width="40" Height="200" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="40" Height="200"/>
+      </Elements>
+    </Gate_01>
+
+    <SmallSlope_L>
+      <Elements>
+        <Image X="-1" Y="-151" Width="300" Height="150" ClassName="v_slope_L"/>
+        <Trapezoid X="0" Y="0" Width="300" Type="1" Height="45" Height1="195"/>
+      </Elements>
+      <Objects/>
+    </SmallSlope_L>
+    
+    
+    <TriangleRoof Label="">
+      <Elements>
+        <Image X="0" Y="-150" Width="300" Height="150" ClassName="v_slope_L"/>
+        <Image X="200" Y="-250" Width="300" Height="150" ClassName="v_slope_L"/>
+        <Image X="500" Y="-249" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="701" Y="-149" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="0" Y="0" Width="1000" Height="50" ClassName="v_black" Type="3"/>
+        <Image X="290" Y="-103" Width="422" Height="111" ClassName="v_black" Type="3"/>
+        <Trapezoid X="0" Y="0" Width="500" Type="1" Height="50" Height1="300"/>
+        <Trapezoid X="500" Y="-250" Width="500" Type="2" Height1="49" Height="300"/>
+      </Elements>
+      <Objects/>
+    </TriangleRoof>
+    
+      
+    <BigTriangleRoof>
+      <Elements>
+        <Image X="500" Y="-400" Width="300" Height="150" ClassName="v_slope_L"/>
+        <Image X="250" Y="-276" Width="300" Height="150" ClassName="v_slope_L"/>
+        <Image X="0" Y="-150" Width="300" Height="150" ClassName="v_slope_L"/>
+        <Image X="700" Y="-500" Width="300" Height="150" ClassName="v_slope_L"/>
+        <Image X="1699" Y="-150" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="1000" Y="-500" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="1449" Y="-275" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="1223" Y="-388" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="0" Y="0" Width="2000" Height="50" ClassName="v_black" Type="3"/>
+        <Image X="293" Y="-136" Width="1415" Height="145" ClassName="v_black" Type="3"/>
+        <Image X="539" Y="-260" Width="918" Height="151" ClassName="v_black" Type="3"/>
+        <Image X="783" Y="-365" Width="452" Height="118" ClassName="v_black" Type="3"/>
+        <Trapezoid X="0" Y="0" Width="1000" Type="1" Height="50" Height1="550"/>
+        <Trapezoid X="1000" Y="-500" Width="1000" Type="2" Height1="50" Height="550"/>
+      </Elements>
+      <Objects/>
+    </BigTriangleRoof>
+
+
+    <LongDownhill>
+      <Elements>
+        <Image X="0" Y="0" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="250" Y="125" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="500" Y="251" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="750" Y="376" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="1000" Y="501" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="1250" Y="625" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="1500" Y="750" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="1750" Y="875" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="1998" Y="1000" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="2250" Y="1125" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="2500" Y="1250" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="0" Y="1500" Width="3000" Height="50" ClassName="v_black" Type="3"/>
+        <Image X="2700" Y="1350" Width="300" Height="150" ClassName="v_slope_R"/>
+        <Image X="0" Y="145" Width="280" Height="1357" ClassName="v_black" Type="3"/>
+        <Image X="265" Y="275" Width="272" Height="1235" ClassName="v_black" Type="3"/>
+        <Image X="525" Y="390" Width="235" Height="1134" ClassName="v_black" Type="3"/>
+        <Image X="750" Y="505" Width="262" Height="1001" ClassName="v_black" Type="3"/>
+        <Image X="975" Y="625" Width="275" Height="895" ClassName="v_black" Type="3"/>
+        <Image X="1240" Y="775" Width="292" Height="747" ClassName="v_black" Type="3"/>
+        <Image X="2235" Y="1255" Width="275" Height="256" ClassName="v_black" Type="3"/>
+        <Image X="1760" Y="1005" Width="243" Height="496" ClassName="v_black" Type="3"/>
+        <Image X="2495" Y="1380" Width="214" Height="133" ClassName="v_black" Type="3"/>
+        <Image X="1982" Y="1130" Width="272" Height="395" ClassName="v_black" Type="3"/>
+        <Image X="1525" Y="900" Width="247" Height="627" ClassName="v_black" Type="3"/>
+        <Trapezoid X="0" Y="0" Width="3000" Type="2" Height1="50" Height="1550"/>
+      </Elements>
+      <Objects/>
+    </LongDownhill>
+
+    
+    <Roof>
+      <Elements>
+        <Image X="-200" Y="200" Width="2200" Height="150" ClassName="v_black" Type="3"/>
+        <Platform X="-200" Y="200" Width="2200" Height="150"/>
+              
+        <Image X="1000" Y="110" Width="120" Height="90" ClassName="v_black" Type="3"/>
+        <Platform X="1000" Y="110" Width="120" Height="90"/>
+
+        <Image X="2500" Y="400" Width="300" Height="1500" ClassName="v_black" Type="3"/>
+        <Platform X="2500" Y="400" Width="300" Height="1500"/>
+              
+        <Image X="3400" Y="400" Width="1000" Height="150" ClassName="v_black" Type="3"/>
+        <Platform X="3400" Y="400" Width="1000" Height="150"/>
+              
+        <Image X="3000" Y="1000" Width="8000" Height="150" ClassName="v_black" Type="3"/>
+        <Platform X="3000" Y="1000" Width="8000" Height="150"/>
+
+        <Image X="11600" Y="1000" Width="70" Height="1000" ClassName="v_black" Type="3"/>
+        <Platform X="11600" Y="1000" Width="70" Height="1000"/>
+
+        <Image X="12200" Y="1000" Width="70" Height="1000" ClassName="v_black" Type="3"/>
+        <Platform X="12200" Y="1000" Width="70" Height="1000"/>
+                           
+        <Image X="4500" Y="910" Width="300" Height="90" ClassName="v_black" Type="3"/>
+        <Platform X="4500" Y="910" Width="300" Height="90"/>
+              
+        <Image X="5300" Y="500" Width="750" Height="300" ClassName="v_black" Type="3"/>
+        <Platform X="5300" Y="500" Width="750" Height="300"/>
+
+        <Image X="6500" Y="750" Width="300" Height="300" ClassName="v_black" Type="3"/>
+        <Platform X="6500" Y="750" Width="300" Height="300"/>
+
+        <Image X="8000" Y="910" Width="120" Height="90" ClassName="v_black" Type="3"/>
+        <Platform X="8000" Y="910" Width="120" Height="90"/>
+
+        <Image X="8650" Y="910" Width="310" Height="90" ClassName="v_black" Type="3"/>
+        <Platform X="8650" Y="910" Width="310" Height="90"/>
+              
+        <Image X="9550" Y="950" Width="100" Height="50" ClassName="v_black" Type="3"/>
+        <Platform X="9550" Y="950" Width="100" Height="50"/>
+
+        <Image X="10300" Y="950" Width="100" Height="50" ClassName="v_black" Type="3"/>
+        <Platform X="10300" Y="950" Width="100" Height="50"/>
+              
+      </Elements>
+      <Objects>
+        <TriggerJump X="750" Y="100"/>
+        <TriggerJump X="1700" Y="100"/>
+        <TriggerJump X="2700" Y="300"/>
+        <TriggerJump X="4300" Y="300"/>
+        <TriggerJump X="7800" Y="900"/>
+        <TriggerJump X="8400" Y="900"/>
+        <TriggerJump X="9300" Y="900"/>
+        <TriggerJump X="10100" Y="900"/>
+        <TriggerJump X="10900" Y="900"/>
+        <TriggerJump X="11600" Y="900"/>
+        <TriggerJump X="12195" Y="900"/>
+      </Objects>
+    </Roof>
+
+    <Coin_Group1 Label="Bonus">
+      <Elements>
+        <Item Type="1" X="0" Y="0" Radius="80" Score="10" GroupId="1"/>
+      </Elements>
+    </Coin_Group1>
+    
+    <Coin_Group2 Label="Bonus">
+      <Elements>
+        <Item Type="1" X="0" Y="0" Radius="80" Score="10" GroupId="2"/>
+      </Elements>
+    </Coin_Group2>
+    
+    <Coin_Group3 Label="Bonus">
+      <Elements>
+        <Item Type="1" X="0" Y="0" Radius="80" Score="10" GroupId="3"/>
+      </Elements>
+    </Coin_Group3>
+    
+    <Coin_Group4 Label="Bonus">
+      <Elements>
+        <Item Type="1" X="0" Y="0" Radius="80" Score="10" GroupId="4"/>
+      </Elements>
+    </Coin_Group4>
+    
+    <Coin_Group5 Label="Bonus">
+      <Elements>
+        <Item Type="1" X="0" Y="0" Radius="80" Score="10" GroupId="5"/>
+      </Elements>
+    </Coin_Group5>
+           
+    <Pill Label="Bonus">
+      <Elements>
+        <Item Type="0" X="0" Y="0" Radius="80" Score="100"/>
+      </Elements>
+    </Pill>
+
+    <Wall_jump_01 Label="">
+      <Elements>
+        <Image X="365" Y="-645" Width="28" Height="215" ClassName="v_Pipe_5"/>
+        <Image X="195" Y="-445" Width="194" Height="106" ClassName="v_CornerUp_L_03"/>
+        <Image X="190" Y="-355" Width="205" Height="162" ClassName="v_dovecote_1"/>
+        <Image X="925" Y="-820" Width="150" Height="150" ClassName="v_CornerUp_R_02"/>
+        <Image X="780" Y="-820" Width="150" Height="150" ClassName="v_CornerUp_L_03"/>
+        <Image X="925" Y="-695" Width="150" Height="691" ClassName="v_LongCornerUp_R_03"/>
+        <Image X="195" Y="-645" Width="28" Height="215" ClassName="v_Pipe_5"/>
+        <Image X="780" Y="-150" Width="150" Height="150" ClassName="v_Wall_02"/>
+        <Image X="780" Y="-675" Width="150" Height="150" ClassName="v_Wall_02"/>
+        <Image X="780" Y="-525" Width="150" Height="150" ClassName="v_Wall_L_03"/>
+        <Image X="780" Y="-375" Width="150" Height="257" ClassName="v_Wall_L_01"/>
+        <Image X="185" Y="-1025" Width="220" Height="398" ClassName="v_tower_middle"/>
+        <Platform X="200" Y="-1045" Width="185" Height="841"/>
+        <Platform X="785" Y="-815" Width="285" Height="811"/>
+      </Elements>
+      <Objects>
+        <TriggerWallRunFromFail X="635" Y="-250"/>
+        <TriggerWallRunFromFailReverse X="385" Y="-250"/>
+        <TriggerWallJump X="385" Y="-1190"/>
+        <TriggerWallJumpCamera X="785" Y="-1220"/>
+      </Objects>
+    </Wall_jump_01>
+    
+    <Floor5500x500>
+      <Elements>
+        <Image X="0" Y="0" Width="5500" Height="500" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="5500" Height="500"/>
+      </Elements>
+      <Objects/>
+    </Floor5500x500>
+    
+    <Platform_6450x800>
+      <Elements>
+        <Image X="0" Y="150" ClassName="v_LongCornerUp_L_01" Width="150" Height="500"/>
+        <Image X="6302" Y="650" ClassName="v_CornerDown_R_02" Width="150" Height="150"/>
+        <Image X="6300" Y="150" ClassName="v_LongCornerUp_R_02" Width="150" Height="500"/>
+        <Image X="0" Y="650" ClassName="v_CornerDown_L_03" Width="150" Height="150"/>
+        <Image X="150" Y="0" ClassName="v_LongFloor_01" Width="500" Height="150"/>
+        <Image X="650" Y="0" ClassName="v_LongFloor_02" Width="500" Height="150"/>
+        <Image X="1150" Y="0" ClassName="v_LongFloor_03" Width="500" Height="150"/>
+        <Image X="1650" Y="0" ClassName="v_LongFloor_02" Width="500" Height="150"/>
+        <Image X="2150" Y="0" ClassName="v_LongFloor_03" Width="500" Height="150"/>
+        <Image X="2650" Y="0" ClassName="v_LongFloor_01" Width="500" Height="150"/>
+        <Image X="3150" Y="0" ClassName="v_LongFloor_02" Width="500" Height="150"/>
+        <Image X="3650" Y="0" ClassName="v_LongFloor_01" Width="500" Height="150"/>
+        <Image X="4150" Y="0" ClassName="v_LongFloor_02" Width="500" Height="150"/>
+        <Image X="4650" Y="0" ClassName="v_LongFloor_03" Width="500" Height="150"/>
+        <Image X="5150" Y="0" ClassName="v_LongFloor_02" Width="500" Height="150"/>
+        <Image X="5650" Y="0" ClassName="v_LongFloor_03" Width="500" Height="150"/>
+        <Image X="6150" Y="0" ClassName="v_Floor_01" Width="150" Height="150"/>
+        <Image X="6300" Y="0" ClassName="v_CornerUp_R_01" Width="150" Height="150"/>
+        <Image X="0" Y="0" ClassName="v_CornerUp_L_03" Width="150" Height="150"/>
+        <Image X="150" Y="150" ClassName="v_black" Type="3" Width="6153" Height="650"/>
+        <Platform X="4" Y="2" Width="6450" Height="800" Name="platform"/>
+      </Elements>
+      <Objects/>
+    </Platform_6450x800>
+    
+    <Platform_5000x700>
+      <Elements>
+        <Image X="501" Y="-1" ClassName="v_LongFloor_03" Width="500" Height="150"/>
+        <Image X="1001" Y="-1" ClassName="v_LongFloor_02" Width="500" Height="150"/>
+        <Image X="1501" Y="-1" ClassName="v_LongFloor_01" Width="500" Height="150"/>
+        <Image X="2001" Y="-1" ClassName="v_LongFloor_02" Width="500" Height="150"/>
+        <Image X="2501" Y="-1" ClassName="v_LongFloor_03" Width="500" Height="150"/>
+        <Image X="3001" Y="-1" ClassName="v_LongFloor_02" Width="500" Height="150"/>
+        <Image X="3501" Y="-1" ClassName="v_LongFloor_01" Width="500" Height="150"/>
+        <Image X="-3" Y="149" ClassName="v_LongCornerUp_L_02" Width="150" Height="500"/>
+        <Image X="351" Y="-1" ClassName="v_Floor_01" Width="150" Height="150"/>
+        <Image X="148" Y="-1" ClassName="v_Floor_02" Width="203" Height="150"/>
+        <Image X="-2" Y="-1" ClassName="v_CornerUp_L_03" Width="150" Height="150"/>
+        <Image X="147" Y="149" ClassName="v_black" Type="3" Width="4854" Height="551"/>
+        <Image X="-3" Y="200" ClassName="v_LongCornerUp_L_02" Width="150" Height="500"/>
+        <Image X="4001" Y="-1" ClassName="v_LongFloor_01" Width="500" Height="150"/>
+        <Image X="4501" Y="-1" ClassName="v_LongFloor_01" Width="500" Height="150"/>
+        <Platform X="1" Y="0" Width="5000" Height="700" Name="platform"/>
+      </Elements>
+      <Objects/>
+    </Platform_5000x700>
+    
+    <Platform_1000x400>
+      <Elements>
+        <Image X="850" Y="-2" ClassName="v_CornerUp_R_03" Width="150" Height="150"/>
+        <Image X="149" Y="-2" ClassName="v_LongFloor_01" Width="500" Height="150"/>
+        <Image X="352" Y="-2" ClassName="v_LongFloor_02" Width="500" Height="150"/>
+        <Image X="850" Y="249" ClassName="v_CornerDown_R_02" Width="150" Height="150"/>
+        <Image X="-1" Y="249" ClassName="v_CornerDown_L_03" Width="150" Height="150"/>
+        <Image X="849" Y="138" ClassName="v_CornerUp_R_02" Width="150" Height="150"/>
+        <Image X="149" Y="148" ClassName="v_black" Type="3" Width="703" Height="251"/>
+        <Image X="-1" Y="-2" ClassName="v_CornerUp_L_03" Width="150" Height="150"/>
+        <Image X="1" Y="135" ClassName="v_CornerUp_L_02" Width="150" Height="150"/>
+        <Platform X="0" Y="0" Width="1000" Height="400" Name="platform"/>
+      </Elements>
+      <Objects/>
+    </Platform_1000x400>
+    
+    <Platform_corner_big1>
+      <Elements>
+        <Image X="0" Y="0" ClassName="v_LongCornerUp_L_03" Width="150" Height="500"/>
+        <Image X="0" Y="500" ClassName="v_LongCornerUp_L_03" Width="150" Height="500"/>
+        <Image X="0" Y="950" ClassName="v_CornerDown_L_02" Width="150" Height="150"/>
+        <Image X="150" Y="0" ClassName="v_black" Type="3" Width="469" Height="1099"/>
+        <Image X="619" Y="0" ClassName="v_black" Type="3" Width="2800" Height="270"/>
+      </Elements>
+      <Objects/>
+    </Platform_corner_big1>
+    
+    <Platform_6350x650>
+      <Elements>
+        <Image X="-1" Y="-2" ClassName="v_CornerUp_L_02" Width="150" Height="150"/>
+        <Image X="-2" Y="148" ClassName="v_LongCornerUp_L_01" Width="150" Height="500"/>
+        <Image X="649" Y="-2" ClassName="v_LongFloor_01" Width="500" Height="150"/>
+        <Image X="1149" Y="-2" ClassName="v_LongFloor_02" Width="500" Height="150"/>
+        <Image X="149" Y="-2" ClassName="v_LongFloor_03" Width="500" Height="150"/>
+        <Image X="1649" Y="-2" ClassName="v_LongFloor_01" Width="500" Height="150"/>
+        <Image X="2149" Y="-2" ClassName="v_LongFloor_02" Width="500" Height="150"/>
+        <Image X="2649" Y="-2" ClassName="v_LongFloor_03" Width="500" Height="150"/>
+        <Image X="3649" Y="-2" ClassName="v_LongFloor_01" Width="500" Height="150"/>
+        <Image X="4149" Y="-2" ClassName="v_LongFloor_02" Width="500" Height="150"/>
+        <Image X="3149" Y="-2" ClassName="v_LongFloor_03" Width="500" Height="150"/>
+        <Image X="4649" Y="-2" ClassName="v_LongFloor_01" Width="500" Height="150"/>
+        <Image X="5149" Y="-2" ClassName="v_LongFloor_02" Width="500" Height="150"/>
+        <Image X="5649" Y="-2" ClassName="v_LongFloor_03" Width="500" Height="150"/>
+        <Image X="6200" Y="-2" ClassName="v_CornerUp_R_01" Width="150" Height="150"/>
+        <Image X="6201" Y="148" ClassName="v_LongCornerUp_R_02" Width="150" Height="500"/>
+        <Image X="6087" Y="-2" ClassName="v_Floor_03" Width="150" Height="150"/>
+        <Image X="148" Y="148" ClassName="v_black" Type="3" Width="6053" Height="500"/>
+        <Platform X="0" Y="0" Width="6350" Height="500" Name="platform"/>
+      </Elements>
+      <Objects/>
+    </Platform_6350x650>
+    
+    <UpSlide_small_01>
+      <Elements>
+        <Image X="300" Y="149" ClassName="v_black" Type="3" Width="298" Height="149"/>
+        <Image X="300" Y="149" ClassName="v_black" Type="3" Width="298" Height="149"/>
+      </Elements>
+      <Objects>
+        <SmallSlope_L X="300" Y="150"/>
+        <SmallSlope_L X="1" Y="299"/>
+        <SmallSlope_L X="300" Y="150"/>
+        <SmallSlope_L X="1" Y="299"/>
+      </Objects>
+    </UpSlide_small_01>
+    
+    <Platform_2010X500>
+      <Elements>
+        <Image X="-4" Y="0" ClassName="v_LongCornerUp_L_01" Width="150" Height="500"/>
+        <Image X="146" Y="0" ClassName="v_black" Type="3" Width="1860" Height="500"/>
+        <Platform X="0" Y="0" Width="2006" Height="500" Name="platform"/>
+      </Elements>
+      <Objects/>
+    </Platform_2010X500>
+    
+    <BarrelsHeap4 Label="Standard obstacles">
+      <Elements>
+        <Image X="406" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="337" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="296" Y="0" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="365" Y="0" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="270" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="473" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="203" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="136" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="432" Y="0" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="66" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="498" Y="0" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="565" Y="0" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="540" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="602" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="-3" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="-73" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="-139" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Image X="-209" Y="89" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Platform X="-205" Y="90" Width="870" Height="90"/>
+        <Platform X="300" Y="0" Width="331" Height="90"/>
+        <Trigger Name="TriggerHighJump" Type="4" X="-920" Y="30" Width="515" Height="150" Node="COM" Priority="0" Output="0"/>
+        <Trigger Name="TriggerHighJump" Type="4" X="-400" Y="-60" Width="596" Height="150"/>
+        <Trigger Name="TriggerJumpAndRoll" Type="4" X="-405" Y="-20" Width="100" Height="200"/>
+      </Elements>
+      <Objects/>
+    </BarrelsHeap4>
+    
+    <Platform4000x500>
+      <Elements>
+        <Image X="0" Y="0" Width="481" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="1445" Y="0" Width="481" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="963" Y="0" Width="481" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="2409" Y="0" Width="481" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="1927" Y="0" Width="481" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="481" Y="0" Width="481" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="2891" Y="0" Width="481" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="3373" Y="0" Width="481" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="0" Y="0" Width="144" Height="500" ClassName="v_LongCornerUp_L_02"/>
+        <Image X="3855" Y="0" Width="144" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="0" Y="138" Width="481" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="481" Y="100" Width="481" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="963" Y="100" Width="481" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="1445" Y="100" Width="481" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="1927" Y="100" Width="481" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="2409" Y="100" Width="481" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="2891" Y="100" Width="481" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="3373" Y="100" Width="481" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="850" Y="59" Width="481" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="0" Y="250" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="0" Y="350" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="481" Y="125" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="481" Y="250" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="219" Y="159" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="481" Y="350" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="963" Y="350" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="1927" Y="350" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="1445" Y="350" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="2409" Y="225" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="1927" Y="225" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="963" Y="225" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="2409" Y="350" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="3373" Y="350" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="2891" Y="350" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="2891" Y="225" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="3373" Y="225" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="1445" Y="225" Width="481" Height="150" ClassName="v_LongFloor_03"/>
+        <Platform X="0" Y="0" Width="3855" Height="500"/>
+      </Elements>
+      <Objects/>
+    </Platform4000x500>
+
+    <Platform4400x500>
+      <Elements>
+        <Image X="-5" Y="109" Width="150" Height="391" ClassName="v_LongCornerUp_L_02"/>
+        <Image X="4250" Y="90" Width="150" Height="410" ClassName="v_LongCornerUp_R_02"/>
+        <Image X="100" Y="0" Width="499" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="549" Y="0" Width="499" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="999" Y="0" Width="499" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="1448" Y="0" Width="499" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="1898" Y="0" Width="499" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="2347" Y="0" Width="499" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="2797" Y="0" Width="499" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="3246" Y="0" Width="499" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="3846" Y="0" Width="499" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="120" Y="20" Width="4157" Height="480" ClassName="v_black" Type="3"/>
+        <Image X="-5" Y="0" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="4249" Y="0" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="3714" Y="0" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Platform X="0" Y="0" Width="4395" Height="500"/>
+      </Elements>
+      <Objects/>
+    </Platform4400x500>
+
+    <Platform500x90>
+      <Elements>
+        <Image X="64" Y="-1" Width="400" Height="95" ClassName="v_LongFloor_01"/>
+        <Image X="-1" Y="-1" Width="149" Height="95" ClassName="v_CornerUp_L_02"/>
+        <Image X="360" Y="-1" Width="149" Height="95" ClassName="v_CornerUp_R_01"/>
+        <Platform X="5" Y="1" Width="500" Height="90"/>
+      </Elements>
+      <Objects/>
+    </Platform500x90>
+
+    <Platform1000x90>
+      <Elements>
+        <Platform X="0" Y="0" Width="1000" Height="90" Name="platform"/>
+        <Image X="0" Y="0" ClassName="v_CornerUp_L_01" Width="150" Height="95"/>
+        <Image X="850" Y="0" ClassName="v_CornerUp_R_03" Width="150" Height="95"/>
+        <Image X="358" Y="0" ClassName="v_LongFloor_01" Width="500" Height="95"/>
+        <Image X="242" Y="0" ClassName="v_Floor_01" Width="150" Height="95"/>
+        <Image X="130" Y="0" ClassName="v_Floor_01" Width="150" Height="95"/>
+      </Elements>
+      <Objects/>
+    </Platform1000x90>
+
+	  <Platform140x250>
+      <Elements>
+        <Image X="66" Y="-2" Width="79" Height="67" ClassName="v_CornerUp_R_03"/>
+        <Image X="-4" Y="-2" Width="76" Height="66" ClassName="v_CornerUp_L_01"/>
+        <Image X="-4" Y="61" Width="77" Height="192" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="66" Y="64" Width="80" Height="189" ClassName="v_LongCornerUp_R_01"/>
+        <Platform X="0" Y="0" Width="140" Height="250"/>
+      </Elements>
+      <Objects/>
+    </Platform140x250>
+
+	  <Platform1600x50>
+      <Elements>
+        <Image X="35" Y="-1" Width="500" Height="55" ClassName="v_LongFloor_01"/>
+        <Image X="535" Y="-1" Width="500" Height="55" ClassName="v_LongFloor_01"/>
+        <Image X="1033" Y="-1" Width="500" Height="55" ClassName="v_LongFloor_01"/>
+        <Image X="1503" Y="-1" Width="100" Height="55" ClassName="v_CornerUp_R_01"/>
+        <Image X="-2" Y="-1" Width="100" Height="55" ClassName="v_CornerUp_L_01"/>
+        <Platform X="0" Y="0" Width="1600" Height="50"/>
+      </Elements>
+      <Objects/>
+    </Platform1600x50>
+	
+    <Platform500x1001>
+      <Elements>
+        <Image X="61" Y="39" Width="402" Height="966" ClassName="v_black" Type="3"/>
+        <Image X="0" Y="0" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="359" Y="0" Width="150" Height="150" ClassName="v_CornerUp_R_02"/>
+        <Image X="148" Y="0" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Image X="258" Y="0" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Image X="3" Y="145" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="0" Y="503" Width="150" Height="502" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="359" Y="146" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="360" Y="503" Width="150" Height="502" ClassName="v_LongCornerUp_R_01"/>
+        <Platform X="6" Y="2" Width="500" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform500x1001>
+	
+    <Platform200x1000>
+      <Elements>
+        <Image X="1" Y="0" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="59" Y="0" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="0" Y="146" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="0" Y="505" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="60" Y="135" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="60" Y="505" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Platform X="5" Y="2" Width="200" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform200x1000>
+	
+	  <Constantine_Platform1000x500>
+      <Elements>
+        <Image X="97" Y="58" Width="801" Height="447" ClassName="v_black" Type="3"/>
+        <Image X="2" Y="0" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="859" Y="0" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="709" Y="1" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Image X="563" Y="2" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Image X="415" Y="1" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Image X="280" Y="1" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Image X="135" Y="1" Width="150" Height="150" ClassName="v_Floor_01"/>
+       <Image X="0" Y="148" Width="150" Height="357" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="860" Y="145" Width="150" Height="360" ClassName="v_LongCornerUp_R_01"/>
+        <Platform X="5" Y="2" Width="1000" Height="500"/>
+      </Elements>
+      <Objects/>
+    </Constantine_Platform1000x500>
+	
+	  <Constantine_Platform380x500>
+      <Elements>
+        <Image X="53" Y="52" Width="271" Height="451" ClassName="v_black" Type="3"/>
+        <Image X="-3" Y="-2" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="235" Y="-1" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="-5" Y="139" Width="150" Height="364" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="235" Y="140" Width="150" Height="363" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="126" Y="-2" Width="117" Height="150" ClassName="v_LongFloor_01"/>
+        <Platform X="0" Y="0" Width="380" Height="500"/>
+      </Elements>
+      <Objects/>
+    </Constantine_Platform380x500>
+	
+	  <Constantine_Platform1700x1400>
+      <Elements>
+        <Image X="-5" Y="-5" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="1555" Y="-5" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="140" Y="-5" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="-5" Y="135" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="1555" Y="140" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="635" Y="-5" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="1060" Y="-5" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="-5" Y="630" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="-5" Y="905" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="1555" Y="635" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="1555" Y="900" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="80" Y="114" Width="1510" Height="1291" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="1700" Height="1400"/>
+      </Elements>
+      <Objects/>
+    </Constantine_Platform1700x1400>
+	
+	  <Constantine_Platform1000x200>
+      <Elements>
+        <Image X="135" Y="125" Width="730" Height="80" ClassName="v_black" Type="3"/>
+        <Image X="855" Y="-5" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="-5" Y="-5" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="140" Y="-5" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="420" Y="-5" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="-5" Y="65" Width="150" Height="140" ClassName="v_CornerDown_L_03"/>
+        <Image X="855" Y="55" Width="150" Height="150" ClassName="v_CornerDown_R_03"/>
+        <Platform X="0" Y="0" Width="1000" Height="200"/>
+      </Elements>
+      <Objects/>
+    </Constantine_Platform1000x200>
+	
+   <Constantine_Platform700x1000>
+      <Elements>
+        <Image X="550" Y="0" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="0" Y="0" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="70" Y="0" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="0" Y="99" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="550" Y="102" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="550" Y="501" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="0" Y="502" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="129" Y="144" Width="443" Height="858" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="700" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Constantine_Platform700x1000>
+	
+    <Constantine_Platform2100x500>
+      <Elements>
+        <Image X="-1" Y="-1" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="1951" Y="-1" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="144" Y="-1" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="1952" Y="131" Width="150" Height="370" ClassName="v_LongCornerUp_R_03"/>
+        <Image X="-3" Y="130" Width="150" Height="370" ClassName="v_LongCornerUp_L_03"/>
+        <Image X="631" Y="-1" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="1115" Y="-1" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="1583" Y="-1" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="140" Y="137" Width="1830" Height="364" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="2100" Height="500"/>
+      </Elements>
+      <Objects/>
+    </Constantine_Platform2100x500>
+	
+	  <Constantine_Floor2100x500>
+      <Elements>
+        <Image X="0" Y="0" Width="2100" Height="500" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="2100" Height="500"/>
+      </Elements>
+      <Objects/>
+    </Constantine_Floor2100x500>
+	
+    <Constantine_Platform700x90>
+      <Elements>
+        <Platform X="0" Y="0" Width="700" Height="90" Name="platform"/>
+        <Image X="115" Y="0" ClassName="v_LongFloor_01" Width="450" Height="95"/>
+        <Image X="0" Y="0" ClassName="v_CornerUp_L_02" Width="150" Height="95"/>
+        <Image X="550" Y="0" ClassName="v_CornerUp_R_01" Width="150" Height="95"/>
+      </Elements>
+      <Objects/>
+    </Constantine_Platform700x90>
+	
+    <Constantine_Barrels550x270>
+      <Elements>
+        <Image X="0" Y="179" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="65" Y="179" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="137" Y="179" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="202" Y="179" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="272" Y="179" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="336" Y="179" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="404" Y="179" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="477" Y="179" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="0" Y="90" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="69" Y="90" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="134" Y="89" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="207" Y="89" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="271" Y="90" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="339" Y="90" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="411" Y="89" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="476" Y="90" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="0" Y="0" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="63" Y="0" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="137" Y="0" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="200" Y="0" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="266" Y="0" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Image X="330" Y="0" ClassName="v_barrel_1" Width="73" Height="91"/>
+        <Platform X="0" Y="0" Width="400" Height="270" Name="platform"/>
+        <Platform X="400" Y="90" Width="150" Height="180" Name="platform"/>
+      </Elements>
+      <Objects/>
+    </Constantine_Barrels550x270>
+	
+    <Constantine_Barrels1000x90>
+      <Elements>
+        <Image X="1" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="65" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="130" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="203" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="268" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="861" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="798" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="735" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="666" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="534" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="470" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="403" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="333" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="603" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Image X="927" Y="-1" Width="73" Height="91" ClassName="v_barrel_1"/>
+        <Platform X="0" Y="0" Width="1000" Height="90"/>
+      </Elements>
+      <Objects/>
+    </Constantine_Barrels1000x90>
+	
+    <Constantine_platform3000x100>
+      <Elements>
+        <Image X="0" Y="0" Width="150" Height="100" ClassName="v_CornerUp_L_01"/>
+        <Image X="2847" Y="0" Width="150" Height="100" ClassName="v_CornerUp_R_03"/>
+        <Image X="144" Y="0" Width="500" Height="100" ClassName="v_LongFloor_01"/>
+        <Image X="641" Y="0" Width="500" Height="100" ClassName="v_LongFloor_02"/>
+        <Image X="1133" Y="0" Width="500" Height="100" ClassName="v_LongFloor_02"/>
+        <Image X="1628" Y="0" Width="500" Height="100" ClassName="v_LongFloor_01"/>
+        <Image X="2118" Y="0" Width="500" Height="100" ClassName="v_LongFloor_03"/>
+        <Image X="2618" Y="0" Width="150" Height="100" ClassName="v_Floor_01"/>
+        <Image X="2738" Y="0" Width="150" Height="100" ClassName="v_Floor_02"/>
+        <Platform X="0" Y="0" Width="3000" Height="100"/>
+      </Elements>
+      <Objects/>
+    </Constantine_platform3000x100>
+	
+    <Constantine_halfcolumn70x500>
+      <Elements>
+        <Image X="0" Y="0" Width="70" Height="500" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="70" Height="500"/>
+      </Elements>
+      <Objects/>
+    </Constantine_halfcolumn70x500>
+	
+    <Constantine_ZoomNormal>
+      <Elements>
+        <Trigger X="0" Y="0" Width="2000" Height="100" Name="Constantine_ZoomNormal" Type="2" Node="COM" Priority="0" Value="1"/>
+      </Elements>
+      <Objects/>
+    </Constantine_ZoomNormal>
+	
+    <Constantine_littlecolumn70x210>
+      <Elements>
+        <Image X="0" Y="0" ClassName="v_black" Type="3" Width="70" Height="250"/>
+        <Platform X="0" Y="0" Width="70" Height="250" Name="platform"/>
+      </Elements>
+      <Objects/>
+    </Constantine_littlecolumn70x210>
+
+    <Platform200x100>
+      <Elements>
+        <Image X="-2" Y="0" Width="42" Height="27" ClassName="v_booth_2_01"/>
+        <Image X="160" Y="0" Width="42" Height="27" ClassName="v_booth_2_03"/>
+        <Image X="-2" Y="78" Width="42" Height="24" ClassName="v_booth_2_07"/>
+        <Image X="160" Y="78" Width="42" Height="24" ClassName="v_booth_2_09"/>
+        <Image X="34" Y="0" Width="42" Height="27" ClassName="v_booth_2_03"/>
+        <Image X="73" Y="0" Width="42" Height="27" ClassName="v_booth_2_03"/>
+        <Image X="121" Y="0" Width="42" Height="27" ClassName="v_booth_2_03"/>
+        <Image X="103" Y="0" Width="42" Height="27" ClassName="v_booth_2_03"/>
+        <Image X="44" Y="75" Width="42" Height="27" ClassName="v_booth_2_03"/>
+        <Image X="83" Y="75" Width="42" Height="27" ClassName="v_booth_2_03"/>
+        <Image X="121" Y="75" Width="42" Height="27" ClassName="v_booth_2_03"/>
+        <Image X="22" Y="75" Width="42" Height="27" ClassName="v_booth_2_03"/>
+        <Image X="-5" Y="10" Width="205" Height="80" ClassName="v_LongCornerUp_L_01"/>
+        <Platform X="0" Y="0" Width="200" Height="100"/>
+      </Elements>
+      <Objects/>
+    </Platform200x100>
+	
+    
+    <Platform500x200>
+      <Elements>
+        <Image X="-3" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="354" Y="-2" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="-3" Y="144" Width="97" Height="56" ClassName="v_booth_2_07"/>
+        <Image X="426" Y="143" Width="77" Height="57" ClassName="v_booth_2_09"/>
+        <Image X="85" Y="49" Width="352" Height="150" ClassName="v_Floor_02"/>
+        <Image X="102" Y="-2" Width="291" Height="150" ClassName="v_Floor_03"/>
+        <Platform X="0" Y="0" Width="500" Height="200"/>
+      </Elements>
+      <Objects/>
+    </Platform500x200>
+	
+    <Platform500x350>
+      <Elements>
+        <Image X="-4" Y="-1" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="353" Y="-2" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="353" Y="140" Width="150" Height="150" ClassName="v_CornerDown_R_03"/>
+        <Image X="-4" Y="127" Width="150" Height="150" ClassName="v_CornerUp_L_03"/>
+        <Image X="-3" Y="199" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="353" Y="200" Width="150" Height="150" ClassName="v_CornerUp_R_03"/>
+        <Image X="73" Y="-1" Width="336" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="60" Y="142" Width="400" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="81" Y="200" Width="343" Height="150" ClassName="v_LongFloor_01"/>
+        <Platform X="0" Y="0" Width="500" Height="350"/>
+      </Elements>
+      <Objects/>
+    </Platform500x350>
+    <Platform570x1000>
+      <Elements>
+        <Image X="-11" Y="-4" Width="460" Height="304" ClassName="v_CornerUp_L_01"/>
+        <Image X="102" Y="-5" Width="481" Height="406" ClassName="v_CornerUp_R_01"/>
+        <Image X="394" Y="387" Width="180" Height="305" ClassName="v_CornerDown_R_02"/>
+        <Image X="323" Y="619" Width="252" Height="382" ClassName="v_CornerDown_R_02"/>
+        <Image X="267" Y="363" Width="214" Height="284" ClassName="v_CornerDown_R_02"/>
+        <Image X="172" Y="711" Width="162" Height="291" ClassName="v_CornerDown_R_02"/>
+        <Image X="-7" Y="280" Width="169" Height="305" ClassName="v_CornerDown_L_03"/>
+        <Image X="-4" Y="577" Width="150" Height="260" ClassName="v_CornerDown_L_03"/>
+        <Image X="-5" Y="722" Width="150" Height="275" ClassName="v_CornerDown_L_03"/>
+        <Image X="44" Y="352" Width="509" Height="640" ClassName="v_CornerDown_L_03"/>
+        <Platform X="0" Y="1" Width="570" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform570x1000>
+    <Platform380x1000>
+      <Elements>
+        <Image X="-3" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="-4" Y="144" Width="150" Height="150" ClassName="v_CornerDown_L_01"/>
+        <Image X="-4" Y="291" Width="150" Height="192" ClassName="v_CornerDown_L_01"/>
+        <Image X="-5" Y="480" Width="150" Height="164" ClassName="v_CornerDown_L_01"/>
+        <Image X="-4" Y="629" Width="150" Height="221" ClassName="v_CornerDown_L_01"/>
+        <Image X="-3" Y="776" Width="150" Height="227" ClassName="v_CornerDown_L_02"/>
+        <Image X="233" Y="-1" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="114" Y="-1" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Image X="141" Y="136" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Image X="134" Y="280" Width="150" Height="150" ClassName="v_Floor_02"/>
+        <Image X="132" Y="423" Width="150" Height="150" ClassName="v_Floor_02"/>
+        <Image X="136" Y="558" Width="150" Height="150" ClassName="v_Floor_02"/>
+        <Image X="137" Y="700" Width="150" Height="150" ClassName="v_Floor_02"/>
+        <Image X="123" Y="828" Width="150" Height="175" ClassName="v_Floor_02"/>
+        <Image X="234" Y="142" Width="150" Height="150" ClassName="v_CornerDown_R_03"/>
+        <Image X="234" Y="286" Width="150" Height="150" ClassName="v_CornerDown_R_03"/>
+        <Image X="236" Y="436" Width="150" Height="150" ClassName="v_CornerDown_R_02"/>
+        <Image X="234" Y="575" Width="150" Height="150" ClassName="v_CornerDown_R_02"/>
+        <Image X="234" Y="716" Width="150" Height="150" ClassName="v_CornerDown_R_03"/>
+        <Image X="235" Y="848" Width="150" Height="155" ClassName="v_CornerDown_R_03"/>
+        <Platform X="0" Y="0" Width="380" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform380x1000>
+    <Platform500x1000_Kirill>
+      <Elements>
+        <Image X="-4" Y="-2" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="-4" Y="147" Width="150" Height="150" ClassName="v_CornerDown_L_02"/>
+        <Image X="-4" Y="293" Width="150" Height="150" ClassName="v_CornerDown_L_02"/>
+        <Image X="-4" Y="441" Width="150" Height="150" ClassName="v_CornerDown_L_03"/>
+        <Image X="-5" Y="588" Width="150" Height="150" ClassName="v_CornerDown_L_03"/>
+        <Image X="-4" Y="730" Width="150" Height="150" ClassName="v_CornerDown_L_03"/>
+        <Image X="353" Y="147" Width="150" Height="150" ClassName="v_CornerDown_R_02"/>
+        <Image X="354" Y="296" Width="150" Height="150" ClassName="v_CornerDown_R_02"/>
+        <Image X="354" Y="442" Width="150" Height="150" ClassName="v_CornerDown_R_03"/>
+        <Image X="354" Y="588" Width="150" Height="150" ClassName="v_CornerDown_R_02"/>
+        <Image X="354" Y="734" Width="150" Height="150" ClassName="v_CornerDown_R_02"/>
+        <Image X="353" Y="-2" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="4" Y="851" Width="276" Height="150" ClassName="v_Floor_01"/>
+        <Image X="233" Y="852" Width="268" Height="150" ClassName="v_Floor_01"/>
+        <Image X="119" Y="103" Width="263" Height="795" ClassName="v_Floor_01"/>
+        <Image X="140" Y="-2" Width="219" Height="150" ClassName="v_Floor_01"/>
+        <Platform X="0" Y="0" Width="500" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform500x1000_Kirill>
+    
+    <Platform200x1000-2>
+      <Elements>
+        <Image X="-4" Y="-1" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="54" Y="-1" Width="150" Height="150" ClassName="v_CornerUp_R_02"/>
+        <Image X="-4" Y="137" Width="150" Height="500" ClassName="v_LongCornerUp_L_03"/>
+        <Image X="-4" Y="503" Width="150" Height="500" ClassName="v_LongCornerUp_L_03"/>
+        <Image X="54" Y="147" Width="150" Height="150" ClassName="v_Wall_R_03"/>
+        <Image X="54" Y="295" Width="150" Height="150" ClassName="v_Wall_R_03"/>
+        <Image X="54" Y="445" Width="150" Height="150" ClassName="v_Wall_R_03"/>
+        <Image X="54" Y="591" Width="150" Height="150" ClassName="v_Wall_R_03"/>
+        <Image X="54" Y="736" Width="150" Height="150" ClassName="v_Wall_R_03"/>
+        <Image X="54" Y="853" Width="150" Height="150" ClassName="v_Wall_R_03"/>
+        <Platform X="0" Y="0" Width="200" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform200x1000-2>
+
+    <Platform_100x90>
+      <Elements>
+        <Image X="0" Y="0" Width="100" Height="90" ClassName="v_CornerDown_L_01"/>
+        <Platform X="0" Y="0" Width="100" Height="90"/>
+      </Elements>
+      <Objects/>
+    </Platform_100x90>
+    
+    <Barrel_11>
+      <Elements>
+        <Image X="58" Y="-2" ClassName="v_barrel_1" Width="67" Height="93"/>
+        <Image X="-4" Y="-2" ClassName="v_barrel_1" Width="67" Height="93"/>
+        <Platform X="0" Y="0" Width="120" Height="90" Name="platform"/>
+      </Elements>
+      <Objects/>
+    </Barrel_11>
+
+    <Barrel_2 Label="Standard obstacles">
+      <Elements>
+        <Trigger Name="TriggerHighJump" Type="4" X="-700" Y="-60" Width="480" Height="150" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects>
+        <Barrel_11 X="0" Y="0"/>
+        <TriggerSpeedVault X="-220" Y="-110"/>
+      </Objects>
+    </Barrel_2>
+
+    <SmallPipeHJ100SV>
+      <Elements/>
+      <Objects>
+        <SmallPipe X="0" Y="0"/>
+        <TriggerSpeedVault X="-220" Y="-110"/>
+        <TriggerHighJump100 X="-300" Y="-60"/>
+      </Objects>
+    </SmallPipeHJ100SV>
+
+    <DoubleConditionerHJ100DC>
+      <Elements/>
+      <Objects>
+        <TriggerHighJump100 X="-303" Y="-48"/>
+        <TriggerDivingKong X="-203" Y="-98"/>
+        <DoubleConditioner X="0" Y="0"/>
+      </Objects>
+    </DoubleConditionerHJ100DC>
+
+    <Platform500x95>
+      <Elements>
+        <Image X="352" Y="0" Width="148" Height="95" ClassName="v_CornerUp_R_03"/>
+        <Image X="0" Y="0" Width="148" Height="95" ClassName="v_CornerUp_L_01"/>
+        <Image X="18" Y="0" Width="460" Height="95" ClassName="v_LongFloor_01"/>
+        <Platform X="3" Y="1" Width="494" Height="94"/>
+      </Elements>
+      <Objects/>
+    </Platform500x95>
+
+    <Platform1000x95>
+      <Elements>
+        <Image X="851" Y="0" Width="149" Height="95" ClassName="v_CornerUp_R_03"/>
+        <Image X="0" Y="0" Width="149" Height="95" ClassName="v_CornerUp_L_01"/>
+        <Image X="138" Y="0" Width="497" Height="95" ClassName="v_LongFloor_01"/>
+        <Image X="373" Y="0" Width="497" Height="95" ClassName="v_LongFloor_01"/>
+        <Platform X="3" Y="1" Width="993" Height="94"/>
+      </Elements>
+      <Objects/>
+    </Platform1000x95>
+
+    <Platform1110x210>
+      <Elements>
+        <Image X="76" Y="0" Width="496" Height="148" ClassName="v_LongFloor_01"/>
+        <Image X="552" Y="0" Width="496" Height="148" ClassName="v_LongFloor_01"/>
+        <Image X="0" Y="0" Width="149" Height="148" ClassName="v_CornerUp_L_03"/>
+        <Image X="961" Y="1" Width="149" Height="148" ClassName="v_CornerUp_R_01"/>
+        <Image X="43" Y="62" Width="1042" Height="148" ClassName="v_Floor_03"/>
+        <Image X="721" Y="32" Width="149" Height="148" ClassName="v_CornerUp_R_03"/>
+        <Image X="762" Y="17" Width="149" Height="148" ClassName="v_CornerDown_R_01"/>
+        <Image X="762" Y="17" Width="149" Height="148" ClassName="v_CornerDown_R_01"/>
+        <Image X="762" Y="17" Width="149" Height="148" ClassName="v_CornerDown_L_03"/>
+        <Image X="960" Y="62" Width="149" Height="148" ClassName="v_CornerDown_R_01"/>
+        <Image X="164" Y="40" Width="149" Height="148" ClassName="v_CornerDown_L_03"/>
+        <Image X="164" Y="40" Width="149" Height="148" ClassName="v_CornerDown_L_03"/>
+        <Image X="2" Y="62" Width="149" Height="148" ClassName="v_CornerDown_L_03"/>
+        <Platform X="5" Y="3" Width="1101" Height="207"/>
+      </Elements>
+      <Objects/>
+    </Platform1110x210>
+
+
+    <Platform500x300HJ>
+      <Elements/>
+      <Objects>
+        <Platform500x300 X="1" Y="1"/>
+        <TriggerHighJump500 X="-553" Y="-55"/>
+      </Objects>
+    </Platform500x300HJ>
+
+    <Platform210x90HJ>
+      <Elements>
+        <Image X="-5" Y="0" Width="210" Height="90" ClassName="v_Wall_01"/>
+        <Platform X="0" Y="0" Width="210" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerHighJump500 X="-754" Y="-57"/>
+        <TriggerDivingKong X="-254" Y="-107"/>
+      </Objects>
+    </Platform210x90HJ>
+
+    <Platform_1700x90>
+      <Elements>
+        <Image X="1554" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="-5" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="142" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="642" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="1132" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_02"/>
+        <Platform X="0" Y="0" Width="1700" Height="90"/>
+      </Elements>
+      <Objects/>
+    </Platform_1700x90>
+
+    <Platform2530x1000HJ>
+  <Elements>
+    <Image X="14" Y="12" Width="2491" Height="971" ClassName="v_black" Type="3"/>
+    <Image X="2372" Y="-5" Width="150" Height="150" ClassName="v_CornerUp_R_02"/>
+    <Image X="2372" Y="138" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+    <Image X="-3" Y="142" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+    <Image X="2373" Y="480" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+    <Image X="1881" Y="-5" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+    <Image X="-1" Y="-5" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+    <Image X="-3" Y="482" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+    <Image X="1392" Y="-5" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+    <Image X="898" Y="-5" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+    <Image X="412" Y="-5" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+    <Image X="113" Y="-5" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+    <Platform X="0" Y="0" Width="2520" Height="990"/>
+  </Elements>
+  <Objects/>
+    </Platform2530x1000HJ>
+
+    <Platform500x90HJ>
+      <Elements>
+        <Image X="0" Y="0" Width="149" Height="95" ClassName="v_CornerUp_L_02"/>
+        <Image X="64" Y="0" Width="400" Height="95" ClassName="v_LongFloor_01"/>
+        <Image X="356" Y="0" Width="149" Height="95" ClassName="v_CornerUp_R_01"/>
+        <Platform X="5" Y="1" Width="496" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerJumpAndRoll X="-201" Y="-90"/>
+        <TriggerHighJump300 X="-502" Y="-59"/>
+      </Objects>
+    </Platform500x90HJ>
+
+    <Platform210x90>
+      <Elements>
+        <Image X="0" Y="0" Width="210" Height="90" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="210" Height="90"/>
+      </Elements>
+      <Objects/>
+    </Platform210x90>
+
+    <Platform300x90>
+  <Elements>
+    <Image X="9" Y="6" Width="285" Height="84" ClassName="v_black" Type="3"/>
+    <Image X="-2" Y="0" Width="150" Height="90" ClassName="v_CornerUp_L_01"/>
+    <Image X="151" Y="0" Width="150" Height="90" ClassName="v_CornerUp_R_01"/>
+    <Platform X="0" Y="0" Width="300" Height="90"/>
+  </Elements>
+  <Objects/>
+    </Platform300x90>
+
+    <Max_descent>
+      <Elements>
+        <Image X="-6" Y="0" Width="431" Height="220" ClassName="v_descent_2"/>
+      </Elements>
+      <Objects/>
+    </Max_descent>
+
+    <Max_ladder>
+      <Elements>
+        <Image X="0" Y="0" Width="150" Height="75" ClassName="v_ladder_R"/>
+      </Elements>
+      <Objects/>
+    </Max_ladder>
+
+    <MaxOutbuilding1550x400>
+      <Elements>
+            <Image X="0" Y="0" Width="1550" Height="400" ClassName="v_black" Type="3"/>
+            <Platform X="0" Y="0" Width="1550" Height="400"/>
+      </Elements>
+      <Objects/>
+    </MaxOutbuilding1550x400>
+
+    <MaxOutbuilding1500x400>
+      <Elements>
+            <Image X="0" Y="0" Width="1500" Height="400" ClassName="v_black" Type="3"/>
+            <Platform X="0" Y="0" Width="1500" Height="400"/>
+      </Elements>
+      <Objects/>
+    </MaxOutbuilding1500x400>
+
+    <MaxPlatform_1500x2000>
+      <Elements>
+            <Image X="0" Y="0" Width="1500" Height="2000" ClassName="v_black" Type="3"/>
+            <Platform X="0" Y="0" Width="1500" Height="2000"/>
+      </Elements>
+      <Objects/>
+    </MaxPlatform_1500x2000>
+
+    <Platform_1110x210>
+      <Elements>
+            <Image X="0" Y="0" Width="1110" Height="210" ClassName="v_black" Type="3"/>
+            <Platform X="0" Y="0" Width="1110" Height="210"/>
+      </Elements>
+      <Objects/>
+    </Platform_1110x210>
+
+    <MaxPlatform4400x400>
+      <Elements>
+            <Image X="0" Y="0" Width="4400" Height="400" ClassName="v_black" Type="3"/>
+            <Platform X="0" Y="0" Width="4400" Height="400"/>
+      </Elements>
+      <Objects/>
+    </MaxPlatform4400x400>
+
+    <MaxPlatform1110x400>
+      <Elements>
+            <Image X="0" Y="0" Width="1110" Height="400" ClassName="v_black" Type="3"/>
+            <Platform X="0" Y="0" Width="1110" Height="400"/>
+      </Elements>
+      <Objects/>
+    </MaxPlatform1110x400>
+
+    <MaxLeftTriangleRoof>
+      <Elements>
+            <Image X="2" Y="-476" Width="997" Height="480" ClassName="v_slope_L"/>
+            <Image X="290" Y="-293" Width="300" Height="150" ClassName="v_slope_L"/>
+            <Image X="0" Y="-149" Width="300" Height="150" ClassName="v_slope_L"/>
+            <Image X="700" Y="-499" Width="300" Height="150" ClassName="v_slope_L"/>
+            <Image X="490" Y="-394" Width="300" Height="150" ClassName="v_slope_L"/>
+            <Image X="0" Y="0" Width="1000" Height="50" ClassName="v_black" Type="3"/>
+            <Trapezoid X="0" Y="0" Width="1000" Type="1" Height="50" Height1="550"/>
+      </Elements>
+      <Objects/>
+    </MaxLeftTriangleRoof>
+
+    <MaxLongDownhill>
+      <Elements>
+            <Image X="250" Y="125" Width="300" Height="150" ClassName="v_slope_R"/>
+            <Image X="0" Y="0" Width="300" Height="150" ClassName="v_slope_R"/>
+            <Image X="500" Y="251" Width="300" Height="150" ClassName="v_slope_R"/>
+            <Image X="750" Y="376" Width="300" Height="150" ClassName="v_slope_R"/>
+            <Image X="1000" Y="501" Width="300" Height="150" ClassName="v_slope_R"/>
+            <Image X="1697" Y="850" Width="353" Height="175" ClassName="v_slope_R"/>
+            <Image X="1998" Y="1000" Width="300" Height="150" ClassName="v_slope_R"/>
+            <Image X="2250" Y="1125" Width="300" Height="150" ClassName="v_slope_R"/>
+            <Image X="2500" Y="1250" Width="300" Height="150" ClassName="v_slope_R"/>
+            <Image X="0" Y="1500" Width="1300" Height="796" ClassName="v_black" Type="3"/>
+            <Image X="2700" Y="1350" Width="300" Height="150" ClassName="v_slope_R"/>
+            <Image X="0" Y="145" Width="280" Height="1357" ClassName="v_black" Type="3"/>
+            <Image X="265" Y="275" Width="272" Height="1235" ClassName="v_black" Type="3"/>
+            <Image X="525" Y="390" Width="235" Height="1134" ClassName="v_black" Type="3"/>
+            <Image X="750" Y="505" Width="262" Height="1001" ClassName="v_black" Type="3"/>
+            <Image X="975" Y="650" Width="326" Height="870" ClassName="v_black" Type="3"/>
+            <Image X="2235" Y="1255" Width="275" Height="256" ClassName="v_black" Type="3"/>
+            <Image X="1697" Y="1005" Width="306" Height="496" ClassName="v_black" Type="3"/>
+            <Image X="2495" Y="1380" Width="214" Height="133" ClassName="v_black" Type="3"/>
+            <Image X="1982" Y="1130" Width="272" Height="395" ClassName="v_black" Type="3"/>
+            <Image X="1697" Y="1500" Width="1301" Height="852" ClassName="v_black" Type="3"/>
+            <Trapezoid X="0" Y="0" Width="1300" Type="0" Height1="1650" Height="2300"/>
+            <Trapezoid X="1699" Y="851" Width="1300" Type="0" Height1="850" Height="1500"/>
+      </Elements>
+      <Objects/>
+    </MaxLongDownhill>
+
+    <MaxDownhill>
+      <Elements>
+            <Image X="660" Y="332" Width="474" Height="238" ClassName="v_slope_R"/>
+            <Image X="0" Y="0" Width="663" Height="334" ClassName="v_slope_R"/>
+            <Image X="1132" Y="568" Width="320" Height="157" ClassName="v_slope_R"/>
+            <Image X="863" Y="567" Width="271" Height="159" ClassName="v_black" Type="3"/>
+            <Image X="0" Y="334" Width="670" Height="115" ClassName="v_black" Type="3"/>
+            <Image X="0" Y="443" Width="873" Height="282" ClassName="v_black" Type="3"/>
+            <Trapezoid X="0" Y="0" Width="1452" Type="0" Height1="44" Height="770"/>
+      </Elements>
+      <Objects/>
+    </MaxDownhill>
+
+    <Image_black>
+      <Elements>
+            <Image X="0" Y="0" Width="50" Height="1023" ClassName="v_black" Type="3"/>
+      </Elements>
+      <Objects/>
+    </Image_black>
+
+    <Max_ladder_R>
+      <Elements>
+            <Image X="0" Y="0" Width="200" Height="100" ClassName="v_ladder_R"/>
+      </Elements>
+      <Objects/>
+    </Max_ladder_R>
+
+    <Platform2300x500>
+      <Elements>
+        <Image X="0" Y="0" Width="2300" Height="500" ClassName="v_black" Type="3"/>
+        <Image X="-9" Y="-7" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="-9" Y="142" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="-7" Y="286" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="-9" Y="350" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="138" Y="-9" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="282" Y="-9" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="430" Y="-7" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="579" Y="-9" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="895" Y="-8" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="741" Y="-9" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="1058" Y="-7" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="1223" Y="-8" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="1385" Y="-8" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="1543" Y="-8" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="1704" Y="-5" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="1882" Y="-6" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="2038" Y="-8" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="2149" Y="-8" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Platform X="0" Y="0" Width="2300" Height="500"/>
+      </Elements>
+      <Objects/>
+    </Platform2300x500>
+
+    <Max_Glass>
+      <Elements>
+        <Image X="0" Y="0" Width="1000" Height="10" ClassName="v_black" Type="3"/>
+      </Elements>
+      <Objects/>
+    </Max_Glass>
+
+    <TriggerAILeftJump Label="Trigger">
+      <Elements>
+        <Trigger X="0" Y="0" Width="100" Height="200" Name="TriggerAILeftJump" Type="1" AI="1" Node="COM" Priority="1" Key1="4" PressType="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerAILeftJump>
+
+    <TriggerAIRightJump>
+      <Elements>
+        <Trigger X="0" Y="0" Width="100" Height="200" Name="TriggerAIRightJump" Type="1" AI="1" Node="COM" Priority="1" Key1="2" PressType="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerAIRightJump>
+	
+    <Max_Outbuilding500x1000>
+      <Elements>
+        <Image X="6" Y="7" Width="484" Height="994" ClassName="v_black" Type="3"/>
+        <Image X="-3" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="353" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="-3" Y="141" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="-4" Y="500" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="353" Y="140" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="353" Y="500" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="215" Y="-1" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Image X="105" Y="-1" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Platform X="0" Y="0" Width="500" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Max_Outbuilding500x1000>
+	
+    <Max_Platform500x500>
+      <Elements>
+        <Image X="20" Y="14" Width="466" Height="486" ClassName="v_black" Type="3"/>
+        <Image X="-4" Y="-2" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="352" Y="-1" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="-4" Y="145" Width="150" Height="150" ClassName="v_Wall_01"/>
+        <Image X="-4" Y="294" Width="150" Height="150" ClassName="v_Wall_01"/>
+        <Image X="-4" Y="350" Width="150" Height="150" ClassName="v_Wall_01"/>
+        <Image X="354" Y="144" Width="150" Height="150" ClassName="v_Wall_R_01"/>
+        <Image X="354" Y="293" Width="150" Height="150" ClassName="v_Wall_R_01"/>
+        <Image X="354" Y="350" Width="150" Height="150" ClassName="v_Wall_R_01"/>
+        <Image X="142" Y="-2" Width="150" Height="150" ClassName="v_CornerUp_R_03"/>
+        <Image X="235" Y="-1" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Platform X="0" Y="0" Width="500" Height="500"/>
+      </Elements>
+      <Objects/>
+    </Max_Platform500x500>
+	
+    <Max_Platform1000x500>
+      <Elements>
+        <Image X="14" Y="13" Width="970" Height="487" ClassName="v_black" Type="3"/>
+        <Image X="853" Y="-2" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="-3" Y="-1" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="137" Y="-1" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="364" Y="-2" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="-4" Y="149" Width="150" Height="150" ClassName="v_Wall_L_01"/>
+        <Image X="-4" Y="298" Width="150" Height="150" ClassName="v_Wall_L_01"/>
+        <Image X="-3" Y="350" Width="150" Height="150" ClassName="v_Wall_L_01"/>
+        <Image X="854" Y="146" Width="150" Height="150" ClassName="v_Wall_R_01"/>
+        <Image X="854" Y="295" Width="150" Height="150" ClassName="v_Wall_R_01"/>
+        <Image X="853" Y="350" Width="150" Height="150" ClassName="v_Wall_R_01"/>
+        <Platform X="0" Y="0" Width="1000" Height="500"/>
+      </Elements>
+      <Objects/>
+    </Max_Platform1000x500>
+
+    <BarrelHJ100HJ Label="Trash">
+      <Elements/>
+      <Objects>
+        <Barrel X="0" Y="0"/>
+        <TriggerHighJump100 X="-302" Y="-57"/>
+        <TriggerHurdleJump X="-202" Y="-107"/>
+      </Objects>
+    </BarrelHJ100HJ>
+
+    <Pipe20x200>
+      <Elements>
+        <Image X="0" Y="0" Width="40" Height="200" ClassName="v_Pipe_5"/>
+        <Platform X="10" Y="0" Width="20" Height="200"/>
+      </Elements>
+      <Objects/>
+    </Pipe20x200>
+
+	  <Picture2000x1200>
+      <Elements>
+        <Image X="0" Y="150" Width="150" Height="150" ClassName="v_Wall_02"/>
+        <Image X="0" Y="0" Width="150" Height="150" ClassName="v_Wall_02"/>
+        <Image X="0" Y="300" Width="150" Height="150" ClassName="v_Wall_02"/>
+        <Image X="0" Y="450" Width="150" Height="150" ClassName="v_Wall_02"/>
+        <Image X="0" Y="600" Width="150" Height="150" ClassName="v_Wall_02"/>
+        <Image X="0" Y="900" Width="150" Height="150" ClassName="v_Wall_02"/>
+        <Image X="0" Y="750" Width="150" Height="150" ClassName="v_Wall_02"/>
+        <Image X="0" Y="1050" Width="150" Height="150" ClassName="v_Wall_02"/>
+        <Image X="10" Y="0" Width="1990" Height="1200" ClassName="v_black" Type="3"/>
+      </Elements>
+      <Objects/>
+    </Picture2000x1200>
+	
+    <Platform910x30>
+      <Elements>
+        <Image X="0" Y="0" Width="910" Height="30" ClassName="v_LongFloor_01"/>
+        <Platform X="0" Y="0" Width="910" Height="30"/>
+      </Elements>
+      <Objects/>
+    </Platform910x30>
+    
+    <TriggerCameraStart Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerStart" Type="2" SubType="2" Value="0.65" X="0" Y="0" Width="300" Height="400" Node="COM" Priority="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerCameraStart>
+    
+    <TriggerZoomMin Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerZoomMin" Type="2" Value="0.65" X="0" Y="0" Width="100" Height="3500" Node="COM" Priority="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerZoomMin>
+    
+    <TriggerZoomMinForCS02 Label="">
+      <Elements>
+        <Trigger Name="TriggerZoomMinForCS02" Type="2" Value="0.9" X="0" Y="0" Width="100" Height="3500" Node="COM" Priority="0" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerZoomMinForCS02>
+    
+    <TriggerCameraVelocity500CS02 Label="">
+      <Elements>
+        <Trigger Name="TriggerCameraVelocity500CS02" Type="2" X="0" Y="0" Width="100" Height="3500" Node="COM" Priority="0" SubType="3" MaxSpeed="1270" />
+      </Elements>
+    </TriggerCameraVelocity500CS02>
+    
+    <TriggerCameraFluencyCS02 Label="">
+      <Elements>
+        <Trigger Name="TriggerCameraFluencyCS02" Type="2" X="0" Y="0" Width="1000" Height="3500" Node="COM" Priority="0" SubType="1" Value="0" />
+      </Elements>
+    </TriggerCameraFluencyCS02>
+    
+     
+    <CS02HelpbotPart1>
+      <Elements>
+        <Trigger X="0" Y="0" Width="2000" Height="210" Name="TriggerCS02HelpbotPart1" Type="13" AI="2" Priority="10" Node="DetectorH" Animation="CS02DownTownHelpBotPart1|1" DelayedAnimation="CS02DownTownHelpBotPart2|42|0"  />
+        <Trigger X="910" Y="-100" Width="200" Height="210" Name="TriggerB" Type="13" AI="0" Priority="10" Node="COM" Animation="" StartsDelayed="TriggerCS02HelpbotPart1"/>
+      </Elements>
+    </CS02HelpbotPart1>
+   
+    <TriggerCS02PlayerPart1>
+      <Elements>
+        <Trigger X="0" Y="0" Width="200" Height="210" Name="TriggerCS02PlayerPart1" Type="13" AI="0" Priority="10"  SubType="2" PX="0" PY="0" Node="DetectorH" Animation="CS02DownTownPlayerPart1|1" />
+      </Elements>
+    </TriggerCS02PlayerPart1>
+    
+    <TriggerCS02PlayerPart1WithTruck>
+      <Elements>
+        <Trigger X="0" Y="0" Width="200" Height="210" Name="TriggerCS02PlayerPart1WithTruck" Type="13" AI="0" Priority="10"  SubType="2" PX="0" PY="0" Node="DetectorH" Animation="CS02DownTownPlayerPart1WithTruck|1" />
+      </Elements>
+    </TriggerCS02PlayerPart1WithTruck>
+    
+    <TriggerCS02PlayerPart2WithTruck>
+      <Elements>
+        <Trigger X="0" Y="0" Width="200" Height="210" Name="TriggerCS02PlayerPart2WithTruck" Type="13" AI="0" Priority="10"  SubType="2" PX="0" PY="0" Node="DetectorH" Animation="CS02DownTownPlayerPart2WithTruck|4" />
+      </Elements>
+    </TriggerCS02PlayerPart2WithTruck>
+    
+    <TriggerCS02Hunter>
+      <Elements>
+        <Trigger X="0" Y="0" Width="200" Height="210" Name="TriggerCS02Hunter" Type="13" AI="1" Priority="10"  SubType="2" PX="0" PY="0" Node="DetectorH" Animation="CS02DownTownHunter|5" />
+      </Elements>
+    </TriggerCS02Hunter>
+    
+    
+    <TriggerCS02DowntownFlashMemory>
+      <Elements>
+        <Trigger Name="TriggerCS02DowntownFlashMemory" Type="10" X="0" Y="-795" Width="500" Height="300"  Animation="CS02DownTownFlashMemory|73" Node="NPivot" Priority="10"/>
+        <Model X="245" Y="214" Type="1" ClassName="cs02_downtown_flash_memory"/>
+      </Elements>
+    </TriggerCS02DowntownFlashMemory>
+    
+    <TriggerCS02DowntownTruck>
+      <Elements>
+        <Trigger Name="TriggerCS02DowntownTruck" Type="10" X="30" Y="-800" Width="500" Height="1000" Animation="CS02DownTownTruck|5" Node="NPivot" Priority="10"/>
+        <Model X="2415" Y="-86" Type="1" ClassName="cs02_truck2"/>
+      </Elements>
+      <Objects/>
+    </TriggerCS02DowntownTruck>
+    
+    <TriggerCSYardCS01Truck>
+      <Elements>
+        <Trigger Name="TriggerCSYardCS01Truck" Type="10" X="30" Y="-800" Width="500" Height="1000" Animation="CSYardCS01Truck|8" Node="NPivot" Priority="10"/>
+        <Model X="430" Y="-70" Type="1" ClassName="cs02_truck2" LifeTime="10"/>
+      </Elements>
+      <Objects/>
+    </TriggerCSYardCS01Truck>
+    
+    <TriggerCSYardCS01Player>
+      <Elements>
+        <Trigger X="0" Y="0" Width="200" Height="210" Name="TriggerCSYardCS01Player" Type="13" AI="0" Priority="10"  SubType="2" PX="0" PY="0" Node="DetectorV" Animation="CSYardCS01PlayerPart1|5" />
+      </Elements>
+    </TriggerCSYardCS01Player>
+    
+    <TriggerCtrlOut>
+      <Elements>
+        <Trigger Width="200" Height="300" Name="TriggerCtrlOut" Type="12" Node="COM" Priority="10"/>
+      </Elements>
+    </TriggerCtrlOut>
+
+
+    <TriggerZoom80 Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerZoom80" Type="2" Value="0.8" X="0" Y="0" Width="100" Height="3500" Node="COM" Priority="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerZoom80>
+    
+
+    <TriggerZoomNormal Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="0" Y="0" Width="100" Height="3500" Node="COM" Priority="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerZoomNormal>
+    
+      
+    <TriggerZoomMax Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="0" Y="0" Width="100" Height="3500" Node="COM" Priority="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerZoomMax>
+        
+      
+
+    
+
+
+    
+
+
+    
+      
+
+      
+      
+    <TriggerJump Label="Trigger">
+      <Elements>
+        <Trigger X="0" Y="0" Width="100" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerJump>
+    
+    <TriggerSpeedUp Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSpeedUp" Type="1" AI="1" Node="COM" Key1="2" PressType="0" Priority="1" Factor="1" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+      <Objects/>
+    </TriggerSpeedUp>
+	
+    <TriggerSpeedUp_Left Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSpeedUp" Type="1" AI="1" Node="COM" Key1="4" PressType="0" Priority="1" Factor="1" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+      <Objects/>
+    </TriggerSpeedUp_Left>
+    
+      
+    <TriggerSlide Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSlide" Type="1" AI="1" Node="COM" Key1="3" PressType="0" Priority="1" Factor="1" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+      <Objects/>
+    </TriggerSlide>
+      
+    <JumpHelp Label="Trigger">
+      <Elements>
+        <Trigger X="0" Y="0" Width="100" Height="200" Name="JumpHelp" Type="3" Node="COM" Priority="1" Key="0"/>
+      </Elements>
+      <Objects/>
+    </JumpHelp>
+    
+    <SlideHelp Label="Trigger">
+      <Elements>
+        <Trigger X="0" Y="0" Width="100" Height="200" Name="SlideHelp" Type="3" Node="COM" Priority="1" Key="2"/>
+      </Elements>
+    </SlideHelp>
+    
+    <FastRunHelp Label="Trigger">
+      <Elements>
+        <Trigger X="0" Y="0" Width="100" Height="200" Name="FastRunHelp" Type="3" Node="COM" Priority="1" Key="1"/>
+      </Elements>
+    </FastRunHelp>
+
+    <TriggerSpeedVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSpeedVault" Type="4" Score="100" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+    </TriggerSpeedVault>
+    
+    <TriggerSpeedVaultFly Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSpeedVaultFly" Type="4" Score="100" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+    </TriggerSpeedVaultFly>
+    
+    <TriggerCollisionToFly Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerCollisionToFly" Type="4" Score="100" X="0" Y="0" Width="150" Height="300"/>
+      </Elements>
+    </TriggerCollisionToFly>
+    
+    <TriggerWallSpeedVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerWallSpeedVault" Type="4" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+    </TriggerWallSpeedVault>
+    
+    <TriggerPopVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerPopVault" Type="4" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+    </TriggerPopVault>
+    
+    <TriggerPopVaultClose Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerPopVaultClose" Type="4" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+    </TriggerPopVaultClose>
+
+    
+      
+    <TriggerDivingKong Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerDivingKong" Type="4" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+    </TriggerDivingKong>
+    
+    <TriggerRunInhibition Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerRunInhibition" Type="4" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+    </TriggerRunInhibition>
+    
+    <TriggerRunFromInhibition Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerRunFromInhibition" Type="4" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+    </TriggerRunFromInhibition>
+    
+    <TriggerDivingKongFly Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerDivingKongFly" Type="4" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+    </TriggerDivingKongFly>
+    
+      
+    <TriggerHurdleJump Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerHurdleJump" Type="4" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+    </TriggerHurdleJump>
+    
+      
+    <TriggerJumpAndRoll Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerJumpAndRoll" Type="4" X="0" Y="0" Width="100" Height="200"/>
+      </Elements>
+    </TriggerJumpAndRoll>
+    
+    <TriggerAboveCar Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerAboveCar" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="26"/>
+      </Elements>
+    </TriggerAboveCar>
+    
+    <TriggerBarJump Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerBarJump" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="27"/>
+      </Elements>
+    </TriggerBarJump>
+    
+    <TriggerBarJumpSaltoless Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerBarJumpSaltoless" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="28"/>
+      </Elements>
+    </TriggerBarJumpSaltoless>
+    
+    <TriggerJumpObstacle Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerJumpObstacle" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="29"/>
+      </Elements>
+    </TriggerJumpObstacle>
+    
+    <TriggerMonkeyVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerMonkeyVault" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="30"/>
+      </Elements>
+    </TriggerMonkeyVault>
+    
+    <TriggerReverseVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerReverseVault" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="31"/>
+      </Elements>
+    </TriggerReverseVault>
+    
+    <TriggerScrewDriver Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerScrewDriver" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="32"/>
+      </Elements>
+    </TriggerScrewDriver>
+    
+    <TriggerThiefVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerThiefVault" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="33"/>
+      </Elements>
+    </TriggerThiefVault>
+    
+    <TriggerTripleHit Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerTripleHit" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="40"/>
+      </Elements>
+    </TriggerTripleHit>
+	
+    <TriggerDashVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerDashVault" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="25"/>
+      </Elements>
+    </TriggerDashVault>
+    
+    <TriggerDoubleKong Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerDoubleKong" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="24"/>
+      </Elements>
+    </TriggerDoubleKong>
+    
+    <TriggerRocketVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerRocketVault" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="42"/>
+      </Elements>
+    </TriggerRocketVault>
+    
+    <TriggerTripleSwing Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerTripleSwing" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="43"/>
+      </Elements>
+    </TriggerTripleSwing>
+    
+    <TriggerSwallow Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSwallow" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="44"/>
+      </Elements>
+    </TriggerSwallow>
+    
+    <TriggerSwallow400 Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSwallow400" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="44"/>
+      </Elements>
+    </TriggerSwallow400>
+    
+    <TriggerAirSpin Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerAirSpin" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="79"/>
+      </Elements>
+    </TriggerAirSpin>
+    
+    <TriggerAirBomb Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerAirBomb" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="80"/>
+      </Elements>
+    </TriggerAirBomb>
+    
+    <TriggerWebster Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerWebster" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="81"/>
+      </Elements>
+    </TriggerWebster>
+    
+    <TriggerWebsterWithSalto Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerWebsterWithSalto" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="82"/>
+      </Elements>
+    </TriggerWebsterWithSalto>
+    
+    <TriggerRollForward Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerRollForward" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="83"/>
+      </Elements>
+    </TriggerRollForward>
+    
+    <TriggerFrontFlipTwoLegs Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerFrontFlipTwoLegs" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="92"/>
+      </Elements>
+    </TriggerFrontFlipTwoLegs>
+    
+    <TriggerSplitOne Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSplitOne" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="93"/>
+      </Elements>
+    </TriggerSplitOne>
+    
+    <TriggerCoolSwing Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerCoolSwing" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="94"/>
+      </Elements>
+    </TriggerCoolSwing>
+    
+    <TriggerSideFlip Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSideFlip" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="96"/>
+      </Elements>
+    </TriggerSideFlip>
+    
+    <TriggerDashToFrontflip Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerDashToFrontflip" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="99"/>
+      </Elements>
+    </TriggerDashToFrontflip>
+    
+    <TriggerTurnVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerTurnVault" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="100"/>
+      </Elements>
+    </TriggerTurnVault>
+    
+    <TriggerSlowSpin Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSlowSpin" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="101"/>
+      </Elements>
+    </TriggerSlowSpin>
+    
+    <TriggerMonkeyToBackflip Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerMonkeyToBackflip" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="102"/>
+      </Elements>
+    </TriggerMonkeyToBackflip>
+    
+    <TriggerMonkeyToBomb Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerMonkeyToBomb" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="103"/>
+      </Elements>
+    </TriggerMonkeyToBomb>
+    
+    <TriggerSpinVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSpinVault" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="104"/>
+      </Elements>
+    </TriggerSpinVault>
+    
+    <TriggerTripleTrickToSwalow Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerTripleTrickToSwalow" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="105"/>
+      </Elements>
+    </TriggerTripleTrickToSwalow>
+    
+    <TriggerDiveDown Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerDiveDown" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="108"/>
+      </Elements>
+    </TriggerDiveDown>
+    
+    <TriggerHandspringToRoll Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerHandspringToRoll" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="109"/>
+      </Elements>
+    </TriggerHandspringToRoll>
+    
+    <TriggerVertVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerVertVault" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="110"/>
+      </Elements>
+    </TriggerVertVault>
+    
+    <TriggerCheatGainer Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerCheatGainer" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="111"/>
+      </Elements>
+    </TriggerCheatGainer>
+    
+    <TriggerBoomBoomSh Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerBoomBoomSh" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="112"/>
+      </Elements>
+    </TriggerBoomBoomSh>
+    
+    <TriggerDoubleBack Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerDoubleBack" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="113"/>
+      </Elements>
+    </TriggerDoubleBack>
+    
+    <Trigger360WallHop Label="Trigger">
+      <Elements>
+        <Trigger Name="Trigger360WallHop" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="114"/>
+      </Elements>
+    </Trigger360WallHop>
+    
+    <TriggerFrontflipLegsUp Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerFrontflipLegsUp" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="115"/>
+      </Elements>
+    </TriggerFrontflipLegsUp>
+    
+    <Trigger360WallCling Label="Trigger">
+      <Elements>
+        <Trigger Name="Trigger360WallCling" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="122"/>
+      </Elements>
+    </Trigger360WallCling>
+    
+    <TriggerUnderbar Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerUnderbar" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="123"/>
+      </Elements>
+    </TriggerUnderbar>
+    
+    <TriggerSidebomb Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSidebomb" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="124"/>
+      </Elements>
+    </TriggerSidebomb>
+    
+    <TriggerFlyingArrow Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerFlyingArrow" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="145"/>
+      </Elements>
+    </TriggerFlyingArrow>
+    
+    <TriggerLongCircle Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerLongCircle" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="146"/>
+      </Elements>
+    </TriggerLongCircle>
+    
+    <TriggerDoubleSpinVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerDoubleSpinVault" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="147"/>
+      </Elements>
+    </TriggerDoubleSpinVault>
+    
+    <TriggerJumpSpinVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerJumpSpinVault" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="148"/>
+      </Elements>
+    </TriggerJumpSpinVault>
+    
+    <TriggerSpin360 Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSpin360" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="149"/>
+      </Elements>
+    </TriggerSpin360>
+    
+    <TriggerNewTrick Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerNewTrick" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="150"/>
+      </Elements>
+    </TriggerNewTrick>
+    
+    <TriggerJumpTumbleTrick180High Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerJumpTumbleTrick180High" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="8"/>
+      </Elements>
+    </TriggerJumpTumbleTrick180High>
+    
+    <TriggerBackFlipTrick90High Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerBackFlipTrick90High" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="14"/>
+      </Elements>
+    </TriggerBackFlipTrick90High>
+    
+      
+    <TriggerObstacleFrontflipTrick0High Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerObstacleFrontflipTrick0High" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="13"/>
+      </Elements>
+    </TriggerObstacleFrontflipTrick0High>
+    
+      
+    <TriggerSpinningVaultTrick0High Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerSpinningVaultTrick0High" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="12"/>
+      </Elements>
+    </TriggerSpinningVaultTrick0High>
+    
+      
+    <TriggerBarrelVaultTrick0High Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerBarrelVaultTrick0High" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="11"/>
+      </Elements>
+    </TriggerBarrelVaultTrick0High>
+    
+          
+    <TriggerJumpWheelTrick180High Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerJumpWheelTrick180High" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="10"/>
+      </Elements>
+    </TriggerJumpWheelTrick180High>
+    
+
+    <TriggerGateVaultTrick0High Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerGateVaultTrick0High" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="9"/>
+      </Elements>
+    </TriggerGateVaultTrick0High>
+    
+      
+    <TriggerHandSpringTrick0High Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerHandSpringTrick0High" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="7"/>
+      </Elements>
+    </TriggerHandSpringTrick0High>
+    
+    <TriggerRailFlipVault Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerRailFlipVault" Type="7" Score="100" Key="0" X="0" Y="0" Width="150" Height="200" ID="41"/>
+      </Elements>
+    </TriggerRailFlipVault>
+      
+      
+    <TriggerHighJump100 Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerHighJump" Type="4" X="0" Y="0" Width="100" Height="150"/>
+      </Elements>
+    </TriggerHighJump100>
+    
+
+    <TriggerHighJump300 Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerHighJump" Type="4" X="0" Y="0" Width="300" Height="150"/>
+      </Elements>
+    </TriggerHighJump300>
+    
+      
+    <TriggerHighJump500 Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerHighJump" Type="4" X="0" Y="0" Width="500" Height="150"/>
+      </Elements>
+    </TriggerHighJump500>
+    
+    <TriggerRunFast Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerRunFast" Type="4" X="0" Y="0" Width="500" Height="150"/>
+      </Elements>
+    </TriggerRunFast>
+    
+    
+    <TriggerLongRunFast Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerRunFast" Type="4" X="0" Y="0" Width="1500" Height="150"/>
+      </Elements>
+    </TriggerLongRunFast>
+
+
+
+      
+    <TriggerVictory Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerVictory" Type="5" SubType="2" X="0" Y="0" Time="4" Width="100" Height="300" End="Loose|20"/>
+      </Elements>
+    </TriggerVictory>
+    
+    <TriggerVictoryCS02 Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerVictoryCS02" Type="5" SubType="2" X="0" Y="0" Time="0" Width="100" Height="300" End="Loose|20"/>
+      </Elements>
+    </TriggerVictoryCS02>
+    
+      
+    <TriggerLoss Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="0" Y="0" Width="1000" Height="100"/>
+      </Elements>
+    </TriggerLoss>
+    
+
+    <TriggerCatch Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerCatch" Type="6" X="0" Y="0" Width="100" Height="150"/>
+      </Elements>
+    </TriggerCatch>
+    
+    <TriggerCatchFront Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerCatchFront" Type="6" X="0" Y="0" Width="100" Height="150"/>
+      </Elements>
+    </TriggerCatchFront>
+    
+    <TriggerWallJump Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerWallJump" Type="4" X="0" Y="0" Width="400" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </TriggerWallJump>
+    
+    <TriggerWallRunFromFail Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerWallRunFromFail" Type="4" X="0" Y="0" Width="150" Height="250"/>
+      </Elements>
+    </TriggerWallRunFromFail>
+    
+    <TriggerWallRunFromFailReverse Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerWallRunFromFailReverse" Type="4" X="0" Y="0" Width="150" Height="250"/>
+      </Elements>
+      <Objects/>
+    </TriggerWallRunFromFailReverse>
+    
+    <TriggerWallJumpCamera Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerWallJumpCamera" Type="2" SubType="1" Value="0.65" X="0" Y="0" Width="300" Height="400" Node="COM" Priority="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerWallJumpCamera>
+   
+     
+    <TriggerCrawlingStart Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerCrawlingStart" Type="4" X="0" Y="0" Width="50" Height="150" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerCrawlingStart>
+    
+    <TriggerCrawlingFinish Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerCrawlingFinish" Type="4" X="0" Y="0" Width="100" Height="150" Node="DetectorV" Priority="0" Output="0"/>
+      </Elements>
+    </TriggerCrawlingFinish>
+    <TriggerCrawlingMiddle Label="Trigger">
+      <Elements>
+        <Trigger X="0" Y="0" Width="250" Height="150" Name="TriggerCrawlingMiddle" Type="4" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerCrawlingMiddle>
+    <TriggerSliding Label="Trigger">
+      <Elements>
+        <Trigger X="3" Y="2" Width="1500" Height="250" Name="TriggerSliding" Type="4" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerSliding>
+    <TriggerSlidingLoop Label="Trigger">
+      <Elements>
+        <Trigger X="3" Y="4" Width="1000" Height="250" Name="TriggerSlidingLoop" Type="4" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerSlidingLoop>
+    
+    <Floor5000x500>
+      <Elements>
+        <Image X="0" Y="0" Width="5000" Height="500" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="5000" Height="500"/>
+      </Elements>
+      <Objects/>
+    </Floor5000x500>
+
+    <Platform1000x500>
+      <Elements>
+        <Image X="0" Y="0" Width="1000" Height="500" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="1000" Height="500"/>
+      </Elements>
+    </Platform1000x500>
+        
+    <Platform600x1000>
+      <Elements>
+        <Image X="145" Y="147" Width="309" Height="883" ClassName="v_black" Type="3"/>
+        <Image X="-4" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_03"/>
+        <Image X="453" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_03"/>
+        <Image X="-5" Y="147" Width="150" Height="500" ClassName="v_LongCornerUp_L_03"/>
+        <Image X="-5" Y="530" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="454" Y="146" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="454" Y="530" Width="150" Height="500" ClassName="v_LongCornerUp_R_03"/>
+        <Image X="146" Y="-3" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Image X="295" Y="-3" Width="150" Height="150" ClassName="v_Floor_03"/>
+        <Image X="431" Y="-2" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Platform X="0" Y="0" Width="600" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform600x1000>
+    
+    <Platform800x1000>
+      <Elements>
+        <Image X="145" Y="147" Width="516" Height="875" ClassName="v_black" Type="3"/>
+        <Image X="-4" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_03"/>
+        <Image X="654" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_02"/>
+        <Image X="-5" Y="147" Width="150" Height="500" ClassName="v_LongCornerUp_L_03"/>
+        <Image X="-5" Y="522" Width="150" Height="500" ClassName="v_LongCornerUp_L_02"/>
+        <Image X="146" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="593" Y="-3" Width="150" Height="150" ClassName="v_Floor_03"/>
+        <Image X="655" Y="147" Width="150" Height="500" ClassName="v_LongCornerUp_R_02"/>
+        <Image X="655" Y="522" Width="150" Height="500" ClassName="v_LongCornerUp_R_03"/>
+        <Platform X="0" Y="0" Width="800" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform800x1000>
+      
+    <Platform600x300>
+      <Elements>
+        <Image X="-4" Y="78" Width="150" Height="150" ClassName="v_Wall_L_01"/>
+        <Image X="455" Y="72" Width="150" Height="150" ClassName="v_Wall_R_02"/>
+        <Image X="-4" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="-4" Y="155" Width="150" Height="150" ClassName="v_CornerDown_L_01"/>
+        <Image X="454" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_03"/>
+        <Image X="455" Y="155" Width="150" Height="150" ClassName="v_CornerDown_R_01"/>
+        <Image X="146" Y="-3" Width="150" Height="150" ClassName="v_Floor_02"/>
+        <Image X="296" Y="-3" Width="150" Height="150" ClassName="v_Floor_03"/>
+        <Image X="339" Y="-3" Width="150" Height="150" ClassName="v_Floor_03"/>
+        <Image X="146" Y="146" Width="309" Height="159" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="600" Height="300"/>
+      </Elements>
+      <Objects/>
+    </Platform600x300>
+    
+    <Platform1000x1000>
+      <Elements>
+        <Image X="145" Y="147" Width="710" Height="873" ClassName="v_black" Type="3"/>
+        <Image X="-5" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="854" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="145" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="432" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="854" Y="147" Width="150" Height="500" ClassName="v_LongCornerUp_R_03"/>
+        <Image X="-5" Y="146" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="-5" Y="520" Width="150" Height="500" ClassName="v_LongCornerUp_L_02"/>
+        <Image X="854" Y="520" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Platform X="0" Y="0" Width="1000" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform1000x1000>
+
+    <Platform2000x500>
+      <Elements>
+        <Image X="1854" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_02"/>
+        <Image X="-4" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="146" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="796" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="1296" Y="-3" Width="150" Height="150" ClassName="v_Floor_03"/>
+        <Image X="1446" Y="-3" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Image X="646" Y="-3" Width="150" Height="150" ClassName="v_Floor_02"/>
+        <Image X="1438" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="-5" Y="350" Width="150" Height="150" ClassName="v_CornerDown_L_03"/>
+        <Image X="-5" Y="200" Width="150" Height="150" ClassName="v_Wall_L_02"/>
+        <Image X="-5" Y="50" Width="150" Height="150" ClassName="v_Wall_L_03"/>
+        <Image X="1855" Y="146" Width="150" Height="150" ClassName="v_Wall_R_03"/>
+        <Image X="1855" Y="296" Width="150" Height="150" ClassName="v_Wall_R_01"/>
+        <Image X="1855" Y="350" Width="150" Height="150" ClassName="v_Wall_R_02"/>
+        <Image X="144" Y="147" Width="1711" Height="353" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="2000" Height="500"/>
+      </Elements>
+      <Objects/>
+    </Platform2000x500>
+         
+    <Platform2500x1000>
+      <Elements>
+        <Image X="142" Y="147" Width="2215" Height="890" ClassName="v_black" Type="3"/>
+        <Image X="-5" Y="537" Width="150" Height="500" ClassName="v_LongCornerUp_L_03"/>
+        <Image X="2355" Y="147" Width="150" Height="500" ClassName="v_LongCornerUp_R_02"/>
+        <Image X="-5" Y="147" Width="150" Height="500" ClassName="v_LongCornerUp_L_02"/>
+        <Image X="-5" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_03"/>
+        <Image X="2354" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_03"/>
+        <Image X="2355" Y="537" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="145" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="645" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="1143" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="1643" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="1939" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Platform X="0" Y="0" Width="2500" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform2500x1000>
+   
+    <Platform3000x1000>
+      <Elements>
+        <Image X="-3" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_03"/>
+        <Image X="145" Y="145" Width="2711" Height="855" ClassName="v_black" Type="3"/>
+        <Image X="2853" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_03"/>
+        <Image X="145" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="1145" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="645" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="1645" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="2145" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="-5" Y="147" Width="150" Height="500" ClassName="v_LongCornerUp_L_03"/>
+        <Image X="-5" Y="500" Width="150" Height="500" ClassName="v_LongCornerUp_L_02"/>
+        <Image X="2854" Y="146" Width="150" Height="500" ClassName="v_LongCornerUp_R_02"/>
+        <Image X="2854" Y="500" Width="150" Height="500" ClassName="v_LongCornerUp_R_03"/>
+        <Image X="2429" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Platform X="0" Y="0" Width="3000" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform3000x1000>
+    
+    <Platform5000x500>
+      <Elements>
+        <Image X="-4" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="-3" Y="147" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="146" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="646" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="1146" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="1646" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="2146" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="2646" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="3146" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="3626" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="4126" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="4850" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="4700" Y="-3" Width="150" Height="150" ClassName="v_Floor_01"/>
+        <Image X="4550" Y="-3" Width="150" Height="150" ClassName="v_Floor_02"/>
+        <Image X="4851" Y="147" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="4851" Y="547" Width="150" Height="500" ClassName="v_LongCornerUp_R_02"/>
+        <Image X="-3" Y="547" Width="150" Height="500" ClassName="v_LongCornerUp_L_03"/>
+        <Image X="147" Y="147" Width="4706" Height="900" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="5000" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform5000x500>
+
+    <Platform4500x500>
+      <Elements>
+        <Image X="-5" Y="700" Width="150" Height="150" ClassName="v_Wall_L_03"/>
+        <Image X="-5" Y="850" Width="150" Height="150" ClassName="v_CornerDown_L_01"/>
+        <Image X="-5" Y="200" Width="150" Height="500" ClassName="v_LongCornerUp_L_01"/>
+        <Image X="-4" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="-4" Y="108" Width="150" Height="150" ClassName="v_Wall_01"/>
+        <Image X="146" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="646" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="1146" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="1645" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="2145" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="2645" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="3145" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="3645" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="4354" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="4145" Y="-3" Width="150" Height="150" ClassName="v_Floor_02"/>
+        <Image X="4265" Y="-3" Width="150" Height="150" ClassName="v_Floor_02"/>
+        <Image X="4355" Y="147" Width="150" Height="150" ClassName="v_Wall_R_02"/>
+        <Image X="4356" Y="297" Width="150" Height="150" ClassName="v_Wall_R_03"/>
+        <Image X="4356" Y="447" Width="150" Height="500" ClassName="v_LongCornerUp_R_01"/>
+        <Image X="4356" Y="850" Width="150" Height="150" ClassName="v_CornerDown_R_01"/>
+        <Image X="143" Y="143" Width="4214" Height="857" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="4500" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform4500x500>
+    
+    <!--                                Outbuilding                   -->
+    
+     <Outbuilding1700x400>
+      <Elements>
+        <Image X="0" Y="0" Width="1700" Height="400" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="1700" Height="400"/>
+      </Elements>
+    </Outbuilding1700x400>
+
+    <Outbuilding1700x1400>
+      <Elements>
+        <Image X="0" Y="0" Width="1700" Height="1400" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="1700" Height="1400"/>
+      </Elements>
+      <Objects/>
+    </Outbuilding1700x1400>
+
+    <Outbuilding1000x1000>
+      <Elements>
+        <Image X="0" Y="0" Width="500" Height="1000" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="500" Height="1000"/>
+      </Elements>
+    </Outbuilding1000x1000>
+
+    <Platform1500x1000>
+      <Elements>
+        <Image X="-4" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_03"/>
+        <Image X="1354" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_03"/>
+        <Image X="858" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="145" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_02"/>
+        <Image X="514" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="-5" Y="147" Width="150" Height="500" ClassName="v_LongCornerUp_L_03"/>
+        <Image X="-5" Y="530" Width="150" Height="500" ClassName="v_LongCornerUp_L_03"/>
+        <Image X="1354" Y="146" Width="150" Height="500" ClassName="v_LongCornerUp_R_02"/>
+        <Image X="1354" Y="530" Width="150" Height="500" ClassName="v_LongCornerUp_R_02"/>
+        <Image X="145" Y="147" Width="1210" Height="882" ClassName="v_black" Type="3"/>
+        <Platform X="1" Y="0" Width="1500" Height="1000"/>
+      </Elements>
+      <Objects/>
+    </Platform1500x1000>
+
+    <Platform1000x200>
+      <Elements>
+        <Image X="0" Y="0" Width="1000" Height="200" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="1000" Height="200"/>
+      </Elements>
+    </Platform1000x200>
+    
+
+     <Platform380x500>
+      <Elements>
+        <Image X="0" Y="0" Width="380" Height="500" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="380" Height="500"/>
+      </Elements>
+    </Platform380x500>
+      
+    <Platform500x500>
+      <Elements>
+        <Image X="0" Y="0" Width="500" Height="500" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="500" Height="500"/>
+      </Elements>
+    </Platform500x500>
+    
+      
+    <Platform500x300>
+      <Elements>
+        <Image X="0" Y="139" Width="200" Height="15" ClassName="v_black" Type="3"/>
+        <Image X="-3" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_01"/>
+        <Image X="54" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_02"/>
+        <Image X="54" Y="150" Width="150" Height="150" ClassName="v_Wall_R_02"/>
+        <Image X="-4" Y="150" Width="150" Height="150" ClassName="v_Wall_L_03"/>
+        <Platform X="0" Y="0" Width="200" Height="300"/>
+      </Elements>
+      <Objects/>
+    </Platform500x300>
+    
+
+    <Platform500x1000>
+      <Elements>
+        <Image X="0" Y="0" Width="200" Height="1000" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="200" Height="1000"/>
+      </Elements>
+    </Platform500x1000>
+    
+      
+    <Platform570x700>
+      <Elements>
+        <Image X="0" Y="0" Width="570" Height="1000" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="570" Height="1000"/>
+      </Elements>
+    </Platform570x700>
+    
+      
+    <Platform1700x90>
+      <Elements>
+        <Image X="1554" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_R_01"/>
+        <Image X="-5" Y="-3" Width="150" Height="150" ClassName="v_CornerUp_L_02"/>
+        <Image X="142" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_01"/>
+        <Image X="642" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_03"/>
+        <Image X="1132" Y="-3" Width="500" Height="150" ClassName="v_LongFloor_02"/>
+        <Platform X="0" Y="0" Width="1700" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerHighJump500 X="-730" Y="-60"/>
+        <TriggerJumpAndRoll X="-230" Y="-110"/>
+      </Objects>
+    </Platform1700x90>
+    
+    <Platform1700x90tr>
+      <Elements>
+        <Image X="1554" Y="-3" ClassName="v_CornerUp_R_01" Width="150" Height="63"/>
+        <Image X="-5" Y="-3" ClassName="v_CornerUp_L_02" Width="150" Height="63"/>
+        <Image X="142" Y="-3" ClassName="v_LongFloor_01" Width="500" Height="63"/>
+        <Image X="642" Y="-3" ClassName="v_LongFloor_03" Width="500" Height="63"/>
+        <Image X="1132" Y="-3" ClassName="v_LongFloor_02" Width="500" Height="63"/>
+        <Image X="-1" Y="53" ClassName="v_black" Width="1700" Height="217"/>
+        <Platform X="0" Y="0" Width="1700" Height="264" Name="platform"/>
+      </Elements>
+      <Objects>
+        <TriggerHighJump500 X="-730" Y="-60"/>
+        <TriggerJumpAndRoll X="-230" Y="-110"/>
+      </Objects>
+    </Platform1700x90tr>
+    
+    <Column>
+      <Elements>
+        <Image X="0" Y="0" Width="70" Height="1000" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="70" Height="1000"/>
+      </Elements>
+    </Column>
+      
+    <SlopeUp>
+      <Elements>
+        <Image X="0" Y="-500" Width="1000" Height="500" ClassName="v_rise_2"/>
+        <Trapezoid X="0" Y="0" Width="1000" Height="250" Height1="750" Type="1"/>
+      </Elements>
+    </SlopeUp>
+      
+    <SlopeDown>
+      <Elements>
+        <Image X="0" Y="0" Width="1000" Height="500" ClassName="v_descent_2"/>
+        <Trapezoid X="0" Y="0" Width="1000" Height="600" Height1="100" Type="2"/>
+      </Elements>
+    </SlopeDown>
+      
+    <JumpInSitTest>
+      <Elements>
+        <Image X="0" Y="0" Width="500" Height="80" ClassName="v_black" Type="3"/>
+        <Platform X="0" Y="0" Width="500" Height="80"/>
+      </Elements>
+    </JumpInSitTest>
+    
+    <Lift02>
+      <Elements>
+        <Image X="50" Y="90" ClassName="v_black" Width="300" Height="50" NativeX="50" NativeY="50"/>
+        <Image X="350" Y="90" ClassName="v_black" Width="50" Height="560" NativeX="50" NativeY="50"/>
+        <Image X="50" Y="601" ClassName="v_black" Width="300" Height="50" NativeX="50" NativeY="50"/>
+        <Image X="16" Y="647" ClassName="long_generator" Width="370" Height="90" NativeX="370" NativeY="100"/>
+        <Image X="0" Y="90" ClassName="v_black" Width="50" Height="560" NativeX="50" NativeY="50"/>
+        <Image X="33" Y="0" ClassName="v_object_01" Width="93" Height="90" NativeX="93" NativeY="95"/>
+        <Image X="111" Y="0" ClassName="v_object_01" Width="93" Height="90" NativeX="93" NativeY="95"/>
+        <Image X="189" Y="0" ClassName="v_object_01" Width="93" Height="90" NativeX="93" NativeY="95"/>
+        <Image X="268" Y="0" ClassName="v_object_01" Width="93" Height="90" NativeX="93" NativeY="95"/>
+      </Elements>
+      <Objects/>
+    </Lift02>
+    <Gas_diving_kong Label="Standard obstacles">
+      <Elements>
+        <Image X="0" Y="-4" ClassName="gas" Width="314" Height="103"/>
+        <Platform X="0" Y="0" Width="300" Height="90" Name="platform"/>
+        <Trigger Name="TriggerHighJump" Type="4" X="-700" Y="-60" Width="500" Height="150" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects>
+        <TriggerDivingKong X="-200" Y="-110"/>
+      </Objects>
+    </Gas_diving_kong>
+    <LongGenerator Label="Standard obstacles">
+      <Elements>
+        <Image X="0" Y="0" ClassName="long_generator" Width="370" Height="90"/>
+        <Platform X="0" Y="0" Width="370" Height="90" Name="platform"/>
+      </Elements>
+      <Objects/>
+    </LongGenerator>
+    <LongGeneratorT Label="Standard obstacles">
+      <Elements>
+        <Trigger Name="TriggerHighJump" Type="4" X="-700" Y="-60" Width="500" Height="150" Node="COM" Priority="0" Output="0"/>
+        <Trigger Name="TriggerJumpAndRoll" Type="4" X="-200" Y="-110" Width="100" Height="200"/>
+      </Elements>
+      <Objects>
+        <LongGenerator X="0" Y="0"/>
+      </Objects>
+    </LongGeneratorT>
+    <LongTable Label="Standard obstacles">
+      <Elements>
+        <Image X="-3" Y="-5" ClassName="long_table" Width="370" Height="95"/>
+        <Platform X="0" Y="0" Width="365" Height="90" Name="platform"/>
+      </Elements>
+      <Objects/>
+    </LongTable>
+    <LongTableT Label="Standard obstacles">
+      <Elements>
+        <Trigger Name="TriggerHighJump" Type="4" X="-700" Y="-60" Width="500" Height="150" Node="COM" Priority="0" Output="0"/>
+        <Trigger Name="TriggerJumpAndRoll" Type="4" X="-200" Y="-110" Width="100" Height="200"/>
+      </Elements>
+      <Objects>
+        <LongTable X="0" Y="0"/>
+      </Objects>
+    </LongTableT>
+    <Gas_speedvault Label="Standard obstacles">
+      <Elements>
+        <Image X="-1" Y="0" ClassName="gas_vertical" Width="60" Height="180"/>
+        <Image X="57" Y="0" ClassName="gas_vertical" Width="60" Height="180"/>
+        <Platform X="0" Y="0" Width="120" Height="90" Name="platform"/>
+      </Elements>
+      <Objects>
+        <TriggerHighJump500 X="-720" Y="-60"/>
+        <TriggerSpeedVault X="-220" Y="-110"/>
+      </Objects>
+    </Gas_speedvault>
+    <Respawn>
+      <Elements>
+        <Spawn X="75" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.5" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn>
+    <RespawnCS01RevolutionGirl>
+      <Elements>
+        <Spawn X="-1270" Y="-1365" Name="RevolutionGirlSpawn" Animation="RunFastFly|12"/>
+        <Trigger X="0" Y="-1200" Width="235" Height="1195" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="RespawnRevolutionGirl" Time="0" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </RespawnCS01RevolutionGirl>
+    <Respawn_5.2sec>
+      <Elements>
+        <Spawn X="75" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="5.2" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_5.2sec>
+    <Respawn_3sec>
+      <Elements>
+        <Spawn X="75" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="3" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_3sec>
+    <Respawn_3.3sec>
+      <Elements>
+        <Spawn X="75" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="3.3" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_3.3sec>
+    <Respawn_2sec>
+      <Elements>
+        <Spawn X="75" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_2sec>
+    <Respawn_2.5sec>
+      <Elements>
+        <Spawn X="75" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2.5" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_2.5sec>
+    <Respawn_2.7sec>
+      <Elements>
+        <Spawn X="75" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2.7" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_2.7sec>
+    <Respawn_1sec>
+      <Elements>
+        <Spawn X="75" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="0.5" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_1sec>
+    <Respawn_special>
+      <Elements>
+        <Spawn X="200" Y="-915" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="-115" Y="-1160" Width="503" Height="1159" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="0" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_special>
+    <SlowDownHelp Label="Trigger">
+      <Elements>
+        <Trigger X="0" Y="0" Width="100" Height="200" Name="SlowDownHelp" Type="3" Node="COM" Priority="1" Key="3"/>
+      </Elements>
+      <Objects/>
+    </SlowDownHelp>
+    <WallJumpRightHelp Label="Trigger">
+      <Elements>
+        <Trigger X="0" Y="0" Width="30" Height="225" Name="WallJumpRightHelp" Type="3" Node="COM" Priority="1" Key="1"/>
+      </Elements>
+      <Objects/>
+    </WallJumpRightHelp>
+    <WallJumpLeftHelp Label="Trigger">
+      <Elements>
+        <Trigger X="0" Y="0" Width="20" Height="225" Name="WallJumpLeftHelp" Type="3" Node="COM" Priority="1" Key="3"/>
+      </Elements>
+      <Objects/>
+    </WallJumpLeftHelp>
+    
+    <JumpHelpColumn>
+      <Elements>
+        <Trigger Name="JumpHelpColumn" Type="3" Key="0" X="0" Y="0" Width="30" Height="200" Node="COM" Priority="0"/>
+      </Elements>
+      <Objects/>
+    </JumpHelpColumn>
+
+    <BarrelToFly Label="Standard obstacles">
+      <Elements>
+        <Image X="-4" Y="-1" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Platform X="0" Y="0" Width="65" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerCollisionToFly X="-150" Y="-210"/>
+      </Objects>
+    </BarrelToFly>
+    <Trapezoid_2>
+      <Elements>
+        <Trapezoid X="5" Y="100" Width="200" Type="1" Name="trapezoid" Height="1" Height1="101"/>
+      </Elements>
+      <Objects/>
+    </Trapezoid_2>
+    <LongCondT Label="Standard obstacles">
+      <Elements>
+        <Trigger Name="TriggerHighJump" Type="4" X="-700" Y="-60" Width="500" Height="150" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects>
+        <TriggerJumpAndRoll X="-200" Y="-110"/>
+        <LongCond X="0" Y="0"/>
+      </Objects>
+    </LongCondT>
+    <LongBallonsT Label="Standard obstacles">
+      <Elements>
+        <Trigger Name="TriggerHighJump" Type="4" X="-700" Y="-60" Width="500" Height="150" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects>
+        <TriggerJumpAndRoll X="-200" Y="-110"/>
+        <LongBallons X="0" Y="0"/>
+      </Objects>
+    </LongBallonsT>
+    <Barrel_2_R Label="Reversed obstacles">
+      <Elements>
+        <Image X="58" Y="-3" ClassName="v_barrel_1" Width="67" Height="93"/>
+        <Image X="-4" Y="-3" ClassName="v_barrel_1" Width="67" Height="93"/>
+        <Trigger Name="TriggerHighJump" Type="4" X="320" Y="-61" Width="480" Height="150" Node="COM" Priority="0" Output="0"/>
+        <Platform X="0" Y="0" Width="120" Height="90" Name="platform"/>
+      </Elements>
+      <Objects>
+        <TriggerSpeedVault X="220" Y="-111"/>
+      </Objects>
+    </Barrel_2_R>
+    <DoubleConditionerT_R Label="Reversed obstacles">
+      <Elements/>
+      <Objects>
+        <TriggerHighJump500 X="500" Y="-60"/>
+        <TriggerDivingKong X="400" Y="-110"/>
+        <DoubleConditioner X="0" Y="0"/>
+      </Objects>
+    </DoubleConditionerT_R>
+    <Gas_diving_kong_R Label="Reversed obstacles">
+      <Elements>
+        <Image X="-2" Y="-4" ClassName="gas" Width="303" Height="103"/>
+        <Platform X="0" Y="0" Width="300" Height="90" Name="platform"/>
+        <Trigger Name="TriggerHighJump" Type="4" X="500" Y="-60" Width="500" Height="150" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects>
+        <TriggerDivingKong X="400" Y="-110"/>
+      </Objects>
+    </Gas_diving_kong_R>
+    <Gas_speedvault_R Label="Reversed obstacles">
+      <Elements>
+        <Image X="-1" Y="0" ClassName="gas_vertical" Width="60" Height="180"/>
+        <Image X="57" Y="0" ClassName="gas_vertical" Width="60" Height="180"/>
+        <Platform X="0" Y="0" Width="120" Height="90" Name="platform"/>
+      </Elements>
+      <Objects>
+        <TriggerHighJump500 X="320" Y="-60"/>
+        <TriggerSpeedVault X="220" Y="-110"/>
+      </Objects>
+    </Gas_speedvault_R>
+    <LongBallonsT_R Label="Reversed obstacles">
+      <Elements>
+        <Trigger Name="TriggerHighJump" Type="4" X="570" Y="-60" Width="500" Height="150" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects>
+        <TriggerJumpAndRoll X="470" Y="-110"/>
+        <LongBallons X="0" Y="0"/>
+      </Objects>
+    </LongBallonsT_R>
+    <LongCondT_R Label="Reversed obstacles">
+      <Elements>
+        <Trigger Name="TriggerHighJump" Type="4" X="570" Y="-60" Width="500" Height="150" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects>
+        <TriggerJumpAndRoll X="470" Y="-110"/>
+        <LongCond X="0" Y="0"/>
+      </Objects>
+    </LongCondT_R>
+    <LongGeneratorT_R Label="Reversed obstacles">
+      <Elements>
+        <Trigger Name="TriggerHighJump" Type="4" X="570" Y="-60" Width="500" Height="150" Node="COM" Priority="0" Output="0"/>
+        <Trigger Name="TriggerJumpAndRoll" Type="4" X="470" Y="-110" Width="100" Height="200"/>
+      </Elements>
+      <Objects>
+        <LongGenerator X="0" Y="0"/>
+      </Objects>
+    </LongGeneratorT_R>
+    <LongTableT_R Label="Reversed obstacles">
+      <Elements>
+        <Trigger Name="TriggerHighJump" Type="4" X="570" Y="-60" Width="500" Height="150" Node="COM" Priority="0" Output="0"/>
+        <Trigger Name="TriggerJumpAndRoll" Type="4" X="470" Y="-110" Width="100" Height="200"/>
+      </Elements>
+      <Objects>
+        <LongTable X="0" Y="0"/>
+      </Objects>
+    </LongTableT_R>
+    <SmallPipeT_R Label="Reversed obstacles">
+      <Elements>
+        <Image X="-4" Y="-11" ClassName="v_Pipe_1" Width="129" Height="104" NativeX="104" NativeY="94"/>
+        <Platform X="0" Y="0" Width="120" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerHighJump500 X="320" Y="-60"/>
+        <TriggerSpeedVault X="220" Y="-110"/>
+      </Objects>
+    </SmallPipeT_R>
+    <SmallWall_R Label="Reversed obstacles">
+      <Elements>
+        <Image X="0" Y="0" ClassName="v_black" Width="50" Height="180" NativeX="50" NativeY="50"/>
+        <Platform X="0" Y="0" Width="50" Height="180"/>
+      </Elements>
+      <Objects>
+        <TriggerPopVault X="270" Y="-20"/>
+        <TriggerPopVaultClose X="180" Y="-20"/>
+      </Objects>
+    </SmallWall_R>
+    <WaterTower_R Label="Reversed obstacles">
+      <Elements>
+        <Image X="50" Y="25" ClassName="v_water_tower" Width="278" Height="495" NativeX="278" NativeY="512"/>
+        <Trigger Name="TriggerCrawlingFinish" Type="4" X="-5" Y="385" Width="100" Height="130" Node="DetectorV" Priority="0" Output="0"/>
+        <Trigger Name="TriggerCrawlingStart" Type="4" X="345" Y="385" Width="50" Height="130" Node="COM" Priority="0" Output="0"/>
+        <Trigger X="95" Y="385" Width="250" Height="130" Name="TriggerCrawlingMiddle" Type="4" Node="COM" Priority="0" Output="0"/>
+        <Platform X="95" Y="25" Width="200" Height="360"/>
+      </Elements>
+      <Objects/>
+    </WaterTower_R>
+    <TriggerRunForwardFromFailReverse Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerRunForwardFromFailReverse" Type="4" X="0" Y="0" Width="150" Height="250" Priority="0" Output="0"/>
+      </Elements>
+    </TriggerRunForwardFromFailReverse>
+    <ReversedRespawn>
+      <Elements>
+        <Spawn X="2805" Y="-150" Name="Spawn1" Animation="JumpOff|18|1"/>
+        <Trigger X="0" Y="-500" Width="286" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="0.5" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </ReversedRespawn>
+    <TriggerLossPanic Label="Trigger">
+      <Elements>
+        <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="0" Y="0" Width="1000" Height="100" Node="COM" Priority="0" Start="FlyPanic|1"/>
+      </Elements>
+      <Objects/>
+    </TriggerLossPanic>
+    <Vanishing_v_black_2450x680>
+      <Elements>
+        <Image Type="2" Depth="0" X="0" Y="0" ClassName="v_black" Width="2450" Height="680" NativeX="50" NativeY="50"/>
+        <Trigger X="0" Y="0" Width="50" Height="300" Name="" Type="0" Node="COM" Priority="0" AI="0"/>
+      </Elements>
+      <Objects/>
+    </Vanishing_v_black_2450x680>
+    <Door_2>
+      <Elements>
+        <Trigger Name="TriggerDoor" Type="10" X="-195" Y="0" Width="50" Height="300" Sounds="door_close" SoundType="0" Animation="Door|1"/>
+        <Model X="0" Y="0" Type="1" ClassName="door_3"/>
+      </Elements>
+      <Objects/>
+    </Door_2>
+    <Vanishing_v_black_500x1000>
+      <Elements>
+        <Image Type="2" Depth="0" X="0" Y="0" ClassName="v_black" Width="500" Height="1000" NativeX="50" NativeY="50"/>
+        <Trigger X="0" Y="0" Width="500" Height="50" Name="" Type="0" Node="COM" Priority="0" AI="0"/>
+      </Elements>
+      <Objects/>
+    </Vanishing_v_black_500x1000>
+    <NoWallRun>
+      <Elements>
+        <Trigger X="0" Y="0" Width="200" Height="220" Name="NoWallRun" Type="4" Node="COM" Priority="0" Output="NoWallRun"/>
+      </Elements>
+      <Objects/>
+    </NoWallRun>
+    <Respawn_5sec>
+      <Elements>
+        <Spawn X="75" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="5" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_5sec>
+    <Door_special>
+      <Elements>
+        <Trigger Name="TriggerDoor" Type="10" X="60" Y="0" Width="50" Height="300" Sounds="door_close" SoundType="0" Animation="Door|1" Node="COM" Priority="0" AI="0"/>
+        <Model X="0" Y="0" Type="1" ClassName="door_3"/>
+      </Elements>
+      <Objects/>
+    </Door_special>
+    <RespawnCS01Helper>
+      <Elements>
+        <Spawn X="130" Y="-1135" Name="RespawnHelper" Animation="CS01DownTownHelper|20"/>
+        <Trigger X="0" Y="-1200" Width="235" Height="1195" Name="TriggerRespawnHelper" Type="11" Node="COM" Priority="10" Spawn="RespawnHelper" Time="0" SubType="0" AI=""/>
+      </Elements>
+      <Objects/>
+    </RespawnCS01Helper>
+
+
+    <Door_CS01 Label="Model">
+      <Elements>
+        <Trigger Name="TriggerDoor" Type="10" X="60" Y="0" Width="50" Height="300" Sounds="door_close" SoundType="0" Animation="Door|1" Node="COM" Priority="0" AI="2"/>
+        <Model X="0" Y="0" Type="1" ClassName="door_3"/>
+        <Trigger Name="TriggerDoor" Type="10" X="-235" Y="0" Width="50" Height="300" Sounds="door_close" SoundType="0" Animation="Door|1" Node="COM" Priority="0" AI="0"/>
+      </Elements>
+      <Objects/>
+    </Door_CS01>
+    <DistanceSpawn_3sec>
+      <Elements>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="DistanceSpawn" Type="11" Node="COM" Priority="0" Spawn="DistanceSpawn" Time="3" SubType="1"/>
+      </Elements>
+      <Objects/>
+    </DistanceSpawn_3sec>
+    <TrackStart Label="Tutorial">
+      <Elements/>
+      <Objects>
+        <Spawn X="0" Y="-250"/>
+        <TriggerCameraStart X="612" Y="-400"/>
+        <Camera X="812" Y="-100"/>
+      </Objects>
+    </TrackStart>
+    <SmallPipeToFly Label="Standard obstacles">
+      <Elements>
+        <Image X="-4" Y="-101" ClassName="v_Pipe_1" Width="129" Height="104" NativeX="104" NativeY="94"/>
+        <Platform X="0" Y="-90" Width="120" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerHighJump500 X="-720" Y="-150"/>
+        <TriggerSpeedVaultFly X="-220" Y="-200"/>
+        <TriggerCollisionToFly X="-150" Y="-300"/>
+      </Objects>
+    </SmallPipeToFly>
+    <Barrel_HurdleJump Label="Standard obstacles">
+      <Elements>
+        <Image X="-3" Y="-90" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+        <Platform X="0" Y="-90" Width="65" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerHurdleJump X="-275" Y="-200"/>
+      </Objects>
+    </Barrel_HurdleJump>
+    <Gas_HurdleJump Label="Standard obstacles">
+      <Elements>
+        <Image X="0" Y="-90" ClassName="gas_vertical" Width="65" Height="194" NativeX="60" NativeY="180"/>
+        <Platform X="0" Y="-90" Width="65" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerHurdleJump X="-275" Y="-200"/>
+      </Objects>
+    </Gas_HurdleJump>
+    <Pipe02_HurdleJump Label="Standard obstacles">
+      <Elements>
+        <Image X="-17" Y="-97" ClassName="v_Pipe_6" Width="96" Height="97" NativeX="99" NativeY="96"/>
+        <Platform X="0" Y="-90" Width="65" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerHurdleJump X="-275" Y="-200"/>
+      </Objects>
+    </Pipe02_HurdleJump>
+    <Pipe01_HurdleJump Label="Standard obstacles">
+      <Elements>
+        <Image X="-7" Y="-97" ClassName="v_Pipe_4" Width="78" Height="100" NativeX="93" NativeY="98"/>
+        <Platform X="0" Y="-90" Width="65" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerHurdleJump X="-275" Y="-200"/>
+      </Objects>
+    </Pipe01_HurdleJump>
+    <TriggerCatchFast>
+      <Elements>
+        <Trigger Name="TriggerCatchFast" Type="6" X="0" Y="0" Width="100" Height="150" Node="COM" Priority="0" Distance="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerCatchFast>
+    <DoubleConditionerToFly Label="Standard obstacles">
+      <Elements/>
+      <Objects>
+        <TriggerHighJump500 X="-700" Y="-60"/>
+        <TriggerDivingKongFly X="-200" Y="-110"/>
+        <DoubleConditioner X="0" Y="0"/>
+      </Objects>
+    </DoubleConditionerToFly>
+    <GasDivingKongToFly Label="Standard obstacles">
+      <Elements>
+        <Image X="0" Y="-4" ClassName="gas" Width="314" Height="103" NativeX="325" NativeY="110"/>
+        <Platform X="0" Y="0" Width="300" Height="90"/>
+        <Trigger Name="TriggerHighJump" Type="4" X="-700" Y="-60" Width="500" Height="150" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects>
+        <TriggerDivingKongFly X="-200" Y="-110"/>
+      </Objects>
+    </GasDivingKongToFly>
+    <Door_3>
+      <Elements>
+        <Trigger Name="TriggerDoor" Type="10" X="60" Y="0" Width="50" Height="300" Sounds="door_close" SoundType="0" Animation="Door|1"/>
+        <Model X="0" Y="0" Type="1" ClassName="door_3"/>
+        <Trigger Name="TriggerDoor" Type="10" X="-145" Y="-300" Width="50" Height="300" Sounds="door_close" SoundType="0" Animation="Door|1" Node="COM" Priority="0" AI="0"/>
+      </Elements>
+      <Objects/>
+    </Door_3>
+    <Respawn_2sec_Reversed>
+      <Elements>
+        <Spawn X="75" Y="-100" Name="Respawn" Animation="JumpOff|18|1"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_2sec_Reversed>
+    <Respawn_134_1.5sec>
+      <Elements>
+        <Spawn X="-175" Y="-80" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="0" Y="-2955" Width="150" Height="300" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.5" SubType="0"/>
+        <Trigger X="0" Y="-2655" Width="150" Height="300" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.51" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_134_1.5sec>
+    <Respawn_134_1.4sec>
+      <Elements>
+        <Spawn X="50" Y="-1045" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="105" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.4" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_134_1.4sec>
+
+    <Gas_HurdleJump_R>
+      <Elements>
+        <Image X="0" Y="-90" ClassName="gas_vertical" Width="65" Height="194" NativeX="60" NativeY="180"/>
+        <Platform X="0" Y="-90" Width="65" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerHurdleJump X="240" Y="-200"/>
+      </Objects>
+    </Gas_HurdleJump_R>
+    <Door_Hunter>
+      <Elements>
+        <Trigger Name="TriggerDoor" Type="10" X="60" Y="0" Width="50" Height="300" Sounds="door_close" SoundType="0" Animation="Door|1" Node="COM" Priority="0" AI="1"/>
+        <Model X="0" Y="0" Type="1" ClassName="door_3"/>
+      </Elements>
+      <Objects/>
+    </Door_Hunter>
+    <Respawn_138>
+      <Elements>
+        <Spawn X="-850" Y="700" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="0" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_138>
+    <LongBallons>
+      <Elements>
+        <Image X="-3" Y="-4" ClassName="long_ballons" Width="387" Height="94" NativeX="370" NativeY="90"/>
+        <Platform X="0" Y="0" Width="370" Height="90"/>
+      </Elements>
+      <Objects/>
+    </LongBallons>
+    <LongCond>
+      <Elements>
+        <Image X="-6" Y="-3" ClassName="long_condion" Width="389" Height="100" NativeX="370" NativeY="90"/>
+        <Platform X="0" Y="0" Width="370" Height="90"/>
+      </Elements>
+      <Objects/>
+    </LongCond>
+    <Respawn_2.5sec_Reversed>
+      <Elements>
+        <Spawn X="75" Y="-100" Name="Respawn" Animation="JumpOff|18|1"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2.5" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_2.5sec_Reversed>
+    <Respawn_138_4sec_Reversed>
+      <Elements>
+        <Spawn X="1300" Y="-1200" Name="Respawn" Animation="JumpOff|18|1"/>
+        <Trigger X="0" Y="-300" Width="150" Height="300" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="4.5" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_138_4sec_Reversed>
+    <TriggerJumpToEdge>
+      <Elements>
+        <Trigger Name="TriggerJumpToEdge" Type="4" X="0" Y="0" Width="100" Height="200" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerJumpToEdge>
+    <Respawn_3sec_Reversed>
+      <Elements>
+        <Spawn X="75" Y="-100" Name="Respawn" Animation="JumpOff|18|1"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="3" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_3sec_Reversed>
+    <Respawn_16>
+      <Elements>
+        <Spawn X="-1000" Y="-500" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="0" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_16>
+    <MoveTestLift>
+      <Elements>
+        <Image Type="3" Depth="0" X="0" Y="-90" ClassName="v_black" Width="1400" Height="90" NativeX="50" NativeY="50"/>
+        <Platform X="0" Y="-90" Width="1400" Height="90"/>
+        <Trigger X="300" Y="-290" Width="100" Height="200" Name="LiftMeUp" Type="15" Node="COM" Vx="0" Vy="-10" FramesToMove="91" Priority="0"/>
+      </Elements>
+      <Objects/>
+    </MoveTestLift>
+    <MoveTestLift_T>
+      <Elements/>
+      <Objects>
+        <MoveTestLift X="0" Y="0"/>
+      </Objects>
+    </MoveTestLift_T>
+    <PlatformDoor430>
+      <Elements>
+        <Image Type="3" Depth="0" X="0" Y="-930" ClassName="v_black" Width="50" Height="500" NativeX="50" NativeY="50"/>
+        <Platform X="0" Y="-1495" Width="50" Height="1065"/>
+        <Trigger Name="CloseTheDoor" Type="15" X="60" Y="-375" Width="50" Height="380" Sounds="door_close" SoundType="0" Node="COM" Priority="0" Vx="0" Vy="10" FramesToMove="43"/>
+      </Elements>
+      <Objects/>
+    </PlatformDoor430>
+    <PlatformDoor500>
+      <Elements>
+        <Image Type="3" Depth="0" X="0" Y="-850" ClassName="v_black" Width="50" Height="530" NativeX="50" NativeY="50"/>
+        <Platform X="0" Y="-850" Width="50" Height="530"/>
+        <Trigger Name="CloseTheDoor" Type="15" X="50" Y="-320" Width="50" Height="320" Sounds="door_close" SoundType="0" Node="COM" Priority="0" Vx="0" Vy="10" FramesToMove="50"/>
+        <Trigger X="-115" Y="-820" Width="115" Height="499" Name="NoWallRun" Type="4" Node="COM" Priority="0" Output="NaN"/>
+      </Elements>
+      <Objects/>
+    </PlatformDoor500>
+    <TriggerCSYardCS02PlayerPart1>
+      <Elements>
+        <Trigger X="0" Y="0" Width="200" Height="210" Name="TriggerCSYardCS02PlayerPart1" Type="13" AI="0" Priority="10" SubType="2" PX="0" PY="0" Node="DetectorH" Animation="CSYardCS02PlayerPart1|7|1"/>
+      </Elements>
+      <Objects/>
+    </TriggerCSYardCS02PlayerPart1>
+    <TriggerCSYardCS02GirlPart1>
+      <Elements>
+        <Trigger X="0" Y="0" Width="200" Height="210" Name="TriggerCSYardCS02GirlPart1" Type="13" AI="0" Priority="10" SubType="2" PX="0" PY="0" Node="DetectorH" Animation="CSYardCS02GirlPart1|30"/>
+      </Elements>
+      <Objects/>
+    </TriggerCSYardCS02GirlPart1>
+    <TriggerCSYardCS02Lift>
+      <Elements>
+        <Trigger Name="TriggerCSYardCS02Lift" Type="10" X="445" Y="-190" Width="130" Height="220" Animation="CSYardCS02Lift|8" Node="NPivot" Priority="10"/>
+        <Model X="-270" Y="-45" Type="1" ClassName="CS_yard_cs02_lift"/>
+      </Elements>
+      <Objects/>
+    </TriggerCSYardCS02Lift>
+    <TriggerCSYardCS02Rope>
+      <Elements>
+        <Trigger Name="TriggerCSYardCS02Rope" Type="10" X="-135" Y="-225" Width="130" Height="220" Animation="CSYardCS02Rope|57" Node="NPivot" Priority="10"/>
+        <Model X="10" Y="-20" Type="1" ClassName="CS_yard_cs02_rope"/>
+      </Elements>
+      <Objects/>
+    </TriggerCSYardCS02Rope>
+    <TriggerCSYardCS02PlayerFastRun>
+      <Elements>
+        <Trigger X="0" Y="0" Width="200" Height="210" Name="TriggerCSYardCS02PlayerFastRun" Type="13" AI="0" Priority="10" SubType="2" PX="0" PY="0" Node="DetectorH" Animation="RunFastFromRun|6"/>
+      </Elements>
+      <Objects/>
+    </TriggerCSYardCS02PlayerFastRun>
+    <TriggerCSYardCS02PlayerPart2>
+      <Elements>
+        <Trigger X="0" Y="0" Width="200" Height="210" Name="TriggerCSYardCS02PlayerPart2" Type="13" AI="0" Priority="10" SubType="2" PX="0" PY="0" Node="DetectorH" Animation="CSYardCS02PlayerPart2|36"/>
+      </Elements>
+      <Objects/>
+    </TriggerCSYardCS02PlayerPart2>
+    <TriggerCSYardCS02Glider>
+      <Elements>
+        <Trigger Name="TriggerCSYardCS02Glider" Type="10" X="-365" Y="-805" Width="500" Height="1000" Animation="CSYardCS02Glider|0" Node="NPivot" Priority="10" AI="0"/>
+        <Model X="1565" Y="-60" Type="1" ClassName="CS_yard_cs02_glider"/>
+      </Elements>
+      <Objects/>
+    </TriggerCSYardCS02Glider>
+    <CS_Yard_Respawn_Girl>
+      <Elements>
+        <Spawn X="1775" Y="425" Name="RevolutionGirlSpawn" Animation="CSYardCS02GirlPart2|0"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawnGirl" Type="11" Node="COM" Priority="0" Spawn="RevolutionGirlSpawn" Time="0" SubType="0" AI="0"/>
+      </Elements>
+      <Objects/>
+    </CS_Yard_Respawn_Girl>
+    <CSyardTriggerZoomNormal>
+      <Elements>
+        <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="0" Y="0" Width="100" Height="430" Node="DetectorV" Priority="0" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </CSyardTriggerZoomNormal>
+    <HunterStop>
+      <Elements>
+        <Trigger X="0" Y="-200" Width="70" Height="200" Name="HunterStop" Type="13" Node="COM" Priority="1" Animation="Loose|20" AI="1"/>
+      </Elements>
+      <Objects/>
+    </HunterStop>
+    <Door_Hunter_2>
+      <Elements>
+        <Trigger Name="TriggerDoor" Type="10" X="0" Y="0" Width="50" Height="300" Sounds="door_close" SoundType="0" Animation="Door|1" Node="COM" Priority="0" AI="1"/>
+        <Model X="900" Y="0" Type="1" ClassName="door_3"/>
+      </Elements>
+      <Objects/>
+    </Door_Hunter_2>
+    <MoveTestLift_UpAndDown>
+      <Elements>
+        <Image Type="3" Depth="0" X="0" Y="-90" ClassName="v_black" Width="1400" Height="90" NativeX="50" NativeY="50"/>
+        <Platform X="0" Y="-90" Width="1400" Height="90"/>
+        <Trigger X="300" Y="-290" Width="100" Height="200" Name="LiftMeUp" Type="15" Node="COM" Vx="0" Vy="-10" FramesToMove="91" Priority="0"/>
+        <Trigger X="1050" Y="-290" Width="100" Height="200" Name="LiftMeDown" Type="15" Node="COM" Vx="0" Vy="10" FramesToMove="91" Priority="0"/>
+      </Elements>
+      <Objects/>
+    </MoveTestLift_UpAndDown>
+    <Respawn_1.2sec>
+      <Elements>
+        <Spawn X="150" Y="-300" Name="Respawn" Animation="JumpOff|18"/>
+        <Trigger X="0" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.2" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </Respawn_1.2sec>
+    <TriggerZoomMin2>
+      <Elements>
+        <Trigger Name="TriggerZoomMin" Type="2" Value="0.5" X="0" Y="0" Width="100" Height="3500" Node="COM" Priority="0" SubType="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerZoomMin2>
+    <TriggerRunReverseFromInhibition>
+      <Elements>
+        <Trigger Name="TriggerRunReverseFromInhibition" Type="4" X="0" Y="0" Width="100" Height="200" Node="COM" Priority="0" Output="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerRunReverseFromInhibition>
+    <Gas_VerticalToFly Label="Standard obstacles">
+      <Elements>
+        <Image X="-2" Y="-7" ClassName="gas_vertical" Width="68" Height="203" NativeX="60" NativeY="180"/>
+        <Platform X="0" Y="0" Width="65" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerCollisionToFly X="-150" Y="-210"/>
+      </Objects>
+    </Gas_VerticalToFly>
+
+    <TriggerCSTechnoCS01GliderMain>
+      <Elements>
+        <Trigger Name="TriggerCSTechnoCS01Glider" Type="10" X="-1410" Y="515" Width="500" Height="1000" Animation="CSTechParkCS01MainGlider|1" Node="NPivot" Priority="10" AI="0"/>
+        <Model X="-1055" Y="-1033" Type="1" ClassName="cs_techpark_cs01_main_glider_girl"/>
+        <Platform X="-1250" Y="-1100" Width="10" Height="10"/>
+      </Elements>
+      <Objects/>
+    </TriggerCSTechnoCS01GliderMain>
+  </Objects>
+</Root>

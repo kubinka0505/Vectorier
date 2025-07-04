@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="150" Y="-710" DeltaX="150" DeltaY="-710"/>
+      <Billboard X="2620" Y="-330" DeltaX="681" DeltaY="380"/>
+      <Building2 X="3014" Y="-570" DeltaX="69" DeltaY="-240"/>
+      <LampPost X="4384" Y="350" DeltaX="300" DeltaY="920"/>
+      <Building3 X="4854" Y="-170" DeltaX="320" DeltaY="-520"/>
+      <Billboard X="6265" Y="1170" DeltaX="328" DeltaY="1340"/>
+      <Building1 X="6872" Y="-140" DeltaX="282" DeltaY="-1310"/>
+      <Building3 X="8961" Y="-240" DeltaX="300" DeltaY="-100"/>
+      <Building1 X="12110" Y="-730" DeltaX="2066" DeltaY="-490">
+        <Building2Image X="-1620" Y="-47"/>
+        <Building2Image X="2615" Y="725"/>
+      </Building1>
+    </Layer>
+    
+
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof37-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-870" BoxY="-2155" BoxWidth="6170" BoxHeight="3730">
+        <Pill X="3529" Y="9"/>
+        <TriggerJumpAndRoll X="4560" Y="-199"/>
+        <TriggerHighJump500 X="4204" Y="-144"/>
+        <TriggerJump X="4560" Y="-198"/>
+        <TriggerLossPanic X="4300" Y="386"/>
+        <Spawn X="-820" Y="-1165"/>
+        <TriggerCameraStart X="400" Y="-575"/>
+        <Camera X="550" Y="-260"/>
+        <TriggerZoomMin X="45" Y="-2155"/>
+        <TriggerZoomNormal X="1655" Y="-1925"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="4365" Y="365" Width="755" Height="108" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="-620" Y="-870" Width="1265" Height="890" Text="ГОТОВО&#xD;Мне не нравится, что бот очень быстро убивает в самом начале. Надо либо расставить условные триггеры, либо дать игроку время на решение. Сейчас он должен прыгать почти сразу после старта трассы (трасса 1-3, игрок еще не научился нормально играть)&#xD;" FontSize="80" Colour="13395507" Transparency="1"/>
+            <Comment X="890" Y="-820" Width="995" Height="761" Text="ГОТОВО&#xD;Не видно, что прыжок сразу после приземления с этой будки приведет к врезанию в кондиционер и смерти от бота. Надо отдалить камеру в самом начале трассы" FontSize="80" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof37-1>
+      <Roof37-6 X="4875" Y="-90" DeltaX="165" DeltaY="-90" BoxX="0" BoxY="-2075" BoxWidth="3370" BoxHeight="3600">
+        <TriggerLossPanic X="2370" Y="461"/>
+        <TriggerZoomMin X="1220" Y="-2075"/>
+        <Respawn_2sec X="35" Y="20"/>
+        <TriggerZoomMax X="120" Y="-1975"/>
+        <Pill X="2705" Y="-660"/>
+        <TriggerJump X="2590" Y="-200"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="2435" Y="440" Width="755" Height="108" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="1600" Y="-860" Width="1395" Height="620" Text="ГОТОВО&#xD;Все таки лучше поставить тут условные триггеры перед башней" FontSize="80" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof37-6>
+      <Roof37-2 X="7915" Y="-455" DeltaX="340" DeltaY="-365" BoxX="0" BoxY="-2406" BoxWidth="7995" BoxHeight="4236">
+        <Pill X="2080" Y="-543"/>
+        <TriggerSpinningVaultTrick0High X="2612" Y="-504"/>
+        <TriggerZoomMin X="2996" Y="-2406"/>
+        <TriggerJump X="5630" Y="-498"/>
+        <TriggerZoomNormal X="60" Y="-1695"/>
+        <Respawn_3sec X="3595" Y="-300"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="3306" Y="-478" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="4616" Y="-383" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="5615" Y="1432" Width="2380" Height="100" Node="COM" Priority="0" Animation="" Start="FlyPanic|1"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="5575" Y="1402" Width="2405" Height="108" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="3840" Y="-815" Width="1395" Height="620" Text="ГОТОВО&#xD;Надо увеличить разгон" FontSize="80" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof37-2>
+      <Roof37-3 X="15786" Y="60" DeltaX="2131" DeltaY="815" BoxX="-111" BoxY="-2043" BoxWidth="4820" BoxHeight="3500">
+        <TriggerZoomNormal X="324" Y="-2043"/>
+        <Pill X="2629" Y="182"/>
+        <Respawn_2.5sec X="-111" Y="-8"/>
+        <TriggerLossPanic X="3699" Y="767"/>
+        <TriggerJump X="3830" Y="-75"/>
+        <Respawn_2.5sec X="3580" Y="175"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="144" Y="-88" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="2029" Y="92" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="2934" Y="92" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3764" Y="92" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="1279" Y="92" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="3714" Y="737" Width="995" Height="108" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="2115" Y="-350" Width="745" Height="245" Text="ГОТОВО&#xD;Осталась старая несуществующая картинка" FontSize="40" Colour="13395507" Transparency="1"/>
+            <Comment X="815" Y="-70" Width="745" Height="245" Text="ГОТОВО&#xD;Слайд на бочки приводит к дерганной анимации, надо убрать яму между бочками и полом, не забыть убрать лишнюю графику (провода, возможно стенку)" FontSize="40" Colour="13395507" Transparency="1"/>
+            <Comment X="3400" Y="-180" Width="355" Height="500" Text="ГОТОВО&#xD;Довольно странно смотрится такой острый угол, графику стоит чуть-чуть переработать (вместо в_блека на углу можно поставить бочку)" FontSize="40" Colour="13395507" Transparency="1"/>
+            <Comment X="-271" Y="-105" Width="980" Height="420" Text="Поднял платформу выше, чтобы анимация подката не заканчивалась дерганием.&#xD;Сделал платформу короче, чтобы, когда игрок ничего не нажимет - персонаж не приземлялся руками на воздух" FontSize="40" Colour="65535" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof37-3>
+      <Roof37-4 X="20272" Y="250" DeltaX="486" DeltaY="10" BoxX="0" BoxY="-2750" BoxWidth="6712" BoxHeight="4441">
+        <TriggerReverseVault X="2094" Y="-471"/>
+        <TriggerZoomMin X="4754" Y="-2338"/>
+        <TriggerJump X="5810" Y="50"/>
+        <TriggerLossPanic X="5550" Y="1010"/>
+        <TriggerZoomMax X="2070" Y="-2725"/>
+        <TriggerZoomNormal X="2730" Y="-2750"/>
+        <Respawn_2.5sec X="4745" Y="-250"/>
+        <TriggerZoomNormal X="6612" Y="-1809"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="709" Y="-176" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="1489" Y="-261" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="2469" Y="-446" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="3509" Y="-356" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="4164" Y="-356" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="4814" Y="-356" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="5550" Y="810" Width="995" Height="108" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof37-4>
+      <Roof37-5 X="26682" Y="502" DeltaX="500" DeltaY="17" BoxX="0" BoxY="-2320" BoxWidth="6131" BoxHeight="4630">
+        <Pill X="4235" Y="-202"/>
+        <TriggerJumpTumbleTrick180High X="4754" Y="-201"/>
+        <TriggerZoomMax X="1229" Y="-2135"/>
+        <TriggerZoomNormal X="3659" Y="-2320"/>
+        <TriggerLossPanic X="5131" Y="869"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="1050" Y="-86" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="1490" Y="-176" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="2110" Y="-176" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="5111" Y="839" Width="995" Height="108" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof37-5>
+      <FinalRoof_DownTown_03 X="32462" Y="752" DeltaX="205" DeltaY="250" BoxX="0" BoxY="-299" BoxWidth="3500" BoxHeight="2229"/>
+    </Layer>
+    
+    <Layer Name="Forward_Layer" Factor="2" Type="2">
+    </Layer>
+    
+  </Layers>
+</Root>

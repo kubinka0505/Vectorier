@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_pk" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="40"/>
+  <Variable Name="Money">40</Variable>
+ 
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+      <Background X="5" Y="-445" DeltaX="5" DeltaY="-445"/>
+      <Background X="2126" Y="-445" DeltaX="0" DeltaY="0"/>
+      <Background X="4247" Y="-445" DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="100" Y="-840" DeltaX="100" DeltaY="-840"/>
+      <Billboard X="2059" Y="-523" DeltaX="170" DeltaY="317"/>
+      <Building2 X="3014" Y="-363" DeltaX="630" DeltaY="160"/>
+      <LampPost X="4384" Y="557" DeltaX="300" DeltaY="920"/>
+      <Building3 X="4854" Y="37" DeltaX="320" DeltaY="-520"/>
+      <Building1 X="6072" Y="-33" DeltaX="135" DeltaY="-70"/>
+      <Billboard X="8208" Y="269" DeltaX="347" DeltaY="302"/>
+      <Building3 X="8951" Y="-193" DeltaX="418" DeltaY="-462">
+        <Building2Image X="1539" Y="123"/>
+        <BillboardImage X="3452" Y="962"/>
+        <Building2Image X="4349" Y="1013"/>
+      </Building3>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof63-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-480" BoxY="-1631" BoxWidth="7881" BoxHeight="3852">
+        <Spawn X="-430" Y="-353"/>
+        <TriggerCameraStart X="310" Y="-398"/>
+        <Camera X="520" Y="-93"/>
+        <Pill X="1295" Y="-245"/>
+        <Pill X="3150" Y="-250"/>
+        <TriggerZoomMin X="5163" Y="-1631"/>
+        <TriggerBackFlipTrick90High X="4549" Y="-500"/>
+        <Respawn_2.5sec X="4435" Y="-295"/>
+        <Pill X="6699" Y="385"/>
+        <TriggerZoomNormal X="7301" Y="-1279"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="1725" Y="-910" Width="665" Height="675" Text="СДЕЛАНО&#xD;Если залезть на башню - бот обгонит и арестует, но игрок при этом может прыгнуть с башни, перепрыгивая охотника. Выглядит плохо. Надо либо поставить условный триггер перед башней, либо перенести арест чуть дальшею" FontSize="50" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof63-1>
+      <Roof63-2 X="6900" Y="1020" DeltaX="175" DeltaY="520" BoxX="-599" BoxY="-2111" BoxWidth="9653" BoxHeight="3500">
+        <TriggerLoss X="-599" Y="377"/>
+        <Pill X="159" Y="-150"/>
+        <Pill X="1294" Y="-240"/>
+        <Pill X="39" Y="-430"/>
+        <Pill X="694" Y="-260"/>
+        <Pill X="4074" Y="-185"/>
+        <TriggerReverseVault X="2800" Y="-201"/>
+        <Pill X="3850" Y="-85"/>
+        <TriggerZoomMin X="3891" Y="-2111"/>
+        <Pill X="4320" Y="-85"/>
+        <TriggerJump X="7040" Y="-196"/>
+        <Pill X="7469" Y="-158"/>
+        <Pill X="7919" Y="-118"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="3601" Y="-86" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="5391" Y="-91" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="4515" Y="-86" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="7189" Y="612" Width="1865" Height="100" Node="COM" Priority="0" Animation="" Start="FlyPanic|1"/>
+            <Spawn X="1594" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="1519" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2.7" SubType="0"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="7329" Y="1112" Width="1645" Height="138" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof63-2>
+      <Roof63-3 X="15860" Y="1520" DeltaX="1710" DeltaY="500" BoxX="-656" BoxY="-2318" BoxWidth="7290" BoxHeight="3500">
+        <Pill X="-576" Y="-535"/>
+        <Pill X="-186" Y="-325"/>
+        <TriggerZoomNormal X="374" Y="-2318"/>
+        <TriggerLoss X="5634" Y="362"/>
+        <TriggerJumpTumbleTrick180High X="5419" Y="-497"/>
+        <Respawn_2.5sec X="129" Y="7"/>
+        <TriggerLoss X="3874" Y="192"/>
+        <Pill X="4959" Y="-565"/>
+        <Pill X="4634" Y="-415"/>
+        <Pill X="5279" Y="-420"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="2599" Y="-83" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3754" Y="-83" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="1734" Y="-80" Score="10" Radius="80" Type="1" GroupId="2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof63-3>
+      <Roof63-4 X="22385" Y="1500" DeltaX="300" DeltaY="280" BoxX="-147" BoxY="-917" BoxWidth="9450" BoxHeight="4098">
+        <Pill X="2724" Y="465"/>
+        <TriggerZoomMin X="3618" Y="-917"/>
+        <Pill X="3884" Y="1040"/>
+        <Respawn_2.5sec X="355" Y="-7"/>
+        <TriggerJump X="5555" Y="1295"/>
+        <Pill X="1419" Y="-205"/>
+        <Pill X="7625" Y="1372"/>
+        <Pill X="8075" Y="1302"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="866" Y="-77" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="2146" Y="475" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="3386" Y="1105" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="7133" Y="3070" Width="2170" Height="111" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="7048" Y="3045" Width="2240" Height="100" Node="COM" Priority="0" Animation="" Start="FlyPanic|1"/>
+            <Comment X="4390" Y="939" Width="460" Height="400" Text="СДЕЛАНО&#xD;Удлинить разгон" FontSize="50" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof63-4>
+      <FinalRoof X="31645" Y="3765" DeltaX="2085" DeltaY="770" BoxX="-845" BoxY="-2290" BoxWidth="4345" BoxHeight="4220">
+        <Pill X="-765" Y="-823"/>
+        <Pill X="-355" Y="-551"/>
+        <TriggerZoomNormal X="270" Y="-2290"/>
+        <Pill X="-20" Y="-231"/>
+        <Respawn X="120" Y="7"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="1027" Y="-100" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="413" Y="-85" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="735" Y="-91" Score="10" Radius="80" Type="1" GroupId="4"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof>
+    </Layer>
+    
+    <Layer Name="Forward_Layer" Factor="2" Type="2">
+    </Layer>
+    
+  </Layers>
+</Root>

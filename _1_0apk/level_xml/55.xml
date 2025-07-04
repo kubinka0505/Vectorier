@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="765" Y="-685" DeltaX="765" DeltaY="-685"/>
+      <Building2 X="3579" Y="-735" DeltaX="1025" DeltaY="-50"/>
+      <Building3 X="5400" Y="-145" DeltaX="751" DeltaY="590"/>
+      <Billboard X="7050" Y="525" DeltaX="567" DeltaY="670"/>
+      <Building1 X="7407" Y="-235" DeltaX="32" DeltaY="-760"/>
+      <Building3 X="9496" Y="-235" DeltaX="300" DeltaY="0"/>
+      <Building3 X="11299" Y="-212" DeltaX="720" DeltaY="23"/>
+      <Building3 X="13063" Y="93" DeltaX="681" DeltaY="305"/>
+      <Billboard X="14328" Y="866" DeltaX="182" DeltaY="773"/>
+      <Building1 X="15508" Y="566" DeltaX="855" DeltaY="-300"/>
+    </Layer>
+    
+
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof55-1 X="0" Y="0" DeltaX="0" DeltaY="0" Override="0" BoxX="-715" BoxY="-2395" BoxWidth="7815" BoxHeight="4217">
+        <TriggerZoomMax X="-670" Y="-1798"/>
+        <TriggerZoomNormal X="1349" Y="-1678"/>
+        <TriggerZoomMin X="5025" Y="-2395"/>
+        <TriggerJump X="5895" Y="-965"/>
+        <Respawn_2.5sec X="2520" Y="-485"/>
+        <TriggerLossPanic X="6065" Y="635"/>
+        <Spawn X="-665" Y="-695"/>
+        <TriggerCameraStart X="-5" Y="-335"/>
+        <Camera X="146" Y="-93"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="5955" Y="520" Width="1145" Height="100" Name="Constantine_ZoomNormal" Type="2" Node="COM" Priority="0" Value="1" SubType="0"/>
+            <Comment X="2880" Y="-305" Width="685" Height="190" Text="СДЕЛАНО&#xD;Данные v_black'и можно сделать статичным" FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="6005" Y="1195" Width="405" Height="350" Text="СДЕЛАНО&#xD;Такие места стоит сделать менее &quot;грубыми&quot; относительно перехода от corner к v_black" FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="3985" Y="-880" Width="480" Height="450" Text="СДЕЛАНО&#xD;Тут модель часто спотыкается при внешне правильном прыжке, надо сделать яму с башней немного уже, поставить башню так, чтобы разница высот была 90, поставить хайджамп" FontSize="40" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof55-1>
+      <Roof55-2 X="7015" Y="-85" DeltaX="1040" DeltaY="700" Override="0" BoxX="-405" BoxY="-505" BoxWidth="6300" BoxHeight="2970">
+        <Pill X="1630" Y="700"/>
+        <TriggerJump X="3463" Y="655"/>
+        <Constantine_ZoomNormal X="3850" Y="1745"/>
+        <Respawn_2.5sec X="1535" Y="845"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3825" Y="2175" Width="2070" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Comment X="1665" Y="-1000" Width="275" Height="220" Text="СДЕЛАНО&#xD;Немного видно верхнюю часть здания" FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="-235" Y="245" Width="405" Height="120" Text="CДЕЛАНО&#xD;Нестыковка image Long_corner" FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="4030" Y="-655" Width="405" Height="350" Text="СДЕЛАНО&#xD;Такие места стоит сделать менее &quot;грубыми&quot; относительно перехода от corner к v_black" FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof55-2>
+      <Roof55-3 X="12800" Y="1550" DeltaX="1820" DeltaY="785" Override="0" BoxX="-215" BoxY="-2090" BoxWidth="5815" BoxHeight="4470">
+        <Pill X="-135" Y="-135"/>
+        <TriggerZoomNormal X="194" Y="-1955"/>
+        <TriggerZoomMax X="2042" Y="-1959"/>
+        <TriggerZoomNormal X="2849" Y="-1790"/>
+        <TriggerJump X="5485" Y="-195"/>
+        <Pill X="5339" Y="-725"/>
+        <TriggerRocketVault X="499" Y="-200"/>
+        <Respawn X="10" Y="5"/>
+        <TriggerZoom80 X="3405" Y="-2090"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="409" Y="-115" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="2550" Y="-495" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="1639" Y="-105" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Comment X="-165" Y="-835" Width="320" Height="215" Text="СДЕЛАНО&#xD;Расположение платформы не кратно 5" FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="2895" Y="-645" Width="570" Height="315" Text="СДЕЛАНО&#xD;Тут несколько сходов без прыжка подряд, иногда проявляется дерганье анимации, надо немного переработать препятствия" FontSize="40" Colour="13395456" Transparency="1"/>
+            <Comment X="4265" Y="-440" Width="570" Height="315" Text="СДЕЛАНО&#xD;Перед вышкой стоит сделать зум80 чтобы предупредить игрока о бонусе" FontSize="40" Colour="13395456" Transparency="1"/>
+            <Comment X="5666" Y="-700" Width="245" Height="265" Text="СДЕЛАНО&#xD;Увеличить время данного респауна" FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="2900" Y="-300" Width="609" Height="310" Text="Тут увеличил немного платформу, что бы после кондиционера небыло дерганного схождения, а также передвинул немного v_dovecote_1." FontSize="40" Colour="16711680" Transparency="1"/>
+            <Comment X="4900" Y="-950" Width="450" Height="200" Text="Передвинул немного назад этот бонус, чтобы игрок успевал его заметить." FontSize="40" Colour="16711680" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof55-3>
+      <Roof55-4 X="18620" Y="1100" DeltaX="220" DeltaY="-450" Override="0" BoxX="-649" BoxY="-2360" BoxWidth="9776" BoxHeight="4104">
+        <TriggerLossPanic X="-649" Y="899"/>
+        <TriggerZoomMin X="396" Y="-2180"/>
+        <TriggerZoomNormal X="2486" Y="-2090"/>
+        <TriggerZoomMin X="3553" Y="-2360"/>
+        <TriggerJump X="6876" Y="104"/>
+        <Constantine_ZoomNormal X="6977" Y="1264"/>
+        <Respawn_3sec X="31" Y="10"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="306" Y="-86" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="1516" Y="-86" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="2191" Y="-71" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="6406" Y="218" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="5401" Y="216" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="6837" Y="1644" Width="2290" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Item X="5881" Y="220" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Comment X="4536" Y="-261" Width="670" Height="405" Text="СДЕЛАНО&#xD;Разгон надо удлинить в полтора-два раза, камеру отдалять немного раньше, чтобы игрок не пытался залезть на вышку" FontSize="40" Colour="13395507" Transparency="1"/>
+            <Comment X="1386" Y="-280" Width="530" Height="360" Text="СДЕЛАНО&#xD;Надо пересмотреть расстояние между ямами, чтобы игрок реже спотыкался при прыжках через них, разнообразить черную графику дна ямы" FontSize="40" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof55-4>
+      <Roof55-5 X="27585" Y="2155" DeltaX="1990" DeltaY="755" Override="0" BoxX="-20" BoxY="-1914" BoxWidth="8615" BoxHeight="3863">
+        <TriggerZoomMax X="714" Y="-1914"/>
+        <TriggerSpinningVaultTrick0High X="743" Y="-200"/>
+        <TriggerZoomNormal X="1928" Y="-1895"/>
+        <Pill X="2591" Y="-232"/>
+        <Pill X="4414" Y="305"/>
+        <TriggerZoomMax X="5682" Y="-1551"/>
+        <TriggerRailFlipVault X="5830" Y="-74"/>
+        <TriggerZoomNormal X="7391" Y="-1650"/>
+        <Respawn_2.5sec X="434" Y="5"/>
+        <Respawn_2.5sec X="5569" Y="125"/>
+        <TriggerLossPanic X="7595" Y="687"/>
+        <TriggerJump X="7851" Y="-70"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="2906" Y="-10" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="5524" Y="45" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="5785" Y="44" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Comment X="2960" Y="264" Width="290" Height="200" Text="СДЕЛАНО&#xD;данный v_black нужно сделать статичным" FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="2600" Y="644" Width="290" Height="200" Text="СДЕЛАНО&#xD;данный v_black нужно сделать статичным" FontSize="40" Colour="2522880" Transparency="1"/>
+            <Comment X="2380" Y="-386" Width="400" Height="740" Text="СДЕЛАНО&#xD;Два схода с платформы без прыжка подряд выглядят не очень хорошо, лучше немного переработать это место (например поднять платформу со спусками на один уровень с вышкой, чтобы с вышки надо было прыгать на нее через яму)" FontSize="40" Colour="13395507" Transparency="1"/>
+            <Comment X="2571" Y="-615" Width="700" Height="600" Text="Тут переместил бонус выше, а также передвинул монету. Сделал больше спуск вниз." FontSize="55" Colour="16711680" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof55-5>
+      <FinalRoof_DownTown_04 X="35975" Y="2217" DeltaX="440" DeltaY="-65" BoxX="0" BoxY="-299" BoxWidth="3500" BoxHeight="2229">
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="785" Y="-83" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="570" Y="-83" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="960" Y="-83" Score="10" Radius="80" Type="1" GroupId="5"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_DownTown_04>
+    </Layer>
+    
+    <Layer Name="Forward_Layer" Factor="2" Type="2">
+    </Layer>
+    
+  </Layers>
+</Root>

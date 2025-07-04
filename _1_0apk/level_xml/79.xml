@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root> 
+	
+	<Sets>
+		<City FileName="buildings_test.xml"/>					
+	</Sets>
+	
+	<Music Name="pk" Volume="0.3"/>
+	<Models>
+		 <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/> 		
+	</Models>
+	
+	
+	<Layers>		 		
+		<Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+			<Background DeltaX="0" DeltaY="-500"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+		</Layer> 
+		
+		<Layer Name="Banner_Layer" Factor="0.5" Type="2">
+		
+      <Building1 DeltaX="200" DeltaY="-100" />
+			<Billboard DeltaX="200" DeltaY="150" />
+			<Building2 DeltaX="500" DeltaY="-200" />
+			<LampPost DeltaX="300" DeltaY="500" />
+			<Building3 DeltaX="300" DeltaY="0" />
+			<Billboard DeltaX="400" DeltaY="-500" />
+			<Building1 DeltaX="200" DeltaY="200" />
+			<Building3 DeltaX="300" DeltaY="0" />
+			
+		</Layer> 
+		
+		<Layer Name="Game_Layer" Factor="1" Type="3">
+
+      <Slope_Roof DeltaX="100" DeltaY="0"/>
+
+		</Layer>
+		
+		<Layer Name="Forward_Layer" Factor="2" Type="2">
+		</Layer>		
+	</Layers>
+</Root>

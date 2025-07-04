@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+
+
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building3 X="3245" Y="-395" DeltaX="3245" DeltaY="-395"/>
+      <Building1 X="6905" Y="-475" DeltaX="2577" DeltaY="-80"/>
+      <Building2 X="15310" Y="360" DeltaX="6616" DeltaY="835">
+        <Building2Image X="-4010" Y="-745"/>
+        <BillboardImage X="-2785" Y="175"/>
+        <Building2Image X="-1750" Y="-105"/>
+      </Building2>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof71-1 X="405" Y="-625" DeltaX="405" DeltaY="-625" BoxX="-485" BoxY="-2310" BoxWidth="7693" BoxHeight="3500">
+        <Spawn X="-435" Y="-405"/>
+        <TriggerCameraStart X="300" Y="-395"/>
+        <Camera X="450" Y="-100"/>
+        <Pill X="1225" Y="-315"/>
+        <TriggerZoomMin X="4405" Y="-2310"/>
+        <TriggerLoss X="6175" Y="-160"/>
+        <TriggerJump X="6387" Y="-799"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="6120" Y="-160" Width="1088" Height="100" Name="maxzoom" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof71-1>
+      <Roof71-2 X="8764" Y="-780" DeltaX="1935" DeltaY="-155" BoxX="-1064" BoxY="-455" BoxWidth="4993" BoxHeight="3995">
+        <TriggerLoss X="-1003" Y="1015"/>
+        <TriggerDashVault X="541" Y="300"/>
+        <Pill X="2142" Y="220"/>
+        <TriggerZoomMin X="2881" Y="-455"/>
+        <TriggerZoomMax X="456" Y="40"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="-1064" Y="1020" Width="1159" Height="100" Name="maxzoom" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+            <Trigger X="2671" Y="1035" Width="1258" Height="100" Name="maxzoom" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof71-2>
+      <Roof71-3 X="12364" Y="-280" DeltaX="600" DeltaY="500" BoxX="-660" BoxY="-900" BoxWidth="4180" BoxHeight="2900">
+        <TriggerLoss X="2517" Y="895"/>
+        <TriggerSlide X="2616" Y="-159"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="2636" Y="885" Width="884" Height="100" Name="maxzoom" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof71-3>
+      <Roof71-4 X="16614" Y="75" DeltaX="1245" DeltaY="355" BoxX="-1209" BoxY="-500" BoxWidth="5249" BoxHeight="3545">
+        <TriggerLoss X="-949" Y="1106"/>
+        <Pill X="2061" Y="755"/>
+        <TriggerLoss X="2922" Y="1512"/>
+        <TriggerZoomMax X="481" Y="-475"/>
+        <TriggerZoomNormal X="2621" Y="-455"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="-1209" Y="1060" Width="1270" Height="100" Name="maxzoom" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+            <Trigger X="2571" Y="1530" Width="1469" Height="100" Name="maxzoom" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof71-4>
+      <Roof71-5 X="20194" Y="1075" DeltaX="580" DeltaY="1000" BoxX="-90" BoxY="-1450" BoxWidth="4725" BoxHeight="5005">
+        <TriggerZoomMin X="1406" Y="55"/>
+        <TriggerJump X="2521" Y="301"/>
+        <TriggerLoss X="2878" Y="1001"/>
+        <TriggerLoss X="3631" Y="1001"/>
+        <TriggerZoomMax X="401" Y="-1300"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="2866" Y="1010" Width="1769" Height="100" Name="maxzoom" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof71-5>
+      <Roof71-6 X="24719" Y="2050" DeltaX="891" DeltaY="975" BoxX="0" BoxY="-2166" BoxWidth="8227" BoxHeight="4565">
+        <Pill X="1760" Y="115"/>
+        <TriggerZoomMin X="6389" Y="-2166"/>
+        <TriggerLoss X="7227" Y="659"/>
+        <TriggerJump X="7317" Y="14"/>
+        <TriggerZoomNormal X="7421" Y="-2042"/>
+        <TriggerZoomMax X="192" Y="-1511"/>
+        <TriggerZoomNormal X="1732" Y="-1211"/>
+        <TriggerZoomMax X="4167" Y="-1101"/>
+        <TriggerZoomNormal X="5087" Y="-1161"/>
+        <Respawn X="29" Y="10"/>
+        <TriggerAirSpin X="600" Y="-199"/>
+      </Roof71-6>
+      <FinalRoof X="32556" Y="2230" DeltaX="411" DeltaY="180" BoxX="0" BoxY="-299" BoxWidth="3500" BoxHeight="2229"/>
+    </Layer>
+    
+    <Layer Name="Forward_Layer" Factor="2" Type="2">
+    </Layer>
+    
+  </Layers>
+</Root>

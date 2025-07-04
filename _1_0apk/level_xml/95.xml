@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" AllowedSpawns="DistanceSpawn" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="HunterSpawn" AI="1" Time="4.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player|Helper" Arrests="Player"/>
+    <Model Name="Helper" Type="0" Color="0" BirthSpawn="SpawnHelper" AI="2" Time="0" Respawns="Player" Skins="helper|shirt|cap" AllowedSpawns="RespawnCS02HelpbotPart2" LifeTime="5" GeneratesBuildings="COM" />
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+      <Background X="0" Y="-425" DeltaX="0" DeltaY="-425"/>
+      <Background X="2121" Y="-135" DeltaX="0" DeltaY="290"/>
+      <Background X="4242" Y="-135" DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="55" Y="-865" DeltaX="55" DeltaY="-865"/>
+      <Building2 X="2869" Y="-915" DeltaX="1025" DeltaY="-50"/>
+      <Building3 X="4689" Y="-415" DeltaX="750" DeltaY="500"/>
+      <Building1 X="6697" Y="-415" DeltaX="925" DeltaY="0"/>
+      <Building3 X="8786" Y="-415" DeltaX="300" DeltaY="0"/>
+      <Building1 X="10475" Y="535" DeltaX="606" DeltaY="950"/>
+      <Building2 X="13289" Y="485" DeltaX="1025" DeltaY="-50"/>
+      <Building3 X="15109" Y="985" DeltaX="750" DeltaY="500"/>
+      <Building1 X="17120" Y="1740" DeltaX="928" DeltaY="755"/>
+      <Building3 X="19209" Y="1740" DeltaX="300" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <CS01a_building X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-680" BoxY="-770" BoxWidth="2238" BoxHeight="1625">
+        <TriggerCameraStart X="360" Y="-397"/>
+        <Camera X="250" Y="-215"/>
+        <TriggerCS01aDowntownCoil X="-335" Y="330"/>
+        <TriggerJump X="1455" Y="-200"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="-78" Y="780" Name="DefaultSpawn" Animation="CS01aDownTownMain|1"/>
+            <Spawn X="-78" Y="640" Name="SpawnHelper" Animation="CS01aDownTownSecond|1"/>
+            <Spawn X="-630" Y="-720" Name="HunterSpawn" Animation="JumpOff|18"/>
+            <Trigger X="1458" Y="-200" Width="100" Height="200" Name="TriggerJump" Type="1" AI="2" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+            <Comment X="490" Y="-585" Width="395" Height="205" Text="Красная рамка из-за скейла" FontSize="41"/>
+          </Elements>
+        </ObjectNULL>
+      </CS01a_building>
+      <Roof95-1 X="1885" Y="-5" DeltaX="335" DeltaY="-5" BoxX="0" BoxY="-2180" BoxWidth="4769" BoxHeight="3500">
+        <TriggerLossPanic X="3705" Y="605"/>
+        <TriggerZoom80 X="1050" Y="-2180"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="3560" Y="565" Width="1209" Height="119" Name="" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+            <Item X="1850" Y="-65" Score="100" Radius="80" Type="0"/>
+            <Comment X="1765" Y="-645" Width="395" Height="205" Text="Красная рамка из-за скейла" FontSize="41"/>
+            <Comment X="275" Y="-390" Width="225" Height="185" Text="Добавил Catch" FontSize="41"/>
+            <Comment X="1860" Y="-135" Width="865" Height="555" Text="Увеличил условный триггер прыжка, чтобы бот следовал за игроком" FontSize="100" Colour="65535" Transparency="0"/>
+            <Comment X="3700" Y="145" Width="1315" Height="775" Text="Передвинул все здания вправо, чтобы после подката и мгновенного попадания в здание игрок спотыкался и не мог обогнать помощника" FontSize="100" Colour="65535" Transparency="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof95-1>
+      <Roof95-2 X="6270" Y="-410" DeltaX="385" DeltaY="-405" BoxX="-100" BoxY="-3740" BoxWidth="4135" BoxHeight="6390">
+        <TriggerZoomNormal X="166" Y="-1440"/>
+        <TriggerZoomMin X="2246" Y="-3740"/>
+        <Respawn_2sec X="26" Y="660"/>
+        <TriggerMonkeyVault X="2766" Y="450"/>
+        <DistanceSpawn_3sec X="2760" Y="655"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="3676" Y="445" Width="100" Height="200" Name="TriggerJump" Type="1" AI="2" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+            <Item X="1920" Y="575" Score="100" Radius="80" Type="0"/>
+            <Item X="2310" Y="490" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3175" Y="495" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3725" Y="580" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Comment X="795" Y="380" Width="395" Height="205" Text="Лишняя картинка V_black на полу - убрал и растянул нижний v_black" FontSize="41"/>
+            <Comment X="1265" Y="675" Width="1840" Height="375" Text="Передвинул 3 джампа, чтобы улучшить помощника" FontSize="100" Colour="65535" Transparency="0"/>
+            <Comment X="3515" Y="610" Width="675" Height="645" Text="Передвинул джамп влево чтобы улучшить помощника" FontSize="100" Colour="65535" Transparency="1"/>
+            <Comment X="3695" Y="-40" Width="1120" Height="645" Text="Передвинул distance_spawn, чтобы игра не заканчивалась, когда игрок видит помощника" FontSize="100" Colour="65535" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof95-2>
+      <Roof95-3 X="10270" Y="-210" DeltaX="0" DeltaY="-450" BoxX="-100" BoxY="-2165" BoxWidth="6006" BoxHeight="4730">
+        <TriggerLossPanic X="4906" Y="1115"/>
+        <TriggerZoomMax X="1761" Y="-2165"/>
+        <TriggerLoss X="761" Y="1210"/>
+        <ReversedRespawn X="1746" Y="5"/>
+        <Respawn_2sec X="1761" Y="540"/>
+        <DistanceSpawn_3sec X="4500" Y="530"/>
+        <TriggerObstacleFrontflipTrick0High X="3948" Y="335"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="5031" Y="335" Width="100" Height="200" Name="TriggerJump" Type="1" AI="2" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+            <Trigger X="4731" Y="1080" Width="1078" Height="121" Name="" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+            <Trigger X="5025" Y="335" Width="100" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+            <Item X="3360" Y="475" Score="100" Radius="80" Type="0"/>
+            <Item X="4875" Y="475" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="2580" Y="300" Width="655" Height="175" Text="Были видны черные полосы на стыке двух vent_ceiling_tile&#xD;" FontSize="41" Colour="3381504" Transparency="1"/>
+            <Comment X="3440" Y="490" Width="826" Height="520" Text="Передвинул джамп вправо, чтобы улучшить помощника" FontSize="100" Colour="65535" Transparency="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof95-3>
+      <Roof95-4 X="15925" Y="325" DeltaX="530" DeltaY="0" BoxX="-132" BoxY="-2665" BoxWidth="5762" BoxHeight="5037">
+        <TriggerLossPanic X="4536" Y="2250"/>
+        <TriggerZoomNormal X="46" Y="-1695"/>
+        <TriggerZoomMin X="3896" Y="-2665"/>
+        <TriggerJumpObstacle X="3266" Y="1420"/>
+        <Respawn_2sec X="4355" Y="1625"/>
+        <DistanceSpawn_3sec X="2845" Y="1630"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="2905" Y="1545" Score="100" Radius="80" Type="0"/>
+            <Trigger X="4551" Y="2250" Width="1079" Height="122" Name="" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+            <Trigger X="4410" Y="1420" Width="100" Height="200" Name="TriggerJump" Type="1" AI="2" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+            <Trigger X="4451" Y="1420" Width="100" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+            <Item X="3950" Y="1550" Score="100" Radius="80" Type="0"/>
+            <Item X="310" Y="-55" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3680" Y="1465" Score="10" Radius="80" Type="1" GroupId="2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof95-4>
+      <Crane X="20975" Y="2221" DeltaX="450" DeltaY="276" BoxX="-420" BoxY="-2150" BoxWidth="4440" BoxHeight="3500">
+        <TriggerZoomMin X="821" Y="-2150"/>
+        <DistanceSpawn_3sec X="3860" Y="25"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-420" Y="-1115" Width="3010" Height="100" Node="COM" Priority="0" Animation="" Start="FlyPanic|1"/>
+            <Trigger X="625" Y="-200" Width="100" Height="200" Name="TriggerJump" Type="1" AI="2" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+            <Trigger Name="TriggerSpeedUp" Type="1" AI="2" Node="COM" Key1="2" PressType="0" Priority="1" X="1420" Y="-200" Width="100" Height="200" Follow="0"/>
+            <Trigger Name="TriggerSlide" Type="1" AI="1" Node="COM" Key1="3" PressType="0" Priority="1" X="3100" Y="-200" Width="920" Height="200" Follow="1" SubType="1"/>
+            <Trigger Name="TriggerSlide" Type="1" AI="1" Node="COM" Key1="3" PressType="0" Priority="1" X="3665" Y="-200" Width="100" Height="200" Follow="0"/>
+            <Trigger X="3920" Y="-200" Width="100" Height="200" Name="TriggerJump" Type="1" AI="2" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+            <Item X="965" Y="-270" Score="100" Radius="80" Type="0"/>
+            <Item X="2865" Y="-70" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="2145" Y="-70" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="375" Y="-75" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Comment X="3510" Y="24" Width="885" Height="570" Text="Передвинул джамп вправо, чтобы улучшить помощника" FontSize="100" Colour="65535" Transparency="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Crane>
+      <Roof95-5 X="26210" Y="3671" DeltaX="1235" DeltaY="1450" BoxX="-1040" BoxY="-1080" BoxWidth="10836" BoxHeight="3700">
+        <TriggerLossPanic X="-990" Y="340"/>
+        <Respawn_2sec X="-325" Y="-530"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="-1040" Y="235" Width="1080" Height="123" Name="" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+            <Item X="3535" Y="60" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="-570" Y="-1000" Score="100" Radius="80" Type="0"/>
+            <Item X="-270" Y="-625" Score="100" Radius="80" Type="0"/>
+            <Item X="-60" Y="-250" Score="100" Radius="80" Type="0"/>
+            <Item X="3945" Y="60" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Trigger X="2015" Y="-670" Width="150" Height="500" Name="DistanceSpawn" Type="11" Node="COM" Priority="0" Spawn="DistanceSpawn" Time="5" SubType="1"/>
+            <Item X="3725" Y="60" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Trigger X="6556" Y="470" Width="100" Height="200" Name="TriggerJump" Type="1" AI="2" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="5" X="6561" Y="270" Width="3235" Height="100" Node="COM" Priority="0" Start="FlyPanic|1"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="5" X="6565" Y="2360" Width="2275" Height="100" Node="COM" Priority="0" Start="FlyPanic|1"/>
+            <Comment X="675" Y="-680" Width="395" Height="205" Text="Красная рамка из-за скейла" FontSize="41"/>
+            <Comment X="2305" Y="-275" Width="380" Height="295" Text="Низ колонны был из V_Black - его убрал и добавил две картинки щербатых стен" FontSize="41"/>
+            <Comment X="-555" Y="1245" Width="505" Height="390" Text="Был виден переход от щербатых стен к ровным" FontSize="41"/>
+            <Trigger X="6585" Y="2460" Width="2255" Height="101" Name="" Type="2" Node="COM" Priority="0" Key1="1" PressType="0" Follow="0" Value="1.1" SubType="0"/>
+            <Comment X="6255" Y="609" Width="1325" Height="435" Text="Передвинул Джамп ближе к краю, чтобы улучшить помощника" FontSize="100" Colour="65535" Transparency="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof95-5>
+      <CS02production X="35031" Y="5671" DeltaX="2236" DeltaY="1330" BoxX="0" BoxY="-2310" BoxWidth="4814" BoxHeight="5510">
+        <TriggerCameraStart X="1404" Y="-403"/>
+        <Camera X="1506" Y="-205"/>
+        <CS02HelpbotPart1 X="2814" Y="-200"/>
+        <TriggerCS02PlayerPart1WithTruck X="2485" Y="-200"/>
+        <TriggerCS02DowntownFlashMemory X="3485" Y="-200"/>
+        <TriggerZoomMax X="1755" Y="-1420"/>
+        <TriggerZoomMinForCS02 X="2985" Y="-1415"/>
+        <TriggerCameraVelocity500CS02 X="1185" Y="-300"/>
+        <TriggerCS02Hunter X="2305" Y="-205"/>
+        <Respawn_5.2sec X="2020" Y="20"/>
+        <TriggerZoomNormal X="81" Y="-2310"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="1331" Y="-120" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="1936" Y="-120" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="766" Y="-120" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="2491" Y="-125" Score="10" Radius="80" Type="1" GroupId="5"/>
+          </Elements>
+        </ObjectNULL>
+      </CS02production>
+      <CS02Building3production X="39020" Y="4935" DeltaX="-1" DeltaY="11" BoxX="0" BoxY="-1560" BoxWidth="12952" BoxHeight="4014">
+        <TriggerVictoryCS02 X="8680" Y="-301"/>
+      </CS02Building3production>
+    </Layer>
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>

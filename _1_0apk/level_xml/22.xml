@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="-240" Y="-585" DeltaX="-240" DeltaY="-585"/>
+      <Building2 X="2639" Y="-290" DeltaX="1090" DeltaY="295"/>
+      <LampPost X="4010" Y="535" DeltaX="301" DeltaY="825"/>
+      <Building3 X="4465" Y="285" DeltaX="305" DeltaY="-250"/>
+      <Billboard X="5885" Y="608" DeltaX="337" DeltaY="323"/>
+      <Building1 X="6525" Y="340" DeltaX="315" DeltaY="-268"/>
+      <Building3 X="8586" Y="175" DeltaX="272" DeltaY="-165">
+        <Building2Image X="1529" Y="8"/>
+        <BillboardImage X="3512" Y="397"/>
+        <Building2Image X="4309" Y="-62"/>
+        <Building2Image X="8479" Y="395"/>
+      </Building3>
+    </Layer>
+    
+
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof22-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-630" BoxY="-2380" BoxWidth="6901" BoxHeight="3500">
+        <Pill X="2645" Y="-985"/>
+        <TriggerSlide X="4555" Y="-905"/>
+        <TriggerZoomMin X="2840" Y="-2380"/>
+        <Pill X="4661" Y="-860"/>
+        <Spawn X="-580" Y="-520"/>
+        <TriggerCameraStart X="255" Y="-396"/>
+        <Camera X="413" Y="-114"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="4775" Y="890" Width="1496" Height="97" Name="TriggerZoomMax" Type="2" Node="COM" Priority="0" Value="1.8" SubType="0"/>
+            <Comment X="-428" Y="-359" Width="746" Height="554" Text="Перенес начало трассы в начало координат" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="2170" Y="-1290" Width="746" Height="554" Text="Опустил бонус ниже, чтобы его можно было взять&#xD;" FontSize="100" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof22-1>
+      <Roof22-2 X="6240" Y="775" DeltaX="1305" DeltaY="1480" BoxX="-995" BoxY="-2063" BoxWidth="6726" BoxHeight="4163">
+        <TriggerJump X="4785" Y="560"/>
+        <Respawn X="-245" Y="-65"/>
+        <TriggerZoomMax X="-8" Y="-2063"/>
+        <TriggerZoomNormal X="1130" Y="-1780"/>
+        <Pill X="2360" Y="670"/>
+        <TriggerZoomMax X="2780" Y="-1400"/>
+        <TriggerLossPanic X="-995" Y="120"/>
+        <TriggerThiefVault X="2830" Y="550"/>
+        <Respawn_3sec X="4360" Y="750"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="4525" Y="1680" Width="1000" Height="100"/>
+            <Trigger X="4235" Y="1675" Width="1496" Height="97" Name="TriggerZoomMax" Type="2" Node="COM" Priority="0" Value="1.8" SubType="0"/>
+            <Comment X="-215" Y="-220" Width="995" Height="980" Text="Сдвинул все здания влево, чтобы игрок после подката, не спотыкался при призелмлении (в некоторых ситуациях)" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="3695" Y="425" Width="920" Height="380" Text="Добавил голубей" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="4300" Y="595" Width="505" Height="312" Text="Добавил Respawn" FontSize="100" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof22-2>
+      <Roof22-3 X="11559" Y="2294" DeltaX="310" DeltaY="769" BoxX="-12" BoxY="-2819" BoxWidth="6041" BoxHeight="3500">
+        <Pill X="68" Y="-259"/>
+        <TriggerZoomNormal X="2576" Y="-2819"/>
+        <Pill X="2243" Y="-345"/>
+        <TriggerJump X="4873" Y="-885"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="4528" Y="-165" Width="1000" Height="100"/>
+            <Trigger X="4533" Y="-85" Width="1496" Height="97" Name="TriggerZoomMax" Type="2" Node="COM" Priority="0" Value="1.8" SubType="0"/>
+            <Comment X="2746" Y="-528" Width="1880" Height="285" Text="Изменил платформы с Jump&amp;Roll, чтобы убрать кувырок по воздуху" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="2986" Y="-49" Width="680" Height="565" Text="Убрал лишнее пересечение платформ" FontSize="100" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof22-3>
+      <Roof22-4 X="17037" Y="1608" DeltaX="253" DeltaY="4" BoxX="0" BoxY="-2053" BoxWidth="3431" BoxHeight="3500">
+        <Respawn X="880" Y="102"/>
+        <TriggerZoomMax X="968" Y="-2053"/>
+        <TriggerAirSpin X="986" Y="-100"/>
+        <TriggerJump X="2345" Y="112"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="2185" Y="887" Width="1000" Height="100"/>
+            <Trigger X="1935" Y="882" Width="1496" Height="97" Name="TriggerZoomMax" Type="2" Node="COM" Priority="0" Value="1.8" SubType="0"/>
+            <Comment X="652" Y="-157" Width="955" Height="635" Text="Переместил трюк, чтобы убрать выполнение трюка по воздуху" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="337" Y="503" Width="955" Height="635" Text="Увеличил платформу, чтобы не было спотыкания" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="1463" Y="707" Width="680" Height="565" Text="Убрал лишнее пересечение платформ" FontSize="100" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof22-4>
+      <Roof22-5 X="19801" Y="1895" DeltaX="199" DeltaY="-3" BoxX="-235" BoxY="-2255" BoxWidth="6266" BoxHeight="3765">
+        <TriggerZoomMin X="29" Y="-1990"/>
+        <TriggerSideFlip X="3922" Y="-770"/>
+        <TriggerZoomMax X="3824" Y="-2255"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="4835" Y="-60" Width="1000" Height="100"/>
+            <Trigger X="4535" Y="-65" Width="1496" Height="97" Name="TriggerZoomMax" Type="2" Node="COM" Priority="0" Value="1.8" SubType="0"/>
+            <Comment X="2220" Y="-285" Width="805" Height="400" Text="Убрал лишние картинки" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="3934" Y="-660" Width="915" Height="185" Text="Добавил голубей" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="3924" Y="-890" Width="965" Height="150" Text="Переместил трюк" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="434" Y="5" Width="1695" Height="400" Text="Переставил кондиционеры" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="3639" Y="-260" Width="680" Height="565" Text="Убрал лишнее пересечение платформ" FontSize="100" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof22-5>
+      <Roof22-6 X="25261" Y="1328" DeltaX="360" DeltaY="3" BoxX="-5" BoxY="-1791" BoxWidth="5011" BoxHeight="3839">
+        <TriggerZoomNormal X="1849" Y="-1791"/>
+        <TriggerZoomMin X="74" Y="-1452"/>
+        <Respawn_3sec X="94" Y="7"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="4006" Y="1671" Width="1000" Height="100"/>
+            <Trigger X="3471" Y="1676" Width="1496" Height="97" Name="TriggerZoomMax" Type="2" Node="COM" Priority="0" Value="1.8" SubType="0"/>
+            <Comment X="-111" Y="-188" Width="965" Height="150" Text="Добавил Respawn" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="3004" Y="292" Width="680" Height="565" Text="Убрал лишнее пересечение платформ" FontSize="100" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof22-6>
+      <Roof22-7 X="29991" Y="2163" DeltaX="380" DeltaY="330" BoxX="-185" BoxY="-2536" BoxWidth="6740" BoxHeight="3542">
+        <Pill X="-105" Y="65"/>
+        <TriggerZoomMin X="329" Y="-2536"/>
+        <TriggerJump X="4038" Y="-187"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="3499" Y="883" Width="3056" Height="101" Name="loss" Type="5" Node="COM" Priority="0" SubType="3" PX="0" PY="0" Animation="" Time="2"/>
+            <Trigger X="3779" Y="905" Width="2734" Height="101" Name="max" Type="2" Node="COM" Priority="0" SubType="0" PX="0" PY="0" Animation="JumpOff" Time="0" Value="1.8"/>
+            <Comment X="70" Y="599" Width="880" Height="370" Text="Добавил графику, добавил бумагу&#xD;" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="1735" Y="744" Width="1035" Height="520" Text="сделал V_black динамическим" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="4124" Y="778" Width="1300" Height="640" Text="Опустил Loss ниже" FontSize="100" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof22-7>
+      <FinalRoof X="35107" Y="2632" DeltaX="731" DeltaY="469" BoxX="-487" BoxY="-2074" BoxWidth="3987" BoxHeight="4004">
+        <TriggerZoomNormal X="120" Y="-2074"/>
+        <Pill X="-407" Y="-85"/>
+      </FinalRoof>
+    </Layer>
+    
+  </Layers>
+</Root>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="Windows-1251"?>
+<Root>
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter|RevolutionGirl" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="RevolutionGirl" Type="0" Color="0" BirthSpawn="RevolutionGirlSpawn" AllowedSpawns="Respawn" AI="2" Time="3.5"  Skins="revolution_girl"  Icon="1"/>
+  </Models>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.1" Type="1" DeltaX="-500" DeltaY="0">
+      <ConstructionYardBackground X="-600" Y="-630" DeltaX="-600" DeltaY="-630"/>
+      <ConstructionYardBackground X="1517" Y="-630" DeltaX="-3" DeltaY="0"/>
+    </Layer>
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <CS_Yard_cs02_build1 X="-5" Y="175" DeltaX="-5" DeltaY="175" BoxX="-2915" BoxY="-1492" BoxWidth="3715" BoxHeight="3817"/>
+      <CS_Yard_cs02_build2 X="625" Y="-1300" DeltaX="630" DeltaY="-1475" BoxX="-350" BoxY="-845" BoxWidth="5455" BoxHeight="2385">
+        <Camera X="-70" Y="1375"/>
+        <TriggerCameraStart X="-350" Y="1140"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="115" Y="1340" Name="DefaultSpawn" Animation="JumpOff|18|1"/>
+          </Elements>
+        </ObjectNULL>
+      </CS_Yard_cs02_build2>
+    </Layer>
+    <Layer Name="Forward_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0"></Layer>
+    <Layer Name="Forward_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0"></Layer>
+  </Layers>
+</Root>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="40"/>
+  <Variable Name="Money">40</Variable>
+  
+  <Layers>        
+    <Layer Name="BG_Layer" Factor="0.1" Type="1" DeltaX="-500" DeltaY="0">
+      <ConstructionYardBackground X="5" Y="-600" DeltaX="5" DeltaY="-600"/>
+      <ConstructionYardBackground X="2125" Y="-600" DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <ConstructionYardBuilding2 X="0" Y="-800" DeltaX="0" DeltaY="-800"/>
+      <ConstructionYardBuilding2 X="1400" Y="-780" DeltaX="400" DeltaY="20"/>
+      <ConstructionYardBuilding2 X="2930" Y="-385" DeltaX="530" DeltaY="395"/>
+      <ConstructionYardBuilding1 X="5035" Y="-390" DeltaX="1105" DeltaY="-5"/>
+      <ConstructionYardBuilding2 X="6825" Y="870" DeltaX="627" DeltaY="1260"/>
+      <ConstructionYardBuilding2 X="8225" Y="505" DeltaX="400" DeltaY="-365"/>
+      <ConstructionYardBuilding1 X="9425" Y="135" DeltaX="200" DeltaY="-370"/>
+      <ConstructionYardBuilding1 X="11030" Y="-270" DeltaX="442" DeltaY="-405"/>
+    </Layer>
+	
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof121-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-500" BoxWidth="3077" BoxHeight="1000">
+        <TriggerJump X="2217" Y="-200"/>
+        <TriggerLoss X="2077" Y="350"/>
+        <TriggerCameraStart X="1162" Y="-400"/>
+        <Camera X="1240" Y="-105"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="77" Y="-80" Name="DefaultSpawn" Animation="JumpOff|18"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof121-1>
+      <Roof121-2 X="2625" Y="-190" DeltaX="320" DeltaY="-190" BoxX="-200" BoxY="-5149" BoxWidth="5956" BoxHeight="6540">
+        <TriggerZoomMax X="-7" Y="-2109"/>
+        <TriggerLoss X="2906" Y="-454"/>
+        <TriggerZoom80 X="761" Y="-5149"/>
+        <Respawn_2.5sec X="602" Y="-1691"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="161" Y="-119" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="91" Y="-239" Width="150" Height="240" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.5" SubType="0"/>
+            <Trigger Name="TriggerSlide" Type="1" AI="1" Node="COM" Key1="3" PressType="0" Priority="1" Factor="1" X="2064" Y="-1899" Width="840" Height="200" Follow="1" SubType="1"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="2896" Y="516" Width="2860" Height="100" Node="COM" Priority="0" SubType="0"/>
+            <Item X="1826" Y="-1779" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="2186" Y="-1779" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="1456" Y="-1779" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Trigger X="2049" Y="-1899" Width="870" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="1" SubType="1"/>
+            <Comment X="2079" Y="-2044" Width="305" Height="445" Text="Убрал тригер тормоза для бота, настроил условные триггеры прыжка и слайда." FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof121-2>
+      <Roof121-3 X="6495" Y="-995" DeltaX="960" DeltaY="895" BoxX="-417" BoxY="-1789" BoxWidth="4812" BoxHeight="4295">
+        <TriggerZoomMax X="2070" Y="-1789"/>
+        <Pill X="1921" Y="626"/>
+        <Respawn_3.3sec X="2111" Y="996"/>
+        <Pill X="676" Y="-84"/>
+        <TriggerZoom80 X="4030" Y="-994"/>
+        <TriggerTurnVault X="3606" Y="796"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="766" Y="1426" Width="1105" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof121-3>
+      <Roof121-6 X="10635" Y="895" DeltaX="0" DeltaY="980" BoxX="0" BoxY="-4175" BoxWidth="4700" BoxHeight="7550">
+        <TriggerLoss X="3165" Y="1020"/>
+        <Pill X="1230" Y="-490"/>
+        <Pill X="1750" Y="330"/>
+        <Respawn_2sec X="3736" Y="-420"/>
+        <Respawn_2sec X="3586" Y="810"/>
+        <TriggerZoom80 X="3948" Y="-3871"/>
+        <TriggerZoomMax X="1854" Y="-125"/>
+        <Respawn_2sec X="1895" Y="595"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="3104" Y="-1735" Width="100" Height="1585" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoomMin" Type="2" Value="0.7" X="1479" Y="-4175" Width="100" Height="3500" Node="COM" Priority="0" SubType="0"/>
+            <Item X="2261" Y="504" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3011" Y="414" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="2631" Y="504" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="2780" Y="239" Width="515" Height="625" Text="Настроил условный триггер прыжка для бота." FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof121-6>
+      <Roof121-5 X="14055" Y="1705" DeltaX="-795" DeltaY="1230" BoxX="0" BoxY="-4239" BoxWidth="5011" BoxHeight="7020">
+        <Pill X="1341" Y="-1440"/>
+        <TriggerLoss X="3860" Y="774"/>
+        <TriggerZoom80 X="1132" Y="-719"/>
+        <TriggerJumpWheelTrick180High X="4016" Y="-1120"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerSlide" Type="1" AI="1" Node="COM" Key1="3" PressType="0" Priority="1" Factor="1" X="3320" Y="-200" Width="545" Height="200" Follow="1" SubType="1"/>
+            <Trigger X="3224" Y="-200" Width="645" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="1" SubType="1"/>
+            <Trigger Name="TriggerZoom80" Type="2" Value="0.85" X="4102" Y="-4239" Width="100" Height="3500" Node="COM" Priority="0" SubType="0"/>
+            <Item X="2526" Y="-90" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="2876" Y="-85" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="3236" Y="-90" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Comment X="3930" Y="-270" Width="305" Height="490" Text="Добавил триггер завершения прохода." FontSize="40" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof121-5>
+      <Roof121-4 X="18470" Y="2061" DeltaX="-110" DeltaY="1275" BoxX="0" BoxY="-2590" BoxWidth="6102" BoxHeight="5424">
+        <Respawn_2sec X="119" Y="-1"/>
+        <TriggerZoomMax X="256" Y="-666"/>
+        <TriggerZoomMin X="1824" Y="-2590"/>
+        <Pill X="1507" Y="-1165"/>
+        <Respawn_2sec X="674" Y="-1091"/>
+        <TriggerTripleSwing X="4394" Y="-811"/>
+        <TriggerJump X="5498" Y="-621"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="3710" Y="-696" Score="10" Radius="80" Type="1" GroupId="4"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof121-4>
+      <FinalRoof_4 X="24285" Y="1452" DeltaX="145" DeltaY="-185" BoxX="0" BoxY="-1590" BoxWidth="3345" BoxHeight="4030">
+        <Respawn_2sec X="28" Y="5"/>
+        <TriggerZoomMax X="233" Y="-1590"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="463" Y="-85" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="903" Y="-85" Score="10" Radius="80" Type="1" GroupId="4"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_4>
+    </Layer>
+  </Layers>
+</Root>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="30"/>
+  <Variable Name="Money">30</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="200" Y="-100" DeltaX="200" DeltaY="-100"/>
+      <Billboard X="2189" Y="50" DeltaX="200" DeltaY="150"/>
+      <Building2 X="3014" Y="-150" DeltaX="500" DeltaY="-200"/>
+      <LampPost X="4385" Y="1740" DeltaX="301" DeltaY="1890"/>
+      <Building3 X="4834" Y="350" DeltaX="299" DeltaY="-1390"/>
+      <Billboard X="6317" Y="150" DeltaX="400" DeltaY="-200"/>
+      <Building1 X="6842" Y="350" DeltaX="200" DeltaY="200"/>
+      <Building3 X="8931" Y="350" DeltaX="300" DeltaY="0"/>
+      <Building1 X="11445" Y="110" DeltaX="1431" DeltaY="-240"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof35-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-430" BoxY="-1430" BoxWidth="6151" BoxHeight="3500">
+        <Spawn X="-380" Y="-305"/>
+        <TriggerCameraStart X="335" Y="-395"/>
+        <Camera X="535" Y="-195"/>
+        <Pill X="2300" Y="-235"/>
+        <TriggerZoomMin X="5005" Y="-1430"/>
+        <TriggerJump X="5148" Y="-200"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="1600" Y="-760" Width="1425" Height="395" Text="СДЕЛАНО&#xD;Попробуй раздвинуть склоны, опустив бонус.&#xD;" FontSize="100" Colour="10027263" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof35-1>
+      <Roof35-2 X="5335" Y="320" DeltaX="0" DeltaY="320" BoxX="0" BoxY="-1500" BoxWidth="4288" BoxHeight="4020">
+        <TriggerZoom80 X="1018" Y="-1500"/>
+        <Pill X="2058" Y="505"/>
+        <TriggerJump X="3473" Y="1465"/>
+        <TriggerLossPanic X="3288" Y="2420"/>
+        <Respawn_2sec X="861" Y="240"/>
+      </Roof35-2>
+      <Roof35-3 X="9445" Y="2020" DeltaX="510" DeltaY="20" BoxX="-105" BoxY="-1501" BoxWidth="10530" BoxHeight="3500">
+        <TriggerZoomMax X="-105" Y="-1501"/>
+        <TriggerSpinningVaultTrick0High X="2626" Y="-201"/>
+        <Respawn_2.5sec X="50" Y="4"/>
+        <Respawn X="5364" Y="4"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="2320" Y="-181" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3315" Y="-181" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="4055" Y="-186" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Trigger Name="TriggerRunFast" Type="4" X="4935" Y="-150" Width="5490" Height="150" Node="COM" Priority="0" Output="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof35-3>
+      <Roof35-4 X="14945" Y="2020" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-2036" BoxWidth="6742" BoxHeight="3685">
+        <Pill X="4644" Y="-161"/>
+        <TriggerZoom80 X="902" Y="-2036"/>
+        <TriggerJump X="4461" Y="-200"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="287" Y="-101" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="1567" Y="-116" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="2222" Y="-116" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3202" Y="-116" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3967" Y="-116" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Trigger X="4942" Y="1304" Width="1800" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="4908" Y="1549" Width="1484" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation=""/>
+          </Elements>
+        </ObjectNULL>
+      </Roof35-4>
+      <Roof35-5 X="21290" Y="2520" DeltaX="1345" DeltaY="500" BoxX="-310" BoxY="-1584" BoxWidth="4132" BoxHeight="4588">
+        <Pill X="1804" Y="-86"/>
+        <TriggerZoomNormal X="2401" Y="-1584"/>
+        <TriggerZoomMax X="2" Y="-496"/>
+        <TriggerThiefVault X="998" Y="-200"/>
+        <Respawn_2.5sec X="7" Y="-1"/>
+        <TriggerLossPanic X="2822" Y="584"/>
+        <TriggerJump X="2902" Y="-197"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="2452" Y="-81" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="1435" Y="-175" Score="10" Radius="80" Type="1" GroupId="2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof35-5>
+      <Roof35-6 X="24875" Y="2525" DeltaX="585" DeltaY="5" BoxX="0" BoxY="-299" BoxWidth="1855" BoxHeight="1499">
+        <Pill X="509" Y="-219"/>
+        <TriggerJump X="1035" Y="-138"/>
+        <TriggerHighJump500 X="1117" Y="206"/>
+        <TriggerJumpAndRoll X="1617" Y="156"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="1012" Y="-24" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="137" Y="-84" Score="10" Radius="80" Type="1" GroupId="3"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof35-6>
+      <FinalRoof_DownTown_04 X="26730" Y="2790" DeltaX="0" DeltaY="-90" BoxX="0" BoxY="-299" BoxWidth="3500" BoxHeight="2229">
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="127" Y="-85" Score="10" Radius="80" Type="1" GroupId="3"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_DownTown_04>
+    </Layer>
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>

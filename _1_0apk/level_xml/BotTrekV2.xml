@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="PlayerSpawn" AI="2" Time="0" Respawns="Hunter|Helper|RevolutionGirl" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="0" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="200" Y="-100" DeltaX="200" DeltaY="-100"/>
+      <Billboard X="1995" Y="305" DeltaX="6" DeltaY="405"/>
+      <Building2 X="3014" Y="-150" DeltaX="694" DeltaY="-455"/>
+      <Building3 X="4834" Y="350" DeltaX="750" DeltaY="500"/>
+      <Billboard X="6570" Y="235" DeltaX="653" DeltaY="-115"/>
+      <Building1 X="6842" Y="350" DeltaX="-53" DeltaY="115"/>
+      <Building3 X="8931" Y="350" DeltaX="300" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <BotTrekV2Roof-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-275" BoxY="-1845" BoxWidth="4305" BoxHeight="3500">
+        <TriggerCameraStart X="905" Y="-875"/>
+        <Camera X="1050" Y="-660"/>
+        <TriggerJump X="3900" Y="-200"/>
+        <TriggerZoomMin X="450" Y="-1845"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="1075" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="1000" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.8" SubType="0"/>
+            <Spawn X="-225" Y="-890" Name="PlayerSpawn" Animation="JumpOff|18"/>
+            <Trigger X="3925" Y="-195" Width="105" Height="195" Name="PlayerJump" Type="1" Node="COM" Priority="0" AI="2" Key1="1" PressType="0" Follow="0"/>
+          </Elements>
+        </ObjectNULL>
+      </BotTrekV2Roof-1>
+      <BotTrekV2Roof-3 X="4500" Y="-175" DeltaX="530" DeltaY="745" BoxX="0" BoxY="0" BoxWidth="100" BoxHeight="600"/>
+      <BotTrekV2Roof-2 X="4500" Y="-175" DeltaX="0" DeltaY="-1680" BoxX="0" BoxY="-500" BoxWidth="2135" BoxHeight="1505">
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="430" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="354" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.4" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </BotTrekV2Roof-2>
+      <BotTrekV2Roof-4 X="6635" Y="-160" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-500" BoxWidth="900" BoxHeight="790">
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="110" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="35" Y="-500" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="0.9" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </BotTrekV2Roof-4>
+      <BotTrekV2Roof-5 X="7775" Y="-525" DeltaX="340" DeltaY="-365" BoxX="0" BoxY="0" BoxWidth="965" BoxHeight="665"/>
+    </Layer>
+  </Layers>
+</Root>

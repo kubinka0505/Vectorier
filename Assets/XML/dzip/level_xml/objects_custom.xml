@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Root>
+	<Sets>
+		<Library FileName="common.swf"/>
+		<Library FileName="glass.swf"/>
+		<Library FileName="birds.swf"/>
+		<Library FileName="papers.swf"/>
+		<Library FileName="techpark.swf"/>
+	</Sets>
+	<Objects Label="kubinka0505">
+		<Object Name="Birds_R">
+			<Content>
+				<Trigger Name="Birds" X="-400" Y="-500" Width="1200" Height="600">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="-1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="First_Sound" Value="birds1"/>
+							<SetVariable Name="Second_Sound" Value="birds2"/>
+							<SetVariable Name="Third_Sound" Value="birds3"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<EventBlock Template="NoneType.Only"/>
+							</Events>
+							<Conditions/>
+							<Actions>
+								<ActionBlock Template="NoneType.Only"/>
+								<Choose Order="Random" Set="1">
+									<ActionBlock Template="CommonLib.Sound" Prefix="First_"/>
+									<ActionBlock Template="CommonLib.Sound" Prefix="Second_"/>
+									<ActionBlock Template="CommonLib.Sound" Prefix="Third_"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+				<Animation X="90" Y="-70" Width="90" Height="66" Type="1" Direction="-2|-3" Acceleration="-0.08|-0.1" ScaleX="-1" ScaleY="1" Time="5" ClassName="p_birds3"/>
+				<Animation X="130" Y="-60" Width="90" Height="66" Type="1" Direction="-3|-4" Acceleration="-0.09|-0.15" ScaleX="-1" ScaleY="1" Time="5" ClassName="p_birds3"/>
+				<Animation X="200" Y="-50" Width="90" Height="66" Type="1" Direction="-5|-2" Acceleration="-0.07|-0.1" ScaleX="-1" ScaleY="1" Time="5" ClassName="p_birds1"/>
+				<Animation X="250" Y="-40" Width="90" Height="66" Type="1" Direction="-10|-1.5" Acceleration="-0.02|-0.1" ScaleX="-1" ScaleY="1" Time="5" ClassName="p_birds2"/>
+				<Image Type="2" ClassName="parrot01" X="232" Y="-29" Width="45" Height="30" NativeX="45" NativeY="30">
+					<Properties>
+						<Static>
+							<Matrix A="-45" B="0" C="0" D="30" Tx="45" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+				<Image Type="2" ClassName="parrot03" X="193" Y="-29" Width="45" Height="30" NativeX="45" NativeY="30">
+					<Properties>
+						<Static>
+							<Matrix A="-45" B="0" C="0" D="30" Tx="45" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+				<Image Type="2" ClassName="parrot02" X="139" Y="-29" Width="45" Height="30" NativeX="45" NativeY="30">
+					<Properties>
+						<Static>
+							<Matrix A="-45" B="0" C="0" D="30" Tx="45" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+				<Image Type="2" ClassName="parrot03" X="82" Y="-29" Width="45" Height="30" NativeX="45" NativeY="30">
+					<Properties>
+						<Static>
+							<Matrix A="-45" B="0" C="0" D="30" Tx="45" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+			</Content>
+		</Object>
+		<Object Name="BirdsFast">
+			<Content>
+				<Trigger Name="Birds" Y="-350" Width="400" Height="400">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="-1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="First_Sound" Value="birds1"/>
+							<SetVariable Name="Second_Sound" Value="birds2"/>
+							<SetVariable Name="Third_Sound" Value="birds3"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<EventBlock Template="NoneType.Only"/>
+							</Events>
+							<Conditions/>
+							<Actions>
+								<ActionBlock Template="NoneType.Only"/>
+								<Choose Order="Random" Set="1">
+									<ActionBlock Template="CommonLib.Sound" Prefix="First_"/>
+									<ActionBlock Template="CommonLib.Sound" Prefix="Second_"/>
+									<ActionBlock Template="CommonLib.Sound" Prefix="Third_"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+				<Animation X="200" Width="90" Height="66" Type="1" Direction="25|-2" Acceleration="0.07|-0.1" ScaleX="1" ScaleY="1" Time="500" ClassName="p_birds1"/>
+				<Animation X="250" Y="10" Width="90" Height="66" Type="1" Direction="24|-1.5" Acceleration="0.02|-0.1" ScaleX="1" ScaleY="1" Time="500" ClassName="p_birds2"/>
+				<Image Type="2" X="216" Y="21.3125" ClassName="parrot01" Width="45" Height="30" NativeX="45" NativeY="30"/>
+				<Image Type="2" X="274" Y="21.3125" ClassName="parrot03" Width="45" Height="30" NativeX="45" NativeY="30"/>
+			</Content>
+		</Object>
+
+		<Object Name="Bottle_Thin">
+			<Content>
+				<Particle X="5" Y="80" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+				<Particle X="5" Y="100" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+				<Particle X="5" Y="120" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+				<Particle X="5" Y="140" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+				<Image Type="2" X="0" Y="100" ClassName="v_black" Width="20" Height="40" NativeX="50" NativeY="50"/>
+				<Image Type="2" X="5" Y="70" ClassName="v_black" Width="10" Height="30" NativeX="50" NativeY="50"/>
+				<Image Type="2" X="0" Y="80" ClassName="v_slope_L" Width="10" Height="20" NativeX="300" NativeY="150"/>
+				<Image Type="2" X="10" Y="80" ClassName="v_slope_L" Width="10" Height="20" NativeX="300" NativeY="150">
+					<Properties>
+						<Static>
+							<Matrix A="-10" B="0" C="0" D="20" Tx="10" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+				<Trigger Name="" X="0" Y="0" Width="20" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="-1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Sound" Value="glass_item_drop3"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<EventBlock Template="NoneType.Only"/>
+								<EventBlock Template="CommonLib.ActiveDeath"/>
+							</Events>
+							<Conditions/>
+							<Actions>
+								<ActionBlock Template="NoneType.Only"/>
+								<ActionBlock Template="CommonLib.Sound"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+
+	</Objects>
+</Root>

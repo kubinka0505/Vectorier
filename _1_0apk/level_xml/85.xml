@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultHunter_1" AI="1" Time="3" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <ConstructionYardBackground DeltaX="0" DeltaY="-500"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding1 X="59" Y="-370" DeltaX="59" DeltaY="-370"/>
+      <ConstructionYardBuilding2 X="1876" Y="-251" DeltaX="654" DeltaY="119"/>
+      <ConstructionYardBuilding2 X="3313" Y="88" DeltaX="437" DeltaY="339"/>
+      <ConstructionYardBuilding1 X="4698" Y="74" DeltaX="385" DeltaY="-14"/>
+      <ConstructionYardBuilding1 X="6263" Y="273" DeltaX="402" DeltaY="199"/>
+      <ConstructionYardBuilding2 X="7883" Y="-79" DeltaX="457" DeltaY="-352"/>
+      <ConstructionYardBuilding2 X="9320" Y="245" DeltaX="437" DeltaY="324"/>
+      <ConstructionYardBuilding1 X="10705" Y="-49" DeltaX="385" DeltaY="-294"/>
+      <ConstructionYardBuilding1 X="12270" Y="525" DeltaX="402" DeltaY="574"/>
+    </Layer>
+  
+    
+
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof85-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-505" BoxY="-2395" BoxWidth="7985" BoxHeight="3970">
+        <TriggerZoomMin X="1976" Y="-1925"/>
+        <TriggerZoomMax X="2811" Y="-2065"/>
+        <TriggerZoomNormal X="3471" Y="-2395"/>
+        <Camera X="435" Y="-100"/>
+        <Spawn X="-455" Y="-395"/>
+        <TriggerCameraStart X="282" Y="-395"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="3502" Y="-780" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="3477" Y="-1025" Width="80" Height="1159" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="0" SubType="0"/>
+            <Spawn X="5055" Y="-75" Name="DefaultHunter_1" Animation="JumpOff|18|1"/>
+            <Trigger X="5625" Y="1151" Width="1835" Height="102" Name="" Type="2" Node="COM" Priority="0" Animation="" Time="2" Start="FlyPanic|1" Value="2" SubType="0"/>
+            <Trigger X="5575" Y="1165" Width="1905" Height="100" Name="TriggerLossPanic" Type="5" Node="COM" Priority="0" SubType="3" PX="0" PY="0" Animation="JumpOff" Time="0" Start="FlyPanic|1"/>
+            <Comment X="1395" Y="-385" Width="480" Height="300" Text="СДЕЛАНО&#xD;бот пепрепрыгивает через smallwall спидвольтом сквозь стенку" FontSize="50"/>
+            <Comment X="605" Y="-55" Width="1000" Height="230" Text="СДЕЛАНО&#xD;Довольно сложно точно расчитать прыжки в самом начале, из-за этого небольшие ошибки приводят к смерти игрока." FontSize="50"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof85-1>
+      <Roof85-3 X="6300" Y="270" DeltaX="640" DeltaY="270" BoxX="-460" BoxY="-3435" BoxWidth="7315" BoxHeight="8140">
+        <TriggerZoomMin X="1086" Y="-3435"/>
+        <TriggerZoomNormal X="3436" Y="-3380"/>
+        <TriggerZoomMin X="5545" Y="-580"/>
+        <TriggerZoomMax X="2121" Y="1205"/>
+        <TriggerWallJump X="5781" Y="-440"/>
+        <TriggerJump X="5706" Y="620"/>
+        <Pill X="1516" Y="1250"/>
+        <Pill X="4710" Y="361"/>
+        <Pill X="-67" Y="99"/>
+        <TriggerLossPanic X="5605" Y="1105"/>
+        <TriggerAIRightJump X="5785" Y="225"/>
+        <Trigger360WallCling X="1443" Y="-205"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="3475" Y="-235" Name="Respawn_1" Animation="JumpOff|18"/>
+            <Trigger X="3550" Y="190" Width="660" Height="95" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="0.5" SubType="0"/>
+            <Trigger X="5625" Y="1100" Width="1230" Height="102" Name="" Type="2" Node="COM" Priority="0" Animation="" Time="2" Start="FlyPanic|1" Value="2" SubType="0"/>
+            <Comment X="3875" Y="635" Width="1125" Height="260" Text="СДЕЛАНО&#xD;Можно прыгнуть сверху и врезаться в эту платформу, после чего модель игрока будет стоять на месте. Надо привести размер в соответствие с принятыми" FontSize="50"/>
+            <Comment X="3375" Y="1065" Width="555" Height="310" Text="СДЕЛАНО&#xD;Тут нужен очень точный прыжок с самого края разгона. наказание за неточность - смерть" FontSize="50"/>
+            <Comment X="4525" Y="865" Width="555" Height="495" Text="СДЕЛАНО&#xD;Очень странно выглядит, когда сначала мы видим и слышим как охотник убивается об стенку, а потом вдруг видим как он появляется за нашей спиной из ниоткуда" FontSize="50"/>
+            <Comment X="4195" Y="980" Width="295" Height="395" Text="СДЕЛАНО&#xD;Похоже, иногда бот рождается головой внутри платформы." FontSize="50"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof85-3>
+      <Roof85-6 X="12475" Y="579" DeltaX="385" DeltaY="-520" BoxX="-227" BoxY="-3820" BoxWidth="7592" BoxHeight="6525">
+        <TriggerAILeftJump X="-81" Y="188"/>
+        <TriggerZoomMax X="135" Y="-3285"/>
+        <TriggerJump X="6128" Y="-187"/>
+        <TriggerZoomMin X="730" Y="-1950"/>
+        <TriggerZoomMax X="2145" Y="-1880"/>
+        <TriggerZoomNormal X="3295" Y="-3820"/>
+        <TriggerZoomNormal X="4395" Y="-795"/>
+        <Pill X="4471" Y="-487"/>
+        <Pill X="5011" Y="-1017"/>
+        <Pill X="5360" Y="-1145"/>
+        <TriggerLossPanic X="6155" Y="638"/>
+        <TriggerWallJumpCamera X="9" Y="-397"/>
+        <TriggerTripleSwing X="1845" Y="-198"/>
+        <Respawn_2sec X="5150" Y="6"/>
+        <TriggerCatch X="3610" Y="-149"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="5005" Y="-1229" Width="102" Height="317" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="0.2" SubType="0"/>
+            <Spawn X="5093" Y="-175" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="6135" Y="633" Width="1230" Height="102" Name="" Type="2" Node="COM" Priority="0" Animation="" Time="2" Start="FlyPanic|1" Value="2" SubType="0"/>
+            <Trigger X="478" Y="-291" Width="112" Height="294" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn_2" Time="0.2" SubType="0"/>
+            <Spawn X="-172" Y="-246" Name="Respawn_2" Animation="JumpOff|18"/>
+            <Comment X="4735" Y="-1119" Width="380" Height="645" Text="СДЕЛАНО&#xD;Воллджамп слишком высоко. Пытаешься прыгнуть налево, но падаешь вниз, хотя выглядит как будто прыгнуть налево можно" FontSize="50"/>
+            <Comment X="5085" Y="-84" Width="295" Height="305" Text="СДЕЛАНО&#xD;Бот может родиться внутри платформы." FontSize="50"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof85-6>
+      <Roof85-4 X="19560" Y="704" DeltaX="775" DeltaY="125" BoxX="-10" BoxY="-4196" BoxWidth="5691" BoxHeight="5307">
+        <TriggerZoomMax X="1481" Y="-3497"/>
+        <TriggerZoomMin X="1741" Y="-4196"/>
+        <TriggerZoomNormal X="3655" Y="-2579"/>
+        <Pill X="1627" Y="-337"/>
+        <Pill X="1429" Y="-765"/>
+        <Pill X="3000" Y="-769"/>
+        <TriggerJump X="4914" Y="-375"/>
+        <Respawn_2sec X="3859" Y="-213"/>
+        <Respawn X="4059" Y="-1398"/>
+        <TriggerTurnVault X="2400" Y="-944"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="1620" Y="-1039" Width="82" Height="295" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="0" SubType="0"/>
+            <Spawn X="458" Y="-1109" Name="Resp" Animation="JumpOff|18"/>
+            <Trigger Name="TriggerLossPanic" Type="5" Time="2" X="4111" Y="377" Width="1450" Height="100" Node="COM" Priority="0" Animation="JumpOff" Start="FlyPanic|1" SubType="3"/>
+            <Trigger X="4096" Y="372" Width="1585" Height="102" Name="" Type="2" Node="COM" Priority="0" Animation="" Time="2" Start="FlyPanic|1" Value="2" SubType="0"/>
+            <Comment X="3820" Y="-1584" Width="535" Height="185" Text="СДЕЛАНО&#xD;Карликовые бетонные блоки выглядят ужасно" FontSize="50"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof85-4>
+      <FinalRoof_4 X="24985" Y="414" DeltaX="310" DeltaY="455" BoxX="0" BoxY="-298" BoxWidth="2705" BoxHeight="2738"/>
+    </Layer>
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>

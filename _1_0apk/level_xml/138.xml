@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="BotSpawn" AI="1" Time="0.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="40"/>
+  <Variable Name="Money">40</Variable>
+  
+  <Layers>        
+    <Layer Name="BG_Layer" Factor="0.1" Type="1" DeltaX="-500" DeltaY="0">
+      <ConstructionYardBackground X="-600" Y="-630" DeltaX="-600" DeltaY="-630"/>
+      <ConstructionYardBackground X="1517" Y="-630" DeltaX="-3" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <ConstructionYardBuilding2 X="-1545" Y="-995" DeltaX="-1545" DeltaY="-995"/>
+      <ConstructionYardBuilding2 X="-280" Y="-670" DeltaX="265" DeltaY="325"/>
+      <ConstructionYardBuilding2 X="995" Y="-945" DeltaX="275" DeltaY="-275"/>
+      <ConstructionYardBuilding2 X="2220" Y="-1380" DeltaX="225" DeltaY="-435"/>
+      <ConstructionYardBuilding1 X="3800" Y="-600" DeltaX="580" DeltaY="780"/>
+      <ConstructionYardBuilding2 X="5806" Y="633" DeltaX="843" DeltaY="1233"/>
+      <ConstructionYardBuilding2 X="7120" Y="810" DeltaX="314" DeltaY="177"/>
+      <ConstructionYardBuilding1 X="8340" Y="365" DeltaX="220" DeltaY="-445"/>
+      <ConstructionYardBuilding2 X="9918" Y="260" DeltaX="415" DeltaY="-105"/>
+    </Layer>
+	
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof138-3 X="-2600" Y="100" DeltaX="-2900" DeltaY="-1190" BoxX="-445" BoxY="-1450" BoxWidth="3125" BoxHeight="2990">
+        <Camera X="650" Y="-1300"/>
+        <Pill X="1540" Y="-550"/>
+        <Respawn_2sec_Reversed X="1060" Y="-5"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="-395" Y="-1200" Name="DefaultSpawn" Animation="DiveDownStart|18"/>
+            <Spawn X="400" Y="-700" Name="BotSpawn" Animation="JumpOff|18"/>
+            <Trigger Name="TriggerStart" Type="2" SubType="2" Value="0.65" X="590" Y="-1450" Width="300" Height="400" Node="COM" Priority="0"/>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="1590" Y="-95" Width="540" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Trigger Name="TriggerZoomMin" Type="2" Value="0.65" X="2500" Y="790" Width="100" Height="615" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof138-3>
+      <Roof138-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-2050" BoxY="-5015" BoxWidth="7000" BoxHeight="6650">
+        <TriggerZoomNormal X="-800" Y="-1865"/>
+        <TriggerWebsterWithSalto X="715" Y="-203"/>
+        <TriggerJump X="3895" Y="-2285"/>
+        <Pill X="4100" Y="-1685"/>
+        <TriggerAirSpin X="3220" Y="-2025"/>
+        <TriggerZoomNormal X="485" Y="-4870"/>
+        <Respawn X="1220" Y="0"/>
+        <TriggerJump X="4120" Y="-200"/>
+        <Respawn_3sec_Reversed X="3305" Y="-1825"/>
+        <Respawn_2sec X="625" Y="-670"/>
+        <Pill X="4500" Y="-250"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="0.8" X="-2050" Y="-5015" Width="100" Height="4065" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="-575" Y="-1065" Width="720" Height="355" Text="СДЕЛАНО&#xD;&#xD;При прыжке с краю - опирается руками на воздух" FontSize="40" Colour="10027263" Transparency="1"/>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="0" Y="-510" Width="100" Height="510" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="1780" Y="-915" Width="100" Height="915" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoomMin" Type="2" Value="0.65" X="145" Y="-1370" Width="100" Height="700" Node="COM" Priority="0" SubType="0"/>
+            <Trigger X="4695" Y="-2135" Width="255" Height="235" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="1" SubType="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof138-1>
+      <Roof138-6 X="0" Y="150" DeltaX="-4590" DeltaY="1505" BoxX="-400" BoxY="-220" BoxWidth="5120" BoxHeight="2560">
+        <Respawn_2sec_Reversed X="2651" Y="1372"/>
+        <Pill X="2056" Y="1622"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="-265" Y="1085" Width="360" Height="265" Text="Бот пройдёт анимацией этот триггер ареста." FontSize="40" Colour="2522880" Transparency="1"/>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="4200" Y="1600" Width="520" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="4200" Y="1500" Width="520" Height="100" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="260" Y="880" Width="770" Height="300" Text="Здесь не видно потолок и поэтому тянет прыгнуть на стену.&#xD;&#xD;Ловушка для несообразительных, но наказание уж очень большое." FontSize="40" Colour="10027263" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof138-6>
+      <Roof138-7 X="4720" Y="340" DeltaX="520" DeltaY="-765" BoxX="-835" BoxY="-520" BoxWidth="4115" BoxHeight="2600">
+        <TriggerJump X="0" Y="965"/>
+        <Respawn_138 X="65" Y="400"/>
+        <Respawn_2sec_Reversed X="1730" Y="895"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomMin" Type="2" Value="0.65" X="590" Y="85" Width="100" Height="325" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="905" Y="610" Width="100" Height="875" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="1790" Y="-415" Width="540" Height="260" Text="Слайд выглядит некрасиво. Тут даже проблема в том, что слайд заканчивается, игрок уже бежит, а звук слайда ещё некоторое время играется." FontSize="60" Colour="2522880" Transparency="1"/>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="1885" Y="1010" Width="100" Height="875" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoomMin" Type="2" Value="0.65" X="2085" Y="565" Width="100" Height="325" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof138-7>
+      <Roof138-4 X="6580" Y="-315" DeltaX="-3280" DeltaY="-320" BoxX="-1860" BoxY="-1915" BoxWidth="6895" BoxHeight="3080">
+        <Respawn_138_4sec_Reversed X="520" Y="-245"/>
+        <TriggerJump X="3190" Y="100"/>
+        <Respawn_3sec X="-1630" Y="105"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomMin" Type="2" Value="0.65" X="685" Y="20" Width="100" Height="280" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3275" Y="1065" Width="1760" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation=""/>
+            <Trigger Name="TriggerZoomMin" Type="2" Value="0.65" X="-1405" Y="-1915" Width="100" Height="2021" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="30" Y="-575" Width="100" Height="680" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="3283" Y="965" Width="1695" Height="100" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof138-4>
+      <Crane_cons X="12528" Y="1380" DeltaX="2653" DeltaY="1405" BoxX="-1313" BoxY="-499" BoxWidth="7270" BoxHeight="1919">
+        <TriggerJump X="3906" Y="-202"/>
+        <Respawn_3.3sec X="47" Y="1"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="-1313" Y="190" Width="1790" Height="100" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="3627" Y="795" Width="2330" Height="100" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-1313" Y="605" Width="2000" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation=""/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3942" Y="1320" Width="2015" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation=""/>
+            <Comment X="417" Y="-2005" Width="1475" Height="435" Text="СДЕЛАЛ&#xD;&#xD;Приземление на кран происходит сильно справа" FontSize="100" Colour="10027263" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Crane_cons>
+      <FinalRoof_8 X="18480" Y="2160" DeltaX="1952" DeltaY="780" BoxX="-95" BoxY="-1860" BoxWidth="5265" BoxHeight="3500">
+        <TriggerZoomNormal X="-95" Y="-1860"/>
+        <Respawn X="108" Y="0"/>
+        <TriggerCheatGainer X="3238" Y="-200"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="-1690" Y="1500" Width="1305" Height="315" Text="СДЕЛАНО&#xD;&#xD;Если сюда упасть, от зданий идут шлейфы. Во-вторых, нас, уже улетевших за экран, ловит потом бот (камера переносится наверх направо)." FontSize="60" Colour="2522880" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_8>
+    </Layer>
+  </Layers>
+</Root>

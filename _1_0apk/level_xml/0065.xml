@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root> 
+	
+	<Sets>
+		
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/> 
+    <City FileName="buildings_test.xml"/>	    
+	</Sets>
+	
+	<Models>
+		 <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>     
+    </Models>
+	
+	
+	<Layers>		 		
+		<Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+			<Background DeltaX="0" DeltaY="-500"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+      <Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+      <Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+      <Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+      <Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+			<Background DeltaX="0" DeltaY="0"/>	
+		</Layer> 
+		
+		<Layer Name="Banner_Layer" Factor="0.5" Type="2">
+			<Building1 DeltaX="200" DeltaY="-100" />
+			<Billboard DeltaX="200" DeltaY="150" />
+			<Building2 DeltaX="500" DeltaY="-200" />
+			<LampPost DeltaX="300" DeltaY="500" />
+			<Building3 DeltaX="300" DeltaY="0" />
+			<Billboard DeltaX="400" DeltaY="-500" />
+			<Building1 DeltaX="200" DeltaY="200" />
+			<Building3 DeltaX="300" DeltaY="0" />
+			
+		</Layer> 
+		
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Building2000x500 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-34" BoxY="-440" BoxWidth="2034" BoxHeight="940">
+        <Spawn X="-116" Y="-226"/>
+        <TriggerCameraStart X="39" Y="-440"/>
+        <Camera X="59" Y="-216"/>
+        <Trigger360WallHop X="1180" Y="-200"/>
+      </Building2000x500>
+      <Building2500x1000 X="2000" Y="-600" DeltaX="0" DeltaY="-600" BoxX="0" BoxY="-200" BoxWidth="2500" BoxHeight="1200">
+        <Trigger360WallCling X="1810" Y="-200"/>
+      </Building2500x1000>
+      <Building2000x500 X="4890" Y="-850" DeltaX="380" DeltaY="-250" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerUnderbar X="1600" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="7190" Y="-850" DeltaX="300" DeltaY="0" BoxX="-60" BoxY="-505" BoxWidth="2068" BoxHeight="1005">
+        <WaterTower X="40" Y="0"/>
+        <TriggerSidebomb X="1480" Y="-200"/>
+        <Barrel X="1945" Y="-90"/>
+      </Building2000x500>
+      <Building2000x500 X="9590" Y="-600" DeltaX="400" DeltaY="250" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerCheatGainer X="1410" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="11790" Y="-600" DeltaX="200" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerDoubleBack X="1110" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="14040" Y="-600" DeltaX="250" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerBoomBoomSh X="1325" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="16260" Y="-600" DeltaX="220" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerFrontflipLegsUp X="1175" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="18760" Y="-100" DeltaX="500" DeltaY="500" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerDiveDown X="1415" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="21060" Y="140" DeltaX="300" DeltaY="240" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerHandspringToRoll X="1145" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="23260" Y="740" DeltaX="200" DeltaY="600" BoxX="0" BoxY="-200" BoxWidth="2010" BoxHeight="700">
+        <TriggerVertVault X="1445" Y="-200"/>
+        <SmallPipe X="1890" Y="-90"/>
+      </Building2000x500>
+      <Building2000x500 X="25260" Y="740" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="2008" BoxHeight="700">
+        <TriggerHighJump500 X="1345" Y="-150"/>
+        <TriggerDashToFrontflip X="1510" Y="-200"/>
+        <TriggerCollisionToFly X="1845" Y="-200"/>
+        <Barrel X="1945" Y="-90"/>
+      </Building2000x500>
+      <Building2000x500 X="27560" Y="960" DeltaX="300" DeltaY="220" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerTripleTrickToSwalow X="860" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="29860" Y="960" DeltaX="300" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="2008" BoxHeight="700">
+        <TriggerHighJump500 X="1345" Y="-150"/>
+        <TriggerSpinVault X="1560" Y="-200"/>
+        <TriggerCollisionToFly X="1845" Y="-200"/>
+        <Barrel X="1945" Y="-90"/>
+      </Building2000x500>
+      <Building2000x500 X="32160" Y="960" DeltaX="300" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="2010" BoxHeight="700">
+        <TriggerMonkeyToBomb X="1250" Y="-200"/>
+        <TriggerHighJump500 X="1170" Y="-150"/>
+        <TriggerSpeedVaultFly X="1670" Y="-200"/>
+        <TriggerCollisionToFly X="1790" Y="-200"/>
+        <SmallPipe X="1890" Y="-90"/>
+      </Building2000x500>
+      <Building2000x500 X="34460" Y="1260" DeltaX="300" DeltaY="300" BoxX="0" BoxY="-200" BoxWidth="2010" BoxHeight="700">
+        <TriggerMonkeyToBackflip X="1080" Y="-200"/>
+        <Pipe365x90 X="1645" Y="-90"/>
+      </Building2000x500>
+      <Building2000x500 X="36760" Y="1260" DeltaX="300" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerSlowSpin X="1580" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="39510" Y="1260" DeltaX="750" DeltaY="0" BoxX="-432" BoxY="-315" BoxWidth="2440" BoxHeight="815">
+        <Barrel X="-430" Y="-315"/>
+        <TriggerTurnVault X="1475" Y="-200"/>
+        <TriggerCollisionToFly X="1845" Y="-200"/>
+        <Barrel X="1945" Y="-90"/>
+      </Building2000x500>
+      <Building2000x500 X="41610" Y="2160" DeltaX="100" DeltaY="900" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerSideFlip X="1490" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="43900" Y="2160" DeltaX="290" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerFrontFlipTwoLegs X="1670" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="46200" Y="2250" DeltaX="300" DeltaY="90" BoxX="0" BoxY="-200" BoxWidth="2010" BoxHeight="700">
+        <TriggerSplitOne X="1580" Y="-200"/>
+        <SmallPipeT X="1890" Y="-90"/>
+      </Building2000x500>
+      <Building2000x500 X="48200" Y="2250" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerCoolSwing X="1760" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="51000" Y="2250" DeltaX="800" DeltaY="0" BoxX="-462" BoxY="-320" BoxWidth="2472" BoxHeight="820">
+        <Barrel X="-460" Y="-320"/>
+        <Barrel X="-145" Y="-310"/>
+        <TriggerRollForward X="1210" Y="-200"/>
+        <SmallPipeT X="1890" Y="-90"/>
+      </Building2000x500>
+      <Building2000x500 X="53100" Y="2250" DeltaX="100" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="2010" BoxHeight="700">
+        <TriggerWebsterWithSalto X="1510" Y="-200"/>
+        <SmallPipeT X="1890" Y="-90"/>
+      </Building2000x500>
+      <Building2000x500 X="55600" Y="2250" DeltaX="500" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerWebster X="1460" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="57820" Y="2250" DeltaX="220" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerAirSpin X="1710" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="60040" Y="2438" DeltaX="220" DeltaY="188" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerAirBomb X="1710" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="62640" Y="2913" DeltaX="600" DeltaY="475" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerSwallow400 X="1740" Y="-200"/>
+      </Building2000x500>
+      <Building2000x500 X="65440" Y="3313" DeltaX="800" DeltaY="400" BoxX="0" BoxY="-200" BoxWidth="2000" BoxHeight="700">
+        <TriggerSwallow X="1710" Y="-200"/>
+      </Building2000x500>
+      <Roof18Test X="67860" Y="3313" DeltaX="420" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="5000" BoxHeight="1200">
+        <TriggerRailFlipVault X="1310" Y="-200"/>
+        <Barrel X="1920" Y="-90"/>
+      </Roof18Test>
+      <Roof18Test X="70280" Y="3313" DeltaX="420" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="5000" BoxHeight="1200">
+        <TriggerDoubleKong X="560" Y="-200"/>
+        <Pipe460x90 X="1140" Y="-90"/>
+        <TriggerAboveCar X="1300" Y="-200"/>
+        <SmallWall X="1780" Y="-180"/>
+      </Roof18Test>
+      <Roof18Test X="72980" Y="3313" DeltaX="700" DeltaY="0" BoxX="-420" BoxY="-200" BoxWidth="5420" BoxHeight="1200">
+        <TriggerBarJump X="-420" Y="-200"/>
+        <TriggerRocketVault X="350" Y="-200"/>
+        <Barrel X="735" Y="-90"/>
+        <TriggerTripleSwing X="2000" Y="-200"/>
+        <TriggerMonkeyVault X="1400" Y="-200"/>
+        <Barrel X="1750" Y="-90"/>
+      </Roof18Test>
+      <Roof18Test X="75790" Y="3313" DeltaX="810" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="5000" BoxHeight="1200">
+        <TriggerJumpObstacle X="110" Y="-200"/>
+        <SmallPipe X="465" Y="-90"/>
+        <TriggerBarJumpSaltoless X="1990" Y="-200"/>
+        <TriggerReverseVault X="900" Y="-200"/>
+        <Barrel X="1220" Y="-90"/>
+      </Roof18Test>
+      <Roof18Test X="77780" Y="3313" DeltaX="-10" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="5000" BoxHeight="1200">
+        <TriggerScrewDriver X="420" Y="-200"/>
+        <Pipe365x90 X="750" Y="-90"/>
+        <TriggerDashVault X="1050" Y="-200"/>
+        <Barrel X="1490" Y="-90"/>
+      </Roof18Test>
+      <Building2000x500 X="80080" Y="3313" DeltaX="300" DeltaY="0" BoxX="-30" BoxY="-200" BoxWidth="2030" BoxHeight="700">
+        <TriggerThiefVault X="315" Y="-200"/>
+        <Barrel X="660" Y="-90"/>
+        <TriggerBarrelVaultTrick0High X="-30" Y="-200"/>
+        <Barrel X="500" Y="-90"/>
+        <TriggerJumpTumbleTrick180High X="1200" Y="-200"/>
+      </Building2000x500>
+      <Roof18Test X="81080" Y="3753" DeltaX="-1000" DeltaY="440" BoxX="0" BoxY="-640" BoxWidth="5000" BoxHeight="1640">
+        <Platform1000x500 X="1010" Y="-190"/>
+        <TriggerObstacleFrontflipTrick0High X="1280" Y="-640"/>
+        <Barrel X="1630" Y="-530"/>
+        <Platform1000x500 X="1410" Y="-190"/>
+        <TriggerJumpWheelTrick180High X="1890" Y="-390"/>
+      </Roof18Test>
+      <Roof18Test X="83480" Y="3753" DeltaX="400" DeltaY="0" BoxX="0" BoxY="-200" BoxWidth="5000" BoxHeight="1200">
+        <TriggerHandSpringTrick0High X="950" Y="-200"/>
+        <TriggerGateVaultTrick0High X="700" Y="-200"/>
+        <SmallWall X="1320" Y="-180"/>
+      </Roof18Test>
+      <Roof18Test X="85680" Y="3843" DeltaX="200" DeltaY="90" BoxX="0" BoxY="-290" BoxWidth="5000" BoxHeight="1290">
+        <TriggerSpinningVaultTrick0High X="770" Y="-290"/>
+        <DoubleConditioner X="1310" Y="-180"/>
+        <TriggerTripleHit X="900" Y="-200"/>
+      </Roof18Test>
+      <Roof18Test X="87680" Y="3843" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-290" BoxWidth="5000" BoxHeight="1290">
+        <TriggerBackFlipTrick90High X="500" Y="-290"/>
+        <TriggerVictory X="1500" Y="-200"/>
+      </Roof18Test>
+    </Layer>
+		
+		<Layer Name="Forward_Layer" Factor="2" Type="2">
+		</Layer>		
+	</Layers>
+</Root>

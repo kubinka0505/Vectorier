@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+		<City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" AllowedSpawns="PlayerLag" Murders="Hunter" Arrests="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="BotSpawn" AI="1" Time="0.3" Respawns="Player" AllowedSpawns="SceneRespawn" Skins="hunter" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="BotSpawn_2" AI="1" Time="2.35" Respawns="Player|Hunter" AllowedSpawns="Respawn" Skins="hunter" Icon="1" Victory="1" Lose="1"/>
+  </Models>
+  
+  <Coins Value="40"/>
+  <Variable Name="Money">40</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+      <ConstructionYardBackground DeltaX="0" DeltaY="-400"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="1" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding1 X="40" Y="-720" DeltaX="40" DeltaY="-720"/>
+      <ConstructionYardBuilding2 X="1857" Y="-601" DeltaX="654" DeltaY="119"/>
+      <ConstructionYardBuilding2 X="3310" Y="-485" DeltaX="453" DeltaY="116"/>
+      <ConstructionYardBuilding1 X="5495" Y="-480" DeltaX="1185" DeltaY="5"/>
+      <ConstructionYardBuilding1 X="6225" Y="-165" DeltaX="-433" DeltaY="315"/>
+      <ConstructionYardBuilding2 X="8640" Y="-230" DeltaX="1252" DeltaY="-65"/>
+      <ConstructionYardBuilding2 X="9875" Y="10" DeltaX="235" DeltaY="240"/>
+      <ConstructionYardBuilding2 X="11295" Y="-245" DeltaX="420" DeltaY="-255"/>
+      <ConstructionYardBuilding1 X="12625" Y="-445" DeltaX="330" DeltaY="-200"/>
+    </Layer>    
+
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <DelayedTestRoof-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-630" BoxWidth="2125" BoxHeight="730">
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Camera X="865" Y="-255"/>
+          </Elements>
+        </ObjectNULL>
+      </DelayedTestRoof-1>
+    </Layer>
+  </Layers>
+</Root>
