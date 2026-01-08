@@ -1,0 +1,216 @@
+<Init>
+	<SetVariable Name="$Active" Value="1"/>
+	<SetVariable Name="$AI" Value="0"/>
+	<SetVariable Name="$Node" Value="COM"/>
+	<SetVariable Name="FollowNode" Value="Camera"/>
+	
+	<!-- Initial Position Is a World Position or Current Player Position-->
+	<SetVariable Name="InitialXPos" Value="CurrentModel"/>
+	
+	<!-- Unique String per Trigger -->
+	<SetVariable Name="UniqueID" Value="A3"/>
+	
+	<SetVariable Name="UpdateEveryFrame" Value="1"/>
+	
+	<!-- I recommend not touching these-->
+	<SetVariable Name="ActivatorToStart" Value="ID"/>
+	<SetVariable Name="ActivatorToLoop" Value="ID1"/>
+	<SetVariable Name="ActivatorToToggle" Value="ID2"/>
+	<SetVariable Name="ActivatorToCheck" Value="ID3"/>
+	
+	<!-- The amount of Movement Every Transformation Does -->
+	<!-- For this case, Move X is 25, and -25-->
+	<SetVariable Name="MovementUnits" Value="25"/>
+	<SetVariable Name="NegativeMovementUnits" Value="-25"/>
+	
+	<!-- Transformation Names for Moving Forward and Back-->
+	<SetVariable Name="TransformForward" Value="Right"/>
+	<SetVariable Name="TransformBack" Value="Left"/>
+	
+	<!-- Model to Log Position-->
+	<SetVariable Name="Model" Value="Player"/>
+	
+	<!-- More things to Not Touch-->
+	<SetVariable Name="Flag1" Value="0"/>
+	<SetVariable Name="Flag2" Value="0"/>
+	<SetVariable Name="State" Value="RunForward"/>
+	<SetVariable Name="StateBuffer" Value="0"/>
+</Init>
+<Loop Name="PreProcess">
+	<Events>
+		<Enter/>
+	</Events>
+	<Conditions>
+		<Equal Value1="_InitialXPos" Value2="CurrentModel"/>
+	</Conditions>
+	<Actions>
+		<SetVariable Name="Model" Value="_$Model"/>
+		<SetVariable Name="InitialXPos" Value="?getModel[_Model].getNode[_FollowNode].worldPositionX"/>
+	</Actions>
+</Loop>
+<Loop Name="Start">
+	<Events>
+		<Enter/>
+	</Events>
+	<Conditions>
+		<Equal Value1="_Flag2" Value2="0"/>
+	</Conditions>
+	<Actions>
+		<SetVariable Name="Flag1" Value="1"/>
+		<SetVariable Name="Flag2" Value="1"/>
+		<SetVariable Name="Model" Value="_$Model"/>
+		<AppendValue Name="ActivatorToStart" Value="_UniqueID"/>
+		<AppendValue Name="ActivatorToLoop" Value="_UniqueID"/>
+		<AppendValue Name="ActivatorToToggle" Value="_UniqueID"/>
+		<AppendValue Name="ActivatorToCheck" Value="_UniqueID"/>
+		<Activate ActionID="_ActivatorToStart"/>
+	</Actions>
+</Loop>
+<Loop Name="UpdateInitialXPos">
+	<Events>
+		<Activate/>
+	</Events>
+	<Conditions>
+		<Operator Type="And">
+			<Equal Value1="_$ActionID" Value2="_ActivatorToLoop"/>
+			<Equal Value1="_Flag1" Value2="1"/>
+		</Operator>
+	</Conditions>
+	<Actions>
+		<Activate ActionID="_ActivatorToStart"/>
+	</Actions>
+</Loop>
+<Loop Name="CheckIfInitialIsHigher">
+	<Events>
+		<Activate/>
+	</Events>
+	<Conditions>
+		<Operator Type="And">
+			<Equal Value1="_$ActionID" Value2="_ActivatorToStart"/>
+			<Equal Value1="_Flag1" Value2="1"/>
+		</Operator>
+	</Conditions>
+	<Actions>
+		<Choose Order="Straight">
+			<Wait Frames="_UpdateEveryFrame"/>
+			<Activate ActionID="_ActivatorToCheck"/>
+			<Activate ActionID="_ActivatorToLoop"/>
+		</Choose>
+	</Actions>
+</Loop>
+<Loop Name="CheckPositive">
+	<Events>
+		<Activate/>
+	</Events>
+	<Conditions>
+		<Operator Type="And">
+			<Greater Value="?getModel[_Model].getNode[_FollowNode].worldPositionX" Than="_InitialXPos"/>
+			<Equal Value1="_$ActionID" Value2="_ActivatorToCheck"/>
+		</Operator>
+	</Conditions>
+	<Actions>
+		<Choose Order="Sync">
+			<AppendValue Name="InitialXPos" Value="_MovementUnits"/>
+			<Transform Name="_TransformForward"/>
+		</Choose>
+	</Actions>
+</Loop>
+<Loop Name="RunFastOffset">
+	<Events>
+		<Activate/>
+	</Events>
+	<Conditions>
+		<Operator Type="And">
+			<Operator Type="Or">
+				<Equal Value1="?getModel[_Model].animationName" Value2="RunFastFromRun"/>
+				<Equal Value1="?getModel[_Model].animationName" Value2="RunFastJump"/>
+				<Equal Value1="?getModel[_Model].animationName" Value2="RunFastFly"/>
+				<Equal Value1="?getModel[_Model].animationName" Value2="RunFastFall"/>
+			</Operator>
+			<Equal Value1="_$ActionID" Value2="_ActivatorToCheck"/>
+			<Equal Value1="_State" Value2="None" Not="1"/>
+			<Equal Value1="_StateBuffer" Value2="0"/>
+		</Operator>
+	</Conditions>
+	<Actions>
+		<SetVariable Name="State" Value="None"/>
+		<Wait Frames="20"/>
+		<AppendValue Name="InitialXPos" Value="-130"/>
+		<SetVariable Name="StateBuffer" Value="1"/>
+	</Actions>
+</Loop>
+<Loop Name="DefaultOffset">
+	<Events>
+		<Activate/>
+	</Events>
+	<Conditions>
+		<Operator Type="And">
+			<Operator Type="And">
+				<Equal Value1="?getModel[_Model].animationName" Value2="RunFastFromRun" Not="1"/>
+				<Equal Value1="?getModel[_Model].animationName" Value2="RunFast" Not="1"/>
+				<Equal Value1="?getModel[_Model].animationName" Value2="RunFastJump" Not="1"/>
+				<Equal Value1="?getModel[_Model].animationName" Value2="RunFastFly" Not="1"/>
+				<Equal Value1="?getModel[_Model].animationName" Value2="RunFastFall" Not="1"/>
+			</Operator>
+			<Equal Value1="_$ActionID" Value2="_ActivatorToCheck"/>
+			<Equal Value1="_StateBuffer" Value2="1"/>
+		</Operator>
+	</Conditions>
+	<Actions>
+		<SetVariable Name="State" Value="RunForward"/>
+		<AppendValue Name="InitialXPos" Value="130"/>
+		<SetVariable Name="StateBuffer" Value="0"/>
+	</Actions>
+</Loop>
+<Loop Name="CheckNegative">
+	<Events>
+		<Activate/>
+	</Events>
+	<Conditions>
+		<Operator Type="And">
+			<Less Value="?getModel[_Model].getNode[_FollowNode].worldPositionX" Than="_InitialXPos"/>
+			<Equal Value1="_$ActionID" Value2="_ActivatorToCheck"/>
+		</Operator>
+	</Conditions>
+	<Actions>
+		<Choose Order="Sync">
+			<AppendValue Name="InitialXPos" Value="_NegativeMovementUnits"/>
+			<Transform Name="_TransformBack"/>
+		</Choose>
+	</Actions>
+</Loop>
+<Loop Name="ToggleOn">
+	<Using>
+		<Variable Name="ActivatorToToggle" DefaultValue="0" Type="String"/>
+	</Using>
+	<Events>
+		<Activate/>
+	</Events>
+	<Conditions>
+		<Operator Type="And">
+			<Equal Value1="_$ActionID" Value2="_ActivatorToToggle"/>
+			<Equal Value1="_Flag1" Value2="0"/>
+		</Operator>
+	</Conditions>
+	<Actions>
+		<SetVariable Name="Flag1" Value="1"/>
+		<Activate ActionID="_ActivatorToLoop"/>
+	</Actions>
+</Loop>
+<Loop Name="ToggleOff">
+	<Using>
+		<Variable Name="ActivatorToToggle" DefaultValue="0" Type="String"/>
+	</Using>
+	<Events>
+		<Activate/>
+	</Events>
+	<Conditions>
+		<Operator Type="And">
+			<Equal Value1="_$ActionID" Value2="_ActivatorToToggle"/>
+			<Equal Value1="_Flag1" Value2="1"/>
+		</Operator>
+	</Conditions>
+	<Actions>
+		<SetVariable Name="Flag1" Value="0"/>
+	</Actions>
+</Loop>

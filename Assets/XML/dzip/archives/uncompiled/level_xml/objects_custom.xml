@@ -1,0 +1,2124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<Sets>
+		<Library FileName="common.swf"/>
+		<Library FileName="glass.swf"/>
+		<Library FileName="birds.swf"/>
+		<Library FileName="papers.swf"/>
+		<Library FileName="techpark.swf"/>
+	</Sets>
+	<Objects Label="Custom">
+		<!-------- Animations -------->
+		<Object Name="Birds_R" Label="Animation" Authors="kubinka0505">
+			<Content>
+				<Trigger X="-400" Y="-500" Width="1200" Height="600">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="-1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="1Sound" Value="birds1"/>
+							<SetVariable Name="2Sound" Value="birds2"/>
+							<SetVariable Name="3Sound" Value="birds3"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<EventBlock Template="NoneType.Only"/>
+							</Events>
+							<Actions>
+								<ActionBlock Template="NoneType.Only"/>
+								<Choose Order="Random" Set="1">
+									<ActionBlock Template="CommonLib.Sound" Prefix="1"/>
+									<ActionBlock Template="CommonLib.Sound" Prefix="2"/>
+									<ActionBlock Template="CommonLib.Sound" Prefix="3"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+				<Animation X="90" Y="-70" Width="90" Height="66" Type="1" Direction="-2|-3" Acceleration="-0.08|-0.1" ScaleX="-1" ScaleY="1" Time="5" ClassName="p_birds3"/>
+				<Animation X="130" Y="-60" Width="90" Height="66" Type="1" Direction="-3|-4" Acceleration="-0.09|-0.15" ScaleX="-1" ScaleY="1" Time="5" ClassName="p_birds3"/>
+				<Animation X="200" Y="-50" Width="90" Height="66" Type="1" Direction="-5|-2" Acceleration="-0.07|-0.1" ScaleX="-1" ScaleY="1" Time="5" ClassName="p_birds1"/>
+				<Animation X="250" Y="-40" Width="90" Height="66" Type="1" Direction="-10|-1.5" Acceleration="-0.02|-0.1" ScaleX="-1" ScaleY="1" Time="5" ClassName="p_birds2"/>
+				<Image Type="2" ClassName="parrot01" X="232" Y="-29" Width="45" Height="30" NativeX="45" NativeY="30">
+					<Properties>
+						<Static>
+							<Matrix A="-45" B="0" C="0" D="30" Tx="45" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+				<Image Type="2" ClassName="parrot03" X="193" Y="-29" Width="45" Height="30" NativeX="45" NativeY="30">
+					<Properties>
+						<Static>
+							<Matrix A="-45" B="0" C="0" D="30" Tx="45" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+				<Image Type="2" ClassName="parrot02" X="139" Y="-29" Width="45" Height="30" NativeX="45" NativeY="30">
+					<Properties>
+						<Static>
+							<Matrix A="-45" B="0" C="0" D="30" Tx="45" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+				<Image Type="2" ClassName="parrot03" X="82" Y="-29" Width="45" Height="30" NativeX="45" NativeY="30">
+					<Properties>
+						<Static>
+							<Matrix A="-45" B="0" C="0" D="30" Tx="45" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+			</Content>
+		</Object>
+		<Object Name="BirdsFast" Label="Animation" Authors="kubinka0505">
+			<Content>
+				<Trigger Y="-350" Width="400" Height="400">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="-1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="First_Sound" Value="birds1"/>
+							<SetVariable Name="Second_Sound" Value="birds2"/>
+							<SetVariable Name="Third_Sound" Value="birds3"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<EventBlock Template="NoneType.Only"/>
+							</Events>
+							<Conditions/>
+							<Actions>
+								<ActionBlock Template="NoneType.Only"/>
+								<Choose Order="Random" Set="1">
+									<ActionBlock Template="CommonLib.Sound" Prefix="First_"/>
+									<ActionBlock Template="CommonLib.Sound" Prefix="Second_"/>
+									<ActionBlock Template="CommonLib.Sound" Prefix="Third_"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+				<Animation X="200" Width="90" Height="66" Type="1" Direction="25|-2" Acceleration="0.07|-0.1" ScaleX="1" ScaleY="1" Time="500" ClassName="p_birds1"/>
+				<Animation X="250" Y="10" Width="90" Height="66" Type="1" Direction="24|-1.5" Acceleration="0.02|-0.1" ScaleX="1" ScaleY="1" Time="500" ClassName="p_birds2"/>
+				<Image Type="2" X="216" Y="21.3125" ClassName="parrot01" Width="45" Height="30" NativeX="45" NativeY="30"/>
+				<Image Type="2" X="274" Y="21.3125" ClassName="parrot03" Width="45" Height="30" NativeX="45" NativeY="30"/>
+			</Content>
+		</Object>
+		<Object Name="Bottle_Thin" Label="Animation" Authors="kubinka0505">
+			<Content>
+				<Particle X="5" Y="80" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+				<Particle X="5" Y="100" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+				<Particle X="5" Y="120" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+				<Particle X="5" Y="140" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+				<Image Type="2" Y="100" ClassName="v_black" Width="20" Height="40" NativeX="50" NativeY="50"/>
+				<Image Type="2" X="5" Y="70" ClassName="v_black" Width="10" Height="30" NativeX="50" NativeY="50"/>
+				<Image Type="2" Y="80" ClassName="v_slope_L" Width="10" Height="20" NativeX="300" NativeY="150"/>
+				<Image Type="2" X="10" Y="80" ClassName="v_slope_L" Width="10" Height="20" NativeX="300" NativeY="150">
+					<Properties>
+						<Static>
+							<Matrix A="-10" B="0" C="0" D="20" Tx="10" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+				<Trigger Width="20" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="-1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Sound" Value="glass_item_drop3"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<EventBlock Template="NoneType.Only"/>
+								<EventBlock Template="CommonLib.ActiveDeath"/>
+							</Events>
+							<Actions>
+								<ActionBlock Template="NoneType.Only"/>
+								<ActionBlock Template="CommonLib.Sound"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<!-------- Models -------->
+		<Object Name="Cube" Label="Model" Authors="Floofly.">
+			<Content>
+				<Model ClassName="cube_10" Type="0" LifeTime="00"/>
+			</Content>
+		</Object>
+
+		<!-------- Tricks -------->
+		<Object Name="TriggerSwing" Label="Trick" Authors="elrealsincoma">
+			<Content>
+				<Area Name="TriggerSwing" Width="150" Height="200" Type="Trick" ItemName="TRICK_SWING" Score="100"/>
+			</Content>
+		</Object>
+		<Object Name="TriggerSpinVaultvec2" Label="Trick" Authors="elrealsincoma">
+			<Content>
+				<Area Name="TriggerSpinVaultvec2" Width="150" Height="200" Type="Trick" ItemName="TRICK_SPINVAULT" Score="100"/>
+			</Content>
+		</Object>
+		<Object Name="TriggerObstacleFrontflipFly" Label="Trick" Authors="elrealsincoma">
+			<Content>
+				<Area Name="TriggerObstacleFrontflipFly" Width="150" Height="200" Type="Trick" ItemName="TRICK_OBSTACLEFRONTFLIP" Score="100"/>
+			</Content>
+		</Object>
+
+		<Object Name="TriggerSwingFly" Label="Trick" Authors="s4bil">
+			<Content>
+				<Area Name="TriggerSwingFly" Width="150" Height="200" Type="Trick" ItemName="TRICK_SWING" Score="100"/>
+			</Content>
+		</Object>
+		<Object Name="TriggerAboveCarFly" Label="Trick" Authors="s4bil">
+			<Content>
+				<Area Name="TriggerAboveCarFly" Width="150" Height="200" Type="Trick" ItemName="TRICK_FOLDFLIP" Score="100"/>
+			</Content>
+		</Object>
+		<Object Name="TriggerVertVaultFly" Label="Trick" Authors="s4bil">
+			<Content>
+				<Area Name="TriggerVertVaultFly" Width="150" Height="200" Type="Trick" ItemName="TRICK_VERTVAULT" Score="100"/>
+			</Content>
+		</Object>
+		<Object Name="TriggerScrewDriverFly" Label="Trick" Authors="s4bil">
+			<Content>
+				<Area Name="TriggerScrewDriverFly" Width="150" Height="200" Type="Trick" ItemName="TRICK_SCREWDRIVER" Score="100"/>
+			</Content>
+		</Object>
+		<Object Name="TriggerFlippingSwingFly" Label="Trick" Authors="s4bil">
+			<Content>
+				<Area Name="TriggerFlippingSwingFly" Width="150" Height="200" Type="Trick" ItemName="TRICK_FLIPPINGSWING" Score="100"/>
+			</Content>
+		</Object>
+		<Object Name="TriggerJumpSpinVaultFly" Label="Trick" Authors="s4bil">
+			<Content>
+				<Area Name="TriggerJumpSpinVaultFly" Width="150" Height="200" Type="Trick" ItemName="TRICK_JUMPSPINVAULT" Score="100"/>
+			</Content>
+		</Object>
+		<Object Name="TriggerRailFlipVaultFly" Label="Trick" Authors="s4bil">
+			<Content>
+				<Area Name="TriggerRailFlipVaultFly" Width="150" Height="200" Type="Trick" ItemName="TRICK_RAILFLIP" Score="100"/>
+			</Content>
+		</Object>
+
+		<Object Name="TriggerTunnelFlip" Label="Trick" Authors="kubinka0505">
+			<Content>
+				<Area Name="TriggerTunnelFlip" Width="150" Height="200" Type="Trick" ItemName="TRICK_SIDEFLIP" Score="100"/>
+			</Content>
+		</Object>
+		<Object Name="TriggerGateVaultFly" Label="Trick" Authors="kubinka0505">
+			<Content>
+				<Area Name="TriggerGateVaultFly" Width="150" Height="200" Type="Trick" ItemName="TRICK_GATEVAULT" Score="100"/>
+			</Content>
+		</Object>
+		<Object Name="TriggerMonkeyVaultFly" Label="Trick" Authors="kubinka0505">
+			<Content>
+				<Area Name="TriggerMonkeyVaultFly" Width="150" Height="200" Type="Trick" ItemName="TRICK_MONKEYVAULT" Score="100"/>
+			</Content>
+		</Object>
+		<Object Name="TriggerFrontflipGround" Label="Trick" Authors="kubinka0505">
+			<Content>
+				<Area Name="TriggerFrontflipGround" Width="150" Height="200" Type="Trick" ItemName="TRICK_JUMPTUMBLE" Score="100"/>
+			</Content>
+		</Object>
+
+		<!-------- Triggers -------->
+
+		<!---- Sound ---->
+		<Object Name="CatSound" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Name="CatSound" Width="44" Height="58">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="1Sound" Value="_cs/k0505/cat_meow1"/>
+							<SetVariable Name="2Sound" Value="_cs/k0505/cat_meow2"/>
+							<SetVariable Name="3Sound" Value="_cs/k0505/cat_meow3"/>
+							<SetVariable Name="4Sound" Value="_cs/k0505/cat_hiss1"/>
+							<SetVariable Name="5Sound" Value="_cs/k0505/cat_hiss2"/>
+							<SetVariable Name="6Sound" Value="_cs/k0505/cat_hiss3"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.OnShow"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<ActionBlock Template="CommonLib.Sound" Prefix="1"/>
+									<ActionBlock Template="CommonLib.Sound" Prefix="2"/>
+									<ActionBlock Template="CommonLib.Sound" Prefix="3"/>
+								</Choose>
+							</Actions>
+						</Loop>
+						<Loop>
+							<Events Template="FreqUsed.OnHide"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<ActionBlock Template="CommonLib.Sound" Prefix="4"/>
+									<ActionBlock Template="CommonLib.Sound" Prefix="5"/>
+									<ActionBlock Template="CommonLib.Sound" Prefix="6"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<!---- Loss ---->
+		<Object Name="TriggerLossVertical" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="300">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="-1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Time" Value="120"/>
+							<SetVariable Name="Start" Value=""/>
+							<SetVariable Name="StartFrame" Value=""/>
+							<SetVariable Name="ReversedStart" Value="0"/>
+							<SetVariable Name="End" Value=""/>
+							<SetVariable Name="EndFrame" Value=""/>
+							<SetVariable Name="ReversedEnd" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="TriggerLoss"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="TriggerLossWater" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="1000" Height="100">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Sound" Value="_cs/k0505/fall_water1"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Kill Model="_$Model"/>
+								<Sound Name="_Sound"/>
+								<EndGame Result="Loss" Time="60" Model="_$Model"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="Respawn_0sec">
+			<Content>
+				<Spawn X="75" Y="-100" Name="Respawn" Animation="JumpOff|18"/>
+				<Trigger Name="TriggerRespawn" Y="-500" Width="150" Height="500">
+					<Properties>
+						<Static>
+							<Selection Choice="AITriggers" Variant="CommonMode"/>
+						</Static>
+					</Properties>
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Spawn" Value="Respawn"/>
+							<SetVariable Name="Frames" Value="0"/>
+							<SetVariable Name="SpawnModel" Value="Hunter"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="Respawn"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HunterModeRespawn">
+			<Content>
+				<Trigger Width="150" Height="500">
+					<Properties>
+						<Static>
+							<Selection Choice="AITriggers" Variant="HunterMode"/>
+						</Static>
+					</Properties>
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Frames" Value="0"/>
+							<SetVariable Name="Time" Value="120"/>
+							<SetVariable Name="$AI" Value="-1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="RespawnHunterMode"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<!---- Camera ---->
+		<Object Name="TriggerCameraStop">
+			<Content>
+				<Trigger Width="300" Height="400">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Follow" Value="_$Model"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<EventBlock Template="FreqUsed.Enter"/>
+							</Events>
+							<Actions>
+								<Camera Stop="1"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<!---- Models ---->
+		<Object Name="DespawnPlayer" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="-1"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Kill Model="Player"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="DespawnHunter" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Kill Model="Hunter"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="DespawnHelper" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Kill Model="Helper"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<!-- AI 0 -->
+		<Object Name="ControlOnOff" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="Control"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="ControlOn" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Control Switch="On" Model="_$Model"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="ControlOff" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Control Switch="Off" Model="_$Model"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="ControlOffArea" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="1500" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Control Switch="Off" Model="_$Model"/>
+							</Actions>
+						</Loop>
+						<Loop>
+							<Events Template="FreqUsed.Exit"/>
+							<Actions>
+								<Control Switch="On" Model="_$Model"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="Stop" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="200" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="AnimName" Value="Loose"/>
+							<SetVariable Name="AnimFrame" Value="20"/>
+							<SetVariable Name="Reversed" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="ForcedAnimation"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="Jump" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Up"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_noFollow"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="Slide" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Down"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_noFollow"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="AILeftJump" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Left"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_noFollow"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="AIRightJump" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Right"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_noFollow"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="JumpOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="SlideOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Down" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="StopOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Left" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="SpeedUpOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Right" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="JumpOrSlide" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Press Key="Down" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="JumpOrStop" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Press Key="Left" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+
+			</Content>
+		</Object>
+		<Object Name="JumpOrSpeedUp" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Press Key="Right" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="SlideOrStop" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Down" Model="_$Model"/>
+									<Press Key="Left" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="SlideOrSpeedUp" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Down" Model="_$Model"/>
+									<Press Key="Right" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="StopOrSlide" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Left" Model="_$Model"/>
+									<Press Key="Down" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="StopOrSpeedUp" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Left" Model="_$Model"/>
+									<Press Key="Right" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<!-- AI 1 -->
+		<Object Name="TriggerCatch2">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<Enter/>
+								<Exit/>
+								<ValueChange Name="?getModel[_$Model].animationFrame"/>
+							</Events>
+							<Conditions>
+								<Greater Value="?getModel[_$Model].getNode[COM].worldPositionX" Than="?getModel[Player].getNode[COM].worldPositionX"/>
+								<Equal Value2="RunForward" Value1="?getModel[_$Model].animationName"/>
+							</Conditions>
+							<Actions>
+								<ForceAnimation Name="Arrest" Model="_$Model" Frame="21" Reversed="0"/>
+								<EndGame Result="Loss" Model="_$Model" Frames="60"/>
+								<Camera Follow="_$Model"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="TriggerAIFollow" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<!-- Up -->
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Up"/>
+							<SetVariable Name="FollowAI" Value="1"/>
+							<SetVariable Name="LineType" Value="Vertical"/>
+							<SetVariable Name="FixedLine" Value="0"/>
+							<SetVariable Name="LineValue" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_Follow"/>
+					</Content>
+				</Trigger>
+
+				<!-- Down -->
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Down"/>
+							<SetVariable Name="FollowAI" Value="1"/>
+							<SetVariable Name="LineType" Value="Vertical"/>
+							<SetVariable Name="FixedLine" Value="0"/>
+							<SetVariable Name="LineValue" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_Follow"/>
+					</Content>
+				</Trigger>
+
+				<!-- Left -->
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Left"/>
+							<SetVariable Name="FollowAI" Value="1"/>
+							<SetVariable Name="LineType" Value="Vertical"/>
+							<SetVariable Name="FixedLine" Value="0"/>
+							<SetVariable Name="LineValue" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_Follow"/>
+					</Content>
+				</Trigger>
+
+				<!-- Right -->
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Rights"/>
+							<SetVariable Name="FollowAI" Value="1"/>
+							<SetVariable Name="LineType" Value="Vertical"/>
+							<SetVariable Name="FixedLine" Value="0"/>
+							<SetVariable Name="LineValue" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_Follow"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="TriggerJumpOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="TriggerSlideOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Down" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="TriggerStopOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Left" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="TriggerSpeedUpOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Right" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="TriggerJumpOrSlide" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Press Key="Down" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="TriggerJumpOrStop" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Press Key="Left" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+
+			</Content>
+		</Object>
+		<Object Name="TriggerJumpOrSpeedUp" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Press Key="Right" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="TriggerSlideOrStop" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Down" Model="_$Model"/>
+									<Press Key="Left" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="TriggerSlideOrSpeedUp" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Down" Model="_$Model"/>
+									<Press Key="Right" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="TriggerStopOrSlide" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Left" Model="_$Model"/>
+									<Press Key="Down" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="TriggerStopOrSpeedUp" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Left" Model="_$Model"/>
+									<Press Key="Right" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<!-- AI 2 -->
+		<Object Name="HelperAIFollow" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<!-- Up -->
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Up"/>
+							<SetVariable Name="FollowAI" Value="2"/>
+							<SetVariable Name="LineType" Value="Vertical"/>
+							<SetVariable Name="FixedLine" Value="0"/>
+							<SetVariable Name="LineValue" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_Follow"/>
+					</Content>
+				</Trigger>
+
+				<!-- Down -->
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Down"/>
+							<SetVariable Name="FollowAI" Value="2"/>
+							<SetVariable Name="LineType" Value="Vertical"/>
+							<SetVariable Name="FixedLine" Value="0"/>
+							<SetVariable Name="LineValue" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_Follow"/>
+					</Content>
+				</Trigger>
+
+				<!-- Left -->
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Left"/>
+							<SetVariable Name="FollowAI" Value="2"/>
+							<SetVariable Name="LineType" Value="Vertical"/>
+							<SetVariable Name="FixedLine" Value="0"/>
+							<SetVariable Name="LineValue" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_Follow"/>
+					</Content>
+				</Trigger>
+
+				<!-- Right -->
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Rights"/>
+							<SetVariable Name="FollowAI" Value="2"/>
+							<SetVariable Name="LineType" Value="Vertical"/>
+							<SetVariable Name="FixedLine" Value="0"/>
+							<SetVariable Name="LineValue" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_Follow"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HelperStop" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="AnimName" Value="Loose"/>
+							<SetVariable Name="AnimFrame" Value="20"/>
+							<SetVariable Name="Reversed" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="ForcedAnimation"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="HelperJump" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Up"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_noFollow"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HelperSlide" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Down"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_noFollow"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HelperAILeftJump" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Left"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_noFollow"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HelperAIRightJump" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Right"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_noFollow"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="HelperJumpOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HelperSlideOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Down" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HelperStopOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Left" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HelperSpeedUpOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Right" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="HelperJumpOrSlide" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Press Key="Down" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HelperJumpOrStop" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Press Key="Left" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+
+			</Content>
+		</Object>
+		<Object Name="HelperJumpOrSpeedUp" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Press Key="Right" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="HelperSlideOrStop" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Down" Model="_$Model"/>
+									<Press Key="Left" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HelperSlideOrSpeedUp" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Down" Model="_$Model"/>
+									<Press Key="Right" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="HelperStopOrSlide" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Left" Model="_$Model"/>
+									<Press Key="Down" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HelperStopOrSpeedUp" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="2"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Left" Model="_$Model"/>
+									<Press Key="Right" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<!-- AI 5 -->
+		<Object Name="HunterModJumpOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="5"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HunterModSlideOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="5"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Down" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HunterModStopOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="5"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Left" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HunterModSpeedUpOrNot" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="5"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Right" Model="_$Model"/>
+									<Wait Frames="0"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="HunterModJumpOrSlide" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="5"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Press Key="Down" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HunterModJumpOrStop" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="5"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Press Key="Left" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+
+			</Content>
+		</Object>
+		<Object Name="HunterModJumpOrSpeedUp" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="5"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Up" Model="_$Model"/>
+									<Press Key="Right" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="HunterModSlideOrStop" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="5"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Down" Model="_$Model"/>
+									<Press Key="Left" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HunterModSlideOrSpeedUp" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="5"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Down" Model="_$Model"/>
+									<Press Key="Right" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<Object Name="HunterModStopOrSlide" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="5"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Left" Model="_$Model"/>
+									<Press Key="Down" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="HunterModStopOrSpeedUp" Label="Trigger" Authors="kubinka0505">
+			<Content>
+				<Trigger Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="5"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events Template="FreqUsed.Enter"/>
+							<Actions>
+								<Choose Order="Random" Set="1">
+									<Press Key="Left" Model="_$Model"/>
+									<Press Key="Right" Model="_$Model"/>
+								</Choose>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+
+		<!---- Ground ---->
+		<Object Name="SmallSlope_R">
+			<Content>
+				<Image ClassName="v_slope_R" Width="300" Height="150"/>
+				<Trapezoid X="-1" Y="1" Width="300" Height="151" Height1="1" Type="2"/>
+			</Content>
+		</Object>
+
+		<!---- Obstacles ---->
+		<Object Name="Bench_Obstacle2">
+			<Content>
+				<Image Y="-105" ClassName="tp_bench" Width="455" Height="105" NativeX="465" NativeY="100"/>
+				<Platform Y="-90" Width="455" Height="90"/>
+				<Object Name="TriggerHighJump500" X="-700" Y="-150"/>
+				<Object Name="TriggerJumpToEdge" X="-200" Y="-200"/>
+		  </Content>
+		</Object>
+
+		<Object Name="wall-e0">
+			<Properties>
+				<Dynamic>
+					<Transformation Name="MoveHead">
+						<Move>
+							<MoveInterval Number="1" FramesToMove="50" Delay="0">
+								<Point Name="Start"/>
+								<Point Name="Support" Number="1" X="-500" />
+								<Point Name="Finish" X="-1000" />
+							</MoveInterval>
+							<MoveInterval Number="2" FramesToMove="2" Delay="10">
+								<Point Name="Start"/>
+								<Point Name="Support" Number="1" Y="5"/>
+								<Point Name="Finish" Y="10"/>
+							</MoveInterval>
+							<MoveInterval Number="3" FramesToMove="2" Delay="0">
+								<Point Name="Start"/>
+								<Point Name="Support" Number="1" Y="5"/>
+								<Point Name="Finish" Y="10"/>
+							</MoveInterval>
+							<MoveInterval Number="4" FramesToMove="5" Delay="5">
+								<Point Name="Start"/>
+								<Point Name="Support" Number="1" Y="40"/>
+								<Point Name="Finish" Y="80"/>
+							</MoveInterval>
+							<MoveInterval Number="5" FramesToMove="5" Delay="0">
+								<Point Name="Start"/>
+								<Point Name="Support" Number="1" Y="20"/>
+								<Point Name="Finish" Y="40"/>
+							</MoveInterval>
+						</Move>
+					</Transformation>
+					<Transformation Name="MoveBody">
+						<Move>
+							<MoveInterval Number="1" FramesToMove="50" Delay="0">
+								<Point Name="Start"/>
+								<Point Name="Support" Number="1" X="-500" />
+								<Point Name="Finish" X="-1000" />
+							</MoveInterval>
+							<MoveInterval Number="2" FramesToMove="5" Delay="10">
+								<Point Name="Start"/>
+								<Point Name="Support" Number="1" Y="12.5"/>
+								<Point Name="Finish" Y="25"/>
+							</MoveInterval>
+							<MoveInterval Number="3" FramesToMove="5" Delay="5">
+								<Point Name="Start"/>
+								<Point Name="Support" Number="1" Y="40"/>
+								<Point Name="Finish" Y="80"/>
+							</MoveInterval>
+						</Move>
+					</Transformation>
+					<Transformation Name="MoveHand">
+						<Move>
+							<MoveInterval Number="1" FramesToMove="50" Delay="0">
+								<Point Name="Start"/>
+								<Point Name="Support" Number="1" X="-500" />
+								<Point Name="Finish" X="-1000" />
+							</MoveInterval>
+							<MoveInterval Number="2" FramesToMove="2" Delay="12">
+								<Point Name="Start"/>
+								<Point Name="Support" Number="1" Y="5"/>
+								<Point Name="Finish" Y="10"/>
+							</MoveInterval>
+							<MoveInterval Number="3" FramesToMove="5" Delay="5">
+								<Point Name="Start"/>
+								<Point Name="Support" Number="1" Y="12.5"/>
+								<Point Name="Finish" Y="25"/>
+							</MoveInterval>
+							<MoveInterval Number="4" FramesToMove="5" Delay="0">
+								<Point Name="Start"/>
+								<Point Name="Support" Number="1" X="27.5" />
+								<Point Name="Finish" X="55" />
+							</MoveInterval>
+						</Move>
+					</Transformation>
+					<Transformation Name="MoveLeg">
+						<Move>
+							<MoveInterval Number="1" FramesToMove="50" Delay="0">
+								<Point Name="Start"/>
+								<Point Name="Support" Number="1" X="-500" />
+								<Point Name="Finish" X="-1000" />
+							</MoveInterval>
+						</Move>
+					</Transformation>
+				</Dynamic>
+			</Properties>
+			<Content>
+				<Image Type="3" X="145" Y="-185" ClassName="v_slope_L" Width="40" Height="20" NativeX="300" NativeY="150">
+					<Properties>
+						<Static>
+							<Matrix A="-40" B="0" C="0" D="20" Tx="40" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+				<Image Type="3" X="128" Y="-165" ClassName="v_black" Width="10" Height="25" NativeX="50" NativeY="50"/>
+				<Image Type="3" X="95" Y="-185" ClassName="v_black" Width="50" Height="20" NativeX="50" NativeY="50"/>
+				<Image X="178" Y="-137" ClassName="wallbox" Width="18" Height="65" NativeX="35" NativeY="130"/>
+				<Image Type="3" X="90" Y="-155" ClassName="v_black" Width="90" Height="90" NativeX="50" NativeY="50"/>
+				<Image Type="3" X="128" Y="-62" ClassName="v_black" Width="10" Height="25" NativeX="50" NativeY="50"/>
+				<Image X="0" Y="-155" ClassName="v_barrel_1" Width="73" Height="91" NativeX="73" NativeY="91"/>
+				<Image Type="3" X="73" Y="-117" ClassName="v_black" Width="25" Height="10" NativeX="50" NativeY="50"/>
+				<Image Type="3" X="58" Y="-122" ClassName="v_black" Width="15" Height="5" NativeX="50" NativeY="50"/>
+				<Image Type="3" X="58" Y="-107" ClassName="v_black" Width="15" Height="5" NativeX="50" NativeY="50"/>
+				<Image Type="3" X="68" Y="-122" ClassName="v_black" Width="5" Height="20" NativeX="50" NativeY="50"/>
+				<Image Type="3" X="60" Y="-50" ClassName="v_slope_L" Width="45" Height="25" NativeX="300" NativeY="150"/>
+				<Image Type="3" X="60" Y="-25" ClassName="v_black" Width="124" Height="25" NativeX="50" NativeY="50"/>
+				<Image Type="3" X="104" Y="-50" ClassName="v_black" Width="80" Height="25" NativeX="50" NativeY="50"/>
+				<Image Type="3" X="123" Y="-68" ClassName="v_black" Width="20" Height="10" NativeX="50" NativeY="50"/>
+				<Trigger Name="ActivatorHead" X="-2580" Y="-500" Width="100" Height="500">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<EventBlock Template="FreqUsed.Enter"/>
+							</Events>
+							<Actions>
+								<ActionBlock Template="FreqUsed.SwitchOff"/>
+								<Transform Name="MoveHead"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+				<Trigger Name="ActivatorBody" X="-2580" Y="-500" Width="100" Height="500">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<EventBlock Template="FreqUsed.Enter"/>
+							</Events>
+							<Actions>
+								<ActionBlock Template="FreqUsed.SwitchOff"/>
+								<Transform Name="MoveBody"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+				<Trigger Name="ActivatorHand" X="-2575" Y="-500" Width="100" Height="500">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<EventBlock Template="FreqUsed.Enter"/>
+							</Events>
+							<Actions>
+								<ActionBlock Template="FreqUsed.SwitchOff"/>
+								<Transform Name="MoveHand"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+				<Trigger Name="ActivatorLeg" X="-2580" Y="-500" Width="100" Height="500">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<EventBlock Template="FreqUsed.Enter"/>
+							</Events>
+							<Actions>
+								<ActionBlock Template="FreqUsed.SwitchOff"/>
+								<Transform Name="MoveLeg"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+	</Objects>
+</Root>

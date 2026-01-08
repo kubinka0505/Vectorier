@@ -1,0 +1,88 @@
+<Textures>
+	<Image ClassName="v_bg" Width="2121" Height="1116"/>
+	<Image ClassName="v_fan_1_2" Width="366" Height="89"/>
+	<Image ClassName="v_billboard_1" Width="325" Height="605"/>
+	<Image ClassName="v_booth_1_1" Width="1373" Height="399"/>
+	<Image ClassName="v_building_1" Width="1789" Height="2599"/>
+	<Image ClassName="v_building_2" Width="1070" Height="2283"/>
+	<Image ClassName="v_building_3" Width="1083" Height="2311"/>
+	<Image ClassName="doorHT" Width="178" Height="255"/>
+	<Image ClassName="fog" Width="500" Height="250"/>
+	<Image ClassName="v_lamppost_1" Width="150" Height="620"/>
+	<Image ClassName="v_grating_1" Width="915" Height="188"/>
+	<Image ClassName="office_battery" Width="258" Height="105"/>
+	<Image ClassName="office_blank" Width="1255" Height="430"/>
+	<Image ClassName="office_cooler" Width="84" Height="218"/>
+	<Image ClassName="office_door" Width="182" Height="256"/>
+	<Image ClassName="office_glads" Width="370" Height="179"/>
+	<Image ClassName="office_lightened_piece" Width="795" Height="430"/>
+	<Image ClassName="office_lightened_piece_down" Width="795" Height="430"/>
+	<Image ClassName="office_printer" Width="106" Height="134"/>
+	<Image ClassName="office_socket" Width="26" Height="27"/>
+	<Image ClassName="office_table" Width="397" Height="164"/>
+	<Image ClassName="office_talents" Width="94" Height="117"/>
+	<Image ClassName="office_urn" Width="54" Height="61"/>
+	<Image ClassName="office_x_passage_edge" Width="30" Height="430"/>
+	<Image ClassName="passage_blank" Width="410" Height="330"/>
+	<Image ClassName="passage_blank_long" Width="820" Height="330"/>
+	<Image ClassName="passage_gallery" Width="820" Height="330"/>
+	<Image ClassName="passage_nosmokin" Width="54" Height="49"/>
+	<Image ClassName="passage_wayout" Width="77" Height="39"/>
+	<Image ClassName="passage_windowz" Width="410" Height="330"/>
+	<Image ClassName="v_railing_1_1" Width="484" Height="87"/>
+	<Image ClassName="v_bg" Width="1061" Height="558"/>
+	<Image ClassName="v_antenna" Width="95" Height="90"/>
+	<Image ClassName="v_bar_binocular" Width="66" Height="150"/>
+	<Image ClassName="v_barrel_1_1" Width="75" Height="90"/>
+	<Image ClassName="v_fan_1_1" Width="200" Height="90"/>
+	<Image ClassName="v_box_1" Width="68" Height="62"/>
+	<Image ClassName="v_billboard_2" Width="165" Height="303"/>
+	<Image ClassName="v_table_1" Width="126" Height="100"/>
+	<Image ClassName="v_table_2" Width="320" Height="95"/>
+	<Image ClassName="v_billboard_2_pattern" Width="165" Height="303"/>
+	<Image ClassName="v_billboard_1_pattern" Width="165" Height="303"/>
+	<Image ClassName="v_boothAngle_1_1" Width="612" Height="385"/>
+	<Image ClassName="v_booth_1_1" Width="1392" Height="399"/>
+	<Image ClassName="v_building_1_pattern" Width="895" Height="527"/>
+	<Image ClassName="v_building_2_3_pattern" Width="546" Height="527"/>
+	<Image ClassName="v_fence" Width="225" Height="100"/>
+	<Image ClassName="v_fence_bar" Width="70" Height="100"/>
+	<Image ClassName="v_muorny_tank_1_1" Width="86" Height="91"/>
+	<Image ClassName="v_muorny_tank_1" Width="86" Height="91"/>
+	<Image ClassName="v_muorny_tank_2" Width="198" Height="125"/>
+	<Image ClassName="v_muorny_tank_2_1" Width="198" Height="125"/>
+	<Image ClassName="v_office_blank" Width="1255" Height="430"/>
+	<Image ClassName="v_office_lightened_piece" Width="795" Height="430"/>
+	<Image ClassName="v_office_lightened_piece_down" Width="795" Height="430"/>
+	<Image ClassName="v_office_pattern" Width="795" Height="430"/>
+	<Image ClassName="v_office_socket" Width="26" Height="27"/>
+	<Image ClassName="v_office_urn" Width="54" Height="61"/>
+	<Image ClassName="v_office_x_passage_edge" Width="30" Height="430"/>
+	<Image ClassName="v_passage_blank" Width="410" Height="330"/>
+	<Image ClassName="v_passage_blank_long" Width="820" Height="330"/>
+	<Image ClassName="v_passage_gallery2" Width="820" Height="330"/>
+	<Image ClassName="v_passage_nosmokin" Width="54" Height="49"/>
+	<Image ClassName="v_passage_wayout" Width="77" Height="39"/>
+	<Image ClassName="v_passage_window" Width="410" Height="330"/>
+	<Image ClassName="v_rail_left" Width="403" Height="264"/>
+	<Image ClassName="v_rail_longleft" Width="824" Height="267"/>
+	<Image ClassName="v_screen" Width="391" Height="315"/>
+	<Image ClassName="v_table_screen" Width="456" Height="185"/>
+	<Image ClassName="v_table_screen_min" Width="457" Height="220"/>
+	<Image ClassName="v_table_simple" Width="417" Height="90"/>
+	<Image ClassName="v_venthole_1_1" Width="127" Height="173"/>
+	<Image ClassName="ventilation_holes_roof" Width="643" Height="150"/>
+	<Image ClassName="ventilation_passage" Width="100" Height="100"/>
+	<Image ClassName="ventilation_hole" Width="117" Height="103"/>
+	<Image ClassName="ventilation_enter" Width="100" Height="100"/>
+	<Image ClassName="volts" Width="120" Height="200"/>
+	<Image ClassName="v_rail_upleft" Width="288" Height="142"/>
+
+	<Image ClassName="building" Tag="Backdrop"/>
+
+	<Image ClassName="collision" Tag="Platform"/>
+	<Image ClassName="trapezoid_type" Tag="Trapezoid"/>
+
+	<Image ClassName="trigger" Components="TriggerSettings" Tag="Trigger"/>
+	<Image ClassName="trick" Components="TriggerSettings" Tag="Trigger" Check="Equals"/>
+</Textures>

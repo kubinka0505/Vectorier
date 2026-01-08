@@ -1,0 +1,31 @@
+<Init>
+	<SetVariable Name="$Active" Value="1"/>
+	<SetVariable Name="$AI" Value="0"/>
+	<SetVariable Name="$Node" Value="COM"/>
+	<SetVariable Name="TransformName" Value=""/>
+	<!-- Animations to Validate -->
+	<SetVariable Name="one_ReqAnim" Value="StandAfterInhibition"/>
+	<SetVariable Name="two_ReqAnim" Value="WallCollisionFromRuntoStand"/>
+	<SetVariable Name="three_ReqAnim" Value="Stand"/>
+	<SetVariable Name="four_ReqAnim" Value="WallCollisionFromSlidetoStand"/>
+	<SetVariable Name="five_ReqAnim" Value="WallCollisionFromRoll41-42toStand"/>
+</Init>
+<Loop>
+	<Events>
+		<EventBlock Template="FreqUsed.Enter"/>
+		<EventBlock Template="CommonLib.RequiredAnimation"/>
+	</Events>
+	<Conditions>
+		<Operator Type="Or">
+			<ConditionBlock Template="CommonLib.RequiredAnimation" Prefix="one_"/>
+			<ConditionBlock Template="CommonLib.RequiredAnimation" Prefix="two_"/>
+			<ConditionBlock Template="CommonLib.RequiredAnimation" Prefix="three_"/>
+			<ConditionBlock Template="CommonLib.RequiredAnimation" Prefix="four_"/>
+			<ConditionBlock Template="CommonLib.RequiredAnimation" Prefix="five_"/>
+		</Operator>
+	</Conditions>
+	<Actions>
+		<ActionBlock Template="FreqUsed.SwitchOff"/>
+		<Transform Name="_TransformName"/>
+	</Actions>
+</Loop>

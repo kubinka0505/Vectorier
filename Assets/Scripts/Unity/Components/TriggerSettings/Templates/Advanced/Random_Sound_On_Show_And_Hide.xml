@@ -1,0 +1,32 @@
+<Init>
+	<SetVariable Name="$Active" Value="1"/>
+	<SetVariable Name="$AI" Value="0"/>
+	<SetVariable Name="$Node" Value="COM"/>
+	<SetVariable Name="1Sound" Value="_cs/k0505/cat_meow1"/>
+	<SetVariable Name="2Sound" Value="_cs/k0505/cat_meow2"/>
+	<SetVariable Name="3Sound" Value="_cs/k0505/cat_meow3"/>
+	<SetVariable Name="4Sound" Value="_cs/k0505/cat_hiss1"/>
+	<SetVariable Name="5Sound" Value="_cs/k0505/cat_hiss1"/>
+	<SetVariable Name="6Sound" Value="_cs/k0505/cat_hiss1"/>
+	<SetVariable Name="Flag1" Value="1"/>
+</Init>
+<Loop>
+	<Events Template="FreqUsed.OnShow"/>
+	<Actions>
+		<Choose Order="Random">
+			<ActionBlock Template="CommonLib.Sound" Prefix="1"/>
+			<ActionBlock Template="CommonLib.Sound" Prefix="2"/>
+			<ActionBlock Template="CommonLib.Sound" Prefix="3"/>
+		</Choose>
+	</Actions>
+</Loop>
+<Loop>
+	<Events Template="FreqUsed.OnHide"/>
+	<Actions>
+		<Choose Order="Random">
+			<ActionBlock Template="CommonLib.Sound" Prefix="4"/>
+			<ActionBlock Template="CommonLib.Sound" Prefix="5"/>
+			<ActionBlock Template="CommonLib.Sound" Prefix="6"/>
+		</Choose>
+	</Actions>
+</Loop>

@@ -1,0 +1,17 @@
+{
+	"included": {
+		"90,0deg": "ROTATE_270",
+		"270,0deg": "ROTATE_90"
+	},
+	"excluded": {
+		"flipX": "FLIP_LEFT_RIGHT",
+		"180,0deg": "ROTATE_180",
+
+		"flipX_180,0deg": "FLIP_TOP_BOTTOM",
+
+		"flipX_90,0deg": "TRANSVERSE",
+		"flipX_270,0deg": "TRANSPOSE",
+
+		"leave at least one entry": "otherwise errors will be raised from empty json key parsing"
+	}
+}

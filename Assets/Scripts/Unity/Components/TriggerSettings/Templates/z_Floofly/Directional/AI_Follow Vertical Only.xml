@@ -1,0 +1,43 @@
+<Init>
+	<SetVariable Name="$Active" Value="1"/>
+	<SetVariable Name="$AI" Value="0"/>
+	<SetVariable Name="$Node" Value="COM"/>
+	<SetVariable Name="FollowAI" Value="2"/>
+	<SetVariable Name="Key" Value="-1"/>
+	<SetVariable Name="LineValue" Value="0"/>
+	<SetVariable Name="Direction" Value="1"/>
+</Init>
+<Loop>
+	<Events Template="FreqUsed.KeyPressed"/>
+	<Conditions>
+		<Equal Value1="?getModel[_$Model].direction" Value2="_Direction"/>
+	</Conditions>
+	<Actions>
+		<SetVariable Name="LineValue" Value="?getModel[Player].getNode[_$Node].localPositionX"/>
+		<SetVariable Name="$AI" Value="_FollowAI"/>
+	</Actions>
+</Loop>
+<Loop>
+	<Events Template="FreqUsed.KeyPressed"/>
+	<Conditions>
+		<Equal Value1="_Key" Value2="-1"/>
+	</Conditions>
+	<Actions>
+		<SetVariable Name="Key" Value="_$Key"/>
+	</Actions>
+</Loop>
+<Loop>
+	<Events>
+		<Line Type="Vertical" Position="_LineValue"/>
+	</Events>
+	<Conditions>
+		<Operator Type="And">
+			<Equal Value1="_$AI" Value2="_FollowAI"/>
+			<Equal Value1="?getModel[_$Model].direction" Value2="_Direction"/>
+		</Operator>
+	</Conditions>
+	<Actions>
+		<Press Key="_Key" Model="_$Model"/>
+		<SetVariable Name="$AI" Value="0"/>
+	</Actions>
+</Loop>

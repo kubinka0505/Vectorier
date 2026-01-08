@@ -1,0 +1,1 @@
+..\..\..\executable\dzip.exe "..\_config\common_xml.dcl"

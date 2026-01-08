@@ -1,0 +1,10 @@
+<Init>
+    <SetVariable Name="$Active" Value="1"/>
+    <SetVariable Name="$AI" Value="0"/>
+    <SetVariable Name="$Node" Value="COM"/>
+    <SetVariable Name="Activator" Value=""/>
+</Init>
+<Loop>
+    <Events Template="FreqUsed.Enter"/>
+    <Actions Template="FreqUsed.DispatchEvent"/>
+</Loop>

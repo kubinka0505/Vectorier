@@ -1,0 +1,10 @@
+<Init>
+	<SetVariable Name="$Active" Value="1"/>
+	<SetVariable Name="$Node" Value="COM"/>
+	<SetVariable Name="$AI" Value="0"/>
+	<SetVariable Name="Sound" Value="0"/>
+</Init>
+<Loop>
+	<Events Template="FreqUsed.Enter"/>
+	<Actions Template="CommonLib.Sound"/>
+</Loop>

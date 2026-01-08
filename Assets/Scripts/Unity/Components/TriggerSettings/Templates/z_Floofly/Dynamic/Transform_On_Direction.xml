@@ -1,0 +1,17 @@
+<Init>
+	<SetVariable Name="$AI" Value="0"/>
+	<SetVariable Name="$Active" Value="1"/>
+	<SetVariable Name="$Node" Value="COM"/>
+	<SetVariable Name="TransformName" Value="0"/>
+	<SetVariable Name="Direction" Value="1"/>
+</Init>
+<Loop>
+	<Events Template="FreqUsed.Enter"/>
+	<Conditions>
+		<Equal Value1="?getModel[_$Model].direction" Value2="_Direction"/>
+	</Conditions>
+	<Actions>
+		<ActionBlock Template="FreqUsed.SwitchOff"/>
+		<Transform Name="_TransformName"/>
+	</Actions>
+</Loop>

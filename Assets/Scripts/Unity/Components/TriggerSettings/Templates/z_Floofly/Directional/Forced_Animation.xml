@@ -1,0 +1,18 @@
+ <Init>
+	<SetVariable Name="$Active" Value="1"/>
+	<SetVariable Name="$AI" Value="1"/>
+	<SetVariable Name="$Node" Value="COM"/>
+	<SetVariable Name="AnimName" Value="AirBombStart"/>
+	<SetVariable Name="AnimFrame" Value="5"/>
+	<SetVariable Name="Reversed" Value="0"/>
+	<SetVariable Name="Direction" Value="1"/>
+</Init>
+<Loop Name="Only">
+	<Events Template="FreqUsed.Enter"/>
+	<Conditions>
+		<Equal Value1="?getModel[_$Model].direction" Value2="_Direction"/>
+	</Conditions> 
+	<Actions>
+		<ForceAnimation Name="_AnimName" Model="_$Model" Frame="_AnimFrame" Reversed="_Reversed"/>
+	</Actions>
+</Loop>

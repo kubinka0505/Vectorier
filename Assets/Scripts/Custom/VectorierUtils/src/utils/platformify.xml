@@ -1,0 +1,70 @@
+<Root>
+	<Collision Offset="6" Padding="12.5" Opacity="0.5" Order="256" Prefix="Platform" RandomizeScale="true">
+		<LeftCorner Textures="v_CornerUp_L_01|v_CornerUp_L_02|v_CornerUp_L_03"/>
+		<LeftWall Textures="v_Wall_01|v_Wall_02|v_Wall_03|v_Wall_L_01|v_Wall_L_02|v_Wall_L_03"/>
+		<Floor Textures="v_Floor_01|v_Floor_02|v_Floor_03|v_LongFloor_01|v_LongFloor_02|v_LongFloor_03"/>
+		<RightCorner Textures="v_CornerUp_R_01|v_CornerUp_R_02|v_CornerUp_R_03"/>
+		<RightWall Textures="v_Wall_R_01|v_Wall_R_02|v_Wall_R_03"/>
+	</Collision>
+
+	<Trapezoid Name="v_slope_l" Width="1.0385" Height="1.0375" Type="1" Opacity="1" Function="ToLower" Method="Contains"/>
+	<Trapezoid Name="v_slope_r" Width="1.0385" Height="1.0375" Type="1" Opacity="1" Function="ToLower" Method="Contains"/>
+	<Trapezoid Name="v_descent_2" Y="3" Width="1.009" Height="1" Type="2" Opacity="1" Function="ToLower" Method="None"/>
+	<Trapezoid Name="lab_pnevmoslope" Width="1.0385" Height="1" Type="1" Opacity="1" Function="ToLower" Method="Contains"/>
+	<Trapezoid Name="lab_slope" Width="1" Height="1" Type="1" Opacity="1" Function="ToLower" Method="None"/>
+	<Trapezoid Name="construction_angle_1" Y="3" Width="1.01" Height="1" Type="1" Opacity="1" Function="ToLower" Method="None"/>
+	<Trapezoid Name="construction_angle_2" Y="3" Width="1.01" Height="1" Type="2" Opacity="1" Function="ToLower" Method="None"/>
+
+	<Textures>
+		<!-- Ground -->
+		<Image Name="collision|v_black" Prefix="Platform" Opacity="1" Function="None"/>
+		<Image Name="v_roof_1" Y="22" Width="83" Height="52" Prefix="Roof1_" Opacity="1" Function="ToLower"/>
+
+		<!-- Cons Bridge -->
+		<Image Name="cons_bridge" Y="23" Width="815" Height="176" Prefix="ConsBridge" Opacity="0.25" Function="ToLower" Method="Contains"/>
+
+		<!-- Truck Fence -->
+		<Image Name="truck_fence" X="15" Width="488" Height="57" Prefix="TruckFence" Opacity="1" Function="ToLower" Method="Contains"/>
+
+		<!-- Weights -->
+		<Image Name="weight" X="-2" Width="448" Height="218" Prefix="Weight" Opacity="1" Function="ToLower" Method="StartsWith"/>
+
+		<!-- Muorny Tanks -->
+		<Image Name="v_muorny_tank_1" X="4" Y="8" Width="78" Height="84" Prefix="MuornyTank1_" Opacity="1" Function="ToLower"/>
+		<Image Name="v_muorny_tank_2" X="12" Y="23" Width="178" Height="107" Prefix="MuornyTank2_" Opacity="1" Function="ToLower" Method="Contains"/>
+
+		<!-- Breakages -->
+		<Image Name="tp_breakage_left" Y="10" Width="506" Height="496" Prefix="TpBreakageLeft" Opacity="1" Function="ToLower" Method="StartsWith"/>
+		<Image Name="tp_breakage_right" X="10" Y="16" Width="500" Height="492" Prefix="TpBreakageRight" Opacity="1" Function="ToLower" Method="StartsWith"/>
+
+		<!-- Water Towers -->
+		<Image Name="cons_tower" X="14" Y="3" Width="185" Height="360" Prefix="ConsTower_" Opacity="1" Function="ToLower"/>
+		<Image Name="cons_tower2" X="20" Y="3" Width="200" Height="449.2" Prefix="ConsTower2_" Opacity="1" Function="ToLower"/>
+		<Image Name="v_water_tower" X="58" Width="200" Height="360" Prefix="WaterTower" Opacity="1" Function="ToLower" Method="StartsWith"/>
+
+		<!-- Blocks -->
+		<Image Name="cons_prop_tile" Width="163" Height="512" Prefix="ConsPropTile" Opacity="1" Function="ToLower" Method="StartsWith"/>
+		<Image Name="cons_prop_horizontal" Width="309" Height="86" Prefix="ConsPropHorizontal" Opacity="1" Function="ToLower"/>
+		<Image Name="cons_prop_horizontal_b" Width="512" Height="146" Prefix="ConsPropHorizontalB" Opacity="1" Function="ToLower"/>
+		<Image Name="generator" Y="2" Width="234" Height="138" Prefix="Generator" Opacity="1" Function="ToLower"/>
+		<Image Name="v_dovecote_1" X="16" Y="19" Width="230" Height="221" Prefix="Dovecote" Opacity="1" Function="ToLower"/>
+
+		<!-- Various -->
+		<Image Name="v_railing_1" X="13" Y="13" Width="257" Height="96" Prefix="Railing1_" Opacity="1" Function="ToLower"/>
+		<Image Name="v_tower_up" X="5" Width="52" Height="38" Prefix="TowerUp" Opacity="1" Function="ToLower"/>
+
+		<!-- Obstacles -->
+		<Image Name="gas" X="1" Y="7" Width="308" Height="101" Prefix="Gas" Opacity="1" Function="ToLower"/>
+		<Image Name="hall_table" Y="5" Width="1317" Height="90" Prefix="HallTable" Opacity="1" Function="ToLower"/>
+		<Image Name="lavkus" Width="370" Height="90" Prefix="Lavkus" Opacity="1" Function="ToLower"/>
+		<Image Name="long_ballons" X="5" Y="5" Width="350" Height="85" Prefix="LongBallons" Opacity="1" Function="ToLower"/>
+		<Image Name="long_condion" X="10" Y="5" Width="347" Height="71" Prefix="LongCondion" Opacity="1" Function="ToLower" Method="StartsWith"/>
+		<Image Name="long_table" X="2" Y="8" Width="361" Height="92" Prefix="LongTable" Opacity="1" Function="ToLower"/>
+		<Image Name="park_ventblack" X="2" Y="1" Width="87" Height="82" Prefix="ParkVentBlack" Opacity="1" Function="ToLower"/>
+		<Image Name="v_fan_1" X="63" Y="21" Width="245" Height="88" Prefix="Fan1" Opacity="1" Function="ToLower"/>
+		<Image Name="v_fan_2" X="53" Y="10" Width="74" Height="88" Prefix="Fan2_" Opacity="1" Function="ToLower"/>
+		<Image Name="v_Pipe_1" X="6" Y="17" Width="94" Height="78" Prefix="Pipe1_" Opacity="1"/>
+		<Image Name="v_Pipe_7" X="16" Y="11" Width="75" Height="87" Prefix="Pipe7_" Opacity="1"/>
+		<Image Name="v_table_2" X="15" Y="9" Width="290" Height="86" Prefix="Table2" Opacity="1" Function="ToLower"/>
+	</Textures>
+</Root>
