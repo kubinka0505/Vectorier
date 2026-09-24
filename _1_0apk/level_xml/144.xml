@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_techpark.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn_2" AI="1" Time="5.3" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="30"/>
+  <Variable Name="Money">30</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.1" Type="1" DeltaX="-500" DeltaY="0">
+      <Techpark_bg1 X="0" Y="-500" DeltaX="0" DeltaY="-500"/>
+      <Techpark_bg1 X="2048" Y="-500" DeltaX="0" DeltaY="0"/>
+      <Techpark_bg1 X="4096" Y="-500" DeltaX="0" DeltaY="0"/>
+    </Layer>
+
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Banner_TP_building_1 X="-535" Y="-515" DeltaX="-535" DeltaY="-515"/>
+      <Banner_TP_building_2 X="1405" Y="-390" DeltaX="480" DeltaY="125"/>
+      <Banner_TP_building_2 X="3770" Y="-625" DeltaX="315" DeltaY="-235"/>
+      <Banner_TP_building_1 X="6040" Y="-1280" DeltaX="220" DeltaY="-655"/>
+      <Banner_TP_building_1 X="7730" Y="-430" DeltaX="230" DeltaY="850"/>
+      <Banner_TP_building_2 X="9560" Y="-435" DeltaX="370" DeltaY="-5"/>
+      <Banner_TP_building_2 X="11885" Y="-355" DeltaX="275" DeltaY="80"/>
+      <Banner_TP_building_1 X="14540" Y="-820" DeltaX="605" DeltaY="-465"/>
+    </Layer>  
+
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof144-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-1900" BoxY="-2300" BoxWidth="9190" BoxHeight="3500">
+        <Pill X="2505" Y="-470"/>
+        <TriggerJump X="7160" Y="0"/>
+        <Respawn_2sec X="4020" Y="290"/>
+        <TriggerCameraStart X="-230" Y="-360"/>
+        <TriggerZoomMin X="5005" Y="-2300"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="125" Y="-560" Name="DefaultSpawn_2" Animation="JumpOff|18"/>
+            <Spawn X="-1850" Y="-1125" Name="DefaultSpawn" Animation="JumpOff|18"/>
+            <Trigger X="-1505" Y="-1550" Width="210" Height="780" Name="" Type="12" Node="COM" Priority="1" AI="0"/>
+            <Trigger X="155" Y="-710" Width="210" Height="780" Name="" Type="12" Node="COM" Priority="1" AI="0"/>
+            <Camera X="-385" Y="-185"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof144-1>
+      <Roof144-2 X="7290" Y="395" DeltaX="0" DeltaY="195" BoxX="-1720" BoxY="-3099" BoxWidth="9189" BoxHeight="6279">
+        <TriggerZoomMax X="2460" Y="-320"/>
+        <Pill X="315" Y="-150"/>
+        <Pill X="4989" Y="-275"/>
+        <TriggerZoomMin X="6854" Y="-2420"/>
+        <Respawn_2sec X="2195" Y="5"/>
+        <Respawn_2.5sec X="6300" Y="900"/>
+        <TriggerZoomNormal X="4084" Y="-3099"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerSlide" Type="1" AI="1" Node="COM" Key1="3" PressType="0" Priority="1" Factor="1" X="6859" Y="796" Width="610" Height="200" Follow="1" SubType="1"/>
+            <Trigger X="6859" Y="796" Width="610" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="1" SubType="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof144-2>
+      <Roof144-3 X="15250" Y="2300" DeltaX="515" DeltaY="920" BoxX="-1388" BoxY="-2974" BoxWidth="7218" BoxHeight="3629">
+        <Respawn_2.7sec X="1755" Y="180"/>
+        <TriggerZoomNormal X="2374" Y="-2974"/>
+        <Pill X="-131" Y="-569"/>
+      </Roof144-3>
+      <Roof144-4 X="21445" Y="1680" DeltaX="-780" DeltaY="-555" BoxX="-165" BoxY="-5459" BoxWidth="5651" BoxHeight="8580">
+        <Pill X="-85" Y="-348"/>
+        <TriggerZoomMax X="15" Y="-2699"/>
+        <Pill X="2493" Y="-1682"/>
+        <TriggerZoomMin X="1435" Y="-379"/>
+        <TriggerZoomNormal X="1250" Y="-4609"/>
+        <Constantine_ZoomNormal X="2735" Y="-1124"/>
+        <TriggerZoomMin X="3740" Y="-5459"/>
+        <HunterStop X="4855" Y="-2019"/>
+        <TriggerZoomMin X="5312" Y="-1704"/>
+        <HunterStop X="4265" Y="-1365"/>
+        <ObjectNULL X="-21445" Y="-1680" Group="1">
+          <Objects>
+            <TriggerGateVaultTrick0High X="24200" Y="-545"/>
+          </Objects>
+          <Elements/>
+        </ObjectNULL>
+      </Roof144-4>
+      <Roof144-5 X="27430" Y="1310" DeltaX="790" DeltaY="1655" BoxX="-1095" BoxY="-1990" BoxWidth="6365" BoxHeight="3255">
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="622" Y="-99" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="2712" Y="-489" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="0" SubType="0"/>
+            <Trigger X="3162" Y="-754" Width="210" Height="780" Name="" Type="12" Node="COM" Priority="1" AI="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof144-5>
+    </Layer>
+    
+
+  </Layers>
+</Root>

@@ -1,0 +1,1 @@
+..\..\..\executable\dzip.exe "..\_config\gui_2048_1536.dcl"

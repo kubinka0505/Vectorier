@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.7" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+
+  <Coins Value="40"/>
+  <Variable Name="Money">40</Variable>
+  
+   <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+      <ConstructionYardBackground DeltaX="0" DeltaY="-500"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding1 X="59" Y="-556" DeltaX="59" DeltaY="-556"/>
+      <ConstructionYardBuilding2 X="1876" Y="-437" DeltaX="654" DeltaY="119"/>
+      <ConstructionYardBuilding1 X="4698" Y="378" DeltaX="1822" DeltaY="815"/>
+      <ConstructionYardBuilding2 X="6525" Y="240" DeltaX="664" DeltaY="-138"/>
+      <ConstructionYardBuilding1 X="8305" Y="60" DeltaX="780" DeltaY="-180"/>
+      <ConstructionYardBuilding1 X="9830" Y="400" DeltaX="362" DeltaY="340"/>
+      <ConstructionYardBuilding2 X="11670" Y="1055" DeltaX="677" DeltaY="655"/>
+    </Layer>
+  
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof68-1 X="0" Y="0" DeltaX="0" DeltaY="0" Override="0" BoxX="-608" BoxY="-4315" BoxWidth="7098" BoxHeight="6956">
+        <TriggerZoomMax X="967" Y="-1567"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Image X="2244" Y="144" Width="500" Height="150" ClassName="v_LongFloor_01" NativeX="" NativeY=""/>
+          </Elements>
+        </ObjectNULL>
+        <Pill X="2975" Y="-850"/>
+        <TriggerZoomNormal X="3483" Y="-4069"/>
+        <TriggerZoomNormal X="5023" Y="-859"/>
+        <TriggerJump X="5545" Y="-50"/>
+        <Respawn_3.3sec X="5115" Y="140"/>
+        <Respawn_3.3sec X="3745" Y="-1030"/>
+        <Respawn_2sec X="2265" Y="145"/>
+        <TriggerCameraStart X="128" Y="-406"/>
+        <Camera X="277" Y="-71"/>
+        <TriggerZoom80 X="1915" Y="-4315"/>
+        <Spawn X="-558" Y="-515"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="4460" Y="-284" Width="75" Height="445" Name="Zoom min" Type="2" Node="COM" Priority="0" Value="0.75"/>
+            <Trigger X="5575" Y="435" Width="915" Height="101" Name="TriggerLossPanic" Type="5" Node="COM" Priority="0" Value="1" SubType="3" PX="0" PY="0" Animation="" Time="2" Start="FlyPanic|1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof68-1>
+      <Crane_cons X="6105" Y="150" DeltaX="495" DeltaY="10" BoxX="-428" BoxY="-2102" BoxWidth="4548" BoxHeight="3500">
+        <Pill X="1165" Y="-255"/>
+        <TriggerZoomMin X="2169" Y="-2102"/>
+        <TriggerCatch X="380" Y="-149"/>
+        <TriggerCatch X="1735" Y="-164"/>
+        <TriggerSpeedUp X="1835" Y="-205"/>
+        <Respawn_3.3sec X="1550" Y="0"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="-428" Y="288" Width="750" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Trigger X="2595" Y="-190" Width="1490" Height="200" Name="AILeftFollow" Type="1" Node="COM" Priority="0" AI="1" Key1="4" PressType="0" Follow="1" SubType="1"/>
+            <Trigger Name="TriggerSlide" Type="1" AI="1" Node="COM" Key1="3" PressType="0" Priority="1" Factor="1" X="3165" Y="-195" Width="935" Height="200" Follow="1" SubType="1"/>
+            <Trigger X="2970" Y="-190" Width="1150" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="1" SubType="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Crane_cons>
+      <Roof68-2 X="10960" Y="1180" DeltaX="855" DeltaY="1030" Override="0" BoxX="-743" BoxY="-3725" BoxWidth="6536" BoxHeight="7399">
+        <TriggerZoomNormal X="-16" Y="-1915"/>
+        <Pill X="234" Y="-364"/>
+        <TriggerZoomMax X="1979" Y="174"/>
+        <Pill X="3217" Y="736"/>
+        <Pill X="4496" Y="505"/>
+        <TriggerSplitOne X="3493" Y="721"/>
+        <TriggerLoss X="4793" Y="920"/>
+        <TriggerJump X="4777" Y="190"/>
+        <Respawn_2.5sec X="1650" Y="590"/>
+        <Respawn_2sec X="460" Y="-870"/>
+        <TriggerZoomMin X="3600" Y="-3725"/>
+        <Respawn_2.5sec X="2900" Y="-1115"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="4335" Y="-215" Width="82" Height="2811" Name="" Type="2" Node="COM" Priority="0" Value="0.75"/>
+            <Trigger X="-743" Y="340" Width="915" Height="101" Name="TriggerLossPanic" Type="5" Node="COM" Priority="0" Value="1" SubType="3" PX="0" PY="0" Animation="" Time="2" Start="FlyPanic|1"/>
+            <Trigger X="-648" Y="320" Width="750" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Trigger X="4903" Y="785" Width="750" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Comment X="3523" Y="-990" Width="2560" Height="860" Text="Здесь отодвинул платформу и бочки немного назад. Игрок теперь после падения может сделать слайд. Также отодвинул камеру. Теперь игрок видит, что внизу есть трюк и может сделать слайд, чтобы выпонить его. " FontSize="50" Colour="65535" Transparency="1"/>
+            <Comment X="765" Y="-1180" Width="425" Height="210" Text="СДЕЛАНО&#xD;здесб пыль мне кажется лишней&#xD;" FontSize="40" Colour="10027263" Transparency="1"/>
+            <Comment X="2835" Y="1015" Width="945" Height="255" Text="СДЕЛАНО&#xD;Пыль в месте, которое игрок пробегает, а не падает на него с большой высоты, не так хорошо смотрится" FontSize="40" Colour="10027263" Transparency="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof68-2>
+      <Roof68-3 X="16495" Y="1645" DeltaX="570" DeltaY="75" Override="0" BoxX="-145" BoxY="-2386" BoxWidth="6765" BoxHeight="3986">
+        <TriggerZoomNormal X="1828" Y="-2315"/>
+        <Pill X="2820" Y="490"/>
+        <Respawn X="3125" Y="409"/>
+        <TriggerZoomMax X="2790" Y="-1911"/>
+        <TriggerZoomMin X="5013" Y="-2386"/>
+        <TriggerDashVault X="124" Y="-192"/>
+        <TriggerZoomNormal X="5818" Y="-1900"/>
+        <TriggerHandspringToRoll X="5755" Y="-120"/>
+        <TriggerJump X="6328" Y="-120"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="624" Y="-176" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3277" Y="310" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="1851" Y="113" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3688" Y="310" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="4416" Y="85" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="4856" Y="-96" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="5191" Y="85" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="6044" Y="-6" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Comment X="973" Y="435" Width="545" Height="335" Text="Опустил эту платформу ниже, так как игрок при прыжке сверху предыдущей крыши мог повиснуть на этой стене и утопить ноги в платформе." FontSize="40" Colour="2522880" Transparency="0"/>
+            <Comment X="1993" Y="-200" Width="980" Height="375" Text="СДЕЛАНО&#xD;Лучше сделать так, чтобы бонус можно было собрать, прыгнув с краю левой платформы&#xD;" FontSize="50" Colour="10027263" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof68-3>
+      <FinalRoof_4 X="23115" Y="2326" DeltaX="0" DeltaY="600" BoxX="0" BoxY="-298" BoxWidth="3345" BoxHeight="2738">
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="986" Y="-84" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="1835" Y="-83" Score="10" Radius="80" Type="1" GroupId="4"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_4>
+    </Layer>
+  </Layers>
+</Root>

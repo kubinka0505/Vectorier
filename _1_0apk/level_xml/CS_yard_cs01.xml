@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="SpawnCSyardcs01" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <ConstructionYardBackground DeltaX="0" DeltaY="-500"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding1 X="-8540" Y="-1180" DeltaX="-8540" DeltaY="-1180"/>
+      <ConstructionYardBuilding2 X="-7089" Y="-895" DeltaX="288" DeltaY="285"/>
+      <ConstructionYardBuilding2 X="-5549" Y="-816" DeltaX="540" DeltaY="79"/>
+      <ConstructionYardBuilding1 X="-4010" Y="-990" DeltaX="539" DeltaY="-174"/>
+      <ConstructionYardBuilding2 X="-2559" Y="-705" DeltaX="288" DeltaY="285"/>
+      <ConstructionYardBuilding2 X="-1019" Y="-626" DeltaX="540" DeltaY="79"/>
+      <ConstructionYardBuilding1 X="830" Y="-325" DeltaX="849" DeltaY="301"/>
+      <ConstructionYardBuilding1 X="2955" Y="-420" DeltaX="962" DeltaY="-95"/>
+      <ConstructionYardBuilding2 X="4760" Y="-175" DeltaX="642" DeltaY="245"/>
+      <ConstructionYardBuilding1 X="6570" Y="-350" DeltaX="810" DeltaY="-175"/>
+      <ConstructionYardBuilding2 X="8335" Y="770" DeltaX="602" DeltaY="1120"/>
+      <ConstructionYardBuilding1 X="9830" Y="515" DeltaX="495" DeltaY="-255"/>
+      <ConstructionYardBuilding2 X="11845" Y="800" DeltaX="852" DeltaY="285"/>
+      <ConstructionYardBuilding1 X="13840" Y="715" DeltaX="995" DeltaY="-85"/>
+      <ConstructionYardBuilding1 X="16135" Y="845" DeltaX="1132" DeltaY="130"/>
+      <ConstructionYardBuilding1 X="18290" Y="710" DeltaX="992" DeltaY="-135"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <CS01Building1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-265" BoxY="-1915" BoxWidth="12155 BoxHeight="3500">
+        <TriggerCSYardCS01Truck X="-50" Y="-190"/>
+        <SpawnCSyardcs01 X="-215" Y="-330"/>
+        <TriggerCameraStart X="545" Y="-540"/>
+        <Camera X="2840" Y="-810"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Image X="2610" Y="-1015" Width="70" Height="90" ClassName="cons_barrel" NativeX="" NativeY=""/>
+          </Elements>
+        </ObjectNULL>
+        <TriggerZoomMin X="-163" Y="-1915"/>
+      </CS01Building1>
+      <CS01Building2 X="6405" Y="-790" DeltaX="405" DeltaY="-790" BoxX="0" BoxY="-1000" BoxWidth="2993" BoxHeight="5045">
+        <TriggerCameraFluencyCS02 X="1993" Y="1545"/>
+      </CS01Building2>
+    </Layer>
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>

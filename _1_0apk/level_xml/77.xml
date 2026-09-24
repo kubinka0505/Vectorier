@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.3" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 DeltaX="200" DeltaY="-100"/>
+      <Billboard DeltaX="580" DeltaY="155"/>
+      <Building2 DeltaX="120" DeltaY="-205"/>
+      <LampPost DeltaX="300" DeltaY="500"/>
+      <Building3 DeltaX="300" DeltaY="0"/>
+      <Billboard DeltaX="400" DeltaY="-200"/>
+      <Building1 DeltaX="200" DeltaY="200"/>
+      <Building3 DeltaX="300" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Kirill_roof36 DeltaX="-826" DeltaY="893">
+        <Spawn X="-514" Y="-463"/>
+        <Camera X="-424" Y="-373"/>
+        <TriggerCameraStart X="-394" Y="-368"/>
+        <Pill X="4136" Y="277"/>
+        <TriggerZoomMin X="4676" Y="-2238"/>
+        <TriggerLoss X="4806" Y="617"/>
+      </Kirill_roof36>
+      <Kirill_roof32 DeltaX="257" DeltaY="149">
+        <Pill X="1000" Y="-122"/>
+        <TriggerZoomNormal X="2110" Y="-2437"/>
+        <Pill X="2115" Y="408"/>
+        <TriggerReverseVault X="3195" Y="548"/>
+        <TriggerLoss X="6735" Y="428"/>
+      </Kirill_roof32>
+      <Kirill_roof35 DeltaX="-181" DeltaY="-110">
+        <TriggerZoomMin X="681" Y="-2112"/>
+        <Pill X="1367" Y="216"/>
+        <TriggerZoomNormal X="3866" Y="-1712"/>
+        <Pill X="5017" Y="690"/>
+        <TriggerLoss X="5806" Y="1193"/>
+        <TriggerZoomMin X="5931" Y="-1912"/>
+      </Kirill_roof35>
+      <Kirill_roof37 DeltaX="-45" DeltaY="781">
+        <TriggerZoomNormal X="1422" Y="-2778"/>
+        <Pill X="3962" Y="-303"/>
+        <TriggerZoomMin X="4907" Y="-2678"/>
+        <TriggerLoss X="5052" Y="547"/>
+      </Kirill_roof37>
+      <Kirill_roof38 DeltaX="203" DeltaY="337">
+        <TriggerZoomNormal X="565" Y="-2770"/>
+        <TriggerZoomMin X="2030" Y="-2665"/>
+        <TriggerZoomMin X="3960" Y="-3545"/>
+        <TriggerLoss X="4915" Y="460"/>
+        <Pill X="5305" Y="-745"/>
+      </Kirill_roof38>
+      <FinalRoof DeltaX="41" DeltaY="-471">
+        <TriggerZoomNormal X="-26" Y="-2999"/>
+      </FinalRoof>
+    </Layer>
+  
+    <Layer Name="Forward_Layer" Factor="2" Type="2">
+    </Layer>
+    
+  </Layers>
+</Root>

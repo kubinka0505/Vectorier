@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <ConstructionYardBackground DeltaX="0" DeltaY="-500"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding2 X="-185" Y="630" DeltaX="-185" DeltaY="630"/>
+      <ConstructionYardBuilding2 X="1595" Y="660" DeltaX="780" DeltaY="30"/>
+      <ConstructionYardBuilding1 X="3220" Y="675" DeltaX="625" DeltaY="15"/>
+      <ConstructionYardBuilding2 X="4850" Y="660" DeltaX="466" DeltaY="-15"/>
+      <ConstructionYardBuilding1 X="6394" Y="610" DeltaX="544" DeltaY="-50"/>
+      <ConstructionYardBuilding2 X="8016" Y="-70" DeltaX="458" DeltaY="-680"/>
+      <ConstructionYardBuilding2 X="9401" Y="-230" DeltaX="385" DeltaY="-160"/>
+      <ConstructionYardBuilding1 X="10545" Y="-440" DeltaX="144" DeltaY="-210"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof74-1 X="-275" Y="3590" DeltaX="-275" DeltaY="3590" BoxX="-110" BoxY="-2385" BoxWidth="7330" BoxHeight="4055">
+        <TriggerZoomMin X="2600" Y="-2309"/>
+        <TriggerZoomNormal X="4465" Y="-2385"/>
+        <Pill X="4200" Y="-80"/>
+        <TriggerJump X="6827" Y="-198"/>
+        <TriggerAboveCar X="4802" Y="-203"/>
+        <TriggerZoomMax X="6235" Y="-1830"/>
+        <Respawn X="6220" Y="-10"/>
+        <Spawn X="-60" Y="-600"/>
+        <Camera X="795" Y="-105"/>
+        <TriggerCameraStart X="640" Y="-395"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="6300" Y="-640" Width="570" Height="593" Text="С этой платформой можно взаимодействовать в очень редких случаях (удариться головой об угол если очень точно попасть на препятствие до этого и очень точно с него прыгнуть). Лучше убрать платформу и поднять черную графику под нец  &#xD;ИСПРАВЛЕНО" FontSize="40" Colour="52224" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof74-1>
+      <Roof74-2 X="6899" Y="3230" DeltaX="-281" DeltaY="-910" BoxX="-235" BoxY="-1111" BoxWidth="4175" BoxHeight="1731">
+        <Pill X="1825" Y="-791"/>
+        <TriggerJump X="1312" Y="-748"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="347" Y="-497" Width="100" Height="509" Name="TriggerZoomMin" Type="2" Node="COM" Priority="0" Value="0.65" SubType="0"/>
+            <Trigger X="3275" Y="-426" Width="88" Height="426" Name="TriggerZoomMax" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+            <Item X="3375" Y="-641" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3540" Y="-96" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="1275" Y="-641" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Trigger Name="TriggerZoomMin" Type="2" Value="0.65" X="3380" Y="-1045" Width="100" Height="565" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="1590" Y="-1111" Width="100" Height="675" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="3275" Y="-435" Width="570" Height="400" Text="Если прыгнуть раньше - приземляешься на стенку на нисходящей части траектории и не добираешься до триггера воллджампа. Надо опустить воллджамп чуть ниже&#xD;ИСПРАВЛЕНО" FontSize="40" Colour="52224" Transparency="1"/>
+            <Comment X="1875" Y="-910" Width="520" Height="425" Text="Этот бонус надо показать заранее&#xD;ИСПРАВЛЕНО. Камера теперь раньше отодвигается." FontSize="40" Colour="52224" Transparency="1"/>
+            <Comment X="-350" Y="-1230" Width="1010" Height="675" Text="Этой графики в игре не видно, да и выглядит она не слишком хорошо&#xD;ИСПРАВЛЕНО" FontSize="40" Colour="52224" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof74-2>
+      <Roof74-3 X="8218" Y="2100" DeltaX="-3051" DeltaY="-560" BoxX="-430" BoxY="-980" BoxWidth="5825" BoxHeight="1625">
+        <TriggerFrontFlipTwoLegs X="293" Y="-293"/>
+        <Respawn X="39" Y="-66"/>
+        <TriggerLossPanic X="3173" Y="508"/>
+        <TriggerJump X="4176" Y="-742"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="173" Y="-429" Width="88" Height="426" Name="TriggerZoomMax" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+            <Trigger X="1147" Y="-449" Width="100" Height="509" Name="TriggerZoomMin" Type="2" Node="COM" Priority="0" Value="0.65" SubType="0"/>
+            <Item X="1605" Y="-77" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="2665" Y="-82" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.9" X="3304" Y="433" Width="673" Height="93" Node="COM" Priority="0" SubType="0"/>
+            <Trigger X="3309" Y="-417" Width="100" Height="502" Name="TriggerZoomNormal" Type="2" Node="COM" Priority="0" Value="1" SubType="0"/>
+            <Item X="4218" Y="-72" Score="10" Radius="80" Type="1" GroupId="2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof74-3>
+      <Roof74-6 X="10967" Y="468" DeltaX="-1836" DeltaY="-1152" BoxX="365" BoxY="-675" BoxWidth="5398" BoxHeight="1785">
+        <Pill X="2204" Y="-229"/>
+        <TriggerLossPanic X="4763" Y="492"/>
+        <TriggerJump X="3329" Y="-204"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="927" Y="-109" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="852" Y="-509" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.8" SubType="0"/>
+            <Trigger X="979" Y="-419" Width="88" Height="426" Name="TriggerZoomMax" Type="2" Node="COM" Priority="0" Value="1.2" SubType="0"/>
+            <Item X="1144" Y="-85" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="844" Y="510" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.9" X="4893" Y="337" Width="673" Height="93" Node="COM" Priority="0" SubType="0"/>
+            <Trigger X="1957" Y="-437" Width="100" Height="509" Name="TriggerZoomMin" Type="2" Node="COM" Priority="0" Value="0.65" SubType="0"/>
+            <Trigger X="4858" Y="-433" Width="100" Height="502" Name="TriggerZoomNormal" Type="2" Node="COM" Priority="0" Value="1" SubType="0"/>
+            <Item X="2934" Y="-79" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Comment X="811" Y="-609" Width="455" Height="480" Text="Видно появление бота&#xD;ИСПРАВЛЕНО" FontSize="40" Colour="52224" Transparency="1"/>
+            <Comment X="1391" Y="-214" Width="490" Height="345" Text="Тут постоянно спотыкаюсь при быстром прохождении воллджампов до этого. Надо немного уменьшить ширину ямы&#xD;ИСПРАВЛЕНО" FontSize="40" Colour="52224" Transparency="1"/>
+            <Comment X="2686" Y="-284" Width="820" Height="290" Text="Разбег надо увеличить как минимум в 2 раза&#xD;ИСПРАВЛЕНО&#xD;Увеличил платформу на 1365." FontSize="40" Colour="52224" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof74-6>
+      <Roof74-4 X="16470" Y="213" DeltaX="323" DeltaY="-245" BoxX="0" BoxY="-1260" BoxWidth="2905" BoxHeight="2110">
+        <TriggerRollForward X="2137" Y="-1002"/>
+        <Respawn X="613" Y="-241"/>
+        <TriggerJump X="2212" Y="-459"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="707" Y="-674" Width="88" Height="426" Name="TriggerZoomMax" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+            <Item X="924" Y="-330" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="154" Y="-75" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="2354" Y="-325" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="559" Y="-1180" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Comment X="2688" Y="-469" Width="870" Height="625" Text="Эти два здания надо переделать чтобы они были не друг над другом а друг за другом" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof74-4>
+      <Roof74-7 X="16475" Y="210" DeltaX="-2765" DeltaY="-593" BoxX="85" BoxY="-2295" BoxWidth="4505" BoxHeight="1819">
+        <Pill X="2199" Y="-1668"/>
+        <TriggerJump X="4095" Y="-1559"/>
+        <TriggerAILeftJump X="3542" Y="-1561"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="510" Y="-1330" Name="Respawn" Animation="JumpOff|18|1"/>
+            <Trigger X="835" Y="-1865" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.3" SubType="0"/>
+            <Trigger X="2245" Y="-1850" Width="100" Height="509" Name="TriggerZoomMin" Type="2" Node="COM" Priority="0" Value="0.65" SubType="0"/>
+            <Item X="1674" Y="-1523" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Trigger Name="TriggerZoomMin" Type="2" Value="0.7" X="1130" Y="-2135" Width="100" Height="920" Node="COM" Priority="0" SubType="0"/>
+            <Item X="2899" Y="-1429" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Comment X="563" Y="-1977" Width="570" Height="400" Text="Видно появление бота&#xD;ИСПРАВЛЕНО" FontSize="40" Colour="52224" Transparency="1"/>
+            <Trigger X="4270" Y="-1085" Width="320" Height="90" Name="ZoomOut" Type="2" Node="COM" Priority="0" Value="0.5" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof74-7>
+      <Roof74-5 X="21082" Y="-157" DeltaX="-273" DeltaY="163" BoxX="-505" BoxY="-1283" BoxWidth="2273" BoxHeight="2048">
+        <Pill X="-150" Y="-484"/>
+        <Pill X="1409" Y="-252"/>
+        <Respawn_2sec X="1430" Y="-704"/>
+        <Respawn_2sec_Reversed X="435" Y="66"/>
+        <TriggerJump X="1539" Y="-899"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="293" Y="-508" Width="550" Height="125" Name="TriggerZoomMax" Type="2" Node="COM" Priority="0" Value="1.1" SubType="0"/>
+            <Trigger X="1683" Y="-1283" Width="85" Height="680" Name="ZoomIn" Type="2" Node="COM" Priority="0" Value="1" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof74-5>
+      <FinalRoof_4 X="23202" Y="-391" DeltaX="435" DeltaY="476" BoxX="-231" BoxY="-524" BoxWidth="3576" BoxHeight="2964">
+        <Pill X="-151" Y="-232"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="1157" Y="-524" Width="300" Height="525" Name="NOCONTROL" Type="12" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="-254" Y="-649" Width="450" Height="375" Text="Этот бонус надо показать заранее&#xD;ИСПРАВЛЕНО" FontSize="40" Colour="52224" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_4>
+    </Layer>
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>

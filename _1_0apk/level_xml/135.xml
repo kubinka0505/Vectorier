@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="1" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn_1" AI="1" Time="0" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+      <ConstructionYardBackground X="0" Y="-850" DeltaX="0" DeltaY="-850"/>
+      <ConstructionYardBackground X="2120" Y="-850" DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground X="4240" Y="-850" DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding1 X="830" Y="-325" DeltaX="830" DeltaY="-325"/>
+      <ConstructionYardBuilding1 X="2955" Y="-420" DeltaX="962" DeltaY="-95"/>
+      <ConstructionYardBuilding2 X="4760" Y="-175" DeltaX="642" DeltaY="245"/>
+      <ConstructionYardBuilding1 X="6570" Y="-350" DeltaX="810" DeltaY="-175"/>
+      <ConstructionYardBuilding2 X="8665" Y="-175" DeltaX="932" DeltaY="175"/>
+      <ConstructionYardBuilding1 X="10160" Y="-430" DeltaX="495" DeltaY="-255"/>
+      <ConstructionYardBuilding2 X="12175" Y="-145" DeltaX="852" DeltaY="285"/>
+      <ConstructionYardBuilding1 X="14170" Y="-230" DeltaX="995" DeltaY="-85"/>
+      <ConstructionYardBuilding1 X="16465" Y="-100" DeltaX="1132" DeltaY="130"/>
+      <ConstructionYardBuilding1 X="18620" Y="-235" DeltaX="992" DeltaY="-135"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof135-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-25" BoxY="-1065" BoxWidth="3965" BoxHeight="2070">
+        <TriggerCameraStart X="1530" Y="-394"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="40" Y="-964" Name="DefaultSpawn" Animation="JumpOff|18"/>
+            <Spawn X="1025" Y="681" Name="DefaultSpawn_1" Animation="JumpOff|18"/>
+            <Trigger X="-25" Y="-1065" Width="210" Height="190" Name="" Type="12" Node="COM" Priority="1" AI="0"/>
+            <Trigger X="1380" Y="-370" Width="150" Height="390" Name="" Type="12" Node="COM" Priority="1" AI="0"/>
+            <Camera X="1295" Y="-25"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof135-1>
+      <Roof135-9 X="3900" Y="60" DeltaX="60" DeltaY="150" BoxX="-292" BoxY="-1350" BoxWidth="3260" BoxHeight="3500">
+        <TriggerZoomMin X="1883" Y="-1350"/>
+        <Pill X="958" Y="-228"/>
+        <TriggerJump X="2205" Y="359"/>
+        <TriggerHandspringToRoll X="1918" Y="358"/>
+        <Respawn_2.7sec X="1850" Y="525"/>
+      </Roof135-9>
+      <Roof135-2 X="6915" Y="1722" DeltaX="190" DeltaY="1105" BoxX="0" BoxY="-2489" BoxWidth="3155" BoxHeight="3500">
+        <TriggerZoomMax X="1215" Y="-2489"/>
+        <Pill X="126" Y="-1202"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="2345" Y="-89" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="2520" Y="-484" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof135-2>
+      <Roof135-12 X="10030" Y="1092" DeltaX="-40" DeltaY="-630" BoxX="-155" BoxY="-2144" BoxWidth="3610" BoxHeight="3500">
+        <TriggerZoomMin X="450" Y="-2144"/>
+      </Roof135-12>
+      <Roof135-3 X="13025" Y="1497" DeltaX="0" DeltaY="405" BoxX="0" BoxY="-3406" BoxWidth="6550" BoxHeight="4671">
+        <TriggerDoubleBack X="2089" Y="-450"/>
+        <TriggerZoomNormal X="1716" Y="-2355"/>
+        <Respawn X="2085" Y="-250"/>
+        <Respawn X="6260" Y="440"/>
+        <Pill X="517" Y="-591"/>
+        <TriggerZoomMin X="5588" Y="-3406"/>
+        <TriggerJump X="6291" Y="-758"/>
+        <Respawn_5sec X="5933" Y="-563"/>
+        <Pill X="4800" Y="743"/>
+      </Roof135-3>
+      <Roof135-4 X="19545" Y="847" DeltaX="110" DeltaY="-90" BoxX="-340" BoxY="-1698" BoxWidth="5442" BoxHeight="3589">
+        <Pill X="1157" Y="1205"/>
+        <TriggerJump X="3954" Y="-5"/>
+        <TriggerZoomMin X="3105" Y="-1698"/>
+        <Respawn_5sec X="3410" Y="72"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="4300" Y="-603" Width="1440" Height="420" Text="СДЕЛАНО&#xD;Не совсем честно приближать здесь камеру. Игрок видит бонус только когда уже не может его собрать." FontSize="50"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof135-4>
+      <Roof135-5 X="24420" Y="1033" DeltaX="0" DeltaY="0" BoxX="-515" BoxY="-3173" BoxWidth="4360" BoxHeight="5090">
+        <Respawn X="1621" Y="-88"/>
+        <TriggerZoomNormal X="1771" Y="-3173"/>
+        <Pill X="3500" Y="-1114"/>
+        <Pill X="500" Y="-299"/>
+        <TriggerJump X="3431" Y="-368"/>
+        <TriggerTripleHit X="2355" Y="1716"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="3357" Y="-1077" Width="415" Height="640" Text="СДЕЛАНО&#xD;Попробуй увеличить промежуток времени, когда игрок может успеть прыгнуть от стены. Сейчас он очень мал: даже зная, как собрать бонус, успеть сложно." FontSize="50"/>
+            <Spawn X="3556" Y="1817" Name="Respawn" Animation="JumpOff|18|1"/>
+            <Trigger X="3481" Y="1417" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.5" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof135-5>
+      <Roof135-11 X="24520" Y="2948" DeltaX="-3745" DeltaY="2495" BoxX="0" BoxY="-1210" BoxWidth="3550" BoxHeight="1905"/>
+      <Roof135-10 X="28235" Y="3013" DeltaX="170" DeltaY="65" BoxX="-1" BoxY="-5651" BoxWidth="5918" BoxHeight="8447">
+        <TriggerZoomMin X="1304" Y="-5651"/>
+        <Respawn X="160" Y="-2549"/>
+        <TriggerJump X="31" Y="-194"/>
+        <TriggerZoomMax X="541" Y="-704"/>
+        <Pill X="1421" Y="-589"/>
+        <Pill X="3745" Y="-2693"/>
+        <Respawn X="4466" Y="-2003"/>
+      </Roof135-10>
+      <Roof135-6 X="28265" Y="453" DeltaX="-5887" DeltaY="-2167" BoxX="-226" BoxY="-500" BoxWidth="4751" BoxHeight="2200"/>
+      <Roof135-7 X="32790" Y="1008" DeltaX="0" DeltaY="0" BoxX="-311" BoxY="-3550" BoxWidth="5229" BoxHeight="7129">
+        <TriggerZoomNormal X="376" Y="-3137"/>
+        <TriggerZoomMax X="2154" Y="-3550"/>
+        <Pill X="1300" Y="134"/>
+        <TriggerZoomMin X="996" Y="79"/>
+        <Respawn X="2840" Y="-73"/>
+        <TriggerSlide X="4104" Y="-271"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="681" Y="1263" Name="Respawn" Animation="JumpOff|18|1"/>
+            <Trigger X="226" Y="1126" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof135-7>
+      <Roof135-8 X="37490" Y="1268" DeltaX="0" DeltaY="350" BoxX="-243" BoxY="-2611" BoxWidth="5143" BoxHeight="3500">
+        <TriggerZoomMin X="1634" Y="-2611"/>
+      </Roof135-8>
+    </Layer>
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>

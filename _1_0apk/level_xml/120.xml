@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="60"/>
+  <Variable Name="Money">60</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <ConstructionYardBackground DeltaX="0" DeltaY="-500"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding2 X="270" Y="160" DeltaX="270" DeltaY="160"/>
+      <ConstructionYardBuilding1 X="1725" Y="130" DeltaX="455" DeltaY="-30"/>
+      <ConstructionYardBuilding1 X="3195" Y="230" DeltaX="307" DeltaY="100"/>
+      <ConstructionYardBuilding2 X="4771" Y="473" DeltaX="413" DeltaY="243"/>
+      <ConstructionYardBuilding1 X="6040" Y="55" DeltaX="269" DeltaY="-418"/>
+      <ConstructionYardBuilding2 X="7696" Y="455" DeltaX="493" DeltaY="400"/>
+      <ConstructionYardBuilding2 X="9183" Y="355" DeltaX="487" DeltaY="-100"/>
+      <ConstructionYardBuilding1 X="10513" Y="95" DeltaX="330" DeltaY="-260"/>
+      <ConstructionYardBuilding1 X="11877" Y="-35" DeltaX="201" DeltaY="-130"/>
+      <ConstructionYardBuilding2 X="13326" Y="370" DeltaX="286" DeltaY="405"/>
+      <ConstructionYardBuilding2 X="14611" Y="640" DeltaX="285" DeltaY="270"/>
+      <ConstructionYardBuilding1 X="16066" Y="780" DeltaX="455" DeltaY="140"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof120-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-580" BoxY="-1769" BoxWidth="3925" BoxHeight="3500">
+        <TriggerZoomMin X="580" Y="-1769"/>
+        <TriggerJump X="3165" Y="-200"/>
+        <Camera X="685" Y="-115"/>
+        <TriggerCameraStart X="530" Y="-400"/>
+        <Spawn X="-530" Y="-475"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="-125" Y="-285" Width="365" Height="395" Text="СДЕЛАНО&#xD;Пыль на краю смотрится плохо. Надо либо передвинуть пыль, либо увеличить платформу влево" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof120-1>
+      <Roof120-2 X="3605" Y="1365" DeltaX="260" DeltaY="1365" BoxX="0" BoxY="-4535" BoxWidth="3665" BoxHeight="5105">
+        <TriggerLossPanic X="2665" Y="375"/>
+        <TriggerZoomMin X="2480" Y="-4535"/>
+        <TriggerZoomMax X="825" Y="-4510"/>
+        <Respawn_2sec X="890" Y="-1140"/>
+      </Roof120-2>
+      <Roof120-3 X="7255" Y="1295" DeltaX="885" DeltaY="-70" BoxX="-335" BoxY="-2446" BoxWidth="7015" BoxHeight="4066">
+        <Pill X="5290" Y="-221"/>
+        <Pill X="-255" Y="-131"/>
+        <TriggerZoomMax X="210" Y="-2300"/>
+        <TriggerJump X="5975" Y="-201"/>
+        <TriggerZoomMax X="5915" Y="-2446"/>
+        <Respawn_2sec X="80" Y="0"/>
+        <TriggerLossPanic X="5680" Y="115"/>
+        <TriggerSplitOne X="2387" Y="-500"/>
+        <TriggerZoomMin X="3700" Y="-2365"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="5455" Y="-588" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3505" Y="-375" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Comment X="2305" Y="-1025" Width="765" Height="370" Text="СДЕЛАНО&#xD;Слишком много картинок и графика достаточно однообразная, надо немного изменить. Пару столбов из баллонов можно оставить, в принципе они интересно смотрятся, но не когда их так много." FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="4485" Y="-75" Width="990" Height="200" Text="СДЕЛАНО&#xD;2 одинаковых башни подряд не очень хорошо смотрятся" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="5050" Y="-580" Width="350" Height="275" Text="СДЕЛАНО&#xD;Надо показать бонус заранее" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="4375" Y="-680" Width="280" Height="310" Text="СДЕЛАНО&#xD;если залезть сюда - можно перепрыгнуть бота, стоящего в аресте, выглядит это странно. Надо либо поставить условные триггеры, либо убрать арест" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof120-3>
+      <Roof120-8 X="13510" Y="955" DeltaX="145" DeltaY="-340" BoxX="0" BoxY="-1975" BoxWidth="2930" BoxHeight="3500">
+        <TriggerJump X="2606" Y="399"/>
+        <TriggerBarJump X="505" Y="-200"/>
+        <TriggerZoomMin X="1400" Y="-1975"/>
+        <Respawn_3sec X="1120" Y="305"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="1908" Y="215" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="329" Y="-77" Score="10" Radius="80" Type="1" GroupId="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof120-8>
+      <Roof120-4 X="16429" Y="1855" DeltaX="-10" DeltaY="300" BoxX="-145" BoxY="-2960" BoxWidth="6091" BoxHeight="3950">
+        <Pill X="3956" Y="-1384"/>
+        <TriggerLossPanic X="4946" Y="-490"/>
+        <TriggerJump X="4871" Y="-1180"/>
+        <TriggerZoomNormal X="1291" Y="-2510"/>
+        <TriggerZoomMin X="1906" Y="-2785"/>
+        <TriggerZoomNormal X="4351" Y="-2960"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="4036" Y="-1195" Name="Respawn" Animation="JumpOff|18"/>
+            <Trigger X="4291" Y="-1470" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2" SubType="0"/>
+            <Item X="485" Y="-369" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="4874" Y="-1051" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="2699" Y="-837" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="1212" Y="-383" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="3581" Y="-1565" Width="315" Height="290" Text="СДЕЛАНО&#xD;Надо показать бонус заранее" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof120-4>
+      <Roof120-5 X="21874" Y="880" DeltaX="435" DeltaY="0" BoxX="0" BoxY="-2550" BoxWidth="3134" BoxHeight="4175">
+        <Pill X="741" Y="-715"/>
+        <TriggerZoomMin X="2186" Y="-2550"/>
+        <TriggerJump X="2472" Y="-1490"/>
+        <TriggerSideFlip X="141" Y="-200"/>
+        <TriggerLossPanic X="2134" Y="-876"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="1284" Y="-1379" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="2308" Y="-1370" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="1722" Y="-81" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Comment X="931" Y="-1360" Width="765" Height="440" Text="СДЕЛАНО&#xD;2 средних серых фона можно заменить на 1 большой" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="1081" Y="-750" Width="660" Height="370" Text="СДЕЛАНО&#xD;Плохое соединение платформ, в таких местах их надо ровно пересекать" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof120-5>
+      <Roof120-6 X="24869" Y="-450" DeltaX="415" DeltaY="-35" BoxX="-555" BoxY="-500" BoxWidth="3630" BoxHeight="1807">
+        <Respawn_2.7sec X="1141" Y="510"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="84" Y="-84" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Comment X="1366" Y="1390" Width="1125" Height="805" Text="СДЕАЛНО&#xD;Много картинок, да и выглядит это не слишком хорошо. Надо изменить графику, уменьшить количество картинок, часть труб можно оставить." FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="-149" Y="430" Width="510" Height="370" Text="СДЕЛАНО&#xD;Плохое соединение платформ, может возникнуть клинг внутрь платформы" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof120-6>
+      <Roof120-7 X="27979" Y="1980" DeltaX="35" DeltaY="1130" BoxX="0" BoxY="-1529" BoxWidth="4561" BoxHeight="1840">
+        <Pill X="94" Y="-935"/>
+        <TriggerJump X="3776" Y="-174"/>
+        <TriggerLossPanic X="3561" Y="211"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="3676" Y="-77" Score="10" Radius="80" Type="1" GroupId="6"/>
+            <Item X="1432" Y="-79" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="1830" Y="-81" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="1053" Y="-75" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Comment X="391" Y="-1340" Width="270" Height="815" Text="СДЕЛАНО&#xD;Тут нужен новоллран" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof120-7>
+      <FinalRoof_4 X="32189" Y="1735" DeltaX="255" DeltaY="-245" BoxX="0" BoxY="-1961" BoxWidth="3345" BoxHeight="4401">
+        <TriggerZoomNormal X="111" Y="-1961"/>
+        <Respawn_2sec X="61" Y="5"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="927" Y="-87" Score="10" Radius="80" Type="1" GroupId="6"/>
+            <Item X="314" Y="-74" Score="10" Radius="80" Type="1" GroupId="6"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_4>
+    </Layer>
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>

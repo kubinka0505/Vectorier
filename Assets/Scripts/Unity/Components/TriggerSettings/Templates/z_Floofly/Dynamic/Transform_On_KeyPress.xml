@@ -1,0 +1,20 @@
+<Init>
+	<SetVariable Name="$AI" Value="0"/>
+	<SetVariable Name="$Active" Value="1"/>
+	<SetVariable Name="$Node" Value="COM"/>
+	<SetVariable Name="Key" Value="-1"/>
+	<SetVariable Name="TransformName" Value="0"/>
+</Init>
+<Loop>
+	<Events Template="FreqUsed.KeyPressed"/>
+	<Conditions>
+		<Operator Type="Or">
+			<Equal Value1="_$Key" Value2="_Key"/>
+			<Equal Value1="_Key" Value2="-1"/>
+		</Operator>
+	</Conditions>
+	<Actions>
+		<ActionBlock Template="FreqUsed.SwitchOff"/>
+		<Transform Name="_TransformName"/>
+	</Actions>
+</Loop>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>PeNet.Asn1</id>
+    <version>2.0.1</version>
+    <authors>Sergey Savchuk, Jan Jansen, Stefan Hausotte</authors>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>icon.png</icon>
+    <projectUrl>https://github.com/secana/asn1</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/secana/PeNet/master/src/PEditor/Icons/logo.png</iconUrl>
+    <description>Asn1 is a tool for parsing and formating ASN1 files.</description>
+    <copyright>Copyright © 2017</copyright>
+    <tags>ASN.1, ASN, PeNet</tags>
+    <repository url="https://github.com/secana/asn1" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETFramework4.6.1" />
+      <group targetFramework=".NETFramework4.8" />
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0" />
+      <group targetFramework="net7.0" />
+      <group targetFramework=".NETStandard2.0" />
+      <group targetFramework=".NETStandard2.1" />
+    </dependencies>
+  </metadata>
+</package>

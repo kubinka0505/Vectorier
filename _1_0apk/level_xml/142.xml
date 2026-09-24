@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_techpark.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="30"/>
+  <Variable Name="Money">30</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.1" Type="1" DeltaX="-500" DeltaY="0">
+      <Techpark_bg1 X="0" Y="-500" DeltaX="0" DeltaY="-500"/>
+      <Techpark_bg1 X="2048" Y="-500" DeltaX="0" DeltaY="0"/>
+      <Techpark_bg1 X="4096" Y="-500" DeltaX="0" DeltaY="0"/>
+    </Layer>
+
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Banner_TP_building_1 X="85" Y="-980" DeltaX="85" DeltaY="-980"/>
+      <Banner_TP_building_2 X="2810" Y="-535" DeltaX="1265" DeltaY="445"/>
+      <Banner_TP_building_1 X="6230" Y="-350" DeltaX="1370" DeltaY="185"/>
+      <Banner_TP_building_2 X="8185" Y="-735" DeltaX="495" DeltaY="-385"/>
+      <Banner_TP_building_1 X="11030" Y="-915" DeltaX="795" DeltaY="-180"/>
+      <Banner_TP_building_2 X="13035" Y="-645" DeltaX="545" DeltaY="270"/>
+      <Banner_TP_building_2 X="15325" Y="-860" DeltaX="240" DeltaY="-215"/>
+    </Layer>  
+
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof142-3 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-165" BoxY="-1860" BoxWidth="4095" BoxHeight="3500">
+        <TriggerZoomMin X="1270" Y="-1860"/>
+        <Spawn X="-115" Y="-161"/>
+        <Camera X="1035" Y="-100"/>
+        <TriggerCameraStart X="875" Y="-395"/>
+      </Roof142-3>
+      <Roof142-4 X="3930" Y="1875" DeltaX="0" DeltaY="865" BoxX="-1530" BoxY="-1510" BoxWidth="6275" BoxHeight="1660">
+        <Pill X="1045" Y="-825"/>
+        <TriggerJump X="4355" Y="-1040"/>
+      </Roof142-4>
+      <Roof142-1 X="8675" Y="2325" DeltaX="0" DeltaY="450" BoxX="0" BoxY="-2230" BoxWidth="7515" BoxHeight="3675">
+        <TriggerZoomMax X="1926" Y="-2230"/>
+        <Pill X="4096" Y="-885"/>
+        <Respawn_2.5sec X="1855" Y="-600"/>
+        <TriggerJump X="7290" Y="-1809"/>
+        <TriggerZoomMin X="4331" Y="-2055"/>
+      </Roof142-1>
+      <Roof142-2 X="16190" Y="710" DeltaX="0" DeltaY="-5" BoxX="-1139" BoxY="-1640" BoxWidth="4763" BoxHeight="3565">
+        <TriggerZoomNormal X="-1139" Y="-1575"/>
+        <Pill X="1338" Y="-81"/>
+        <Respawn_2.5sec X="395" Y="-391"/>
+      </Roof142-2>
+      <Roof142-5 X="19550" Y="710" DeltaX="0" DeltaY="1185" BoxX="0" BoxY="-781" BoxWidth="6770" BoxHeight="1131">
+        <Respawn_2.5sec X="567" Y="-4"/>
+        <Pill X="5812" Y="-83"/>
+        <Respawn_2.5sec X="4255" Y="-281"/>
+        <TriggerJump X="6520" Y="-193"/>
+      </Roof142-5>
+      <Roof142-6 X="26320" Y="365" DeltaX="0" DeltaY="-345" BoxX="0" BoxY="-1899" BoxWidth="3945" BoxHeight="3500">
+        <Pill X="1638" Y="111"/>
+        <TriggerAILeftJump X="3303" Y="-9"/>
+        <TriggerJump X="3704" Y="-10"/>
+        <Respawn_2.5sec X="1032" Y="0"/>
+        <TriggerZoomMin X="1513" Y="-1899"/>
+      </Roof142-6>
+      <Roof142-7 X="29935" Y="270" DeltaX="-330" DeltaY="-285" BoxX="-361" BoxY="-2274" BoxWidth="4464" BoxHeight="4000">
+        <TriggerZoomNormal X="-122" Y="-1774"/>
+        <TriggerJump X="2123" Y="-694"/>
+        <TriggerZoomMin X="438" Y="-2274"/>
+        <TriggerZoomNormal X="4003" Y="-2039"/>
+        <TriggerHighJump500 X="3303" Y="-154"/>
+        <TriggerJumpAndRoll X="3803" Y="-204"/>
+      </Roof142-7>
+      <Final_roof142 X="33940" Y="175" DeltaX="0" DeltaY="-90" BoxX="0" BoxY="-465" BoxWidth="2940" BoxHeight="1410"/>
+    </Layer>
+    
+
+  </Layers>
+</Root>

@@ -1,0 +1,1 @@
+..\..\..\executable\dzip.exe "..\_config\sound.dcl"

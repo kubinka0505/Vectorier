@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_techpark.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+	<Model Name="Hunter" Type="0" Color="0" BirthSpawn="BotSpawn" AI="1" Time="0" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+	<Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="2" Time="1.2" AllowedSpawns="Respawn2" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="30"/>
+  <Variable Name="Money">30</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.1" Type="1" DeltaX="-500" DeltaY="0">
+      <Techpark_bg1 X="0" Y="-500" DeltaX="0" DeltaY="-500"/>
+      <Techpark_bg1 X="2048" Y="-500" DeltaX="0" DeltaY="0"/>
+      <Techpark_bg1 X="4095" Y="-500" DeltaX="-1" DeltaY="0"/>
+      <Techpark_bg1 X="6140" Y="-500" DeltaX="-3" DeltaY="0"/>
+    </Layer>
+
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Banner_TP_building_2 X="1730" Y="-829" DeltaX="1730" DeltaY="-829"/>
+      <Banner_TP_building_1 X="3800" Y="-1375" DeltaX="20" DeltaY="-546"/>
+      <Banner_TP_building_2 X="5365" Y="-680" DeltaX="105" DeltaY="695"/>
+      <Banner_TP_building_1 X="7805" Y="-1375" DeltaX="390" DeltaY="-695"/>
+      <Banner_TP_building_2 X="9305" Y="-630" DeltaX="40" DeltaY="745"/>
+      <Banner_TP_building_1 X="11713" Y="-1375" DeltaX="358" DeltaY="-745"/>
+      <Banner_TP_building_2 X="13213" Y="-630" DeltaX="40" DeltaY="745"/>
+      <Banner_TP_building_1 X="15700" Y="-1375" DeltaX="437" DeltaY="-745"/>
+      <Banner_TP_building_2 X="17200" Y="-630" DeltaX="40" DeltaY="745"/>
+      <Banner_TP_building_1 X="19400" Y="-1375" DeltaX="150" DeltaY="-745"/>
+      <Banner_TP_building_2 X="20900" Y="-630" DeltaX="40" DeltaY="745"/>
+      <Banner_TP_building_1 X="23230" Y="-1375" DeltaX="280" DeltaY="-745"/>
+      <Banner_TP_building_2 X="24730" Y="-630" DeltaX="40" DeltaY="745"/>
+      <Banner_TP_building_1 X="27270" Y="-1375" DeltaX="490" DeltaY="-745"/>
+    </Layer>  
+
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof143_Start X="0" Y="-1494" DeltaX="0" DeltaY="-1494" BoxX="0" BoxY="-401" BoxWidth="2075" BoxHeight="701">
+        <Camera X="1374" Y="-146"/>
+        <TriggerCameraStart X="1295" Y="-401"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="200" Y="-96" Name="DefaultSpawn" Animation="JumpOff|18"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof143_Start>
+      <Roof143_Rail X="700" Y="-310" DeltaX="-1375" DeltaY="1184"/>
+      <Roof143_Train X="1750" Y="-745" DeltaX="-6660" DeltaY="-435" BoxX="-300" BoxY="-3345" BoxWidth="25880" BoxHeight="3785">
+        <TriggerZoomMin X="102" Y="-3345"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="-250" Y="245" Name="Respawn" Animation="Fly|18"/>
+            <Trigger X="0" Y="-989" Width="150" Height="240" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="0" SubType="0"/>
+            <Trigger X="250" Y="-950" Width="70" Height="200" Name="HunterStop" Type="13" Node="COM" Priority="1" Animation="Loose|30" AI="2"/>
+            <Trigger Name="TriggerSlide" Type="1" AI="3" Node="COM" Key1="3" PressType="0" Priority="1" Factor="1" X="210" Y="-945" Width="100" Height="200" Follow="0"/>
+            <Trigger X="210" Y="-945" Width="100" Height="200" Name="TriggerJump" Type="1" AI="4" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof143_Train>
+      <Roof143_Obstacle_1 X="8300" Y="-900" DeltaX="-3029" DeltaY="-235" BoxX="-300" BoxY="-665" BoxWidth="600" BoxHeight="815"/>
+      <Roof143_Rail X="8400" Y="-310" DeltaX="-100" DeltaY="590"/>
+      <Roof143_Rail X="16100" Y="-310" DeltaX="-10" DeltaY="0" BoxX="5240" BoxY="-2805" BoxWidth="253" BoxHeight="3500"/>
+      <Roof143_Tunnel X="23530" Y="-1100" DeltaX="-280" DeltaY="-790" BoxX="0" BoxY="-1980" BoxWidth="4950" BoxHeight="3500">
+        <Respawn X="940" Y="-300"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="0.9" X="3" Y="-1980" Width="100" Height="3500" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof143_Tunnel>
+      <Roof143_Rail X="23790" Y="-310" DeltaX="-4690" DeltaY="1085" BoxX="5240" BoxY="-2805" BoxWidth="253" BoxHeight="3500"/>
+      <Roof143_Office X="32650" Y="-320" DeltaX="-2705" DeltaY="-1010" BoxX="-3850" BoxY="-3050" BoxWidth="8940" BoxHeight="6050">
+        <TriggerZoomMin X="-2385" Y="-1560"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="0.9" X="4990" Y="-3050" Width="100" Height="3500" Node="COM" Priority="0" SubType="0"/>
+            <Trigger X="-3425" Y="-1200" Width="70" Height="200" Name="HunterStop" Type="13" Node="COM" Priority="1" Animation="Loose|30" AI="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof143_Office>
+      <Roof143_Final X="37640" Y="-1390" DeltaX="-2130" DeltaY="0" BoxX="0" BoxY="-499" BoxWidth="4755" BoxHeight="2429">
+        <Respawn X="103" Y="1"/>
+      </Roof143_Final>
+    </Layer>
+  </Layers>
+</Root>

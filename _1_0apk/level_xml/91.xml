@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+		<City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+      <ConstructionYardBackground X="0" Y="-400" DeltaX="0" DeltaY="-400"/>
+      <ConstructionYardBackground X="2121" Y="-400" DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground X="4242" Y="-400" DeltaX="1" DeltaY="0"/>
+      <ConstructionYardBackground X="6363" Y="-400" DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding1 DeltaX="43" DeltaY="-233"/>
+      <ConstructionYardBuilding2 DeltaX="670" DeltaY="661"/>
+      <ConstructionYardBuilding2 DeltaX="437" DeltaY="244"/>
+      <ConstructionYardBuilding1 DeltaX="385" DeltaY="-294"/>
+      <ConstructionYardBuilding1 DeltaX="402" DeltaY="574"/>
+      <ConstructionYardBuilding2 DeltaX="450" DeltaY="508"/>
+      <ConstructionYardBuilding2 DeltaX="437" DeltaY="27"/>
+      <ConstructionYardBuilding1 DeltaX="385" DeltaY="-135"/>
+      <ConstructionYardBuilding1 DeltaX="379" DeltaY="-148"/>
+      <ConstructionYardBuilding2 DeltaX="356" DeltaY="271"/>
+      <ConstructionYardBuilding1 DeltaX="281" DeltaY="-204"/>
+      <ConstructionYardBuilding1 DeltaX="379" DeltaY="-148"/>
+      <ConstructionYardBuilding2 DeltaX="356" DeltaY="271"/>
+    </Layer>
+    
+
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof91-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-520" BoxY="-1542" BoxWidth="9720" BoxHeight="3759">
+        <TriggerZoomMax X="656" Y="-1542"/>
+        <Pill X="1995" Y="-175"/>
+        <TriggerDashVault X="2405" Y="-200"/>
+        <TriggerZoomNormal X="3025" Y="-1537"/>
+        <TriggerZoomMin X="4138" Y="-1283"/>
+        <Pill X="6126" Y="389"/>
+        <TriggerJump X="6250" Y="310"/>
+        <TriggerCameraStart X="306" Y="-400"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="6565" Y="1985" Width="2570" Height="100" Name="" Type="2" Node="COM" Priority="0" Value="1.5" SubType="0"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="6565" Y="2030" Width="2635" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Spawn X="-470" Y="-350" Name="DefaultSpawn" Animation="JumpOff|18"/>
+            <Camera X="465" Y="-105"/>
+            <Comment X="3700" Y="1010" Width="505" Height="415" Text="ГОТОВО&#xD;Надо поправить резкий переход графики выщербленных стен к вблеку" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="3605" Y="-70" Width="680" Height="945" Text="ГОТОВО&#xD;Небольшие в_блеки надо сделать статическими" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="3220" Y="1140" Width="485" Height="305" Text="Добавил щербатую стену" FontSize="40" Colour="65535" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof91-1>
+      <Roof91-3 X="8725" Y="1760" DeltaX="2100" DeltaY="1255" BoxX="0" BoxY="-1855" BoxWidth="4488" BoxHeight="3606">
+        <TriggerZoomNormal X="8" Y="-1855"/>
+        <Respawn_2.5sec X="65" Y="-5"/>
+        <TriggerZoomMin X="1329" Y="-1749"/>
+        <Pill X="1597" Y="-202"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="3290" Y="-200" Width="770" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="1" SubType="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof91-3>
+      <Roof91-2 X="14355" Y="2855" DeltaX="1630" DeltaY="1095" BoxX="-2200" BoxY="-3004" BoxWidth="10440" BoxHeight="4819">
+        <TriggerZoomNormal X="25" Y="-2274"/>
+        <Respawn_2sec X="243" Y="-547"/>
+        <TriggerZoomMax X="1256" Y="-2501"/>
+        <Pill X="1560" Y="-185"/>
+        <Pill X="3245" Y="-155"/>
+        <TriggerBarJumpSaltoless X="3762" Y="39"/>
+        <TriggerZoom80 X="4255" Y="-3004"/>
+        <TriggerJump X="5230" Y="-1144"/>
+        <TriggerJump X="5243" Y="36"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-2105" Y="190" Width="2250" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="-2200" Y="225" Width="2570" Height="100" Name="" Type="2" Node="COM" Priority="0" Value="1.5" SubType="0"/>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="860" Y="456" Width="1965" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3485" Y="1006" Width="940" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="3825" Y="631" Width="4415" Height="100" Name="" Type="2" Node="COM" Priority="0" Value="1.5" SubType="0"/>
+            <Comment X="3085" Y="260" Width="440" Height="270" Text="ГОТОВО&#xD;Надо подогнать графику под платформу, сейчас можно приземлиться на воздух" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="4120" Y="-1050" Width="325" Height="340" Text="ГОТОВО&#xD;Тут можно пропустить бота вперед и довольно долго бежать за ним. Нужен арест" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof91-2>
+      <Roof91-6 X="20000" Y="2985" DeltaX="355" DeltaY="-110" BoxX="-275" BoxY="-3169" BoxWidth="3040" BoxHeight="4669">
+        <TriggerZoomMin X="80" Y="-3169"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="1060" Y="756" Width="1705" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Item X="1875" Y="-629" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-275" Y="1116" Width="650" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Comment X="-10" Y="105" Width="305" Height="175" Text="ГОТОВО&#xD;Нужно добавить черную графику в нижнюю часть платформы. Сейчас при клинге можно залезать по воздуху" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="1635" Y="-545" Width="530" Height="450" Text="Увеличил платформу, чтобы срабатывал кетч, когда бот падает сверху на эту платформу" FontSize="40" Colour="65535" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof91-6>
+      <Roof91-4 X="22520" Y="2740" DeltaX="510" DeltaY="295" BoxX="0" BoxY="-1755" BoxWidth="7494" BoxHeight="4215">
+        <TriggerZoomNormal X="51" Y="-1755"/>
+        <Respawn_2.5sec X="144" Y="-3"/>
+        <TriggerZoom80 X="1631" Y="-1287"/>
+        <Pill X="1786" Y="324"/>
+        <Respawn_2sec X="2639" Y="910"/>
+        <TriggerZoomMax X="3074" Y="-1049"/>
+        <TriggerZoom80 X="5163" Y="-1040"/>
+        <Pill X="5363" Y="458"/>
+        <TriggerBarJump X="6489" Y="157"/>
+        <TriggerZoomNormal X="6552" Y="-1397"/>
+        <TriggerLossPanic X="6494" Y="1157"/>
+        <Respawn_3sec X="5499" Y="326"/>
+        <TriggerJump X="7030" Y="275"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="569" Y="-88" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="1209" Y="-88" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="2964" Y="817" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3364" Y="727" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="4154" Y="727" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="4859" Y="727" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="5689" Y="267" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="6224" Y="177" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="5955" Y="10" Width="355" Height="415" Text="ГОТОВО&#xD;Тут нужен арест, сейчас можно увидеть как исчезает бот, если пропустить его на воллджампе" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="-320" Y="1010" Width="465" Height="300" Text="ГОТОВО&#xD;Надо убрать стык платформ, который может привести к клингу внутрь платформы" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="5725" Y="-875" Width="580" Height="355" Text="ГОТОВО&#xD;Небольшие в_блеки надо сделать статическими" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof91-4>
+      <Roof91-5 X="29864" Y="3119" DeltaX="184" DeltaY="-91" BoxX="0" BoxY="-3149" BoxWidth="7926" BoxHeight="6469">
+        <TriggerZoom80 X="2091" Y="-2245"/>
+        <Pill X="2671" Y="-1176"/>
+        <TriggerLoss X="2805" Y="-391"/>
+        <TriggerZoomMin X="3459" Y="-3149"/>
+        <Pill X="4956" Y="-1534"/>
+        <TriggerJump X="6198" Y="-1639"/>
+        <TriggerZoom80 X="6296" Y="-2994"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="2876" Y="-1319" Width="465" Height="370" Text="ГОТОВО&#xD;При слайде с башни пролетаешь сквозь эту платформу. Можно немного увеличить ее вниз чтобы модель цеплялась за нее" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Item X="169" Y="-88" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="944" Y="-178" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="1629" Y="-388" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="3094" Y="-1363" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="4149" Y="-1538" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="6189" Y="-1538" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="6001" Y="-524" Width="1925" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Trigger X="5686" Y="-419" Width="2105" Height="100" Name="" Type="2" Node="COM" Priority="0" Value="1.5" SubType="0"/>
+            <Comment X="1546" Y="-1919" Width="365" Height="400" Text="ГОТОВО&#xD;в_блеки надо сделать статическими" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+        <ObjectNULL X="-29864" Y="-3119" Group="1">
+          <Objects/>
+          <Elements>
+            <Comment X="29635" Y="5120" Width="530" Height="315" Text="Уменьшил платформу, чтобы при падении с нее на столб, игрок и бот не дулали кувырок по воздуху" FontSize="40" Colour="65535" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof91-5>
+      <FinalRoof_4 X="37650" Y="2113" DeltaX="1486" DeltaY="444" BoxX="0" BoxY="-499" BoxWidth="3345" BoxHeight="2939">
+        <Respawn_2.5sec X="5" Y="1"/>
+      </FinalRoof_4>
+    </Layer>
+
+  </Layers>
+</Root>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="2" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+      <Background DeltaX="0" DeltaY="-300"/>
+      <Background DeltaX="-8" DeltaY="80"/>
+      <Background DeltaX="-7" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 DeltaX="200" DeltaY="-100" Override="0"/>
+      <Billboard DeltaX="200" DeltaY="150"/>
+      <Building2 DeltaX="500" DeltaY="-200"/>
+      <LampPost DeltaX="300" DeltaY="500"/>
+      <Building3 DeltaX="300" DeltaY="0"/>
+      <Building1 DeltaX="995" DeltaY="2381" Override="0"/>
+      <Billboard DeltaX="-1662" DeltaY="-301"/>
+      <Building3 DeltaX="1987" DeltaY="365"/>
+    </Layer>
+  
+    
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof56-1 X="-600" Y="600" DeltaX="-600" DeltaY="600" Override="0">
+        <Spawn X="-332" Y="-243"/>
+        <TriggerCameraStart X="702" Y="-400"/>
+        <Camera X="755" Y="-49"/>
+        <Pill X="2045" Y="191"/>
+        <TriggerZoomMax X="5005" Y="-2252"/>
+        <TriggerCatch X="5015" Y="-200"/>
+        <Respawn X="5341" Y="-50"/>
+        <Pill X="6237" Y="-310"/>
+        <TriggerJump X="6805" Y="-225"/>
+        <TriggerLoss X="6860" Y="400"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="6641" Y="-902" Width="107" Height="873" Name="Zoom" Type="2" Node="COM" Priority="0" Value="0.75"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof56-1>
+      <Crane X="6963" Y="741" DeltaX="662" DeltaY="141">
+        <TriggerJump X="3880" Y="-200"/>
+        <TriggerCatch X="26" Y="-161"/>
+        <TriggerSpinningVaultTrick0High X="276" Y="-211"/>
+        <TriggerCatch X="1402" Y="-158"/>
+        <TriggerZoomMin X="2421" Y="-2331"/>
+      </Crane>
+      <Roof56-2 X="12905" Y="1440" DeltaX="1942" DeltaY="699" Override="0">
+        <TriggerLoss X="-1843" Y="187"/>
+        <TriggerLoss X="-876" Y="187"/>
+        <TriggerZoomNormal X="95" Y="-1402"/>
+        <Respawn X="254" Y="-1"/>
+        <TriggerZoomMin X="2777" Y="-1686"/>
+        <Pill X="4666" Y="-572"/>
+        <TriggerJump X="6579" Y="-230"/>
+      </Roof56-2>
+      <Roof56-3 X="20752" Y="1956" DeltaX="1084" DeltaY="516" Override="0">
+        <TriggerLoss X="-1007" Y="259"/>
+        <Respawn X="0" Y="4"/>
+        <TriggerZoomNormal X="68" Y="-1582"/>
+        <TriggerReverseVault X="1871" Y="-195"/>
+        <TriggerZoomMin X="2481" Y="-1858"/>
+        <TriggerJump X="3995" Y="-187"/>
+        <TriggerLoss X="4237" Y="638"/>
+      </Roof56-3>
+      <Roof56-4 X="26775" Y="2505" DeltaX="1287" DeltaY="549" Override="0">
+        <TriggerLoss X="-855" Y="81"/>
+        <Respawn X="-127" Y="-157"/>
+        <TriggerZoomNormal X="65" Y="-1682"/>
+        <TriggerJump X="5490" Y="303"/>
+        <TriggerZoomMin X="5551" Y="-2131"/>
+      </Roof56-4>
+      <Kirill_roof35 X="33264" Y="3880" DeltaX="725" DeltaY="1375">
+        <TriggerLoss X="-703" Y="233"/>
+        <Pill X="-508" Y="-850"/>
+        <TriggerZoomNormal X="187" Y="-2845"/>
+        <Respawn X="770" Y="9"/>
+        <TriggerZoomMin X="4283" Y="-2093"/>
+        <Pill X="4660" Y="803"/>
+        <TriggerSlide X="5971" Y="471"/>
+        <TriggerLoss X="6109" Y="1303"/>
+      </Kirill_roof35>
+      <FinalRoof X="40120" Y="5183" DeltaX="427" DeltaY="1303" Override="0">
+        <Pill X="-190" Y="-505"/>
+        <TriggerZoomNormal X="327" Y="-3231"/>
+        <TriggerVictory X="620" Y="-300"/>
+      </FinalRoof>
+    </Layer>
+  
+    <Layer Name="Forward_Layer" Factor="2" Type="2">
+    </Layer>
+    
+  </Layers>
+</Root>

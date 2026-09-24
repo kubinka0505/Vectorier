@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0.8" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Helper" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="2" Time="0" AllowedSpawns="RespawnCS02HelpbotPart2" LifeTime="5" Skins="helper|shirt"/>
+    <Model Name="Hunter" Type="0" Color="0" AI="1" Time="5.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Helper" Arrests="Helper" Icon="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2">
+      <Building1 DeltaX="150" DeltaY="-710"/>
+      <Billboard DeltaX="250" DeltaY="760"/>
+      <Building2 DeltaX="500" DeltaY="-620"/>
+      <LampPost DeltaX="300" DeltaY="920"/>
+      <Building3 DeltaX="320" DeltaY="-520"/>
+      <Billboard DeltaX="323" DeltaY="778"/>
+      <Building1 DeltaX="287" DeltaY="-748"/>
+      <Building3 DeltaX="300" DeltaY="-100">
+      <Building2Image X="1529" Y="-537"/>
+        <BillboardImage X="3512" Y="532"/>
+        <Building2Image X="4309" Y="73"/>
+      </Building3>
+    </Layer>
+    
+
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <CS02production X="5" Y="-5" DeltaX="5" DeltaY="-5" BoxX="5" BoxY="-1835" BoxWidth="4809" BoxHeight="5035">
+        <TriggerCameraStart X="1404" Y="-403"/>
+        <Spawn X="165" Y="-1785"/>
+        <Camera X="1506" Y="-205"/>
+        <CS02HelpbotPart1 X="2814" Y="-200"/>
+        <TriggerCS02PlayerPart1WithTruck X="2485" Y="-200"/>
+        <TriggerCS02DowntownFlashMemory X="3485" Y="-200"/>
+        <TriggerZoomMax X="1755" Y="-1420"/>
+        <TriggerZoomMinForCS02 X="2985" Y="-1415"/>
+        <TriggerCameraVelocity500CS02 X="1185" Y="-300"/>
+        <TriggerCS02Hunter X="2305" Y="-205"/>
+        <Respawn_5.2sec X="2020" Y="20"/>
+      </CS02production>
+      <CS02Building3production X="3995" Y="-752" DeltaX="0" DeltaY="0" BoxX="135" BoxY="-1560" BoxWidth="12817" BoxHeight="4014">
+        <TriggerVictoryCS02 X="8225" Y="-328"/>
+      </CS02Building3production>
+    </Layer>
+    
+   
+    
+    <Layer Name="Forward_Layer" Factor="2" Type="2">
+    </Layer>
+    
+  </Layers>
+</Root>

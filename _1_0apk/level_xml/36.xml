@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="2.0" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="200" Y="-100" DeltaX="200" DeltaY="-100"/>
+      <Billboard X="2189" Y="50" DeltaX="200" DeltaY="150"/>
+      <Building2 X="3014" Y="-150" DeltaX="500" DeltaY="-200"/>
+      <LampPost X="4384" Y="350" DeltaX="300" DeltaY="500"/>
+      <Building3 X="4834" Y="350" DeltaX="300" DeltaY="0"/>
+      <Billboard X="6317" Y="150" DeltaX="400" DeltaY="-200"/>
+      <Building1 X="6842" Y="154" DeltaX="200" DeltaY="4"/>
+      <Building3 X="11710" Y="650" DeltaX="3079" DeltaY="496"/>
+      <Building1 X="15260" Y="410" DeltaX="2467" DeltaY="-240"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof36-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-495" BoxY="-1738" BoxWidth="6135" BoxHeight="3500">
+        <Pill X="4060" Y="-198"/>
+        <TriggerZoom80 X="470" Y="-1738"/>
+        <TriggerLossPanic X="4640" Y="702"/>
+        <TriggerJump X="4785" Y="110"/>
+        <Spawn X="-445" Y="-385"/>
+        <TriggerCameraStart X="285" Y="-400"/>
+        <Camera X="420" Y="-80"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="625" Y="110" Width="335" Height="310" Text="СДЕЛАНО&#xD;С платформами внутри мелких препятствий игрок не контактирует, их можно убрать" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="1640" Y="230" Width="510" Height="565" Text="СДЕЛАНО&#xD;С платформой внутри бочек игрок не контактирует. При попадании в триггер проигрыша модель переходит в анимацию Stand залезая при этом в графику бочки. Нужно убрать платформу и убрать несколько бочек справа" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof36-1>
+      <Roof36-2 X="5300" Y="-60" DeltaX="415" DeltaY="-365" BoxX="0" BoxY="-2203" BoxWidth="6015" BoxHeight="4243">
+        <TriggerZoom80 X="10" Y="-2203"/>
+        <Pill X="2170" Y="512"/>
+        <TriggerLossPanic X="5015" Y="1027"/>
+        <TriggerJump X="5105" Y="305"/>
+        <Respawn_2.5sec X="35" Y="0"/>
+        <Respawn_3sec X="3770" Y="635"/>
+        <TriggerZoomMin X="5055" Y="-1460"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="4310" Y="747" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="5010" Y="412" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Comment X="1460" Y="725" Width="1280" Height="610" Text="СДЕЛАНО&#xD;Если прыгнуть с краю этой платформы - будет приземление с опорой руками на воздух&#xD;" FontSize="100" Colour="10027263" Transparency="0"/>
+            <Comment X="665" Y="225" Width="335" Height="310" Text="СДЕЛАНО&#xD;С платформами внутри бочек игрок не контактирует." FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof36-2>
+      <Roof36-3 X="11030" Y="440" DeltaX="450" DeltaY="0" BoxX="0" BoxY="-1750" BoxWidth="5830" BoxHeight="3500">
+        <Pill X="2055" Y="-95"/>
+        <Pill X="4020" Y="62"/>
+        <TriggerJump X="4900" Y="202"/>
+        <Respawn_2.5sec X="4000" Y="402"/>
+        <TriggerLossPanic X="4830" Y="1275"/>
+        <TriggerZoomNormal X="3335" Y="-1750"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="385" Y="-88" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3450" Y="-28" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="4825" Y="317" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="355" Y="-1380" Width="1790" Height="1440" Text="СДЕЛАНО&#xD;Отодвигание камеры не помогло, бонус все равно не видно.&#xD;&#xD;Рекомендую переместить его где-то в район правого нижнего угла этого комментария&#xD;" FontSize="100" Colour="10027263" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof36-3>
+      <Roof36-4 X="16680" Y="840" DeltaX="600" DeltaY="0" BoxX="-38" BoxY="-200" BoxWidth="1728" BoxHeight="1650">
+        <TriggerJump X="930" Y="-160"/>
+        <TriggerLossPanic X="690" Y="680"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="-405" Y="445" Width="410" Height="683" Text="СДЕЛАНО&#xD;Надо немного поднять вверх лосспаник и увеличить здания вниз, чтобы не были видны обрезанные края при прыжке в пропасть. Также в руф36-4 нужно увеличить вниз платформу, сейчас можно улететь в графику" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Item X="42" Y="-91" Score="10" Radius="80" Type="1" GroupId="2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof36-4>
+      <Roof36-7 X="18030" Y="950" DeltaX="165" DeltaY="-415" BoxX="0" BoxY="-2177" BoxWidth="5429" BoxHeight="3500">
+        <TriggerZoomMin X="1108" Y="-2177"/>
+        <TriggerJump X="5329" Y="379"/>
+        <Respawn_2sec X="53" Y="13"/>
+        <Pill X="2308" Y="-42"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="4408" Y="493" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="4813" Y="493" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="4018" Y="493" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Comment X="5330" Y="210" Width="2145" Height="885" Text="СДЕЛАНО&#xD;Теперь прыжок с самого края наказывается.&#xD;" FontSize="100" Colour="10027263" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof36-7>
+      <Roof36-5 X="25015" Y="1940" DeltaX="1580" DeltaY="415" BoxX="-1608" BoxY="-2135" BoxWidth="7208" BoxHeight="3945">
+        <TriggerJumpObstacle X="1325" Y="-201"/>
+        <TriggerReverseVault X="2000" Y="-200"/>
+        <TriggerRailFlipVault X="2601" Y="-202"/>
+        <Pill X="4696" Y="-327"/>
+        <TriggerJump X="5161" Y="-202"/>
+        <TriggerZoomMax X="302" Y="-2135"/>
+        <TriggerZoomNormal X="3305" Y="-2125"/>
+        <Respawn X="114" Y="-9"/>
+        <Respawn_2.5sec X="5267" Y="5"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-1608" Y="254" Width="1700" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Item X="1725" Y="-167" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="2380" Y="-172" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="1060" Y="-167" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Comment X="5270" Y="-655" Width="740" Height="530" Text="СДЕЛАНО&#xD;Если тут сделать спидвольт (не брать бонус) - проявляется некрасивая анимация схода из-за маленькой ступеньки между зданиями и из-за слишком близко стоящей к краю тумбочки. Надо либо сделать здания стыкущимися ровно, либо сделать speedvault to fly, либо увеличить здание офиса, чтобы после спидвольта игрок приземлялся на пол" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Item X="5509" Y="-79" Score="10" Radius="80" Type="1" GroupId="5"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof36-5>
+      <Roof36-6 X="30735" Y="2115" DeltaX="120" DeltaY="175" BoxX="0" BoxY="-1495" BoxWidth="3005" BoxHeight="3500">
+        <TriggerZoomMin X="90" Y="-1495"/>
+        <TriggerJump X="2905" Y="1295"/>
+        <Pill X="1993" Y="431"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="1090" Y="460" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="2820" Y="1325" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Comment X="985" Y="-935" Width="1700" Height="935" Text="СДЕЛАНО&#xD;Бонус не видно заранее, нужно отодвинуть камеру вовремя" FontSize="100" Colour="10027263" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof36-6>
+      <FinalRoof X="34145" Y="3700" DeltaX="410" DeltaY="85" BoxX="-723" BoxY="-1624" BoxWidth="4223" BoxHeight="3554">
+        <TriggerLossPanic X="-723" Y="622"/>
+        <TriggerZoomNormal X="96" Y="-1624"/>
+        <Respawn_2sec X="66" Y="1"/>
+      </FinalRoof>
+    </Layer>
+    
+    <Layer Name="Forward_Layer" Factor="2" Type="2">
+    </Layer>
+    
+  </Layers>
+</Root>

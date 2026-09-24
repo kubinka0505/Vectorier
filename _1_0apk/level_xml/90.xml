@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.2" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="40"/>
+  <Variable Name="Money">40</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <ConstructionYardBackground DeltaX="0" DeltaY="-500"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding1 X="410" Y="580" DeltaX="410" DeltaY="580"/>
+      <ConstructionYardBuilding2 X="1796" Y="1014" DeltaX="223" DeltaY="434"/>
+      <ConstructionYardBuilding1 X="3209" Y="1370" DeltaX="413" DeltaY="356"/>
+      <ConstructionYardBuilding2 X="4703" Y="1825" DeltaX="331" DeltaY="455"/>
+      <ConstructionYardBuilding1 X="7553" Y="1565" DeltaX="1850" DeltaY="-260"/>
+      <ConstructionYardBuilding2 X="9087" Y="1675" DeltaX="371" DeltaY="110"/>
+      <ConstructionYardBuilding1 X="10367" Y="1465" DeltaX="280" DeltaY="-210"/>
+      <ConstructionYardBuilding2 X="11886" Y="1825" DeltaX="356" DeltaY="360"/>
+      <ConstructionYardBuilding2 X="14321" Y="1600" DeltaX="1435" DeltaY="-225"/>
+      <ConstructionYardBuilding1 X="15993" Y="1335" DeltaX="672" DeltaY="-265"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof90-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-575" BoxY="-1396" BoxWidth="5155" BoxHeight="4494">
+        <TriggerZoomMax X="-575" Y="-1303"/>
+        <TriggerZoom80 X="1421" Y="-1396"/>
+        <TriggerAirBomb X="1460" Y="-380"/>
+        <TriggerZoomMin X="2991" Y="-402"/>
+        <TriggerJump X="3668" Y="95"/>
+        <Spawn X="-525" Y="-425"/>
+        <TriggerCameraStart X="214" Y="-405"/>
+        <Camera X="362" Y="-92"/>
+        <Pill X="3958" Y="83"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="2775" Y="1235" Width="1560" Height="100" Node="COM" Priority="0" Animation="" Start="FlyPanic|1" AI=""/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="2745" Y="1080" Width="1835" Height="145" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof90-1>
+      <Roof90-2 X="4285" Y="745" DeltaX="545" DeltaY="450" BoxX="0" BoxY="-574" BoxWidth="5700" BoxHeight="3965">
+        <Pill X="2716" Y="1002"/>
+        <TriggerZoomNormal X="2761" Y="-574"/>
+        <TriggerZoomMin X="3659" Y="-109"/>
+        <TriggerJump X="4483" Y="1378"/>
+        <Respawn_3sec X="394" Y="6"/>
+        <TriggerLossPanic X="4700" Y="2685"/>
+      </Roof90-2>
+      <Roof90-3 X="9970" Y="3032" DeltaX="1165" DeltaY="710" BoxX="-205" BoxY="-2227" BoxWidth="6950" BoxHeight="4248">
+        <TriggerZoomMax X="110" Y="-1861"/>
+        <Respawn_2sec X="256" Y="-2"/>
+        <TriggerDoubleKong X="480" Y="-202"/>
+        <TriggerZoom80 X="1678" Y="-1897"/>
+        <Pill X="2150" Y="-242"/>
+        <TriggerZoomMax X="2303" Y="-1998"/>
+        <TriggerZoom80 X="3415" Y="-2227"/>
+        <Pill X="4126" Y="-965"/>
+        <TriggerZoomMin X="5207" Y="-1479"/>
+        <TriggerJump X="5680" Y="-547"/>
+        <TriggerLossPanic X="5745" Y="688"/>
+        <Respawn_2.5sec X="3434" Y="-828"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="1105" Y="-187" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="1440" Y="-187" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="2370" Y="-727" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3505" Y="-902" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="5445" Y="-537" Score="10" Radius="80" Type="1" GroupId="2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof90-3>
+      <Roof90-4 X="16655" Y="3022" DeltaX="855" DeltaY="340" BoxX="0" BoxY="-1577" BoxWidth="5932" BoxHeight="3535">
+        <TriggerZoomMax X="25" Y="-1577"/>
+        <TriggerZoomMin X="3009" Y="-1542"/>
+        <Respawn_2.7sec X="10" Y="-2"/>
+        <Respawn_2sec X="1518" Y="-83"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="3135" Y="-472" Width="1275" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="1" SubType="1"/>
+            <Item X="105" Y="-107" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="1600" Y="-207" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="2465" Y="-347" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="3090" Y="-387" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="3725" Y="-387" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Trigger X="4310" Y="1368" Width="1622" Height="101" Name="" Type="2" Node="COM" Priority="0" Key="0" Value="1.1" SubType="0"/>
+            <Comment X="1065" Y="-367" Width="500" Height="355" Text="СДЕЛАНО&#xD;Платформа-препятствие, создающее невысокий проход, должна быть на высоте от пола 130+&#xD;&#xD;Сейчас высота 125" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof90-4>
+      <Roof90-5 X="22541" Y="3812" DeltaX="1465" DeltaY="1060" BoxX="-1456" BoxY="-1719" BoxWidth="6610" BoxHeight="4579">
+        <TriggerZoomMax X="202" Y="-1719"/>
+        <TriggerSplitOne X="604" Y="-198"/>
+        <Pill X="1844" Y="-242"/>
+        <TriggerZoomMin X="2727" Y="-1333"/>
+        <TriggerJump X="4102" Y="-196"/>
+        <Respawn_2.5sec X="499" Y="-597"/>
+        <TriggerLossPanic X="4154" Y="585"/>
+        <Respawn_2.5sec X="19" Y="2"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-1456" Y="793" Width="1520" Height="100" Node="COM" Priority="0" Animation="JumpOff" Start="FlyPanic|1"/>
+            <Comment X="4294" Y="2018" Width="500" Height="350" Text="СДЕЛАНО&#xD;Видны обрезанные края" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof90-5>
+      <FinalRoof_3 X="27156" Y="3892" DeltaX="440" DeltaY="85" BoxX="0" BoxY="-1197" BoxWidth="4310" BoxHeight="3500">
+        <TriggerZoomNormal X="2218" Y="-1197"/>
+        <Pill X="1518" Y="458"/>
+        <Respawn_2sec X="2174" Y="1033"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="563" Y="-97" Score="10" Radius="80" Type="1" GroupId="4"/>
+          </Elements>
+        </ObjectNULL>
+        <ObjectNULL X="-27156" Y="-3892" Group="1">
+          <Objects/>
+          <Elements>
+            <Comment X="76457" Y="13504" Width="500" Height="350" Text="Видны обрезанные края" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_3>
+    </Layer>
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>

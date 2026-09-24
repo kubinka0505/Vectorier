@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+   <Library FileName="common.swf"/>
+   <Library FileName="downtown.swf"/>
+  </Sets>
+  
+  <Objects>
+  
+    <BackgroundImage>
+      <Elements>
+        <Image X="0" Y="0" ClassName="v_bg" Width="2121" Height="1116"/>
+      </Elements>
+    </BackgroundImage>
+    
+    <BackJamb>
+      <Elements>
+        <Image X="0" Y="0" Width="70" Height="500" ClassName="v_dark_gray"/>
+      </Elements>
+      <Objects/>
+    </BackJamb>
+      
+    <BackConditoner>
+      <Elements>
+        <Image X="-6" Y="-4" Width="366" Height="89" ClassName="v_fan_1_2"/>
+      </Elements>
+      <Objects/>
+    </BackConditoner>
+    
+    <BillboardImage>
+      <Elements>
+        <Image X="0" Y="0" ClassName="v_billboard_1" Width="325" Height="605"/>
+      </Elements>
+    </BillboardImage>
+    
+    <Booth>
+      <Elements>
+        <Image X="0" Y="0" ClassName="v_booth_1_1" Width="1373" Height="399"/>
+      </Elements>
+    </Booth>
+    <Building1Image>
+      <Elements>
+        <Image X="0" Y="0" ClassName="v_building_1" Width="1789" Height="2599"/>
+      </Elements>
+    </Building1Image>
+    
+
+    <Building2Image>
+      <Elements>
+        <Image X="0" Y="0" ClassName="v_building_2" Width="1070" Height="2283"/>
+      </Elements>
+    </Building2Image>
+    
+          
+    <Building3Image Label="">
+      <Elements>
+        <Image X="0" Y="0" ClassName="v_building_3" Width="1083" Height="2311"/>
+      </Elements>
+    </Building3Image>
+    
+    <DoorHT>
+      <Elements>
+        <Image X="0" Y="0" Width="178" Height="255" ClassName="doorHT"/>
+      </Elements>
+      <Objects/>
+    </DoorHT>
+    
+    <Fence>
+      <Elements>
+        <Image X="0" Y="0" Width="400" Height="200" ClassName="v_dark_gray"/>
+      </Elements>
+      <Objects/>
+    </Fence>
+    
+    <Fog>
+      <Elements>
+        <Image X="0" Y="0" Width="500" Height="250" ClassName="fog"/>
+      </Elements>
+      <Objects/>
+    </Fog>
+    
+    <Grating>
+      <Elements>
+        <Image X="-15" Y="-10" ClassName="v_grating_1" Width="915" Height="188"/>
+      </Elements>
+    </Grating>
+    
+    <LampPostImage Label="">
+      <Elements>
+        <Image X="0" Y="0" ClassName="v_lamppost_1" Width="150" Height="620"/>
+      </Elements>
+    </LampPostImage>
+    
+    <Lift01>
+      <Elements>
+        <Image X="54" Y="601" ClassName="vent_lamp" Width="235" Height="40"/>
+        <Image X="0" Y="306" ClassName="v_Pipe_5" Width="28" Height="215"/>
+        <Image X="330" Y="304" ClassName="v_Pipe_5" Width="28" Height="215"/>
+        <Image X="116" Y="67" ClassName="v_railing_1" Width="140" Height="54"/>
+        <Image X="19" Y="118" ClassName="v_black" Type="3" Width="3" Height="191"/>
+        <Image X="336" Y="116" ClassName="v_black" Type="3" Width="3" Height="191"/>
+        <Image X="21" Y="424" ClassName="gas" Width="325" Height="110"/>
+        <Image X="135" Y="0" ClassName="v_object_02" Width="99" Height="96"/>
+        <Image X="18" Y="495" ClassName="gas" Width="325" Height="110"/>
+        <Image X="17" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+        <Image X="56" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+        <Image X="96" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+        <Image X="137" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+        <Image X="177" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+        <Image X="255" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+        <Image X="216" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+        <Image X="293" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+        <Platform X="22" Y="428" Width="316" Height="180" Name="platform"/>
+      </Elements>
+      <Objects/>
+    </Lift01>
+    
+
+    <Table>
+      <Elements>
+        <Image X="-9" Y="-5" Width="320" Height="95" ClassName="v_table_2"/>
+        <Platform X="0" Y="0" Width="300" Height="90"/>
+      </Elements>
+      <Objects/>
+    </Table>
+    
+    <TableT Label="Standard obstacles">
+      <Elements>
+        <Image X="-9" Y="-5" Width="320" Height="95" ClassName="v_table_2"/>
+        <Platform X="0" Y="0" Width="300" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerHighJump500 X="-700" Y="-60"/>
+        <TriggerDivingKong X="-200" Y="-110"/>
+      </Objects>
+    </TableT>
+    
+    <Max_table_1>
+      <Elements>
+            <Image X="-3" Y="-10" Width="126" Height="101" ClassName="v_table_1"/>
+            <Platform X="0" Y="0" Width="120" Height="90"/>
+      </Elements>
+      <Objects>
+            <TriggerHighJump500 X="-700" Y="-60"/>
+            <TriggerSpeedVault X="-200" Y="-110"/>
+      </Objects>
+    </Max_table_1>
+
+    <Max_table_2>
+      <Elements>
+            <Image X="-9" Y="-5" Width="320" Height="95" ClassName="v_table_2"/>
+            <Platform X="0" Y="0" Width="300" Height="90"/>
+      </Elements>
+      <Objects>
+            <TriggerHighJump500 X="-700" Y="-60"/>
+            <TriggerDivingKong X="-200" Y="-110"/>
+      </Objects>
+    </Max_table_2>
+    
+    <Office_battery>
+      <Elements>
+        <Image X="0" Y="0" Width="258" Height="105" ClassName="office_battery"/>
+      </Elements>
+      <Objects/>
+    </Office_battery>
+    
+    <Office_blank>
+      <Elements>
+        <Image X="0" Y="0" Width="1255" Height="430" ClassName="office_blank"/>
+      </Elements>
+      <Objects/>
+    </Office_blank>
+    
+    <Office_cooler Label="">
+      <Elements>
+        <Image X="0" Y="0" Width="84" Height="218" ClassName="office_cooler"/>
+      </Elements>
+      <Objects/>
+    </Office_cooler>
+    
+    <Office_door>
+      <Elements>
+        <Image X="0" Y="0" Width="182" Height="256" ClassName="office_door"/>
+      </Elements>
+      <Objects/>
+    </Office_door>
+    
+    <Office_glads>
+      <Elements>
+        <Image X="0" Y="0" Width="370" Height="179" ClassName="office_glads"/>
+      </Elements>
+      <Objects/>
+    </Office_glads>
+    
+    <Office_lightened_piece>
+      <Elements>
+        <Image X="0" Y="0" Width="795" Height="430" ClassName="office_lightened_piece"/>
+      </Elements>
+      <Objects/>
+    </Office_lightened_piece>
+    
+    <Office_lightened_piece_down>
+      <Elements>
+        <Image X="0" Y="0" Width="795" Height="430" ClassName="office_lightened_piece_down"/>
+      </Elements>
+      <Objects/>
+    </Office_lightened_piece_down>
+    
+    <Office_printer>
+      <Elements>
+        <Image X="0" Y="0" Width="106" Height="134" ClassName="office_printer"/>
+      </Elements>
+      <Objects/>
+    </Office_printer>
+    
+    <Office_socket>
+      <Elements>
+        <Image X="0" Y="0" Width="26" Height="27" ClassName="office_socket"/>
+      </Elements>
+      <Objects/>
+    </Office_socket>
+    
+    <Office_table>
+      <Elements>
+        <Image X="0" Y="0" Width="397" Height="164" ClassName="office_table"/>
+      </Elements>
+      <Objects/>
+    </Office_table>
+    
+    <Office_talents>
+      <Elements>
+        <Image X="0" Y="0" Width="94" Height="117" ClassName="office_talents"/>
+      </Elements>
+      <Objects/>
+    </Office_talents>
+    
+    <Office_urn>
+      <Elements>
+        <Image X="0" Y="0" Width="54" Height="61" ClassName="office_urn"/>
+      </Elements>
+      <Objects/>
+    </Office_urn>
+    
+    <Office_x_passage_edge>
+      <Elements>
+        <Image X="0" Y="0" Width="30" Height="430" ClassName="office_x_passage_edge"/>
+      </Elements>
+      <Objects/>
+    </Office_x_passage_edge>
+    
+    <Passage_blank>
+      <Elements>
+        <Image X="0" Y="0" Width="410" Height="330" ClassName="passage_blank"/>
+      </Elements>
+      <Objects/>
+    </Passage_blank>
+    
+    <Passage_blank_long>
+      <Elements>
+        <Image X="0" Y="0" Width="820" Height="330" ClassName="passage_blank_long"/>
+      </Elements>
+      <Objects/>
+    </Passage_blank_long>
+    
+    <Passage_gallery>
+      <Elements>
+        <Image X="0" Y="0" Width="820" Height="330" ClassName="passage_gallery"/>
+      </Elements>
+      <Objects/>
+    </Passage_gallery>
+    
+    <Passage_nosmokin>
+      <Elements>
+        <Image X="0" Y="0" Width="54" Height="49" ClassName="passage_nosmokin"/>
+      </Elements>
+      <Objects/>
+    </Passage_nosmokin>
+    
+    <Passage_wayout>
+      <Elements>
+        <Image X="0" Y="0" Width="77" Height="39" ClassName="passage_wayout"/>
+      </Elements>
+      <Objects/>
+    </Passage_wayout>
+    
+    <Passage_windowz>
+      <Elements>
+        <Image X="0" Y="0" Width="410" Height="330" ClassName="passage_windowz"/>
+      </Elements>
+      <Objects/>
+    </Passage_windowz>
+    
+    <Railing>
+      <Elements>
+        <Image X="-8" Y="-7" ClassName="v_railing_1_1" Width="484" Height="87"/>
+      </Elements>
+      <Objects/>
+    </Railing>
+    
+    <ShortTableT Label="Standard obstacles">
+      <Elements>
+        <Image X="-3" Y="-11" ClassName="v_table_1" Width="126" Height="101"/>
+        <Platform X="0" Y="0" Width="120" Height="90" Name="platform"/>
+      </Elements>
+      <Objects>
+        <TriggerHighJump500 X="-720" Y="-60"/>
+        <TriggerSpeedVault X="-220" Y="-110"/>
+      </Objects>
+    </ShortTableT>
+    
+    <V_bgnew Label="">
+      <Elements>
+        <Image X="0" Y="0" Width="1061" Height="558" ClassName="v_bg"/>
+      </Elements>
+      <Objects/>
+    </V_bgnew>
+
+    <V_antenna>
+      <Elements>
+        <Image X="0" Y="0" Width="95" Height="90" ClassName="v_antenna"/>
+      </Elements>
+      <Objects/>
+    </V_antenna>
+    
+    <V_bar_binocular Label="">
+      <Elements>
+        <Image X="0" Y="0" Width="66" Height="150" ClassName="v_bar_binocular"/>
+      </Elements>
+      <Objects/>
+    </V_bar_binocular>
+    
+    <v_barrel_01>
+      <Elements>
+        <Image X="0" Y="0" Width="75" Height="90" ClassName="v_barrel_1_1"/>
+      </Elements>
+    </v_barrel_01>
+    
+    <v_fan_1_1>
+      <Elements>
+        <Image X="-30" Y="-5" Width="200" Height="90" ClassName="v_fan_1_1"/>
+      </Elements>
+    </v_fan_1_1>
+
+    <V_box_1>
+      <Elements>
+        <Image X="0" Y="0" Width="68" Height="62" ClassName="v_box_1"/>
+      </Elements>
+      <Objects/>
+    </V_box_1>
+
+    <V_billboard_2>
+      <Elements>
+        <Image X="0" Y="0" Width="165" Height="303" ClassName="v_billboard_2"/>
+      </Elements>
+      <Objects/>
+    </V_billboard_2>
+    
+    <V_table_1>
+      <Elements>
+        <Image X="0" Y="0" Width="126" Height="100" ClassName="v_table_1"/>
+      </Elements>
+      <Objects/>
+    </V_table_1>
+    
+    <V_table_2>
+      <Elements>
+        <Image X="0" Y="0" Width="320" Height="95" ClassName="v_table_2"/>
+      </Elements>
+      <Objects/>
+    </V_table_2>
+    
+    <V_billboard_2_pattern>
+      <Elements>
+        <Image X="0" Y="0" Width="165" Height="303" ClassName="v_billboard_2_pattern"/>
+      </Elements>
+      <Objects/>
+    </V_billboard_2_pattern>
+    
+    <V_billboard_1_pattern>
+      <Elements>
+        <Image X="0" Y="0" Width="165" Height="303" ClassName="v_billboard_1_pattern"/>
+      </Elements>
+      <Objects/>
+    </V_billboard_1_pattern>
+    
+    <V_boothAngle_1_1>
+      <Elements>
+        <Image X="0" Y="0" Width="612" Height="385" ClassName="v_boothAngle_1_1"/>
+      </Elements>
+      <Objects/>
+    </V_boothAngle_1_1>
+    
+    <V_booth_1_1>
+      <Elements>
+        <Image X="0" Y="0" Width="1392" Height="399" ClassName="v_booth_1_1"/>
+      </Elements>
+      <Objects/>
+    </V_booth_1_1>
+    
+    <V_building_1_pattern>
+      <Elements>
+        <Image X="0" Y="0" Width="895" Height="527" ClassName="v_building_1_pattern"/>
+      </Elements>
+      <Objects/>
+    </V_building_1_pattern>
+    
+    <V_building_2_3_pattern>
+      <Elements>
+        <Image X="0" Y="0" Width="546" Height="527" ClassName="v_building_2_3_pattern"/>
+      </Elements>
+      <Objects/>
+    </V_building_2_3_pattern>
+    
+    <V_fence Label="">
+      <Elements>
+        <Image X="0" Y="0" Width="225" Height="100" ClassName="v_fence"/>
+      </Elements>
+      <Objects/>
+    </V_fence>
+    
+    <V_fence_bar>
+      <Elements>
+        <Image X="0" Y="0" Width="70" Height="100" ClassName="v_fence_bar"/>
+      </Elements>
+      <Objects/>
+    </V_fence_bar>
+    
+    <V_muorny_tank_1_1>
+      <Elements>
+        <Image X="0" Y="0" Width="86" Height="91" ClassName="v_muorny_tank_1_1"/>
+      </Elements>
+      <Objects/>
+    </V_muorny_tank_1_1>
+    
+    <V_muorny_tank_1>
+      <Elements>
+        <Image X="0" Y="0" Width="86" Height="91" ClassName="v_muorny_tank_1"/>
+      </Elements>
+      <Objects/>
+    </V_muorny_tank_1>
+    
+    <V_muorny_tank_2>
+      <Elements>
+        <Image X="0" Y="0" Width="198" Height="125" ClassName="v_muorny_tank_2"/>
+      </Elements>
+      <Objects/>
+    </V_muorny_tank_2>
+    
+    <V_muorny_tank_2_1>
+      <Elements>
+        <Image X="0" Y="0" Width="198" Height="125" ClassName="v_muorny_tank_2_1"/>
+      </Elements>
+      <Objects/>
+    </V_muorny_tank_2_1>
+    
+    <V_office_blank Label="">
+      <Elements>
+        <Image X="0" Y="0" Width="1255" Height="430" ClassName="v_office_blank"/>
+      </Elements>
+      <Objects/>
+    </V_office_blank>
+    
+    <V_office_lightened_piece>
+      <Elements>
+        <Image X="0" Y="0" Width="795" Height="430" ClassName="v_office_lightened_piece"/>
+      </Elements>
+      <Objects/>
+    </V_office_lightened_piece>
+    
+    <V_office_lightened_piece_down>
+      <Elements>
+        <Image X="0" Y="0" Width="795" Height="430" ClassName="v_office_lightened_piece_down"/>
+      </Elements>
+      <Objects/>
+    </V_office_lightened_piece_down>
+    
+    <V_office_pattern>
+      <Elements>
+        <Image X="0" Y="0" Width="795" Height="430" ClassName="v_office_pattern"/>
+      </Elements>
+      <Objects/>
+    </V_office_pattern>
+    
+    <V_office_socket>
+      <Elements>
+        <Image X="0" Y="0" Width="26" Height="27" ClassName="v_office_socket"/>
+      </Elements>
+      <Objects/>
+    </V_office_socket>
+    
+    <V_office_urn>
+      <Elements>
+        <Image X="0" Y="0" Width="54" Height="61" ClassName="v_office_urn"/>
+      </Elements>
+      <Objects/>
+    </V_office_urn>
+    
+    <V_office_x_passage_edge>
+      <Elements>
+        <Image X="0" Y="0" Width="30" Height="430" ClassName="v_office_x_passage_edge"/>
+      </Elements>
+      <Objects/>
+    </V_office_x_passage_edge>
+    
+    <V_passage_blank>
+      <Elements>
+        <Image X="0" Y="0" Width="410" Height="330" ClassName="v_passage_blank"/>
+      </Elements>
+      <Objects/>
+    </V_passage_blank>
+    
+    <V_passage_blank_long>
+      <Elements>
+        <Image X="0" Y="0" Width="820" Height="330" ClassName="v_passage_blank_long"/>
+      </Elements>
+      <Objects/>
+    </V_passage_blank_long>
+    
+    <V_passage_gallery2>
+      <Elements>
+        <Image X="0" Y="0" Width="820" Height="330" ClassName="v_passage_gallery2"/>
+      </Elements>
+      <Objects/>
+    </V_passage_gallery2>
+    
+    <V_passage_nosmokin>
+      <Elements>
+        <Image X="0" Y="0" Width="54" Height="49" ClassName="v_passage_nosmokin"/>
+      </Elements>
+      <Objects/>
+    </V_passage_nosmokin>
+    
+    <V_passage_wayout>
+      <Elements>
+        <Image X="0" Y="0" Width="77" Height="39" ClassName="v_passage_wayout"/>
+      </Elements>
+      <Objects/>
+    </V_passage_wayout>
+    
+    <V_passage_window>
+      <Elements>
+        <Image X="0" Y="0" Width="410" Height="330" ClassName="v_passage_window"/>
+      </Elements>
+      <Objects/>
+    </V_passage_window>
+    
+    <V_rail_left>
+      <Elements>
+        <Image X="0" Y="0" Width="403" Height="264" ClassName="v_rail_left"/>
+      </Elements>
+      <Objects/>
+    </V_rail_left>
+    
+    <V_rail_longleft>
+      <Elements>
+        <Image X="0" Y="0" Width="824" Height="267" ClassName="v_rail_longleft"/>
+      </Elements>
+      <Objects/>
+    </V_rail_longleft>
+    
+    <V_rail_longright>
+      <Elements>
+        <Image X="0" Y="0" Width="824" Height="267" ClassName="v_rail_longright"/>
+      </Elements>
+      <Objects/>
+    </V_rail_longright>
+    
+    <V_rail_right>
+      <Elements>
+        <Image X="0" Y="0" Width="395" Height="264" ClassName="v_rail_right"/>
+      </Elements>
+      <Objects/>
+    </V_rail_right>
+    
+    <V_rail_upleft>
+      <Elements>
+        <Image X="0" Y="0" Width="288" Height="142" ClassName="v_rail_upleft"/>
+      </Elements>
+      <Objects/>
+    </V_rail_upleft>
+    
+    <V_rail_upright>
+      <Elements>
+        <Image X="0" Y="0" Width="288" Height="142" ClassName="v_rail_upright"/>
+      </Elements>
+      <Objects/>
+    </V_rail_upright>
+    
+    <V_screen>
+      <Elements>
+        <Image X="0" Y="0" Width="391" Height="315" ClassName="v_screen"/>
+      </Elements>
+      <Objects/>
+    </V_screen>
+    
+    <V_table_screen>
+      <Elements>
+        <Image X="0" Y="0" Width="456" Height="185" ClassName="v_table_screen"/>
+      </Elements>
+      <Objects/>
+    </V_table_screen>
+    
+    <V_table_screen_min>
+      <Elements>
+        <Image X="0" Y="0" Width="457" Height="220" ClassName="v_table_screen_min"/>
+      </Elements>
+      <Objects/>
+    </V_table_screen_min>
+    
+    <V_table_simple>
+      <Elements>
+        <Image X="0" Y="0" Width="417" Height="90" ClassName="v_table_simple"/>
+      </Elements>
+      <Objects/>
+    </V_table_simple>
+    
+    <V_venthole_1_1>
+      <Elements>
+        <Image X="0" Y="0" Width="127" Height="173" ClassName="v_venthole_1_1"/>
+      </Elements>
+      <Objects/>
+    </V_venthole_1_1>
+    
+    <Ventilation_holes_roof>
+      <Elements>
+        <Image X="0" Y="0" Width="643" Height="150" ClassName="ventilation_holes_roof"/>
+      </Elements>
+      <Objects/>
+    </Ventilation_holes_roof>
+    
+    <Ventilation_passage>
+      <Elements>
+        <Image X="0" Y="0" Width="100" Height="100" ClassName="ventilation_passage"/>
+      </Elements>
+      <Objects/>
+    </Ventilation_passage>
+    
+    <Ventilation_hole>
+      <Elements>
+        <Image X="0" Y="0" Width="117" Height="103" ClassName="ventilation_hole"/>
+      </Elements>
+      <Objects/>
+    </Ventilation_hole>
+    
+    <Ventilation_enter>
+      <Elements>
+        <Image X="0" Y="0" Width="100" Height="100" ClassName="ventilation_enter"/>
+      </Elements>
+      <Objects/>
+    </Ventilation_enter>
+
+    <Volts>
+      <Elements>
+        <Image X="0" Y="0" Width="120" Height="200" ClassName="volts"/>
+      </Elements>
+      <Objects/>
+    </Volts>
+    
+    <Wall_left>
+      <Elements>
+        <Image X="0" Y="0" Width="35" Height="330" ClassName="wall_left"/>
+      </Elements>
+      <Objects/>
+    </Wall_left>
+    
+    <Wall_right>
+      <Elements>
+        <Image X="0" Y="0" Width="35" Height="330" ClassName="wall_right"/>
+      </Elements>
+      <Objects/>
+    </Wall_right>
+    
+	  <Constantine_office_pattern1560x865>
+      <Elements>
+        <Image X="0" Y="0" Width="1560" Height="865" ClassName="v_office_pattern"/>
+      </Elements>
+      <Objects/>
+    </Constantine_office_pattern1560x865>
+    
+    <Max_barrels>
+      <Elements>
+            <Image X="71" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+            <Image X="141" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+            <Image X="0" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+            <Image X="214" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+            <Image X="287" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+            <Image X="243" Y="88" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+            <Image X="170" Y="88" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+            <Image X="95" Y="88" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+            <Image X="210" Y="0" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+            <Image X="135" Y="0" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+      </Elements>
+      <Objects/>
+    </Max_barrels>
+   
+    <MaxBack_Wall>
+      <Elements>
+            <Image X="0" Y="0" Width="2919" Height="1000" ClassName="office_blank"/>
+      </Elements>
+      <Objects/>
+    </MaxBack_Wall>
+
+    <MaxWall_Window>
+      <Elements>
+            <Image X="0" Y="0" Width="729" Height="401" ClassName="passage_blank_long"/>
+            <Image X="1492" Y="0" Width="740" Height="401" ClassName="passage_blank_long"/>
+            <Image X="726" Y="0" Width="770" Height="401" ClassName="passage_gallery"/>
+      </Elements>
+      <Objects/>
+    </MaxWall_Window>
+    
+    <MaxWall_Window1>
+      <Elements>
+        <Image X="0" Y="0" Width="729" Height="401" ClassName="passage_blank_long"/>
+        <Image X="1468" Y="0" Width="740" Height="401" ClassName="passage_blank_long"/>
+        <Image X="729" Y="0" Width="740" Height="401" ClassName="passage_blank_long"/>
+      </Elements>
+      <Objects/>
+    </MaxWall_Window1>
+    
+    <Passage_blank_long4000x1050>
+      <Elements>
+        <Image X="0" Y="0" Width="4000" Height="1050" ClassName="passage_blank_long"/>
+      </Elements>
+      <Objects/>
+    </Passage_blank_long4000x1050>
+    
+    <TriggerCS01DowntownMain>
+      <Elements>
+        <Trigger X="0" Y="0" Width="509" Height="300" Name="TriggerCS01DowntownMain" Type="5" Node="COM" Priority="10" SubType="2" PX="0" PY="0" Animation="" Time="8" Start="CS01DownTownMain|20" AI="0"/>
+      </Elements>
+      <Objects/>
+    </TriggerCS01DowntownMain>
+    
+    <TriggerCS01DowntownSecond>
+      <Elements>
+        <Trigger Name="TriggerCS01DowntownSecond" Type="10" X="0" Y="0" Width="500" Height="300" SoundType="0" Animation="CS01DownTownSecond|20" Node="NPivot" Priority="10" AI="0"/>
+        <Model X="215" Y="-922" Type="1" ClassName="cs01_downtown_second"/>
+      </Elements>
+      <Objects/>
+    </TriggerCS01DowntownSecond>
+    
+    <TriggerCS01DowntownCtrlOut>
+      <Elements>
+        <Trigger Width="200" Height="300" Name="TriggerCS01DowntownCtrlOut" Type="12" Node="COM" Priority="10"/>
+      </Elements>
+    </TriggerCS01DowntownCtrlOut>
+    
+    <TriggerCS01aDowntownCoil>
+      <Elements>
+        <Trigger Name="TriggerCS01aDowntownCoil" Type="10" X="0" Y="135" Width="500" Height="300" SoundType="0" Animation="CS01aDownTownCoil|1" Node="NPivot" Priority="10"/>
+        <Model X="270" Y="200" Type="1" ClassName="cs01a_downtown_coil"/>
+      </Elements>
+      <Objects/>
+    </TriggerCS01aDowntownCoil>
+    
+    
+    <ShortTableT_R>
+      <Elements>
+        <Image X="-3" Y="-11" ClassName="v_table_1" Width="126" Height="101" NativeX="126" NativeY="101"/>
+        <Platform X="0" Y="0" Width="120" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerHighJump500 X="420" Y="-60"/>
+        <TriggerSpeedVault X="320" Y="-110"/>
+      </Objects>
+    </ShortTableT_R>
+    <TableT_R>
+      <Elements>
+        <Image X="-9" Y="-5" ClassName="v_table_2" Width="320" Height="95" NativeX="320" NativeY="95"/>
+        <Platform X="0" Y="0" Width="300" Height="90"/>
+      </Elements>
+      <Objects>
+        <TriggerHighJump500 X="500" Y="-60"/>
+        <TriggerDivingKong X="400" Y="-110"/>
+      </Objects>
+    </TableT_R>
+  </Objects>
+</Root>

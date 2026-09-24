@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="80"/>
+  <Variable Name="Money">80</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <ConstructionYardBackground DeltaX="0" DeltaY="-500"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+   <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding2 X="-653" Y="-285" DeltaX="-653" DeltaY="-285"/>
+      <ConstructionYardBuilding1 X="517" Y="135" DeltaX="170" DeltaY="420"/>
+      <ConstructionYardBuilding1 X="2509" Y="-100" DeltaX="829" DeltaY="-235"/>
+      <ConstructionYardBuilding2 X="4713" Y="608" DeltaX="1041" DeltaY="708"/>
+      <ConstructionYardBuilding1 X="6205" Y="290" DeltaX="492" DeltaY="-318"/>
+      <ConstructionYardBuilding2 X="8110" Y="545" DeltaX="742" DeltaY="255"/>
+      <ConstructionYardBuilding1 X="9605" Y="290" DeltaX="495" DeltaY="-255"/>
+      <ConstructionYardBuilding2 X="11620" Y="575" DeltaX="852" DeltaY="285"/>
+      <ConstructionYardBuilding1 X="13615" Y="490" DeltaX="995" DeltaY="-85"/>
+      <ConstructionYardBuilding1 X="15910" Y="620" DeltaX="1132" DeltaY="130"/>
+      <ConstructionYardBuilding1 X="18065" Y="485" DeltaX="992" DeltaY="-135"/>
+      <ConstructionYardBuilding2 X="20100" Y="690" DeltaX="872" DeltaY="205"/>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof117-7 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-515" BoxY="-1685" BoxWidth="4590" BoxHeight="3500">
+        <TriggerZoomMin X="1445" Y="-1685"/>
+        <TriggerJump X="3550" Y="-200"/>
+        <TriggerCameraStart X="330" Y="-405"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="-465" Y="-435" Name="DefaultSpawn" Animation="JumpOff|18"/>
+            <Camera X="475" Y="-116"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof117-7>
+      <Roof117-1 X="4840" Y="1330" DeltaX="840" DeltaY="1330" BoxX="-820" BoxY="-4350" BoxWidth="5408" BoxHeight="7305">
+        <TriggerJump X="3966" Y="-2136"/>
+        <Pill X="2100" Y="-372"/>
+        <TriggerZoomMax X="-165" Y="-3010"/>
+        <TriggerZoomNormal X="3185" Y="-545"/>
+        <TriggerZoomMin X="2805" Y="-4350"/>
+        <TriggerLossPanic X="-820" Y="280"/>
+        <Respawn_2sec X="3810" Y="-1950"/>
+        <TriggerJump X="3995" Y="-285"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="-580" Y="279" Width="750" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Comment X="1625" Y="-2950" Width="1000" Height="965" Text="Передвинул препятствия вправо, среднее препятсвие расположил ровно между другими, для более красивого прохождения данного места" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="2020" Y="-380" Width="880" Height="840" Text="Передвинул третий столб на 45 влево, чтобы при сборе бонуса игрок не спотыкался на нем" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="3735" Y="-320" Width="770" Height="575" Text="Переставил Jump из крыши в слой&#xD;" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="2950" Y="-290" Width="875" Height="405" Text="ГОТОВО&#xD;Последний столбик лучше заменить другим препятствием, сейчас довольно часто моделька дергает ногой при приземлении на него." FontSize="60" Colour="13382400" Transparency="1"/>
+            <Comment X="3920" Y="-150" Width="555" Height="520" Text="ГОТОВО&#xD;графику кондиционера лучше заменить, сейчас игрок ожидает дайвингконга в этом месте." FontSize="60" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof117-1>
+      <Roof117-2 X="9260" Y="1150" DeltaX="120" DeltaY="-180" BoxX="0" BoxY="-1635" BoxWidth="6020" BoxHeight="3555">
+        <Pill X="3225" Y="-224"/>
+        <TriggerZoomNormal X="5235" Y="-1635"/>
+        <Pill X="585" Y="-218"/>
+        <TriggerZoomMin X="940" Y="-1580"/>
+        <TriggerLossPanic X="425" Y="273"/>
+        <TriggerLossPanic X="5020" Y="935"/>
+        <TriggerSpinningVaultTrick0High X="1165" Y="-585"/>
+        <Respawn_3.3sec X="1005" Y="-380"/>
+        <TriggerJump X="5270" Y="77"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="445" Y="268" Width="1230" Height="102" Name="" Type="2" Node="COM" Priority="0" Animation="" Time="2" Start="FlyPanic|1" Value="2" SubType="0"/>
+            <Trigger X="5260" Y="935" Width="760" Height="102" Name="" Type="2" Node="COM" Priority="0" Animation="" Time="2" Start="FlyPanic|1" Value="2" SubType="0"/>
+            <Item X="1845" Y="-560" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3860" Y="-425" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="4610" Y="-55" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Comment X="3640" Y="-550" Width="680" Height="720" Text="Увеличил платформу, чтобы игрок не опирался руками о воздух" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="4885" Y="-125" Width="680" Height="720" Text="Увеличил платформу, чтобы игрок не опирался руками о воздух" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="2875" Y="-1570" Width="680" Height="720" Text="Опустил платформу, чтобы игрок не опирался ногами о воздух" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="4505" Y="700" Width="680" Height="720" Text="Поправил выступающую графику" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="1995" Y="-855" Width="680" Height="720" Text="Добавил условные триггеры jump и slide&#xD;" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="3565" Y="605" Width="710" Height="610" Text="Убрал лишнее пересечение платформ" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="2845" Y="-515" Width="680" Height="720" Text="Добавил  jumр, чтобы сделать бота немного быстрее&#xD;" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="1160" Y="-810" Width="770" Height="575" Text="Передвинул Catch, чтобы игрок не перепрыгивал бота в кэтче&#xD;" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="620" Y="-740" Width="450" Height="535" Text="добавил Respawn&#xD;" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="5225" Y="715" Width="680" Height="720" Text="Опустил ниже loss" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="3020" Y="-85" Width="485" Height="700" Text="ГОТОВО&#xD;В_блек этой ступеньки можно сделать маленьким и статическим, немного растянув правый в_блек налево" FontSize="60" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof117-2>
+      <Roof117-3 X="15095" Y="1520" DeltaX="475" DeltaY="120" BoxX="0" BoxY="-4015" BoxWidth="6540" BoxHeight="4750">
+        <Pill X="1804" Y="-940"/>
+        <Pill X="732" Y="-1340"/>
+        <Respawn_2sec X="3332" Y="-1255"/>
+        <Respawn_3sec X="105" Y="10"/>
+        <TriggerDiveDown X="2484" Y="-1681"/>
+        <TriggerZoomNormal X="3805" Y="-3300"/>
+        <TriggerZoomMax X="2155" Y="-3880"/>
+        <TriggerLossPanic X="5540" Y="-930"/>
+        <TriggerJump X="5925" Y="-1620"/>
+        <TriggerZoomMin X="1185" Y="-4015"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="1187" Y="-75" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3982" Y="-1315" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="4537" Y="-1410" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="802" Y="-640" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="1212" Y="-630" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="5525" Y="-1930" Width="925" Height="815" Text="сдвинул столб вправо, чтобы при прыжке, с платформы игрок не отталкивался от воздуха" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="5510" Y="-2630" Width="690" Height="605" Text="Переставил Jump из крыши в слой&#xD;" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="3125" Y="-945" Width="915" Height="635" Text="Убрал лишнее пересечение платформ" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Trigger X="5699" Y="-942" Width="750" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Item X="5915" Y="-1500" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Comment X="1080" Y="-1750" Width="430" Height="295" Text="ГОТОВО&#xD;В_блек можно сделать статическим" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="885" Y="-1295" Width="660" Height="850" Text="ГОТОВО&#xD;Тут надо отдалить камеру, чтобы игрок увидел оба бонуса заранее, а также чтобы ему были видны действия охотника, если игрок пошел по правильному пути." FontSize="100" Colour="13382400" Transparency="1"/>
+            <Comment X="5860" Y="-890" Width="770" Height="1335" Text="ГОТОВО&#xD;Тут можно удалить часть картинок стен, которые не видны игроку в о время геймплея" FontSize="100" Colour="13382400" Transparency="1"/>
+            <Comment X="4650" Y="-855" Width="565" Height="1355" Text="ГОТОВО&#xD;Тут можно удалить часть картинок стен, которые не видны игроку в о время геймплея" FontSize="100" Colour="13382400" Transparency="1"/>
+            <Comment X="255" Y="-300" Width="1615" Height="1060" Text="ЗАМЕНИЛ BARRIER НА &quot;ПОДКАТ&quot; - ПРИ ОТДАЛЕНИИ КАМЕРЫ, ЧТОБЫ ИГРОК ВИДЕЛ ОБА БОНУСА, БЫЛО ВИДНО КАК BARRIER ЧЕРЕЗ НЕКОТОРОЕ ВРЕМЯ ИСПАРЯЕТСЯ В ВОЗДУХЕ&#xD;" FontSize="100" Colour="65535" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof117-3>
+      <Roof117-4 X="21500" Y="95" DeltaX="415" DeltaY="-5" BoxX="0" BoxY="-1785" BoxWidth="6947" BoxHeight="3500">
+        <TriggerZoomMin X="120" Y="-1785"/>
+        <Pill X="3882" Y="883"/>
+        <TriggerJump X="5635" Y="936"/>
+        <TriggerLossPanic X="5947" Y="1406"/>
+        <Respawn_2.5sec X="1720" Y="150"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="6062" Y="1406" Width="750" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Item X="5107" Y="1051" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="4707" Y="1056" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="5502" Y="1051" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Comment X="1720" Y="-450" Width="820" Height="680" Text="сменил respawn 2 секунды, на Respawn 2.5 секунд" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="395" Y="640" Width="1465" Height="1000" Text="Убрал лишнее пересечение платформ" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="6460" Y="840" Width="1165" Height="1400" Text="ГОТОВО&#xD;Тут можно перепрыгнуть с разгона кондиционер, упасть вниз на узкую платформу, перекатиться по ней и сорваться вниз. Это плохо, так как игрок делает все правильно, но его наказывают" FontSize="100" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof117-4>
+      <Roof117-5 X="28020" Y="1230" DeltaX="90" DeltaY="0" BoxX="0" BoxY="-2905" BoxWidth="6477" BoxHeight="7155">
+        <TriggerZoomMin X="2370" Y="-1331"/>
+        <TriggerZoomNormal X="675" Y="-1190"/>
+        <TriggerZoomNormal X="5830" Y="750"/>
+        <TriggerJump X="5838" Y="999"/>
+        <Respawn_5sec X="2122" Y="206"/>
+        <TriggerZoomMax X="4545" Y="-650"/>
+        <TriggerTripleHit X="4447" Y="335"/>
+        <TriggerJump X="5885" Y="340"/>
+        <TriggerLossPanic X="5477" Y="1401"/>
+        <TriggerZoomMin X="5470" Y="-2905"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="2687" Y="126" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="1597" Y="585" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="2362" Y="131" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Comment X="5710" Y="275" Width="600" Height="485" Text="Переместил jump из здания в слой" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Trigger X="5511" Y="1389" Width="750" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="1.2"/>
+            <Comment X="1595" Y="305" Width="915" Height="895" Text="ГОТОВО&#xD;Тут надо немного упростить прыжок, сейчас можно сорваться почти добравшись до верхней платформы." FontSize="100" Colour="13382400" Transparency="1"/>
+            <Comment X="3910" Y="880" Width="1005" Height="620" Text="ГОТОВО&#xD;Под такой тонкой платформой очень плохо выглядит кроулинг, надо расширить" FontSize="100" Colour="13382400" Transparency="1"/>
+            <Comment X="5455" Y="60" Width="900" Height="465" Text="ГОТОВО&#xD;Прыжок в неизвестность, надо отодвинуть камеру" FontSize="100" Colour="13382400" Transparency="1"/>
+            <Comment X="5585" Y="1775" Width="1395" Height="1040" Text="ГОТОВО&#xD;У меня не получилось сюда упасть, но лучше все же увеличить графику вниз и уравнять выщербленные стены и в_блеки. Скорее всего можно будет увидеть обрезанные здания на мобильных устройствах" FontSize="100" Colour="13382400" Transparency="1"/>
+            <Comment X="-435" Y="775" Width="480" Height="1085" Text="ГОТОВО&#xD;Тут можно удалить часть картинок стен, которые не видны игроку в о время геймплея" FontSize="100" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof117-5>
+      <Roof117-6 X="34280" Y="2340" DeltaX="280" DeltaY="-80" BoxX="0" BoxY="-2986" BoxWidth="5782" BoxHeight="4686">
+        <Respawn_3sec X="1821" Y="-384"/>
+        <TriggerZoomMin X="3245" Y="-2986"/>
+        <TriggerZoomNormal X="445" Y="-1800"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="667" Y="-444" Score="10" Radius="80" Type="1" GroupId="6"/>
+            <Item X="3967" Y="-1119" Score="10" Radius="80" Type="1" GroupId="7"/>
+            <Item X="4387" Y="-1334" Score="10" Radius="80" Type="1" GroupId="7"/>
+            <Item X="5702" Y="-1389" Score="10" Radius="80" Type="1" GroupId="7"/>
+            <Item X="2127" Y="-464" Score="10" Radius="80" Type="1" GroupId="6"/>
+            <Item X="1167" Y="-254" Score="10" Radius="80" Type="1" GroupId="6"/>
+            <Comment X="405" Y="-320" Width="1260" Height="650" Text="Сделал столбы шире, чтобы игрок не опирался руками о воздух" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="680" Y="395" Width="1390" Height="610" Text="Убрал лишнее пересечение платформ" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="875" Y="-700" Width="565" Height="375" Text="Добавил jump" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="2525" Y="-695" Width="745" Height="705" Text="ГОТОВО&#xD;Платформа выше графики, надо поднять графику" FontSize="100" Colour="13382400" Transparency="1"/>
+            <Comment X="4560" Y="-2495" Width="570" Height="1310" Text="ГОТОВО&#xD;Слишком узкая площадка для слайда, надо дать игроку пробежать пару шагов после подъема." FontSize="100" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof117-6>
+      <Roof117-8 X="40040" Y="1107" DeltaX="-1005" DeltaY="-21" BoxX="0" BoxY="-1658" BoxWidth="1802" BoxHeight="3500">
+        <Pill X="991" Y="190"/>
+        <TriggerJump X="1297" Y="-159"/>
+        <TriggerZoomNormal X="515" Y="-1658"/>
+        <TriggerLossPanic X="802" Y="598"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="900" Y="590" Width="750" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="2"/>
+            <Comment X="860" Y="497" Width="550" Height="565" Text="Сделал зум 2, вместо 1.2" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Comment X="625" Y="-143" Width="840" Height="790" Text="ГОТОВО&#xD;При прыжке на столб бот постоянно убивает, надо упростить бота, либо прыжок" FontSize="100" Colour="13382400" Transparency="1"/>
+            <Comment X="1140" Y="742" Width="485" Height="1100" Text="ГОТОВО&#xD;Внутри столба есть лишний в_блек" FontSize="100" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof117-8>
+      <FinalRoof_7 X="41584" Y="1188" DeltaX="189" DeltaY="61" BoxX="0" BoxY="-705" BoxWidth="5485" BoxHeight="1390">
+        <Respawn_3sec X="56" Y="2"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="-1115" Y="-778" Width="1570" Height="470" Text="Передвинул зум, чтобы не было видно обрезанного низа финального здания" FontSize="100" Colour="2522880" Transparency="1"/>
+            <Item X="2777" Y="-482" Score="10" Radius="80" Type="1" GroupId="8"/>
+            <Item X="2337" Y="-482" Score="10" Radius="80" Type="1" GroupId="8"/>
+            <Item X="1262" Y="-167" Score="10" Radius="80" Type="1" GroupId="8"/>
+            <Comment X="-25" Y="-358" Width="520" Height="365" Text="ГОТОВО&#xD;Тут нужен респаун" FontSize="60" Colour="13382400" Transparency="1"/>
+            <Comment X="3190" Y="-768" Width="945" Height="750" Text="ГОТОВО&#xD;Можно заменить 2 картинки бетонного задника на 1 увеличенный вдвое" FontSize="100" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_7>
+    </Layer>
+
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+  </Layers>
+</Root>

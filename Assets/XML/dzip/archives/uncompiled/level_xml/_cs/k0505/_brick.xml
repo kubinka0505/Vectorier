@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<Scene>
+  <Nodes>
+    <Cube-Node1 Type="MacroNode" X="-22.91394805908203" Y="132.5097198486328" Z="44.50738525390625" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="-3.60030614681531" LCC2="-0.17327792133940706" LCC3="2.2634539314612487" LCC4="2.5101301366934687"/>
+    <Cube-Node2 Type="MacroNode" X="-22.91394805908203" Y="205.63270568847656" Z="44.50738525390625" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.5523729760707008" LCC2="-1.8019752027544456" LCC3="0.6658224928331157" LCC4="1.583779733850629"/>
+    <Cube-Node3 Type="MacroNode" X="-22.91394805908203" Y="132.5097198486328" Z="-35.158416748046875" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="-4.104934385738492" LCC2="4.5542195155242" LCC3="7.088615144148864" LCC4="-6.537900273934572"/>
+    <Cube-Node4 Type="MacroNode" X="-22.91394805908203" Y="205.63270568847656" Z="-35.158416748046875" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.047749296568054156" LCC2="2.925517099319477" LCC3="5.490976238907072" LCC4="-7.464242634794603"/>
+    <Cube-Node5 Type="MacroNode" X="20.043846130371094" Y="132.5097198486328" Z="44.50738525390625" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="-3.5941406423677873" LCC2="2.3053946913263497" LCC3="-0.16702031536235326" LCC4="2.4557662664037907"/>
+    <Cube-Node6 Type="MacroNode" X="20.043846130371094" Y="205.63270568847656" Z="44.50738525390625" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.5585375555418273" LCC2="0.6766973279378705" LCC3="-1.7646512926391067" LCC4="1.5294164091594087"/>
+    <Cube-Node7 Type="MacroNode" X="20.043846130371094" Y="132.5097198486328" Z="-35.158416748046875" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="-4.098768620976208" LCC2="7.032893113668789" LCC3="4.658137705588314" LCC4="-6.592262198280895"/>
+    <Cube-Node8 Type="MacroNode" X="20.043846130371094" Y="205.63270568847656" Z="-35.158416748046875" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.05391388904159312" LCC2="5.404189488842302" LCC3="3.0605026275635447" LCC4="-7.518606005447439"/>
+  </Nodes>
+  <Edges>
+    <Cube-Edge1 Type="Edge" Length="79.66580200195312" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node3" End2="Cube-Node1"/>
+    <Cube-Edge2 Type="Edge" Length="73.12298583984375" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node1" End2="Cube-Node2"/>
+    <Cube-Edge3 Type="Edge" Length="79.66580200195312" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node2" End2="Cube-Node4"/>
+    <Cube-Edge4 Type="Edge" Length="73.12298583984375" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node4" End2="Cube-Node3"/>
+    <Cube-Edge5 Type="Edge" Length="42.957794189453125" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node7" End2="Cube-Node3"/>
+    <Cube-Edge6 Type="Edge" Length="42.957794189453125" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node4" End2="Cube-Node8"/>
+    <Cube-Edge7 Type="Edge" Length="73.12298583984375" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node8" End2="Cube-Node7"/>
+    <Cube-Edge8 Type="Edge" Length="79.66580200195312" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node5" End2="Cube-Node7"/>
+    <Cube-Edge9 Type="Edge" Length="79.66580200195312" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node8" End2="Cube-Node6"/>
+    <Cube-Edge10 Type="Edge" Length="73.12298583984375" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node6" End2="Cube-Node5"/>
+    <Cube-Edge11 Type="Edge" Length="42.957794189453125" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node1" End2="Cube-Node5"/>
+    <Cube-Edge12 Type="Edge" Length="42.957794189453125" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node6" End2="Cube-Node2"/>
+    <Cube-Edge13 Type="Edge" Length="108.13700137671836" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node3" End2="Cube-Node2"/>
+    <Cube-Edge14 Type="Edge" Length="84.80768325899135" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node7" End2="Cube-Node4"/>
+    <Cube-Edge15 Type="Edge" Length="108.13700137671836" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node5" End2="Cube-Node8"/>
+    <Cube-Edge16 Type="Edge" Length="84.80768325899135" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node1" End2="Cube-Node6"/>
+    <Cube-Edge17 Type="Edge" Length="90.50973478161237" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node1" End2="Cube-Node7"/>
+    <Cube-Edge18 Type="Edge" Length="90.50973478161237" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Cube-Node6" End2="Cube-Node4"/>
+  </Edges>
+  <Figures>
+    <Cube-Triangle-1 Type="Triangle" Shading="0" Node1="Cube-Node2" Node2="Cube-Node3" Node3="Cube-Node1"/>
+    <Cube-Triangle-2 Type="Triangle" Shading="0" Node1="Cube-Node4" Node2="Cube-Node7" Node3="Cube-Node3"/>
+    <Cube-Triangle-3 Type="Triangle" Shading="0" Node1="Cube-Node8" Node2="Cube-Node5" Node3="Cube-Node7"/>
+    <Cube-Triangle-4 Type="Triangle" Shading="0" Node1="Cube-Node6" Node2="Cube-Node1" Node3="Cube-Node5"/>
+    <Cube-Triangle-5 Type="Triangle" Shading="0" Node1="Cube-Node7" Node2="Cube-Node1" Node3="Cube-Node3"/>
+    <Cube-Triangle-6 Type="Triangle" Shading="0" Node1="Cube-Node4" Node2="Cube-Node6" Node3="Cube-Node8"/>
+    <Cube-Triangle-7 Type="Triangle" Shading="0" Node1="Cube-Node2" Node2="Cube-Node4" Node3="Cube-Node3"/>
+    <Cube-Triangle-8 Type="Triangle" Shading="0" Node1="Cube-Node4" Node2="Cube-Node8" Node3="Cube-Node7"/>
+    <Cube-Triangle-9 Type="Triangle" Shading="0" Node1="Cube-Node8" Node2="Cube-Node6" Node3="Cube-Node5"/>
+    <Cube-Triangle-10 Type="Triangle" Shading="0" Node1="Cube-Node6" Node2="Cube-Node2" Node3="Cube-Node1"/>
+    <Cube-Triangle-11 Type="Triangle" Shading="0" Node1="Cube-Node7" Node2="Cube-Node5" Node3="Cube-Node1"/>
+    <Cube-Triangle-12 Type="Triangle" Shading="0" Node1="Cube-Node4" Node2="Cube-Node2" Node3="Cube-Node6"/>
+  </Figures>
+</Scene>

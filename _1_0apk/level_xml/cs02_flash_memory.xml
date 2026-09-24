@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+  <Nodes>
+    <Node489 Type="Node"  X="482.080871582031"  Y="-116.826416015625"  Z="17.0814056396484"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
+    <Node490 Type="Node"  X="482.077941894531"  Y="-116.839080810547"  Z="17.0814056396484"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
+  </Nodes>
+  <Edges>
+    <Edge491 Type="Edge"  Length="0.013089737854898"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node490"  End2="Node489" />
+  </Edges>
+  <Figures>
+    <Capsule_Edge491 Type="Capsule"  Edge="Edge491"  Radius1="5"  Radius2="5"  Margin1="0"  Margin2="0" />
+    <NP_Node489 Type="NodePoint"  Node="Node489"  Radius="3" />
+    <NP_Node490 Type="NodePoint"  Node="Node490"  Radius="3" />
+    <EL_Edge491 Type="EdgeLine"  Edge="Edge491"  Width="0" />
+  </Figures>
+  <GroupsOfSelection>
+    <SG-1>
+      <Layer1:NToeS_1 Type="Node" />
+      <Layer1:NKnee_1 Type="Node" />
+      <Layer1:NHeel_1 Type="Node" />
+      <Layer1:NToe_1 Type="Node" />
+      <Layer1:NToeTip_1 Type="Node" />
+      <Layer1:NAnkle_1 Type="Node" />
+    </SG-1>
+    <SG-2>
+      <Layer1:NToeS_2 Type="Node" />
+      <Layer1:NToeTip_2 Type="Node" />
+      <Layer1:NToe_2 Type="Node" />
+      <Layer1:NHeel_2 Type="Node" />
+      <Layer1:NAnkle_2 Type="Node" />
+      <Layer1:NKnee_2 Type="Node" />
+    </SG-2>
+    <SG-3>
+      <Layer1:NKnucklesS_1 Type="Node" />
+      <Layer1:NFingertips_1 Type="Node" />
+      <Layer1:NKnuckles_1 Type="Node" />
+      <Layer1:NWrist_1 Type="Node" />
+      <Layer1:NElbow_1 Type="Node" />
+    </SG-3>
+    <SG-4>
+      <Layer1:NKnucklesS_2 Type="Node" />
+      <Layer1:NFingertips_2 Type="Node" />
+      <Layer1:NKnuckles_2 Type="Node" />
+      <Layer1:NWrist_2 Type="Node" />
+      <Layer1:NElbow_2 Type="Node" />
+    </SG-4>
+    <SG-5>
+      <Layer1:NPivot Type="Node" />
+      <Layer1:NPelvisF Type="Node" />
+      <Layer1:NStomachF Type="Node" />
+      <Layer1:NChestF Type="Node" />
+      <Layer1:NStomachS_2 Type="Node" />
+      <Layer1:NStomachS_1 Type="Node" />
+      <Layer1:NChestS_2 Type="Node" />
+      <Layer1:NChestS_1 Type="Node" />
+      <Layer1:NShoulder_2 Type="Node" />
+      <Layer1:NShoulder_1 Type="Node" />
+      <Layer1:NNeck Type="Node" />
+      <Layer1:NChest Type="Node" />
+      <Layer1:NStomach Type="Node" />
+      <Layer1:NHip_2 Type="Node" />
+      <Layer1:NHip_1 Type="Node" />
+    </SG-5>
+    <SG-6>
+      <Layer1:NHeadF Type="Node" />
+      <Layer1:NHeadS_2 Type="Node" />
+      <Layer1:NHeadS_1 Type="Node" />
+      <Layer1:NTop Type="Node" />
+      <Layer1:NHead Type="Node" />
+    </SG-6>
+    <SG-7/>
+    <SG-8/>
+    <SG-9/>
+  </GroupsOfSelection>
+</Scene>

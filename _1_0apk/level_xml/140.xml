@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_techpark.xml"/>    
+  </Sets>  
+  <Music Name="music_dinamic" Volume="0.3"/>    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>   
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>  
+  <Coins Value="70"/>
+  <Variable Name="Money">70</Variable>  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.1" Type="1" DeltaX="-500" DeltaY="0">
+      <Techpark_bg1 X="0" Y="-560" DeltaX="0" DeltaY="-560"/>
+      <Techpark_bg1 X="2050" Y="-560" DeltaX="2" DeltaY="0"/>
+      <Techpark_bg1 X="4098" Y="-560" DeltaX="0" DeltaY="0"/>
+    </Layer>  
+-   <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Banner_TP_building_2 X="0" Y="-440" DeltaX="0" DeltaY="-440"/>
+      <Banner_TP_building_1 X="295" Y="-1405" DeltaX="-1755" DeltaY="-965"/>
+      <Banner_TP_building_2 X="4595" Y="95" DeltaX="2840" DeltaY="1500"/>
+      <Banner_TP_building_2 X="6750" Y="95" DeltaX="105" DeltaY="0"/>
+      <Banner_TP_building_2 X="10100" Y="-220" DeltaX="1300" DeltaY="-315"/>
+      <Banner_TP_building_1 X="11795" Y="-535" DeltaX="-355" DeltaY="-315"/>
+      <Banner_TP_building_2 X="13195" Y="-365" DeltaX="-60" DeltaY="170"/>
+      <Banner_TP_building_1 X="15250" Y="-580" DeltaX="5" DeltaY="-215"/>
+      <Banner_TP_building_1 X="17350" Y="-225" DeltaX="640" DeltaY="355"/>
+    </Layer>
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof140_1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-645" BoxWidth="3960" BoxHeight="1230">
+        <TriggerJump X="3855" Y="160"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="440" Y="-645" Width="160" Height="650" Name="CameraStart" Type="2" Node="COM" Priority="0" Value="1" SubType="2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof140_1>
+      <Roof140_1_2 X="3535" Y="-35" DeltaX="0" DeltaY="-395" BoxX="0" BoxY="-2000" BoxWidth="2925" BoxHeight="4395">
+        <TriggerJump X="980" Y="-24"/>
+        <TriggerJump X="1675" Y="-224"/>
+        <TriggerJump X="2350" Y="-414"/>
+      </Roof140_1_2>
+      <Roof140_2 X="6460" Y="-265" DeltaX="0" DeltaY="-230" BoxX="-130" BoxY="-1664" BoxWidth="7790" BoxHeight="3534">
+        <TrackStart X="1245" Y="15"/>
+      </Roof140_2>
+      <Roof140_3 X="14640" Y="-665" DeltaX="500" DeltaY="0" BoxX="0" BoxY="-205" BoxWidth="6990" BoxHeight="1805">
+        <TriggerJump X="4895" Y="-205"/>
+      </Roof140_3>
+      <Roof140_4 X="22840" Y="-665" DeltaX="200" DeltaY="0" BoxX="0" BoxY="0" BoxWidth="5000" BoxHeight="1500"/>
+    </Layer>
+  </Layers>
+</Root>

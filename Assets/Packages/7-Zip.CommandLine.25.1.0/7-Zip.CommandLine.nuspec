@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>7-Zip.CommandLine</id>
+    <version>25.1.0</version>
+    <title>7-Zip Standalone Command Line Version</title>
+    <authors>Igor Pavlov</authors>
+    <owners>whut</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">LGPL-2.1-or-later</license>
+    <licenseUrl>https://licenses.nuget.org/LGPL-2.1-or-later</licenseUrl>
+    <icon>7ziplogo.png</icon>
+    <projectUrl>http://www.7-zip.org/</projectUrl>
+    <iconUrl>http://www.7-zip.org/7ziplogo.png</iconUrl>
+    <description>7-Zip is a file archiver with a high compression ratio.
+
+7za.exe is a standalone console version of 7-Zip with reduced formats support.
+
+7za.exe and 7z.exe from 7-Zip have same command line interface. 
+
+7za.exe features:
+
+- High compression ratio in 7z format
+- Supported formats:
+    - Packing / unpacking: 7z, xz, ZIP, GZIP, BZIP2 and TAR 
+    - Unpacking only: lzma, CAB, ZSTD.
+- Highest compression ratio for ZIP and GZIP formats.
+- Fast compression and decompression
+- Strong AES-256 encryption in 7z and ZIP formats.
+
+NOTE: This NuGet package was created by extracting the 7za.exe from 7-Zip Extra
+and adding the Help File (7-zip.chm) from 7-Zip.</description>
+    <summary>7-Zip is a file archiver with a high compression ratio.</summary>
+    <copyright>7-Zip Copyright (C) 1999-2025 Igor Pavlov.</copyright>
+    <language>en-US</language>
+    <tags>7za 7zip 7-Zip Z 7z xz ZIP GZIP BZIP2 TAR lzma CAB ZSTD</tags>
+  </metadata>
+</package>

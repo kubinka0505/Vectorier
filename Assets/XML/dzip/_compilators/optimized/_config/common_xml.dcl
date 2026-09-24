@@ -1,0 +1,27 @@
+archive "C:\Users\Jakub\Downloads\Vector\Vectorier\Assets\XML\dzip\archives\.compiled\common_xml.dz"
+basedir "C:\Users\Jakub\Downloads\Vector\Vectorier\Assets\XML\dzip\archives\uncompiled\.common_xml"
+file "Achievements.xml" 0 copy
+file "credits.xml" 0 copy
+file "credits_eng.xml" 0 copy
+file "credits_rus.xml" 0 copy
+file "ids.xml" 0 copy
+file "List_demo.xml" 0 copy
+file "list_free_mob.xml" 0 copy
+file "list_free_mob_demo.xml" 0 copy
+file "list_paid_mob.xml" 0 copy
+file "List_Payed.xml" 0 copy
+file "List_payed_b.xml" 0 copy
+file "localization_all.xml" 0 copy
+file "localization_demo.xml" 0 copy
+file "localization_list.xml" 0 copy
+file "Shop_free.xml" 0 copy
+file "shop_ids.xml" 0 copy
+file "shop_ids_andr_free.xml" 0 copy
+file "shop_ids_andr_paid.xml" 0 copy
+file "shop_ids_hd.xml" 0 copy
+file "shop_ids_hd_free.xml" 0 copy
+file "shop_ids_iphone.xml" 0 copy
+file "shop_ids_iphone_free.xml" 0 copy
+file "shop_ids_test.xml" 0 copy
+file "Shop_payed.xml" 0 copy
+file "Shop_payed_mob.xml" 0 copy

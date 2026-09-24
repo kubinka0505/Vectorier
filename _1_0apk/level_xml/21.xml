@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+
+  <Sets>
+    <City FileName="buildings.xml"/>
+		<City FileName="buildings_construction.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="2.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="40"/>
+  <Variable Name="Money">40</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+      <ConstructionYardBackground DeltaX="0" DeltaY="-500"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+      <ConstructionYardBuilding2 X="185" Y="-225" DeltaX="185" DeltaY="-225"/>
+      <ConstructionYardBuilding2 X="1441" Y="-240" DeltaX="256" DeltaY="-15"/>
+      <ConstructionYardBuilding1 X="3802" Y="-265" DeltaX="1361" DeltaY="-25"/>
+      <ConstructionYardBuilding2 X="5447" Y="-225" DeltaX="481" DeltaY="40"/>
+      <ConstructionYardBuilding2 X="7113" Y="-195" DeltaX="666" DeltaY="30"/>
+      <ConstructionYardBuilding1 X="8719" Y="5" DeltaX="606" DeltaY="200"/>
+      <ConstructionYardBuilding2 X="10639" Y="-20" DeltaX="756" DeltaY="-25"/>
+      <ConstructionYardBuilding1 X="12155" Y="40" DeltaX="516" DeltaY="60"/>
+    </Layer>
+    
+
+    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
+    
+
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof21-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-495" BoxY="-3305" BoxWidth="3890" BoxHeight="3840">
+        <Spawn X="-445" Y="-495"/>
+        <TriggerCameraStart X="50" Y="-400"/>
+        <Camera X="390" Y="-205"/>
+        <TriggerBarJump X="1415" Y="-200"/>
+        <TriggerZoomMin X="2280" Y="-3305"/>
+        <TriggerLossPanic X="1440" Y="435"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="845" Y="-405" Score="100" Radius="80" Type="0" GroupId="1"/>
+            <Item X="3315" Y="-95" Score="100" Radius="80" Type="0" GroupId="1"/>
+            <Comment X="235" Y="-1350" Width="3075" Height="295" Text="ГОТОВО&#xD;Эти картинки надо сделать динамическими и возможно стоит засунуть их в отдельное здание" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof21-1>
+      <Roof21-2 X="2585" Y="1125" DeltaX="-120" DeltaY="1210" BoxX="0" BoxY="-415" BoxWidth="2410" BoxHeight="600">
+        <TriggerJump X="2310" Y="-200"/>
+        <TriggerTurnVault X="1820" Y="-115"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="2327" Y="-69" Score="100" Radius="80" Type="0" GroupId="0"/>
+            <Comment X="160" Y="-255" Width="590" Height="350" Text="ГОТОВО&#xD;С этой платформой нет контакта, можно оставить только картинку&#xD;" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="1915" Y="-300" Width="455" Height="320" Text="ГОТОВО&#xD;Надо поднять триггер, сделать препятствие с триггером отдельным объектом" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="-1250" Y="850" Width="1350" Height="657" Text="ГОТОВО&#xD;Надо продлить сюда в_блек земли. На мобильных устройствах тут можно увидеть пустоту " FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="2640" Y="-1580" Width="350" Height="225" Text="ГОТОВО&#xD;Веревки надо сделать статиками" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof21-2>
+      <Roof21-3 X="4835" Y="2074" DeltaX="-105" DeltaY="954" BoxX="0" BoxY="-2565" BoxWidth="7300" BoxHeight="3880">
+        <TriggerJump X="7110" Y="-855"/>
+        <TriggerZoomNormal X="720" Y="-2565"/>
+        <TriggerZoom80 X="1750" Y="-2185"/>
+        <TriggerZoomNormal X="4255" Y="-2360"/>
+        <TriggerZoom80 X="6775" Y="-2420"/>
+        <Respawn_2.5sec X="5080" Y="0"/>
+        <TriggerFrontFlipTwoLegs X="6945" Y="-855"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="200" Y="-179" Width="540" Height="360" Text="ГГОТОВО&#xD;Плохой стык зданий, надо состыковать здания так, чтобы игрок не мог контактировать с местом стыка" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="365" Y="-769" Width="535" Height="425" Text="ГОТОВО&#xD;Должна быть возможность взять этот бонус без трюка" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Item X="3225" Y="-325" Score="100" Radius="80" Type="0" GroupId="0"/>
+            <Item X="5315" Y="-345" Score="100" Radius="80" Type="0" GroupId="0"/>
+            <Item X="4785" Y="-260" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="6425" Y="-380" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="6800" Y="-725" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Comment X="1155" Y="-505" Width="645" Height="390" Text="ГОТОВО&#xD;Слишком тесно стоят препятствия. После вышки должно быть достаточно места чтобы мгрок успел встать" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="2060" Y="-210" Width="445" Height="200" Text="ГОТОВО&#xD;С этой платформой нет контакта, можно оставить только картинку&#xD;" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof21-3>
+      <Roof21-4 X="12135" Y="2075" DeltaX="0" DeltaY="656" BoxX="0" BoxY="-2840" BoxWidth="5600" BoxHeight="4130">
+        <TriggerJump X="5085" Y="-195"/>
+        <TriggerZoomNormal X="2285" Y="-2840"/>
+        <TriggerZoomMin X="3960" Y="-2210"/>
+        <Respawn_2.5sec X="2345" Y="-905"/>
+        <TriggerJump X="1420" Y="-1125"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="370" Y="-770" Width="490" Height="230" Text="ГОТОВО&#xD;Тут нужен арест" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Item X="5440" Y="-175" Score="100" Radius="80" Type="0" GroupId="0"/>
+            <Item X="1350" Y="-945" Score="100" Radius="80" Type="0" GroupId="1"/>
+            <Item X="2920" Y="-995" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="4170" Y="-495" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="2560" Y="-995" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="1115" Y="-990" Width="580" Height="660" Text="ГОТОВО&#xD;об эту платформу можно удариться головой при прыжке с экскаватора. При этом игрок приземлится на слоуп стрелы экскаватора в дерганной анимации. Надо поднять платформу выше, чтобы игрок не мог задеть ее головой, либо уменьшить ее высоту (возможно при этом надо будет поднять и предыдущую платформу, висящую в воздухе)" FontSize="40" Colour="13382400" Transparency="1"/>
+            <Comment X="35" Y="-231" Width="315" Height="265" Text="ГОТОВО&#xD;С этой платформой нет контакта, можно оставить только картинку&#xD;" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof21-4>
+      <Roof21-5 X="17735" Y="2074" DeltaX="0" DeltaY="-1" BoxX="0" BoxY="-205" BoxWidth="3945" BoxHeight="445">
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="2650" Y="-65" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="865" Y="-70" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Comment X="3925" Y="-475" Width="565" Height="410" Text="ГОТОВО&#xD;Бонус очень часто берется в плохой анимации недослайда, взять его красиво очень сложно. Надо либо изменить препятствие перед бонусом, либо расположение бонуса" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof21-5>
+      <Roof21-6 X="21680" Y="2194" DeltaX="0" DeltaY="120" BoxX="0" BoxY="-2205" BoxWidth="5800" BoxHeight="4355">
+        <TriggerZoomNormal X="135" Y="-2020"/>
+        <TriggerZoomMax X="1940" Y="-1350"/>
+        <TriggerZoom80 X="3545" Y="-1585"/>
+        <TriggerZoomNormal X="4165" Y="-2205"/>
+        <Respawn_2.5sec X="235" Y="5"/>
+        <Respawn_2.5sec X="1845" Y="595"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="240" Y="-400" Score="100" Radius="80" Type="0" GroupId="0"/>
+            <Item X="3825" Y="-360" Score="100" Radius="80" Type="0" GroupId="1"/>
+            <Item X="3850" Y="435" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="3390" Y="440" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="4445" Y="-380" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="1345" Y="-60" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Comment X="1530" Y="-650" Width="555" Height="355" Text="ГОТОВО&#xD;Объект лифт состоит из динамических вблектов, надо поменять на статические" FontSize="40" Colour="13382400" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof21-6>
+    </Layer>
+
+  </Layers>
+</Root>

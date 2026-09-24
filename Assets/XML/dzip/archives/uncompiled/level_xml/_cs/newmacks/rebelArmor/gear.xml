@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<Scene>
+  <Nodes>
+    <rebelarmorgear-Node-1 Type="MacroNode" X="-17.874408721923828" Y="137.1496124267578" Z="11.0754976272583" Mass="1.0" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NPelvisF" ChildNode2="NHip_1" ChildNode3="NHip_2" ChildNode4="NStomach" LCC1="-0.22124132983326825" LCC2="1.4186873789003835" LCC3="-0.5457248481343663" LCC4="0.34827879906725095"/>
+    <rebelarmorgear-Node-2 Type="MacroNode" X="-21.261943817138672" Y="137.19305419921875" Z="10.859076499938965" Mass="1.0" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NPelvisF" ChildNode2="NHip_1" ChildNode3="NHip_2" ChildNode4="NStomach" LCC1="-0.21309222225106406" LCC2="1.599678344671983" LCC3="-0.75123397908438" LCC4="0.36464785666346106"/>
+    <rebelarmorgear-Node-3 Type="MacroNode" X="-17.59833526611328" Y="146.60870361328125" Z="8.653273582458496" Mass="1.0" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NPelvisF" ChildNode2="NHip_1" ChildNode3="NHip_2" ChildNode4="NStomach" LCC1="-0.31377664473935096" LCC2="1.1417990365261848" LCC3="-0.7306475314246212" LCC4="0.9026251396377872"/>
+    <rebelarmorgear-Node-4 Type="MacroNode" X="-20.985868453979492" Y="146.65216064453125" Z="8.43685245513916" Mass="1.0" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NPelvisF" ChildNode2="NHip_1" ChildNode3="NHip_2" ChildNode4="NStomach" LCC1="-0.3056272614091881" LCC2="1.3227892661920382" LCC3="-0.936157052393535" LCC4="0.918995047610685"/>
+    <rebelarmorgear-Node-5 Type="MacroNode" X="-18.214078903198242" Y="138.59530639648438" Z="16.682416915893555" Mass="1.0" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NPelvisF" ChildNode2="NHip_1" ChildNode3="NHip_2" ChildNode4="NStomach" LCC1="0.439208551503187" LCC2="1.065845140341622" LCC3="-0.8801020160292703" LCC4="0.3750483241844613"/>
+    <rebelarmorgear-Node-6 Type="MacroNode" X="-21.601612091064453" Y="138.63876342773438" Z="16.46599769592285" Mass="1.0" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NPelvisF" ChildNode2="NHip_1" ChildNode3="NHip_2" ChildNode4="NStomach" LCC1="0.44735814896042675" LCC2="1.2468352649341539" LCC3="-1.0856116271567917" LCC4="0.3914182132622111"/>
+    <rebelarmorgear-Node-7 Type="MacroNode" X="-17.938003540039062" Y="148.05441284179688" Z="14.260193824768066" Mass="1.0" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NPelvisF" ChildNode2="NHip_1" ChildNode3="NHip_2" ChildNode4="NStomach" LCC1="0.3466736189592991" LCC2="0.7889560095210726" LCC3="-1.0650251342899186" LCC4="0.929395505809547"/>
+    <rebelarmorgear-Node-8 Type="MacroNode" X="-21.325538635253906" Y="148.0978546142578" Z="14.04377269744873" Mass="1.0" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NPelvisF" ChildNode2="NHip_1" ChildNode3="NHip_2" ChildNode4="NStomach" LCC1="0.35482272652973224" LCC2="0.9699469752276336" LCC3="-1.270534265147778" LCC4="0.9457645633904121"/>
+  </Nodes>
+  <Edges>
+    <rebelarmorgear-Edge-1 Type="Edge" Length="4.857943534851074" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-3" End2="rebelarmorgear-Node-1"/>
+    <rebelarmorgear-Edge-2 Type="Edge" Length="3.070631265640259" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-1" End2="rebelarmorgear-Node-2"/>
+    <rebelarmorgear-Edge-3 Type="Edge" Length="4.857943534851074" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-2" End2="rebelarmorgear-Node-4"/>
+    <rebelarmorgear-Edge-4 Type="Edge" Length="3.070631265640259" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-4" End2="rebelarmorgear-Node-3"/>
+    <rebelarmorgear-Edge-5 Type="Edge" Length="4.299002647399902" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-7" End2="rebelarmorgear-Node-3"/>
+    <rebelarmorgear-Edge-6 Type="Edge" Length="4.299002647399902" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-4" End2="rebelarmorgear-Node-8"/>
+    <rebelarmorgear-Edge-7 Type="Edge" Length="3.070631265640259" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-8" End2="rebelarmorgear-Node-7"/>
+    <rebelarmorgear-Edge-8 Type="Edge" Length="4.857943534851074" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-5" End2="rebelarmorgear-Node-7"/>
+    <rebelarmorgear-Edge-9 Type="Edge" Length="4.857943534851074" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-8" End2="rebelarmorgear-Node-6"/>
+    <rebelarmorgear-Edge-10 Type="Edge" Length="3.070631265640259" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-6" End2="rebelarmorgear-Node-5"/>
+    <rebelarmorgear-Edge-11 Type="Edge" Length="4.299002647399902" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-1" End2="rebelarmorgear-Node-5"/>
+    <rebelarmorgear-Edge-12 Type="Edge" Length="4.299002647399902" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-6" End2="rebelarmorgear-Node-2"/>
+    <rebelarmorgear-Edge-13 Type="Edge" Length="5.747033300523745" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-3" End2="rebelarmorgear-Node-2"/>
+    <rebelarmorgear-Edge-14 Type="Edge" Length="5.2830105178656295" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-7" End2="rebelarmorgear-Node-4"/>
+    <rebelarmorgear-Edge-15 Type="Edge" Length="5.747033300523745" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-5" End2="rebelarmorgear-Node-8"/>
+    <rebelarmorgear-Edge-16 Type="Edge" Length="5.2830105178656295" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-1" End2="rebelarmorgear-Node-6"/>
+    <rebelarmorgear-Edge-17 Type="Edge" Length="6.486989991525555" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-1" End2="rebelarmorgear-Node-7"/>
+    <rebelarmorgear-Edge-18 Type="Edge" Length="6.486989991525555" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="rebelarmorgear-Node-6" End2="rebelarmorgear-Node-4"/>
+  </Edges>
+  <Figures>
+    <rebelarmorgear-Triangle-1 Type="Triangle" Node1="rebelarmorgear-Node-2" Node2="rebelarmorgear-Node-3" Node3="rebelarmorgear-Node-1"/>
+    <rebelarmorgear-Triangle-2 Type="Triangle" Node1="rebelarmorgear-Node-4" Node2="rebelarmorgear-Node-7" Node3="rebelarmorgear-Node-3"/>
+    <rebelarmorgear-Triangle-3 Type="Triangle" Node1="rebelarmorgear-Node-8" Node2="rebelarmorgear-Node-5" Node3="rebelarmorgear-Node-7"/>
+    <rebelarmorgear-Triangle-4 Type="Triangle" Node1="rebelarmorgear-Node-6" Node2="rebelarmorgear-Node-1" Node3="rebelarmorgear-Node-5"/>
+    <rebelarmorgear-Triangle-5 Type="Triangle" Node1="rebelarmorgear-Node-7" Node2="rebelarmorgear-Node-1" Node3="rebelarmorgear-Node-3"/>
+    <rebelarmorgear-Triangle-6 Type="Triangle" Node1="rebelarmorgear-Node-4" Node2="rebelarmorgear-Node-6" Node3="rebelarmorgear-Node-8"/>
+    <rebelarmorgear-Triangle-7 Type="Triangle" Node1="rebelarmorgear-Node-2" Node2="rebelarmorgear-Node-4" Node3="rebelarmorgear-Node-3"/>
+    <rebelarmorgear-Triangle-8 Type="Triangle" Node1="rebelarmorgear-Node-4" Node2="rebelarmorgear-Node-8" Node3="rebelarmorgear-Node-7"/>
+    <rebelarmorgear-Triangle-9 Type="Triangle" Node1="rebelarmorgear-Node-8" Node2="rebelarmorgear-Node-6" Node3="rebelarmorgear-Node-5"/>
+    <rebelarmorgear-Triangle-10 Type="Triangle" Node1="rebelarmorgear-Node-6" Node2="rebelarmorgear-Node-2" Node3="rebelarmorgear-Node-1"/>
+    <rebelarmorgear-Triangle-11 Type="Triangle" Node1="rebelarmorgear-Node-7" Node2="rebelarmorgear-Node-5" Node3="rebelarmorgear-Node-1"/>
+    <rebelarmorgear-Triangle-12 Type="Triangle" Node1="rebelarmorgear-Node-4" Node2="rebelarmorgear-Node-2" Node3="rebelarmorgear-Node-6"/>
+  </Figures>
+</Scene>

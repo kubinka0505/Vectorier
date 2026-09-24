@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+	<Coins Value="50"/>
+  <Variable Name="Money">50</Variable>
+  
+  <Layers>
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="1150" Y="-710" DeltaX="1150" DeltaY="-710"/>
+      <Billboard X="3558" Y="-42" DeltaX="619" DeltaY="668"/>
+      <Building2 X="4035" Y="-540" DeltaX="152" DeltaY="-498"/>
+      <LampPost X="5385" Y="-50" DeltaX="280" DeltaY="490"/>
+      <Building3 X="5865" Y="-740" DeltaX="330" DeltaY="-690"/>
+      <Billboard X="7273" Y="493" DeltaX="325" DeltaY="1233"/>
+      <Building1 X="7873" Y="-542" DeltaX="275" DeltaY="-1035"/>
+      <Building3 X="9963" Y="-442" DeltaX="301" DeltaY="100">
+        <Building2Image X="1529" Y="-537"/>
+      </Building3>
+      <Building2 X="15982" Y="-213" DeltaX="4936" DeltaY="229">
+        <BillboardImage X="-2497" Y="863"/>
+        <Building2Image X="-1710" Y="44"/>
+      </Building2>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof64-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-520" BoxY="-2490" BoxWidth="6210" BoxHeight="3675">
+        <Pill X="3455" Y="375"/>
+        <TriggerLossPanic X="4690" Y="990"/>
+        <TriggerSlide X="4546" Y="-14"/>
+        <Spawn X="-470" Y="-740"/>
+        <TriggerCameraStart X="220" Y="-390"/>
+        <Camera X="355" Y="-110"/>
+        <TriggerZoomMin X="1375" Y="-2490"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="1000" Y="-295" Width="645" Height="375" Text="СДЕЛАНО&#xD;Слайд в эту дырку приводит к резкой анимации переката, что выглядит некрасиво." FontSize="50" Colour="13395507" Transparency="1"/>
+            <Platform X="0" Y="-290" Width="0" Height="100"/>
+            <Comment X="2970" Y="-600" Width="925" Height="740" Text="СДЕЛАНО&#xD;Надо отдалить камеру, чтобы бонус было видно заранее" FontSize="50" Colour="13395507" Transparency="1"/>
+            <Comment X="3920" Y="-1630" Width="2440" Height="705" Text="СДЕЛАНО&#xD;Надо поднять средний план в первой половине трассы" FontSize="75" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof64-1>
+      <Roof64-6 X="5340" Y="480" DeltaX="300" DeltaY="300" BoxX="-116" BoxY="-2104" BoxWidth="5211" BoxHeight="3505">
+        <TriggerZoomMax X="86" Y="-2104"/>
+        <TriggerSpinningVaultTrick0High X="360" Y="-200"/>
+        <TriggerZoomNormal X="1521" Y="-2099"/>
+        <TriggerJump X="3606" Y="-1005"/>
+        <Respawn_2.5sec X="3305" Y="-810"/>
+        <Respawn_2.5sec X="15" Y="5"/>
+        <Constantine_ZoomNormal X="3095" Y="-415"/>
+        <TriggerLossPanic X="3500" Y="-315"/>
+      </Roof64-6>
+      <Roof64-2 X="9600" Y="-368" DeltaX="535" DeltaY="-40" BoxX="-268" BoxY="-1817" BoxWidth="8188" BoxHeight="3580">
+        <TriggerZoomMax X="-200" Y="-1817"/>
+        <TriggerZoomNormal X="765" Y="-1772"/>
+        <TriggerZoomMin X="2745" Y="-1737"/>
+        <Constantine_ZoomNormal X="5920" Y="329"/>
+        <TriggerJump X="5892" Y="-487"/>
+        <TriggerLossPanic X="6138" Y="344"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="510" Y="-162" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="1555" Y="-77" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="2865" Y="-447" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3765" Y="-357" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Comment X="3150" Y="-617" Width="735" Height="580" Text="СДЕЛАНО&#xD;Увеличить разгон" FontSize="40" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof64-2>
+      <Roof64-3 X="16725" Y="-438" DeltaX="1110" DeltaY="220" BoxX="0" BoxY="-1856" BoxWidth="3279" BoxHeight="3760">
+        <TriggerZoomNormal X="2129" Y="-1596"/>
+        <Pill X="2584" Y="119"/>
+        <TriggerJump X="2530" Y="-4"/>
+        <TriggerZoomMax X="879" Y="-1856"/>
+        <Respawn_2.5sec X="824" Y="4"/>
+        <TriggerLossPanic X="2279" Y="909"/>
+        <TriggerAirSpin X="1109" Y="-199"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="-321" Y="699" Width="735" Height="580" Text="СДЕЛАНО&#xD;Можно избавиться от платформы и от всех картинок, сделанных для нее. Игрок либо не видит этого места, либо умирает в нем." FontSize="40" Colour="13395507" Transparency="1"/>
+            <Item X="844" Y="-91" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Trigger X="2439" Y="829" Width="615" Height="102" Name="" Type="2" Node="COM" Priority="0" SubType="0" Animation="" Time="2" Start="FlyPanic|1" Value="2"/>
+            <Comment X="1954" Y="-241" Width="735" Height="580" Text="СДЕЛАНО&#xD;Нужно немного расширить платформы, чтобы начало трюка и приземление после него не были с самого краю" FontSize="40" Colour="13395507" Transparency="1"/>
+            <Platform X="384" Y="-721" Width="0" Height="100"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof64-3>
+      <Roof64-4 X="19720" Y="-308" DeltaX="375" DeltaY="-60" BoxX="-70" BoxY="-2016" BoxWidth="8045" BoxHeight="4754">
+        <TriggerZoomMax X="324" Y="-1882"/>
+        <TriggerObstacleFrontflipTrick0High X="1254" Y="-202"/>
+        <TriggerZoomNormal X="1983" Y="-2016"/>
+        <Pill X="4249" Y="178"/>
+        <TriggerZoomMax X="6030" Y="-762"/>
+        <Respawn_2sec X="1833" Y="-1"/>
+        <Respawn_2sec X="6668" Y="964"/>
+        <Pill X="7647" Y="1046"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="138" Y="-71" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3173" Y="-161" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="708" Y="-161" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="5248" Y="714" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="6578" Y="804" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="1668" Y="-161" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Comment X="5043" Y="624" Width="340" Height="215" Text="СДЕЛАНО&#xD;Дырки под картинками бочек" FontSize="50" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof64-4>
+      <Roof64-5 X="27480" Y="872" DeltaX="255" DeltaY="215" BoxX="-511" BoxY="-1726" BoxWidth="6295" BoxHeight="3500">
+        <TriggerZoomMin X="415" Y="-1726"/>
+        <TriggerLoss X="-511" Y="548"/>
+        <Constantine_ZoomNormal X="3784" Y="528"/>
+        <TriggerJump X="3880" Y="-196"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="949" Y="-82" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="2299" Y="-72" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3859" Y="653" Width="1650" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+            <Comment X="883" Y="-332" Width="340" Height="215" Text="СДЕЛАНО&#xD;Удлинить разбег" FontSize="50" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof64-5>
+      <Roof64-7 X="32940" Y="1112" DeltaX="1460" DeltaY="240" BoxX="-160" BoxY="-2178" BoxWidth="3721" BoxHeight="3838">
+        <TriggerZoomMax X="779" Y="-2178"/>
+        <TriggerZoomNormal X="1529" Y="-2128"/>
+        <TriggerJump X="2890" Y="-197"/>
+        <Respawn_2sec X="1363" Y="-304"/>
+        <TriggerLossPanic X="2561" Y="373"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="224" Y="-79" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="2429" Y="-165" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="1304" Y="-471" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="3310" Y="-459" Score="10" Radius="80" Type="1" GroupId="5"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof64-7>
+      <FinalRoof_DownTown_03 X="36145" Y="762" DeltaX="205" DeltaY="-350" BoxX="0" BoxY="-299" BoxWidth="3500" BoxHeight="2229"/>
+    </Layer>
+    
+    <Layer Name="Forward_Layer" Factor="2" Type="2">
+    </Layer>
+    
+  </Layers>
+</Root>

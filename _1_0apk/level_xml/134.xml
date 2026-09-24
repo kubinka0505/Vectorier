@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_dinamic" Volume="0.0"/>
+    
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+	<Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="0.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="50"/>
+  <Variable Name="Money">30</Variable>
+  
+  <Layers>  
+  
+    <Layer Name="BG_Layer" Factor="0.1" Type="1" DeltaX="-500" DeltaY="0">
+      <Background X="-1390" Y="-335" DeltaX="-1390" DeltaY="-335"/>
+      <Background X="730" Y="-335" DeltaX="-1" DeltaY="0"/>
+      <Background X="2850" Y="-60" DeltaX="-1" DeltaY="275"/>
+    </Layer>
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="0" Y="-800" DeltaX="0" DeltaY="-800"/>
+      <Building3 X="2290" Y="-250" DeltaX="501" DeltaY="550"/>
+      <Building3 X="3875" Y="50" DeltaX="502" DeltaY="300"/>
+      <Building1 X="5510" Y="500" DeltaX="552" DeltaY="450"/>
+      <Building1 X="8040" Y="1182" DeltaX="741" DeltaY="682"/>
+      <Building1 X="12301" Y="1449" DeltaX="2472" DeltaY="267"/>
+    </Layer>
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof134-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-2220" BoxWidth="8095" BoxHeight="4860">
+        <TriggerJump X="7000" Y="-200"/>
+        <Camera X="1780" Y="-205"/>
+        <Respawn_134_1.4sec X="2050" Y="0"/>
+        <TriggerZoomMin X="3035" Y="-2220"/>
+        <TriggerCS01DowntownCtrlOut X="785" Y="-300"/>
+        <TriggerCS01DowntownCtrlOut X="2250" Y="-300"/>
+        <TriggerLoss X="7095" Y="715"/>
+        <TriggerWebsterWithSalto X="3590" Y="-200"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Spawn X="500" Y="-180" Name="DefaultSpawn" Animation="JumpOff|18"/>
+            <Trigger Name="TriggerStart" Type="2" SubType="2" Value="1" X="1870" Y="-400" Width="300" Height="400" Node="COM" Priority="0"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="7100" Y="560" Width="990" Height="150" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof134-1>
+      <Roof134-2 X="9890" Y="1850" DeltaX="2790" DeltaY="1850" BoxX="-2774" BoxY="-2455" BoxWidth="10264" BoxHeight="4955">
+        <TriggerZoomMin X="5874" Y="-1931"/>
+        <Respawn X="49" Y="0"/>
+        <Pill X="-2694" Y="-2000"/>
+        <Pill X="-2444" Y="-2070"/>
+        <Pill X="-2140" Y="-2080"/>
+        <Pill X="-1840" Y="-2000"/>
+        <Pill X="-1240" Y="-1700"/>
+        <Pill X="-940" Y="-1470"/>
+        <Pill X="-640" Y="-1200"/>
+        <Pill X="-340" Y="-870"/>
+        <Pill X="-1540" Y="-1870"/>
+        <Pill X="5960" Y="-70"/>
+        <Pill X="-40" Y="-420"/>
+        <Pill X="1720" Y="60"/>
+        <Pill X="2240" Y="30"/>
+        <Pill X="1980" Y="-40"/>
+        <TriggerZoom80 X="-105" Y="-2455"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="-2125" Y="410" Width="2125" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="5970" Y="2260" Width="1520" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="5970" Y="1875" Width="1520" Height="190" Node="COM" Priority="0" SubType="0"/>
+            <Trigger X="5480" Y="-120" Width="495" Height="200" Name="TriggerJump" Type="1" AI="1" Node="COM" Priority="1" Key1="1" PressType="0" Follow="1" SubType="1"/>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="-2125" Y="120" Width="2035" Height="295" Node="COM" Priority="0" SubType="0"/>
+            <Item X="4725" Y="5" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="5720" Y="10" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="4310" Y="95" Score="10" Radius="80" Type="1" GroupId="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof134-2>
+      <Roof134-3 X="17380" Y="3720" DeltaX="1515" DeltaY="1790" BoxX="-1310" BoxY="-3419" BoxWidth="9785" BoxHeight="5419">
+        <TriggerZoomNormal X="0" Y="-2379"/>
+        <TriggerZoomMin X="5100" Y="-3419"/>
+        <Pill X="-1230" Y="-2009"/>
+        <Pill X="-630" Y="-1509"/>
+        <Pill X="-130" Y="-359"/>
+        <Pill X="-330" Y="-909"/>
+        <Pill X="-930" Y="-1909"/>
+        <TriggerTripleTrickToSwalow X="795" Y="-199"/>
+        <Respawn X="950" Y="1"/>
+        <TriggerJump X="6335" Y="-1254"/>
+        <Respawn_2.5sec_Reversed X="4046" Y="-522"/>
+        <Respawn_2.7sec X="1735" Y="-1055"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="6435" Y="-149" Width="2040" Height="105" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="6435" Y="-309" Width="2040" Height="158" Node="COM" Priority="0" SubType="0"/>
+            <Item X="3140" Y="-1224" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="1535" Y="-699" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="1970" Y="-1144" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="1495" Y="-84" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="4490" Y="-179" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3445" Y="-169" Score="10" Radius="80" Type="1" GroupId="2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof134-3>
+      <Roof134-4 X="25855" Y="3305" DeltaX="2035" DeltaY="640" BoxX="-1986" BoxY="-2165" BoxWidth="6015" BoxHeight="6370">
+        <Respawn X="114" Y="-10"/>
+        <Pill X="-1906" Y="-793"/>
+        <Pill X="-156" Y="-223"/>
+        <Pill X="-1541" Y="-843"/>
+        <Pill X="-506" Y="-493"/>
+        <Pill X="-856" Y="-673"/>
+        <Pill X="-1206" Y="-793"/>
+        <Pill X="2194" Y="-93"/>
+        <Pill X="2494" Y="107"/>
+        <Pill X="2794" Y="485"/>
+        <Pill X="2994" Y="933"/>
+        <Respawn_134_1.5sec X="2264" Y="2787"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerZoomNormal" Type="2" Value="1" X="9" Y="-1748" Width="100" Height="1920" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="2049" Y="250" Width="200" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="3104" Y="4055" Width="925" Height="150" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoom66" Type="2" Value="0.66" X="2047" Y="-2165" Width="100" Height="3500" Node="COM" Priority="0" SubType="0"/>
+            <Item X="1454" Y="-158" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="1914" Y="-88" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Item X="634" Y="-83" Score="10" Radius="80" Type="1" GroupId="4"/>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="3094" Y="3267" Width="315" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof134-4>
+      <Roof134-5 X="29390" Y="7130" DeltaX="430" DeltaY="1035" BoxX="-425" BoxY="-2502" BoxWidth="4221" BoxHeight="3682">
+        <Pill X="-345" Y="-2422"/>
+        <TriggerJump X="1655" Y="-102"/>
+        <TriggerZoomNormal X="494" Y="-2405"/>
+        <Pill X="-192" Y="-1888"/>
+        <Pill X="108" Y="-668"/>
+        <Pill X="-42" Y="-1362"/>
+        <TriggerSwallow400 X="1494" Y="-103"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLoss" Type="5" SubType="3" Time="2" X="1667" Y="770" Width="2125" Height="100" Node="COM" Priority="0" Animation="JumpOff"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="1666" Y="620" Width="2130" Height="150" Node="COM" Priority="0" SubType="0"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof134-5>
+      <FinalRoof X="31665" Y="7625" DeltaX="520" DeltaY="405" BoxX="-484" BoxY="-696" BoxWidth="3984" BoxHeight="2626">
+        <Pill X="-404" Y="-616"/>
+        <Pill X="-154" Y="-586"/>
+        <Pill X="96" Y="-476"/>
+        <Pill X="346" Y="-276"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="745" Y="-83" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="1080" Y="-88" Score="10" Radius="80" Type="1" GroupId="5"/>
+            <Item X="1645" Y="-78" Score="10" Radius="80" Type="1" GroupId="5"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof>
+    </Layer>
+  </Layers>
+</Root>

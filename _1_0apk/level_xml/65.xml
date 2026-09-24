@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+  
+  <Music Name="music_pk" Volume="0.3"/>
+  
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+  
+  <Coins Value="30"/>
+  <Variable Name="Money">30</Variable>
+  
+  <Layers>
+  
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>
+      <Background DeltaX="0" DeltaY="0"/>
+    </Layer>
+    
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 X="200" Y="-535" DeltaX="200" DeltaY="-535"/>
+      <Billboard X="2189" Y="50" DeltaX="200" DeltaY="585"/>
+      <Building2 X="3014" Y="-150" DeltaX="500" DeltaY="-200"/>
+      <LampPost X="4384" Y="350" DeltaX="300" DeltaY="500"/>
+      <Building3 X="4834" Y="350" DeltaX="300" DeltaY="0"/>
+      <Billboard X="6317" Y="-150" DeltaX="400" DeltaY="-500"/>
+      <Building1 X="6842" Y="50" DeltaX="200" DeltaY="200"/>
+      <Building3 X="8931" Y="50" DeltaX="300" DeltaY="0"/>
+      <Building1 X="11200" Y="350" DeltaX="1186" DeltaY="300"/>
+    </Layer>
+            
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof65-1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-390" BoxY="-1720" BoxWidth="6842" BoxHeight="3500">
+        <TriggerScrewDriver X="875" Y="-200"/>
+        <TriggerZoomMin X="3450" Y="-1720"/>
+        <Pill X="4328" Y="-107"/>
+        <Pill X="4590" Y="-117"/>
+        <Pill X="4843" Y="-122"/>
+        <Pill X="5161" Y="-137"/>
+        <Pill X="5512" Y="-147"/>
+        <TriggerJump X="5303" Y="-196"/>
+        <Pill X="5935" Y="-222"/>
+        <Pill X="6372" Y="-210"/>
+        <Spawn X="-340" Y="-555"/>
+        <TriggerCameraStart X="360" Y="-325"/>
+        <Camera X="510" Y="-125"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="2090" Y="500" Width="840" Height="495" Text="СДЕЛАНО&#xD;Картинка выше платформы" FontSize="100" Colour="13395507" Transparency="1"/>
+            <Comment X="1240" Y="-150" Width="840" Height="495" Text="СДЕЛАНО&#xD;Тут лишняя картинка короткого пола" FontSize="100" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof65-1>
+      <Roof65-2 X="7350" Y="660" DeltaX="1800" DeltaY="660" BoxX="-2045" BoxY="-1738" BoxWidth="7140" BoxHeight="3500">
+        <Pill X="-642" Y="-740"/>
+        <TriggerZoomNormal X="43" Y="-1738"/>
+        <TriggerBackFlipTrick90High X="610" Y="-200"/>
+        <TriggerLoss X="4095" Y="750"/>
+        <TriggerBarJumpSaltoless X="4152" Y="159"/>
+        <Respawn_2.5sec X="10" Y="0"/>
+        <Respawn_2.5sec X="3622" Y="366"/>
+        <Pill X="2310" Y="120"/>
+        <Pill X="2090" Y="102"/>
+        <TriggerJump X="3978" Y="159"/>
+        <Pill X="1850" Y="97"/>
+        <Pill X="-305" Y="-545"/>
+        <Pill X="15" Y="-306"/>
+        <Pill X="2430" Y="280"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-1975" Y="765" Width="2045" Height="100" Node="COM" Priority="0" Animation="" Start="FlyPanic|1"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="-2045" Y="800" Width="2300" Height="125" Node="COM" Priority="0" SubType="0"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="4280" Y="810" Width="640" Height="125" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="1820" Y="-415" Width="1260" Height="535" Text="СДЕЛАНО&#xD;Сделать цепочку здесь вмето двух стоящих здесь бонусов" FontSize="100" Colour="10027263" Transparency="1"/>
+            <Comment X="-175" Y="-780" Width="840" Height="495" Text="СДЕЛАНО&#xD;При прыжке с края разгона последний бонус не берется" FontSize="100" Colour="13395507" Transparency="1"/>
+            <Comment X="1690" Y="80" Width="840" Height="495" Text="СДЕЛАНО&#xD;Под вторым бонусом можно прокатиться, взяв остальные" FontSize="100" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof65-2>
+      <Roof65-3 X="12050" Y="995" DeltaX="385" DeltaY="-25" BoxX="0" BoxY="-1853" BoxWidth="7210" BoxHeight="3500">
+        <TriggerZoomMin X="2605" Y="-1853"/>
+        <Pill X="4913" Y="-121"/>
+        <Pill X="5250" Y="-117"/>
+        <Pill X="4572" Y="-126"/>
+        <TriggerJump X="5220" Y="-195"/>
+        <Pill X="5635" Y="-161"/>
+        <Pill X="6015" Y="-195"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="1132" Y="-170" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="2195" Y="-170" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Item X="3260" Y="-105" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="5295" Y="935" Width="1820" Height="100" Node="COM" Priority="0" Animation="" Start="FlyPanic|1"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="5275" Y="995" Width="1935" Height="125" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="330" Y="-345" Width="1855" Height="390" Text="СДЕЛАНО&#xD;Эти бонусы убрать" FontSize="100" Colour="10027263" Transparency="1"/>
+            <Comment X="2185" Y="-755" Width="2005" Height="285" Text="Здесь передвинул стол немного левее - за счет этого увеличил место для разгона игрока." FontSize="50" Colour="65535" Transparency="1"/>
+            <Comment X="3315" Y="-405" Width="865" Height="541" Text="СДЕЛАНО&#xD;Надо еще увеличить разгон" FontSize="100" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof65-3>
+      <Roof65-4 X="19080" Y="1355" DeltaX="1575" DeltaY="360" BoxX="-735" BoxY="-2266" BoxWidth="6630" BoxHeight="3552">
+        <Pill X="-655" Y="-500"/>
+        <Pill X="-315" Y="-375"/>
+        <TriggerZoomNormal X="-14" Y="-2214"/>
+        <TriggerZoomMin X="3704" Y="-2266"/>
+        <Pill X="-25" Y="-195"/>
+        <Pill X="2500" Y="-660"/>
+        <Pill X="3190" Y="-720"/>
+        <Pill X="3915" Y="-674"/>
+        <TriggerJump X="4515" Y="-485"/>
+        <Respawn_2sec X="-145" Y="-21"/>
+        <Pill X="4783" Y="-476"/>
+        <Pill X="5023" Y="-464"/>
+        <Pill X="5238" Y="-296"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Comment X="-915" Y="-226" Width="1090" Height="535" Text="СДЕЛАНО&#xD;2 последних бонуса не берутся, если прыгнуть с края разгона" FontSize="100" Colour="13395507" Transparency="1"/>
+            <Item X="832" Y="-291" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="1605" Y="-280" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="2845" Y="-605" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="3465" Y="-595" Score="10" Radius="80" Type="1" GroupId="2"/>
+            <Item X="2200" Y="-540" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="4466" Y="-374" Score="10" Radius="80" Type="1" GroupId="3"/>
+            <Item X="380" Y="-75" Score="10" Radius="80" Type="1" GroupId="1"/>
+            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="4550" Y="964" Width="1345" Height="125" Node="COM" Priority="0" SubType="0"/>
+            <Comment X="245" Y="-295" Width="490" Height="450" Text="СДЕЛАНО&#xD;Этот бонус убрать" FontSize="100" Colour="10027263" Transparency="1"/>
+            <Comment X="2310" Y="-2655" Width="1295" Height="1680" Text="СДЕЛАНО&#xD;бонусы берущиеся головой выглядят плохо. Кроме того, тут можно пропустить бота вперед и он арестует игрока только на финальной крыше.&#xD;&#xD;Взятие всех бонусов тут возможно только при прыжке с определенной точки в самом начале цепочки. Возможно имеет смысл упростить это место." FontSize="100" Colour="13395507" Transparency="1"/>
+            <Comment X="980" Y="-461" Width="1295" Height="480" Text="СДЕЛАНО&#xD;Тут можно сделать слайд и упереться в стенку, выглядит некрасиво, лучше оставить больше места между башней и стенкой&#xD;" FontSize="100" Colour="13395507" Transparency="1"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof65-4>
+      <FinalRoof_DownTown_03 X="24725" Y="1925" DeltaX="1020" DeltaY="860" BoxX="-934" BoxY="-2485" BoxWidth="4434" BoxHeight="4415">
+        <TriggerLossPanic X="-934" Y="473"/>
+        <TriggerZoomNormal X="22" Y="-2485"/>
+        <Pill X="62" Y="-150"/>
+        <Pill X="-217" Y="-652"/>
+        <Pill X="-50" Y="-410"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Item X="480" Y="-80" Score="10" Radius="80" Type="1" GroupId="3"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof_DownTown_03>
+    </Layer>
+            
+      </Layers>
+</Root>

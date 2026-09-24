@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<Scene>
+  <Nodes>
+    <shitheadNode1 Type="MacroNode" X="12.98828411102295" Y="226.7526397705078" Z="24.706775665283203" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="1.6315107731931149" LCC2="0.9741763186321296" LCC3="-0.6276278660955522" LCC4="-0.9780592257296923"/>
+    <shitheadNode2 Type="MacroNode" X="12.98828411102295" Y="198.74813842773438" Z="11.499828338623047" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="-0.04253014955149847" LCC2="2.3816526285527924" LCC3="0.7841408255685487" LCC4="-2.123263304569843"/>
+    <shitheadNode3 Type="MacroNode" X="12.98828411102295" Y="213.54568481445312" Z="52.71128463745117" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="1.0588713357933228" LCC2="-0.3934909629043196" LCC3="-2.0352366573402354" LCC4="2.369856284451232"/>
+    <shitheadNode4 Type="MacroNode" X="12.98828411102295" Y="185.5411834716797" Z="39.504337310791016" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="-0.6151696912258994" LCC2="1.0139852665096964" LCC3="-0.6234680496816225" LCC4="1.2246524743978253"/>
+    <shitheadNode5 Type="MacroNode" X="-17.974210739135742" Y="226.7526397705078" Z="24.706775665283203" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="1.6270676601761953" LCC2="-0.8123652867111899" LCC3="1.1241737818005313" LCC4="-0.9388761552655367"/>
+    <shitheadNode6 Type="MacroNode" X="-17.974210739135742" Y="198.74813842773438" Z="11.499828338623047" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="-0.04697337004448058" LCC2="0.5951110033907915" LCC3="2.535942417909574" LCC4="-2.0840800512558846"/>
+    <shitheadNode7 Type="MacroNode" X="-17.974210739135742" Y="213.54568481445312" Z="52.71128463745117" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="1.0544281164822091" LCC2="-2.180032732769474" LCC3="-0.2834351896304756" LCC4="2.4090398059177405"/>
+    <shitheadNode8 Type="MacroNode" X="-17.974210739135742" Y="185.5411834716797" Z="39.504337310791016" Mass="1.0" Fixed="0" Visible="1" Selectable="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="-0.6196128074180766" LCC2="-0.7725563588487045" LCC3="1.1283335339036433" LCC4="1.2638356323631377"/>
+  </Nodes>
+  <Edges>
+    <shitheadEdge1 Type="Edge" Length="200.0" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode3" End2="shitheadNode1"/>
+    <shitheadEdge2 Type="Edge" Length="200.0" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode1" End2="shitheadNode2"/>
+    <shitheadEdge3 Type="Edge" Length="200.0" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode2" End2="shitheadNode4"/>
+    <shitheadEdge4 Type="Edge" Length="200.0" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode4" End2="shitheadNode3"/>
+    <shitheadEdge5 Type="Edge" Length="200.0" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode7" End2="shitheadNode3"/>
+    <shitheadEdge6 Type="Edge" Length="200.0" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode4" End2="shitheadNode8"/>
+    <shitheadEdge7 Type="Edge" Length="200.0" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode8" End2="shitheadNode7"/>
+    <shitheadEdge8 Type="Edge" Length="200.0" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode5" End2="shitheadNode7"/>
+    <shitheadEdge9 Type="Edge" Length="200.0" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode8" End2="shitheadNode6"/>
+    <shitheadEdge10 Type="Edge" Length="200.0" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode6" End2="shitheadNode5"/>
+    <shitheadEdge11 Type="Edge" Length="200.0" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode1" End2="shitheadNode5"/>
+    <shitheadEdge12 Type="Edge" Length="200.0" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode6" End2="shitheadNode2"/>
+    <shitheadEdge13 Type="Edge" Length="282.842712474619" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode3" End2="shitheadNode2"/>
+    <shitheadEdge14 Type="Edge" Length="282.842712474619" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode7" End2="shitheadNode4"/>
+    <shitheadEdge15 Type="Edge" Length="282.842712474619" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode5" End2="shitheadNode8"/>
+    <shitheadEdge16 Type="Edge" Length="282.842712474619" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode1" End2="shitheadNode6"/>
+    <shitheadEdge17 Type="Edge" Length="282.842712474619" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode1" End2="shitheadNode7"/>
+    <shitheadEdge18 Type="Edge" Length="282.842712474619" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="shitheadNode6" End2="shitheadNode4"/>
+  </Edges>
+  <Figures>
+    <shitheadTriangle-1 Type="Triangle" Shading="0" Node1="shitheadNode2" Node2="shitheadNode3" Node3="shitheadNode1"/>
+    <shitheadTriangle-2 Type="Triangle" Shading="0" Node1="shitheadNode4" Node2="shitheadNode7" Node3="shitheadNode3"/>
+    <shitheadTriangle-3 Type="Triangle" Shading="0" Node1="shitheadNode8" Node2="shitheadNode5" Node3="shitheadNode7"/>
+    <shitheadTriangle-4 Type="Triangle" Shading="0" Node1="shitheadNode6" Node2="shitheadNode1" Node3="shitheadNode5"/>
+    <shitheadTriangle-5 Type="Triangle" Shading="0" Node1="shitheadNode7" Node2="shitheadNode1" Node3="shitheadNode3"/>
+    <shitheadTriangle-6 Type="Triangle" Shading="0" Node1="shitheadNode4" Node2="shitheadNode6" Node3="shitheadNode8"/>
+    <shitheadTriangle-7 Type="Triangle" Shading="0" Node1="shitheadNode2" Node2="shitheadNode4" Node3="shitheadNode3"/>
+    <shitheadTriangle-8 Type="Triangle" Shading="0" Node1="shitheadNode4" Node2="shitheadNode8" Node3="shitheadNode7"/>
+    <shitheadTriangle-9 Type="Triangle" Shading="0" Node1="shitheadNode8" Node2="shitheadNode6" Node3="shitheadNode5"/>
+    <shitheadTriangle-10 Type="Triangle" Shading="0" Node1="shitheadNode6" Node2="shitheadNode2" Node3="shitheadNode1"/>
+    <shitheadTriangle-11 Type="Triangle" Shading="0" Node1="shitheadNode7" Node2="shitheadNode5" Node3="shitheadNode1"/>
+    <shitheadTriangle-12 Type="Triangle" Shading="0" Node1="shitheadNode4" Node2="shitheadNode2" Node3="shitheadNode6"/>
+  </Figures>
+</Scene>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root> 
+  
+  <Sets>
+    <City FileName="buildings.xml"/>
+    <City FileName="buildings_downtown.xml"/>
+  </Sets>
+
+  <Music Name="music_dinamic" Volume="0.3"/>
+  <Models>
+    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>     
+    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+  </Models>
+
+
+  <Layers>         
+    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500">
+      <Background DeltaX="0" DeltaY="-500"/>  
+      <Background DeltaX="0" DeltaY="0"/>  
+      <Background DeltaX="0" DeltaY="0"/> 
+    </Layer> 
+    
+    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="0">
+      <Building1 DeltaX="134" DeltaY="-310"/>
+      <Billboard DeltaX="309" DeltaY="176"/>
+      <Building2 DeltaX="490" DeltaY="-245"/>
+      <LampPost DeltaX="259" DeltaY="520"/>
+      <Building3 DeltaX="328" DeltaY="-544"/>
+      <Billboard DeltaX="351" DeltaY="255"/>
+      <Building1 DeltaX="292" DeltaY="-327"/>
+      <Building3 DeltaX="348" DeltaY="-45"/>
+      <Building2 DeltaX="4760" DeltaY="895">
+        <Building2Image X="-4213" Y="-768"/>
+        <BillboardImage X="-2360" Y="160"/>
+        <Building2Image X="-1745" Y="-135"/>
+      </Building2>
+    </Layer>
+    
+    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+      <Roof88-1 DeltaX="-635" DeltaY="1635">
+        <Spawn X="-665" Y="-665"/>
+        <TriggerCameraStart X="245" Y="-390"/>
+        <Camera X="395" Y="-120"/>
+        <Pill X="1735" Y="-475"/>
+        <TriggerLoss X="2710" Y="440"/>
+        <TriggerJump X="2747" Y="-351"/>
+      </Roof88-1>
+      <Roof88-2 DeltaX="385" DeltaY="-15">
+        <TriggerLoss X="2680" Y="30"/>
+        <TriggerJump X="2862" Y="-258"/>
+      </Roof88-2>
+      <Roof88-3 DeltaX="375" DeltaY="-500">
+        <Respawn X="90" Y="0"/>
+        <TriggerZoomMax X="729" Y="-1912"/>
+        <Pill X="1331" Y="-264"/>
+        <TriggerZoomNormal X="1888" Y="-1922"/>
+        <TriggerLoss X="2700" Y="525"/>
+        <TriggerJump X="2906" Y="-278"/>
+      </Roof88-3>
+      <Roof88-4 DeltaX="405" DeltaY="0">
+        <TriggerLoss X="2705" Y="535"/>
+        <TriggerJump X="2865" Y="-679"/>
+      </Roof88-4>
+      <Roof88-5 DeltaX="390" DeltaY="-485">
+        <TriggerZoomMin X="116" Y="-3465"/>
+        <Pill X="605" Y="-245"/>
+        <TriggerLoss X="2730" Y="1000"/>
+        <TriggerJump X="2860" Y="-187"/>
+      </Roof88-5>
+      <Roof88-6 DeltaX="390" DeltaY="0">
+        <TriggerZoomNormal X="1088" Y="-3433"/>
+        <TriggerLoss X="2755" Y="537"/>
+        <TriggerJump X="2894" Y="-279"/>
+      </Roof88-6>
+      <Roof88-7 DeltaX="375" DeltaY="485">
+        <Respawn X="85" Y="-1000"/>
+        <TriggerZoomMax X="460" Y="-4473"/>
+        <TriggerZoomNormal X="2363" Y="-4428"/>
+        <Pill X="2550" Y="-1260"/>
+        <TriggerLoss X="2709" Y="-461"/>
+        <TriggerJump X="2907" Y="-1265"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="2930" Y="-460" Width="575" Height="100" Name="zoommax" Type="2" Node="COM" Priority="0" Value="2"/>
+          </Elements>
+        </ObjectNULL>
+      </Roof88-7>
+      <Roof88-8 DeltaX="395" DeltaY="-1000">
+        <Respawn X="70" Y="-500"/>
+        <TriggerZoomMax X="536" Y="-3953"/>
+        <TriggerZoomNormal X="2082" Y="-3937"/>
+        <TriggerLoss X="2735" Y="555"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Trigger X="2854" Y="557" Width="575" Height="100" Name="zoommax" Type="2" Node="COM" Priority="0" Value="2"/>
+          </Elements>
+        </ObjectNULL>
+        <TriggerSlide X="3818" Y="-1573"/>
+        <TriggerZoomMin X="4139" Y="-3167"/>
+      </Roof88-8>
+      <Roof88-9 DeltaX="-850" DeltaY="-985">
+        <Pill X="1130" Y="-235"/>
+        <Respawn X="1185" Y="10"/>
+        <TriggerJump X="2775" Y="-160"/>
+        <TriggerLoss X="2945" Y="2060"/>
+      </Roof88-9>
+      <FinalRoof DeltaX="1950" DeltaY="635">
+        <TriggerLoss X="-1940" Y="65"/>
+        <TriggerLoss X="-985" Y="1425"/>
+        <TriggerLoss X="-975" Y="50"/>
+        <Platform500x1001 X="-10" Y="1920"/>
+        <Platform500x1001 X="-10" Y="975"/>
+        <TriggerZoomNormal X="42" Y="-2049"/>
+        <ObjectNULL X="0" Y="0">
+          <Elements>
+            <Image X="405" Y="965" Width="2007" Height="1968" ClassName="v_black"/>
+          </Elements>
+        </ObjectNULL>
+      </FinalRoof>
+    </Layer>
+    
+    <Layer Name="Forward_Layer" Factor="2" Type="2">
+    </Layer>  
+    
+  </Layers>
+</Root>
